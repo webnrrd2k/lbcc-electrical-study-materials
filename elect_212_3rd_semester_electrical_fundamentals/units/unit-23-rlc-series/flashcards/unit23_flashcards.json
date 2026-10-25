@@ -1,0 +1,519 @@
+[
+  {
+    "front": "Phase of the resistor's voltage vs the series current?",
+    "back": "In phase.<br><img src=\"drop_phases.png\">",
+    "extra_notes": "Review Q1",
+    "media": [
+      "drop_phases.png"
+    ],
+    "tags": [
+      "unit23",
+      "phase"
+    ]
+  },
+  {
+    "front": "Phase of the inductor's voltage vs the series current?",
+    "back": "Eₗ LEADS the current by 90°.<br><img src=\"drop_phases.png\">",
+    "extra_notes": "Review Q2",
+    "media": [
+      "drop_phases.png"
+    ],
+    "tags": [
+      "unit23",
+      "phase"
+    ]
+  },
+  {
+    "front": "Phase of the capacitor's voltage vs the series current?",
+    "back": "Ec LAGS the current by 90°.<br><img src=\"drop_phases.png\">",
+    "extra_notes": "Review Q3",
+    "media": [
+      "drop_phases.png"
+    ],
+    "tags": [
+      "unit23",
+      "phase"
+    ]
+  },
+  {
+    "front": "<img src=\"drop_phases.png\"><br>What is the phase relationship between Eₗ and Ec in series?",
+    "back": "180° apart — exactly opposite, so they subtract.",
+    "extra_notes": "",
+    "media": [
+      "drop_phases.png"
+    ],
+    "tags": [
+      "unit23",
+      "phase"
+    ]
+  },
+  {
+    "front": "What is the same through every part of an RLC series circuit?",
+    "back": "The current.<br><img src=\"rlc_series_circuit.png\">",
+    "extra_notes": "",
+    "media": [
+      "rlc_series_circuit.png"
+    ],
+    "tags": [
+      "unit23",
+      "series"
+    ]
+  },
+  {
+    "front": "How do Xl and Xc combine in series?",
+    "back": "They subtract: net X = Xl − Xc. The smaller is eliminated, the larger reduced.<br><img src=\"reactance_cancel.png\">",
+    "extra_notes": "",
+    "media": [
+      "reactance_cancel.png"
+    ],
+    "tags": [
+      "unit23",
+      "reactance"
+    ]
+  },
+  {
+    "front": "Impedance formula for RLC series?",
+    "back": "Z = √(R² + (Xl − Xc)²)<br><img src=\"impedance_triangle_rlc.png\">",
+    "extra_notes": "R = √(Z² − (Xl − Xc)²)",
+    "media": [
+      "impedance_triangle_rlc.png"
+    ],
+    "tags": [
+      "unit23",
+      "impedance",
+      "formula"
+    ]
+  },
+  {
+    "front": "<img src=\"reactance_cancel.png\"><br>R 12 Ω, Xl 24 Ω, Xc 8 Ω. Z?",
+    "back": "√(12² + 16²) = <b>20 Ω</b>",
+    "extra_notes": "Example 23–1",
+    "media": [
+      "reactance_cancel.png"
+    ],
+    "tags": [
+      "unit23",
+      "impedance"
+    ]
+  },
+  {
+    "front": "Xc is larger than Xl. Does the negative difference matter in Z?",
+    "back": "No — it's squared. R 10, Xl 30, Xc 54 → √(100 + 576) = 26 Ω.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "impedance"
+    ]
+  },
+  {
+    "front": "Two common Z mistakes in RLC series?",
+    "back": "Adding Xl + Xc, or putting Xl and Xc separately into √(R² + …). Always subtract first.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "impedance",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Why can RLC series current be surprisingly large?",
+    "back": "Xl and Xc cancel, so Z can be smaller than either reactance.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "impedance"
+    ]
+  },
+  {
+    "front": "<img src=\"rlc_series_circuit.png\"><br>RLC example on 240 V: current and drops?",
+    "back": "I = 240/20 = 12 A; Eᵣ = 144 V, Eₗ = 288 V, Ec = 96 V.",
+    "extra_notes": "",
+    "media": [
+      "rlc_series_circuit.png"
+    ],
+    "tags": [
+      "unit23",
+      "voltage"
+    ]
+  },
+  {
+    "front": "<img src=\"drops_exceed_supply.png\"><br>Can a component's voltage exceed the supply in RLC series?",
+    "back": "Yes — Eₗ = 288 V on a 240 V supply. Eₗ and Ec partly cancel, so the supply only provides the difference.",
+    "extra_notes": "Check capacitor ratings!",
+    "media": [
+      "drops_exceed_supply.png"
+    ],
+    "tags": [
+      "unit23",
+      "voltage",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Total voltage formula in RLC series?",
+    "back": "Eₜ = √(Eᵣ² + (Eₗ − Ec)²)",
+    "extra_notes": "√(144² + 192²) = 240 V",
+    "media": [],
+    "tags": [
+      "unit23",
+      "voltage",
+      "formula"
+    ]
+  },
+  {
+    "front": "L and C values in Example 23–1?",
+    "back": "L = 24/377 = 0.0637 H; C = 1/(377 × 8) = 331.6 µF.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "components"
+    ]
+  },
+  {
+    "front": "66.3 µF, 0.0663 H, 8 Ω on 120 V, 60 Hz. Current?",
+    "back": "Xc = 40 Ω, Xl = 25 Ω → Z = √(64 + 225) = 17 Ω → I = <b>7.05 A</b>.",
+    "extra_notes": "Example 23–2",
+    "media": [],
+    "tags": [
+      "unit23",
+      "impedance"
+    ]
+  },
+  {
+    "front": "Xl 62 Ω, Xc 38 Ω on 208 V. What R limits current to 8 A?",
+    "back": "Z = 208/8 = 26 Ω; R = √(26² − 24²) = <b>10 Ω</b>.",
+    "extra_notes": "Example 23–3",
+    "media": [],
+    "tags": [
+      "unit23",
+      "impedance"
+    ]
+  },
+  {
+    "front": "Power quantities in Example 23–1?",
+    "back": "P 1728 W; VARsL 3456; VARsC 1152; net 2304 VARs inductive; VA 2880.<br><img src=\"power_vectors_rlc.png\">",
+    "extra_notes": "",
+    "media": [
+      "power_vectors_rlc.png"
+    ],
+    "tags": [
+      "unit23",
+      "power"
+    ]
+  },
+  {
+    "front": "Apparent power formula in RLC circuits?",
+    "back": "VA = √(P² + (VARsL − VARsC)²)",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "power",
+      "formula"
+    ]
+  },
+  {
+    "front": "<img src=\"power_vectors_rlc.png\"><br>Why do inductive and capacitive VARs cancel?",
+    "back": "While the coil stores energy the capacitor releases it (and vice versa) — they trade energy locally, so the source supplies only the net.",
+    "extra_notes": "",
+    "media": [
+      "power_vectors_rlc.png"
+    ],
+    "tags": [
+      "unit23",
+      "power"
+    ]
+  },
+  {
+    "front": "Book typo in Figure 23–6?",
+    "back": "VARsC shown as 1142; correct value is 1152 (96 V × 12 A). Also \"PF = 0.06 × 100\" should be 0.6.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "errata"
+    ]
+  },
+  {
+    "front": "When is the RLC series PF lagging?",
+    "back": "When inductive VARs (Xl) exceed capacitive VARs (Xc) — current lags.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "power_factor"
+    ]
+  },
+  {
+    "front": "When is the RLC series PF leading?",
+    "back": "When capacitive VARs (Xc) exceed inductive — current leads.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "power_factor"
+    ]
+  },
+  {
+    "front": "Example 23–1 PF and θ?",
+    "back": "PF = 1728/2880 = 60% LAGGING; θ = 53.13°.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "power_factor"
+    ]
+  },
+  {
+    "front": "18 W, 24 VARsL, 34 VARsC in series. PF, leading or lagging?",
+    "back": "Net 10 VARs capacitive → PF = 18/√(18² + 10²) ≈ 87.4% LEADING.",
+    "extra_notes": "Practice 6–7",
+    "media": [],
+    "tags": [
+      "unit23",
+      "power_factor"
+    ]
+  },
+  {
+    "front": "tan θ in an RLC series circuit?",
+    "back": "tan θ = (Xl − Xc)/R = (VARsL − VARsC)/P",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "power_factor",
+      "formula"
+    ]
+  },
+  {
+    "front": "What is resonance?",
+    "back": "The frequency at which Xl = Xc, so they cancel completely.<br><img src=\"resonance_crossing.png\">",
+    "extra_notes": "23–2",
+    "media": [
+      "resonance_crossing.png"
+    ],
+    "tags": [
+      "unit23",
+      "resonance"
+    ]
+  },
+  {
+    "front": "<img src=\"resonance_crossing.png\"><br>Why must Xl and Xc be equal at some frequency?",
+    "back": "Xl rises with frequency and Xc falls — the curves must cross.",
+    "extra_notes": "",
+    "media": [
+      "resonance_crossing.png"
+    ],
+    "tags": [
+      "unit23",
+      "resonance"
+    ]
+  },
+  {
+    "front": "Resonant frequency formula?",
+    "back": "fR = 1 / (2π√(LC))  (L in H, C in F)",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "resonance",
+      "formula"
+    ]
+  },
+  {
+    "front": "Formulas for the L or C needed to resonate at fR?",
+    "back": "L = 1/(4π²f²C); C = 1/(4π²f²L) — both π and f squared.",
+    "extra_notes": "Works for series or parallel",
+    "media": [],
+    "tags": [
+      "unit23",
+      "resonance",
+      "formula",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "C needed to resonate with 0.2 H at 1200 Hz?",
+    "back": "≈ <b>88 nF</b>",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "resonance"
+    ]
+  },
+  {
+    "front": "L needed to resonate with 50 µF at 400 Hz?",
+    "back": "≈ <b>3.17 mH</b>",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "resonance"
+    ]
+  },
+  {
+    "front": "At series resonance, what are Z, current and PF?",
+    "back": "Z = R (minimum), current maximum, PF = 100% (θ = 0°).<br><img src=\"resonance_current.png\">",
+    "extra_notes": "",
+    "media": [
+      "resonance_current.png"
+    ],
+    "tags": [
+      "unit23",
+      "resonance"
+    ]
+  },
+  {
+    "front": "<img src=\"resonance_current.png\"><br>0.0159 H (5 Ω wire) + 1.59 µF on 50 V: current at resonance (1000 Hz)?",
+    "back": "Only R limits it: 50/5 = <b>10 A</b> (vs ~0.47 A at 600 Hz, ~0.73 A at 1400 Hz).",
+    "extra_notes": "",
+    "media": [
+      "resonance_current.png"
+    ],
+    "tags": [
+      "unit23",
+      "resonance"
+    ]
+  },
+  {
+    "front": "<img src=\"resonance_voltages.png\"><br>In that circuit, the voltage across L and across C at resonance?",
+    "back": "10 A × 100 Ω = <b>1000 V</b> each — on a 50 V supply.",
+    "extra_notes": "Magnified by Q = Xl/R = 20",
+    "media": [
+      "resonance_voltages.png"
+    ],
+    "tags": [
+      "unit23",
+      "resonance",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "At resonance, do L and C disappear?",
+    "back": "No — they cancel each other's effect on the source, but each carries full current and develops a full (high) voltage.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "resonance",
+      "exception"
+    ]
+  },
+  {
+    "front": "What is bandwidth?",
+    "back": "The frequency range between the two points where current is 0.707 × maximum: B = f₂ − f₁.<br><img src=\"bandwidth.png\">",
+    "extra_notes": "",
+    "media": [
+      "bandwidth.png"
+    ],
+    "tags": [
+      "unit23",
+      "bandwidth"
+    ]
+  },
+  {
+    "front": "Bandwidth formula using Q?",
+    "back": "B = fR / Q",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "bandwidth",
+      "formula"
+    ]
+  },
+  {
+    "front": "<img src=\"resonance_current.png\"><br>High-Q vs low-Q resonant circuit?",
+    "back": "High Q (low R): sharp peak, narrow bandwidth. Low Q: flat peak, wide bandwidth.",
+    "extra_notes": "Bandwidth is inversely proportional to Q",
+    "media": [
+      "resonance_current.png"
+    ],
+    "tags": [
+      "unit23",
+      "bandwidth"
+    ]
+  },
+  {
+    "front": "<img src=\"bandwidth.png\"><br>Resonance at 1000 Hz, 0.707 points at 995 and 1005 Hz. Bandwidth?",
+    "back": "<b>10 Hz</b> (narrow — high Q)",
+    "extra_notes": "",
+    "media": [
+      "bandwidth.png"
+    ],
+    "tags": [
+      "unit23",
+      "bandwidth"
+    ]
+  },
+  {
+    "front": "Resonance at 1200 Hz, 0.707 points at 1150 and 1250 Hz. Bandwidth?",
+    "back": "<b>100 Hz</b> (wide — low Q)",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "bandwidth"
+    ]
+  },
+  {
+    "front": "Why can PF capacitor banks cause trouble on systems with VFDs?",
+    "back": "Capacitors + system inductance form a resonant L-C circuit; if it lands near a harmonic (300, 420 Hz…) currents/voltages are magnified — blown fuses, failed caps. Hence detuned banks.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "field"
+    ]
+  },
+  {
+    "front": "<img src=\"resonant_test_set.png\"><br>How do resonant AC test sets produce very high test voltages?",
+    "back": "A tuned reactor resonates with the cable's capacitance; at resonance the voltage across the cable is magnified (≈ Q × supply).",
+    "extra_notes": "",
+    "media": [
+      "resonant_test_set.png"
+    ],
+    "tags": [
+      "unit23",
+      "field",
+      "testing"
+    ]
+  },
+  {
+    "front": "What is ferroresonance?",
+    "back": "Resonance between an iron-core transformer's (nonlinear) inductance and cable capacitance — often after single-phase switching — producing erratic overvoltages.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "field"
+    ]
+  },
+  {
+    "front": "400 Hz resonant HV source: 15 mH, 2 Ω, 240 V. Capacitor voltage rating?",
+    "back": "At resonance I = 240/2 = 120 A; Ec = I × Xc (= I × Xl ≈ 120 × 37.7 Ω). The rating must exceed THAT (×1.414 if DC-rated), not 240 V.",
+    "extra_notes": "Practical Application",
+    "media": [],
+    "tags": [
+      "unit23",
+      "field",
+      "practical",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Review Q4 (400 Hz): what must you NOT use?",
+    "back": "377 — compute 2π × 400 for Xl and Xc.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit23",
+      "pitfall"
+    ]
+  }
+]

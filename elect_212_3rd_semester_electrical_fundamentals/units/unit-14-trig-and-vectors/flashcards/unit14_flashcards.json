@@ -1,0 +1,715 @@
+[
+  {
+    "front": "What is a right triangle?",
+    "back": "A triangle with one 90° (right) angle.<br><img src=\"right_triangle_parts.png\">",
+    "extra_notes": "14–1",
+    "media": [
+      "right_triangle_parts.png"
+    ],
+    "tags": [
+      "unit14",
+      "right_triangle"
+    ]
+  },
+  {
+    "front": "Which side of a right triangle is the hypotenuse?",
+    "back": "The side across from the 90° angle. It's always the longest side.<br><img src=\"right_triangle_parts.png\">",
+    "extra_notes": "Find the 90° corner first; don't go by which side looks slanted",
+    "media": [
+      "right_triangle_parts.png"
+    ],
+    "tags": [
+      "unit14",
+      "right_triangle"
+    ]
+  },
+  {
+    "front": "What do the angles of any triangle add up to?",
+    "back": "180°",
+    "extra_notes": "14–1 / summary",
+    "media": [],
+    "tags": [
+      "unit14",
+      "angles"
+    ]
+  },
+  {
+    "front": "In a right triangle, what do the two non-right angles add up to?",
+    "back": "90°. If you know one, the other is 90° minus it.",
+    "extra_notes": "Review Q10: Y = 36°, so X = 54°",
+    "media": [],
+    "tags": [
+      "unit14",
+      "angles"
+    ]
+  },
+  {
+    "front": "You solve for a leg and get a length longer than the hypotenuse. What happened?",
+    "back": "You made a mistake. A leg can never be longer than the hypotenuse.",
+    "extra_notes": "Sanity check every time",
+    "media": [],
+    "tags": [
+      "unit14",
+      "right_triangle",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "State the Pythagorean theorem.",
+    "back": "c² = a² + b², where c is the hypotenuse and a and b are the legs.<br><img src=\"pythagoras_squares.png\">",
+    "extra_notes": "14–2",
+    "media": [
+      "pythagoras_squares.png"
+    ],
+    "tags": [
+      "unit14",
+      "pythagorean",
+      "formula"
+    ]
+  },
+  {
+    "front": "<img src=\"pythagoras_squares.png\"><br>What does this picture prove?",
+    "back": "The square on the hypotenuse equals the sum of the squares on the two legs: 9 + 16 = 25, so the hypotenuse is 5.",
+    "extra_notes": "3-4-5 triangle",
+    "media": [
+      "pythagoras_squares.png"
+    ],
+    "tags": [
+      "unit14",
+      "pythagorean"
+    ]
+  },
+  {
+    "front": "Formula for the hypotenuse when you know both legs?",
+    "back": "c = √(a² + b²)",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "pythagorean",
+      "formula"
+    ]
+  },
+  {
+    "front": "Formula for a leg when you know the hypotenuse and the other leg?",
+    "back": "a = √(c² − b²). Note the minus sign.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "pythagorean",
+      "formula"
+    ]
+  },
+  {
+    "front": "Hypotenuse = 18 in., one leg = 7 in. Find the other leg.",
+    "back": "√(18² − 7²) = √275 = <b>16.583 in.</b><br><img src=\"example_14_1.png\">",
+    "extra_notes": "Example 14–1",
+    "media": [
+      "example_14_1.png"
+    ],
+    "tags": [
+      "unit14",
+      "pythagorean"
+    ]
+  },
+  {
+    "front": "Legs of 3 and 4. Is the hypotenuse 7?",
+    "back": "No. 5. √(a² + b²) ≠ a + b.",
+    "extra_notes": "The same mistake as R + Xₗ = Z in AC",
+    "media": [],
+    "tags": [
+      "unit14",
+      "pythagorean",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Calculator: how should you type the hypotenuse of legs 18 and 7?",
+    "back": "√(18² + 7²), with parentheses around the whole sum. Or square and add first, then take the root last.",
+    "extra_notes": "√18² + 7² gives the wrong answer",
+    "media": [],
+    "tags": [
+      "unit14",
+      "pythagorean",
+      "calculator",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "When does the Pythagorean theorem NOT apply?",
+    "back": "On non-right triangles, and for quantities that aren't exactly 90° apart.",
+    "extra_notes": "R and Xₗ are 90° apart, so it works for impedance",
+    "media": [],
+    "tags": [
+      "unit14",
+      "pythagorean",
+      "exception"
+    ]
+  },
+  {
+    "front": "How do you lay out a square corner with a tape measure?",
+    "back": "Mark 3 on one line and 4 on the other. The corner is 90° when the diagonal is exactly 5 (or use 6-8-10).<br><img src=\"three_four_five.png\">",
+    "extra_notes": "",
+    "media": [
+      "three_four_five.png"
+    ],
+    "tags": [
+      "unit14",
+      "pythagorean",
+      "field"
+    ]
+  },
+  {
+    "front": "Formula for a rolling offset's true offset?",
+    "back": "True offset = √(rise² + roll²)",
+    "extra_notes": "Pythagorean theorem in conduit work",
+    "media": [],
+    "tags": [
+      "unit14",
+      "pythagorean",
+      "field"
+    ]
+  },
+  {
+    "front": "<img src=\"opp_adj_from_X.png\"><br>From angle X, which side is opposite and which is adjacent?",
+    "back": "A is opposite X. B is adjacent to X.",
+    "extra_notes": "Figure 14–22 orientation",
+    "media": [
+      "opp_adj_from_X.png"
+    ],
+    "tags": [
+      "unit14",
+      "sohcahtoa",
+      "labels"
+    ]
+  },
+  {
+    "front": "<img src=\"opp_adj_from_Y.png\"><br>From angle Y, which side is opposite and which is adjacent?",
+    "back": "B is opposite Y. A is adjacent to Y.",
+    "extra_notes": "Re-label for every question",
+    "media": [
+      "opp_adj_from_Y.png"
+    ],
+    "tags": [
+      "unit14",
+      "sohcahtoa",
+      "labels"
+    ]
+  },
+  {
+    "front": "Does the hypotenuse change when you switch from angle X to angle Y?",
+    "back": "No. Only opposite and adjacent swap.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "sohcahtoa",
+      "labels"
+    ]
+  },
+  {
+    "front": "Book trick for finding the opposite side?",
+    "back": "Draw a line that bisects (splits) the angle. It runs into the opposite side.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "sohcahtoa",
+      "labels"
+    ]
+  },
+  {
+    "front": "sin θ = ?",
+    "back": "Opposite / Hypotenuse<br><img src=\"soh_cah_toa.png\">",
+    "extra_notes": "SOH",
+    "media": [
+      "soh_cah_toa.png"
+    ],
+    "tags": [
+      "unit14",
+      "sohcahtoa",
+      "formula"
+    ]
+  },
+  {
+    "front": "cos θ = ?",
+    "back": "Adjacent / Hypotenuse<br><img src=\"soh_cah_toa.png\">",
+    "extra_notes": "CAH",
+    "media": [
+      "soh_cah_toa.png"
+    ],
+    "tags": [
+      "unit14",
+      "sohcahtoa",
+      "formula"
+    ]
+  },
+  {
+    "front": "tan θ = ?",
+    "back": "Opposite / Adjacent<br><img src=\"soh_cah_toa.png\">",
+    "extra_notes": "TOA",
+    "media": [
+      "soh_cah_toa.png"
+    ],
+    "tags": [
+      "unit14",
+      "sohcahtoa",
+      "formula"
+    ]
+  },
+  {
+    "front": "What does \"Oscar Had A Heap Of Apples\" stand for?",
+    "back": "sin = O/H, cos = A/H, tan = O/A",
+    "extra_notes": "Same as SOH-CAH-TOA",
+    "media": [],
+    "tags": [
+      "unit14",
+      "sohcahtoa"
+    ]
+  },
+  {
+    "front": "You know O and H. Which function do you use?",
+    "back": "Sine",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "sohcahtoa"
+    ]
+  },
+  {
+    "front": "You know A and H. Which function do you use?",
+    "back": "Cosine",
+    "extra_notes": "Review Q1",
+    "media": [],
+    "tags": [
+      "unit14",
+      "sohcahtoa"
+    ]
+  },
+  {
+    "front": "You know O and A. Which function do you use?",
+    "back": "Tangent",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "sohcahtoa"
+    ]
+  },
+  {
+    "front": "What do sin⁻¹, cos⁻¹ and tan⁻¹ (arcsin, INV SIN) do?",
+    "back": "Run the ratio backward: you give a ratio and get the angle back.",
+    "extra_notes": "sin⁻¹ does NOT mean 1/sin",
+    "media": [],
+    "tags": [
+      "unit14",
+      "inverse",
+      "calculator"
+    ]
+  },
+  {
+    "front": "H = 14, O = 9. Find the angle.",
+    "back": "sin θ = 9/14 = 0.643, so θ = sin⁻¹(0.643) = <b>40°</b>",
+    "extra_notes": "Example 14–2",
+    "media": [],
+    "tags": [
+      "unit14",
+      "inverse"
+    ]
+  },
+  {
+    "front": "Same triangle, now find the other angle (A = 9 from that angle, H = 14).",
+    "back": "cos⁻¹(9/14) = <b>50°</b>. Check: 40 + 50 = 90.",
+    "extra_notes": "Example 14–3",
+    "media": [],
+    "tags": [
+      "unit14",
+      "inverse"
+    ]
+  },
+  {
+    "front": "Why does sin X = cos Y in a right triangle?",
+    "back": "The side opposite X is the side adjacent to Y, and X + Y = 90°.",
+    "extra_notes": "That's why both examples gave 0.643",
+    "media": [],
+    "tags": [
+      "unit14",
+      "sohcahtoa"
+    ]
+  },
+  {
+    "front": "What range do sin and cos fall in for a right triangle's angles?",
+    "back": "0 to 1, because the hypotenuse is the longest side.",
+    "extra_notes": "ERROR on sin⁻¹ or cos⁻¹ means the hypotenuse is on top — swap it to the bottom",
+    "media": [],
+    "tags": [
+      "unit14",
+      "sohcahtoa",
+      "calculator",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "What happens to tan θ as θ approaches 90°?",
+    "back": "It grows without limit. tan 45° = 1.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "sohcahtoa"
+    ]
+  },
+  {
+    "front": "Calculator mode for this course: DEG or RAD? How do you check?",
+    "back": "DEG. Test: sin 30 should give 0.5.",
+    "extra_notes": "RAD gives wrong answers with no warning",
+    "media": [],
+    "tags": [
+      "unit14",
+      "calculator",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "The book shows sin(0.643) = 0.0112. What went wrong?",
+    "back": "SIN was pressed instead of SIN⁻¹ (arcsin).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "calculator",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Why shouldn't you round the ratio before taking the inverse?",
+    "back": "Rounding early shifts the angle. Keep full precision until the final answer.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "calculator",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Do SOH-CAH-TOA and the Pythagorean theorem work on any triangle?",
+    "back": "No. Only on right triangles.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "exception"
+    ]
+  },
+  {
+    "front": "O = H × ?",
+    "back": "sin θ",
+    "extra_notes": "Opp = sin θ × Hyp",
+    "media": [],
+    "tags": [
+      "unit14",
+      "formulas_14_4"
+    ]
+  },
+  {
+    "front": "A = H × ?",
+    "back": "cos θ",
+    "extra_notes": "Adj = cos θ × Hyp",
+    "media": [],
+    "tags": [
+      "unit14",
+      "formulas_14_4"
+    ]
+  },
+  {
+    "front": "H = O ÷ ?   and   H = A ÷ ?",
+    "back": "H = O / sin θ, and H = A / cos θ",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "formulas_14_4"
+    ]
+  },
+  {
+    "front": "O = A × ?   and   A = O ÷ ?",
+    "back": "O = A × tan θ, and A = O / tan θ",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "formulas_14_4"
+    ]
+  },
+  {
+    "front": "Sanity check when solving for the hypotenuse?",
+    "back": "The answer must be bigger than the leg you started with (dividing by sin or cos, which are under 1).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "formulas_14_4",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "<img src=\"shadow_building.png\"><br>How does the shadow method find a building's height?",
+    "back": "The ruler and its shadow give tan θ = 12/7.5 = 1.6 (θ ≈ 58°). Height = 35 ft × 1.6 = <b>56 ft</b>.",
+    "extra_notes": "Shortcut: the ratios are equal, so you don't even need the angle",
+    "media": [
+      "shadow_building.png"
+    ],
+    "tags": [
+      "unit14",
+      "practical"
+    ]
+  },
+  {
+    "front": "What's the difference between a scalar and a vector?",
+    "back": "A scalar has magnitude only (\"walk 3 blocks\"). A vector has magnitude and direction (\"walk 3 blocks south\").",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "vectors"
+    ]
+  },
+  {
+    "front": "Which way is 0°, and which way do positive angles rotate?",
+    "back": "0° points right (horizontal). Positive angles go counterclockwise. A negative angle goes clockwise: −30° = 330°.<br><img src=\"angle_convention.png\">",
+    "extra_notes": "",
+    "media": [
+      "angle_convention.png"
+    ],
+    "tags": [
+      "unit14",
+      "vectors"
+    ]
+  },
+  {
+    "front": "A vector drawn at 120° after one at 45°. Is the 120° measured from the 45° line?",
+    "back": "No. Every angle is measured from 0°.<br><img src=\"vectors_from_zero.png\">",
+    "extra_notes": "Figure 14–13",
+    "media": [
+      "vectors_from_zero.png"
+    ],
+    "tags": [
+      "unit14",
+      "vectors",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "What does 5∠30° mean?",
+    "back": "Magnitude 5 at an angle of 30° (polar form).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "vectors",
+      "notation"
+    ]
+  },
+  {
+    "front": "What is a resultant?",
+    "back": "The single vector equal to the combined effect of the vectors being added.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "vectors"
+    ]
+  },
+  {
+    "front": "How do you add vectors pointing in the same direction?",
+    "back": "Add the magnitudes. Example: 6 V + 4 V batteries aiding = 10 V. Series resistors 80 + 50 + 30 = 160 Ω.<br><img src=\"vectors_same_opposite.png\">",
+    "extra_notes": "",
+    "media": [
+      "vectors_same_opposite.png"
+    ],
+    "tags": [
+      "unit14",
+      "vector_addition"
+    ]
+  },
+  {
+    "front": "How do you add vectors that are exactly opposite (180°)?",
+    "back": "Larger minus smaller, in the direction of the larger. 6 V − 4 V = 2 V.<br><img src=\"vectors_same_opposite.png\">",
+    "extra_notes": "The book's wording (\"larger from the smaller\") is backwards",
+    "media": [
+      "vectors_same_opposite.png"
+    ],
+    "tags": [
+      "unit14",
+      "vector_addition",
+      "errata"
+    ]
+  },
+  {
+    "front": "Describe the tip-to-tail method.",
+    "back": "Put the tail of the 2nd vector at the head of the 1st. The resultant runs from the first tail to the last head. It works for any number of vectors.<br><img src=\"tip_to_tail.png\">",
+    "extra_notes": "",
+    "media": [
+      "tip_to_tail.png"
+    ],
+    "tags": [
+      "unit14",
+      "vector_addition"
+    ]
+  },
+  {
+    "front": "Describe the parallelogram method.",
+    "back": "Both vectors start at the same point. Complete the parallelogram. The resultant is the diagonal from the shared corner.<br><img src=\"parallelogram.png\">",
+    "extra_notes": "Same answer as tip-to-tail. The book's \"tale\" is a typo for tail.",
+    "media": [
+      "parallelogram.png"
+    ],
+    "tags": [
+      "unit14",
+      "vector_addition"
+    ]
+  },
+  {
+    "front": "4∠15° + 3∠60° = ?",
+    "back": "<b>6.48∠34.1°</b> (not 7). The book's drawn answer, 6.4832, is slightly off because drawing is approximate.<br><img src=\"tip_to_tail.png\">",
+    "extra_notes": "Vectors at an angle add to less than the straight sum",
+    "media": [
+      "tip_to_tail.png"
+    ],
+    "tags": [
+      "unit14",
+      "vector_addition"
+    ]
+  },
+  {
+    "front": "How do you add vectors exactly using components?",
+    "back": "x = M cos θ, y = M sin θ for each vector. Sum the x's and the y's. Then M = √(x² + y²), θ = tan⁻¹(y/x).<br><img src=\"components.png\">",
+    "extra_notes": "",
+    "media": [
+      "components.png"
+    ],
+    "tags": [
+      "unit14",
+      "vector_addition",
+      "components"
+    ]
+  },
+  {
+    "front": "Exception when finding the resultant angle with tan⁻¹?",
+    "back": "tan⁻¹ only returns −90° to +90°. If the total x is negative, add 180°.",
+    "extra_notes": "Or use the calculator's R→P key",
+    "media": [],
+    "tags": [
+      "unit14",
+      "components",
+      "exception"
+    ]
+  },
+  {
+    "front": "On a 120/240 V split-phase service, why do the legs add to 240 V?",
+    "back": "The legs are 180° apart, so measured leg to leg their magnitudes add.<br><img src=\"split_phase.png\">",
+    "extra_notes": "",
+    "media": [
+      "split_phase.png"
+    ],
+    "tags": [
+      "unit14",
+      "field",
+      "split_phase"
+    ]
+  },
+  {
+    "front": "Split-phase: 30 A on L1, 20 A on L2. Neutral current?",
+    "back": "<b>10 A</b>. The neutral carries the difference, because the leg currents oppose.",
+    "extra_notes": "That's why a lost neutral is dangerous",
+    "media": [],
+    "tags": [
+      "unit14",
+      "field",
+      "split_phase"
+    ]
+  },
+  {
+    "front": "Why is a 3-phase wye 120/208, not 120/240?",
+    "back": "The phases are 120° apart, not 180°. Vector addition gives 120 × √3 ≈ 208 V.<br><img src=\"wye_208.png\">",
+    "extra_notes": "",
+    "media": [
+      "wye_208.png"
+    ],
+    "tags": [
+      "unit14",
+      "field",
+      "three_phase"
+    ]
+  },
+  {
+    "front": "Why is the neutral current zero in a balanced wye?",
+    "back": "Three equal vectors 120° apart cancel out.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "field",
+      "three_phase"
+    ]
+  },
+  {
+    "front": "High-leg delta (120/240): what does the high leg read to neutral?",
+    "back": "≈ 208 V (240 × √3/2). It must be marked orange. Never land a 120 V load on it.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "field",
+      "three_phase"
+    ]
+  },
+  {
+    "front": "Offset multipliers: 10°, 22½°, 30°, 45°, 60°?",
+    "back": "6.0, 2.6, 2.0, 1.4, 1.2 (each is 1/sin θ).<br><img src=\"conduit_offset.png\">",
+    "extra_notes": "Distance between bends = depth × multiplier",
+    "media": [
+      "conduit_offset.png"
+    ],
+    "tags": [
+      "unit14",
+      "field",
+      "conduit"
+    ]
+  },
+  {
+    "front": "Why is the 30° offset multiplier exactly 2?",
+    "back": "sin 30° = 0.5, and 1/0.5 = 2.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "field",
+      "conduit"
+    ]
+  },
+  {
+    "front": "Power factor is the cosine of which angle?",
+    "back": "The phase angle θ between voltage and current (PF = cos θ = W/VA).",
+    "extra_notes": "Preview of later units",
+    "media": [],
+    "tags": [
+      "unit14",
+      "field",
+      "preview"
+    ]
+  },
+  {
+    "front": "Name the three AC triangles that this chapter's math prepares you for.",
+    "back": "Impedance (Z, R, X), power (VA, W, VAR), and series voltage (E, E_R, E_X).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit14",
+      "preview"
+    ]
+  }
+]

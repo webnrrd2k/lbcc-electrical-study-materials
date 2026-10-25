@@ -1,0 +1,749 @@
+[
+  {
+    "front": "In a pure resistive AC circuit, what is the phase relationship of voltage and current?",
+    "back": "In phase (0°).<br><img src=\"wave_resistive.png\">",
+    "extra_notes": "Review Q1",
+    "media": [
+      "wave_resistive.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "phase_angle"
+    ]
+  },
+  {
+    "front": "In a pure inductive AC circuit, what is the phase relationship of voltage and current?",
+    "back": "Current lags voltage by 90°.<br><img src=\"wave_inductive.png\">",
+    "extra_notes": "Review Q2 | ELI the ICE man: E before I in an inductor (L)",
+    "media": [
+      "wave_inductive.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "phase_angle"
+    ]
+  },
+  {
+    "front": "In an R-L series circuit, by how much are voltage and current out of phase?",
+    "back": "Somewhere between 0° and 90°, with current lagging.<br><img src=\"wave_rl_series.png\">",
+    "extra_notes": "Exactly 0° only if pure R; exactly 90° only if pure L",
+    "media": [
+      "wave_rl_series.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "phase_angle"
+    ]
+  },
+  {
+    "front": "What determines the exact phase angle in an R-L series circuit?",
+    "back": "The <b>ratio</b> of resistance to inductive reactance (not their sizes alone).",
+    "extra_notes": "R 30 / Xₗ 40 and R 300 / Xₗ 400 both give 53.13°",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "phase_angle"
+    ]
+  },
+  {
+    "front": "In an R-L series circuit, how does the current compare in the resistor, the inductor and the line?",
+    "back": "It is the same everywhere: Iₜ = Iᵣ = Iₗ.",
+    "extra_notes": "Series rule still holds in AC. Current is the bridge between groups.",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "current"
+    ]
+  },
+  {
+    "front": "<img src=\"rl_series_circuit.png\"><br>What is this circuit, and what is its total current?",
+    "back": "R-L series circuit. Z = √(30² + 40²) = 50 Ω, so Iₜ = 240 / 50 = <b>4.8 A</b>.",
+    "extra_notes": "The chapter's main worked example",
+    "media": [
+      "rl_series_circuit.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "impedance",
+      "current"
+    ]
+  },
+  {
+    "front": "In a series phasor diagram, which quantity is drawn as the 0° reference, and why?",
+    "back": "Current. It is the one quantity shared by every part of a series circuit.<br><img src=\"phasor_series.png\">",
+    "extra_notes": "Eᵣ is drawn along it (0°); Eₗ points up (90°)",
+    "media": [
+      "phasor_series.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "phasor"
+    ]
+  },
+  {
+    "front": "Relative to the circuit current, where does the resistor's voltage sit, and where does the inductor's?",
+    "back": "Eᵣ is in phase with the current. Eₗ leads the current by 90°.<br><img src=\"phasor_series.png\">",
+    "extra_notes": "That 90° gap is why the drops add as a right triangle",
+    "media": [
+      "phasor_series.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "phasor",
+      "voltage"
+    ]
+  },
+  {
+    "front": "What are the three groups of quantities in an R-L series circuit?",
+    "back": "Resistive: R, Eᵣ, Iᵣ, P (W)<br>Inductive: Xₗ, Eₗ, Iₗ, VARs, L<br>Total: Z, Eₜ, Iₜ, VA, PF, θ<br><img src=\"three_groups.png\">",
+    "extra_notes": "Chapter summary bullets",
+    "media": [
+      "three_groups.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "three_groups"
+    ]
+  },
+  {
+    "front": "<img src=\"three_groups.png\"><br>What's the rule for using Ohm's law in an R-L circuit?",
+    "back": "Use Ohm's law and the power formulas only <b>inside one group</b> (resistive, inductive or total). To cross groups, use the right triangle (the Pythagorean theorem or trig).",
+    "extra_notes": "Book: Eᵣ = I × Xₗ and Eᵣ = I × Z are both wrong",
+    "media": [
+      "three_groups.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "three_groups"
+    ]
+  },
+  {
+    "front": "In every R-L triangle, which side is the resistive quantity, which is the inductive one, and which is the total?",
+    "back": "Horizontal leg = resistive<br>Vertical leg = inductive<br>Hypotenuse = total<br>θ sits between the resistive leg and the hypotenuse.<br><img src=\"triangle_layout.png\">",
+    "extra_notes": "",
+    "media": [
+      "triangle_layout.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "triangles"
+    ]
+  },
+  {
+    "front": "Why do the impedance, voltage and power triangles all have the same angle θ?",
+    "back": "They're similar triangles. Voltage = impedance × I. Power = impedance × I².",
+    "extra_notes": "30-40-50 Ω → 144-192-240 V → 691.2 W, 921.6 VARs, 1152 VA",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "triangles"
+    ]
+  },
+  {
+    "front": "Define impedance (Z).",
+    "back": "The total opposition to current in an AC circuit, combining resistance and reactance. Measured in ohms.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "impedance"
+    ]
+  },
+  {
+    "front": "Formula for Z in an R-L series circuit?",
+    "back": "Z = √(R² + Xₗ²)<br><img src=\"impedance_triangle.png\">",
+    "extra_notes": "Rearranged: R = √(Z² − Xₗ²), Xₗ = √(Z² − R²)",
+    "media": [
+      "impedance_triangle.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "impedance",
+      "formula"
+    ]
+  },
+  {
+    "front": "R = 30 Ω and Xₗ = 40 Ω in series. Why isn't Z = 70 Ω?",
+    "back": "R and Xₗ are 90° apart, so they add as vectors: √(30² + 40²) = 50 Ω.<br><img src=\"impedance_triangle.png\">",
+    "extra_notes": "Adding R + Xₗ is the #1 AC mistake",
+    "media": [
+      "impedance_triangle.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "impedance",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Name two graphical ways to add R and Xₗ.",
+    "back": "1. Tip-to-tail: start Xₗ at the end of R.<br>2. Parallelogram: both start at the origin, and the diagonal is Z.<br>Both give the same answer as the right triangle.<br><img src=\"vector_methods.png\">",
+    "extra_notes": "",
+    "media": [
+      "vector_methods.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "impedance",
+      "vectors"
+    ]
+  },
+  {
+    "front": "Two resistors and two inductors are in series. How do you find Z?",
+    "back": "Add the R's together and the Xₗ's together first. Then Z = √(Rₜ² + Xₗₜ²).",
+    "extra_notes": "Like quantities point the same direction, so they add straight. Practice 13",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "impedance",
+      "multi_component"
+    ]
+  },
+  {
+    "front": "Formula for total current in an R-L series circuit?",
+    "back": "Iₜ = Eₜ / Z",
+    "extra_notes": "Z replaces R in Ohm's law. Example: 240 / 50 = 4.8 A",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "current",
+      "formula"
+    ]
+  },
+  {
+    "front": "Why can't you find total current with Eₜ / R or Eₜ / Xₗ?",
+    "back": "Those mix a total voltage with a single part's ohms. Only total ÷ total (Eₜ / Z) gives Iₜ.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "current",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Formula for the voltage drop across the resistor?",
+    "back": "Eᵣ = Iᵣ × R",
+    "extra_notes": "Example: 4.8 A × 30 Ω = 144 V",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "voltage",
+      "formula"
+    ]
+  },
+  {
+    "front": "Formula for the voltage drop across the inductor?",
+    "back": "Eₗ = Iₗ × Xₗ",
+    "extra_notes": "Example: 4.8 A × 40 Ω = 192 V",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "voltage",
+      "formula"
+    ]
+  },
+  {
+    "front": "Why is Eᵣ = I × Z wrong?",
+    "back": "Z is a total quantity, so I × Z gives Eₜ, not Eᵣ. Resistive values need resistive ohms (R).",
+    "extra_notes": "Same reason Eᵣ = I × Xₗ is wrong",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "voltage",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Formula for total voltage from the two drops?",
+    "back": "Eₜ = √(Eᵣ² + Eₗ²)<br><img src=\"voltage_triangle.png\">",
+    "extra_notes": "Rearranged: Eᵣ = √(Eₜ² − Eₗ²), Eₗ = √(Eₜ² − Eᵣ²)",
+    "media": [
+      "voltage_triangle.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "voltage",
+      "formula"
+    ]
+  },
+  {
+    "front": "<img src=\"meter_drops.png\"><br>You measure 144 V across the resistor and 192 V across the coil on a 240 V supply. That's 336 V total. Is the meter bad?",
+    "back": "No. The drops are 90° apart, so they add as vectors: √(144² + 192²) = 240 V. A meter shows magnitude only, not timing.",
+    "extra_notes": "KVL still holds, using vector addition",
+    "media": [
+      "meter_drops.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "voltage",
+      "field",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "How do you find the inductance from Xₗ at 60 Hz?",
+    "back": "L = Xₗ / (2πf) = Xₗ / 377",
+    "extra_notes": "Example: 40 / 377 = 0.106 H. 377 only applies at 60 Hz.",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "inductance",
+      "formula"
+    ]
+  },
+  {
+    "front": "What is true power, and what unit is it in?",
+    "back": "The power actually converted to heat, light or work, in watts (W). Only the resistive part produces it.",
+    "extra_notes": "P = Eᵣ × Iᵣ = Iᵣ²R = Eᵣ²/R",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power",
+      "watts"
+    ]
+  },
+  {
+    "front": "Compute the watts for the 30 Ω / 40 Ω / 240 V example.",
+    "back": "P = Eᵣ × Iᵣ = 144 × 4.8 = <b>691.2 W</b>",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power",
+      "watts"
+    ]
+  },
+  {
+    "front": "Why can only the resistive part of an R-L circuit produce watts?",
+    "back": "Watts are produced only when voltage and current have the same sign. Eᵣ is in phase with I. Eₗ is 90° off, so its energy is stored and returned.<br><img src=\"power_wave_rl.png\">",
+    "extra_notes": "",
+    "media": [
+      "power_wave_rl.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power",
+      "watts"
+    ]
+  },
+  {
+    "front": "Name two common WRONG ways to calculate watts in an R-L circuit.",
+    "back": "Eₜ × I (that gives VA) and I² × Xₗ (that gives VARs).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "What are VARs? Give two other names for them.",
+    "back": "Volt-amperes-reactive: the power that charges and discharges the coil's magnetic field each cycle. Also called <b>quadrature power</b> or <b>wattless power</b>.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power",
+      "vars"
+    ]
+  },
+  {
+    "front": "Formulas for inductive VARs?",
+    "back": "VARs = Eₗ × Iₗ = Iₗ² × Xₗ = Eₗ² / Xₗ",
+    "extra_notes": "Example: 4.8² × 40 = 921.6 VARs",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power",
+      "vars",
+      "formula"
+    ]
+  },
+  {
+    "front": "<img src=\"power_wave_rl.png\"><br>This graph shows power in an R-L circuit. What do the gold and red areas mean?",
+    "back": "Gold: voltage and current have the same sign, so power flows to the load (or is stored in the field).<br>Red: opposite signs, so the stored field energy is returned to the source.",
+    "extra_notes": "Pure L: gold = red, net 0 W",
+    "media": [
+      "power_wave_rl.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power",
+      "vars"
+    ]
+  },
+  {
+    "front": "What is apparent power, and why is it called \"apparent\"?",
+    "back": "Volt-amperes (VA) = Eₜ × Iₜ. It's what you get by multiplying a voltmeter reading by an ammeter reading. It looks like power, but only part of it is real work.",
+    "extra_notes": "Example: 240 × 4.8 = 1152 VA",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power",
+      "va"
+    ]
+  },
+  {
+    "front": "Formula relating watts, VARs and VA?",
+    "back": "VA = √(P² + VARs²)<br><img src=\"power_triangle.png\">",
+    "extra_notes": "P = √(VA² − VARs²), VARs = √(VA² − P²)",
+    "media": [
+      "power_triangle.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power",
+      "formula"
+    ]
+  },
+  {
+    "front": "Fill in the missing side: P = 691.2 W, VARs = 921.6. What is VA?",
+    "back": "√(691.2² + 921.6²) = <b>1152 VA</b><br><img src=\"power_triangle.png\">",
+    "extra_notes": "",
+    "media": [
+      "power_triangle.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power",
+      "triangles"
+    ]
+  },
+  {
+    "front": "Book error check: Figures 17–12, 17–14 and 17–15 label the VARs as 691.2. What should it be?",
+    "back": "<b>921.6 VARs</b>. 691.2 is the watts value, copied by mistake.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "errata",
+      "power"
+    ]
+  },
+  {
+    "front": "Two resistors (56 W and 44 W) and two inductors (152 and 88 VARs) are in series on 130 V. Find VA and I.",
+    "back": "Watts add: 100 W. VARs add: 240.<br>VA = √(100² + 240²) = 260 VA.<br>I = 260 / 130 = <b>2 A</b>.<br><img src=\"example_17_1_power_triangle.png\">",
+    "extra_notes": "Example 17–1. After that, each part: E = P/I or VARs/I, then R or Xₗ = E/I",
+    "media": [
+      "example_17_1_power_triangle.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "multi_component",
+      "power"
+    ]
+  },
+  {
+    "front": "Can you add watts to watts and VARs to VARs directly? Can you add VA to VA directly?",
+    "back": "Watts + watts: yes. VARs + VARs: yes (same direction).<br>VA: only if the loads are at the same angle. Otherwise convert to W and VARs first.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "multi_component",
+      "power",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Define power factor.",
+    "back": "The ratio of true power to apparent power: PF = P / VA. Usually written as a percent.",
+    "extra_notes": "Range 0 to 100%; can't exceed 100%",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power_factor"
+    ]
+  },
+  {
+    "front": "Three ratios that give PF in an R-L series circuit?",
+    "back": "PF = P / VA = R / Z = Eᵣ / Eₜ<br>(any resistive quantity ÷ its matching total)",
+    "extra_notes": "Example: 0.6 = 60%",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power_factor",
+      "formula"
+    ]
+  },
+  {
+    "front": "Why can't PF be found from current in a series circuit?",
+    "back": "The current is the same in every part, so Iᵣ / Iₜ is always 1.",
+    "extra_notes": "In parallel circuits it can be",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power_factor",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Is an R-L circuit's power factor leading or lagging?",
+    "back": "Lagging (current lags voltage). Capacitive circuits lead.",
+    "extra_notes": "Write \"0.6 lagging\" when it matters",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power_factor"
+    ]
+  },
+  {
+    "front": "A plant uses 5 MW. How much VA must the utility supply at 60% PF, and at 95% PF?",
+    "back": "60%: 5 / 0.6 = <b>8.333 MVA</b><br>95%: 5 / 0.95 = <b>5.263 MVA</b><br><img src=\"pf_utility.png\">",
+    "extra_notes": "Same work, ~37% less current. That's why low-PF customers pay a surcharge.",
+    "media": [
+      "pf_utility.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power_factor",
+      "field"
+    ]
+  },
+  {
+    "front": "Why do utilities charge industrial customers for low power factor?",
+    "back": "They bill for watt-hours, but they have to generate and carry the full VA (current). Low PF means more current, more losses and more equipment capacity for the same billed energy.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power_factor",
+      "field"
+    ]
+  },
+  {
+    "front": "<img src=\"pf_family.png\"><br>Each triangle has the same VA (hypotenuse). What happens to watts and VARs as PF drops?",
+    "back": "Watts (horizontal leg) shrink and VARs (vertical leg) grow. θ gets larger.",
+    "extra_notes": "PF 100% → θ 0°; 80% → 36.9°; 60% → 53.1°; 30% → 72.5°",
+    "media": [
+      "pf_family.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "power_factor",
+      "triangles"
+    ]
+  },
+  {
+    "front": "What is angle theta (θ)?",
+    "back": "The phase angle between the applied voltage and the total current.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "theta"
+    ]
+  },
+  {
+    "front": "How are θ and power factor related?",
+    "back": "cos θ = PF, so θ = cos⁻¹(PF).",
+    "extra_notes": "The book's sentence \"θ is the cosine of the PF\" is backwards; its math is right",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "theta",
+      "formula"
+    ]
+  },
+  {
+    "front": "Find θ for the main example (PF = 0.6).",
+    "back": "θ = cos⁻¹(0.6) = <b>53.13°</b>, current lagging.<br><img src=\"wave_rl_series.png\">",
+    "extra_notes": "",
+    "media": [
+      "wave_rl_series.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "theta"
+    ]
+  },
+  {
+    "front": "Besides cosine, what other trig ratios give θ?",
+    "back": "sin θ = VARs / VA (or Xₗ / Z, Eₗ / Eₜ)<br>tan θ = VARs / P (or Xₗ / R, Eₗ / Eᵣ)",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "theta",
+      "formula"
+    ]
+  },
+  {
+    "front": "PF = 86%. What's the most common calculator mistake when finding θ?",
+    "back": "Typing cos⁻¹(86). Convert to a decimal first: cos⁻¹(0.86) = 30.7°. Also check the calculator is in DEG mode.",
+    "extra_notes": "Review Q5",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "theta",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Given VARs and VA (but not watts), which function finds θ?",
+    "back": "Sine: VARs is opposite θ and VA is the hypotenuse, so θ = sin⁻¹(VARs / VA).",
+    "extra_notes": "Review Q8",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "theta"
+    ]
+  },
+  {
+    "front": "Given θ = 22° and P = 94 W, how do you find VARs?",
+    "back": "VARs = P × tan θ = 94 × tan 22° ≈ 38 VARs.",
+    "extra_notes": "Practice 12",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "theta",
+      "power"
+    ]
+  },
+  {
+    "front": "<img src=\"motor_rl.png\"><br>Why does a motor winding act like an R-L series circuit?",
+    "back": "It's a coil (inductance) of wire (resistance) with a single current path.",
+    "extra_notes": "",
+    "media": [
+      "motor_rl.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "motors",
+      "field"
+    ]
+  },
+  {
+    "front": "How does a motor's power factor change from no load to full load?",
+    "back": "No load: mostly inductive, so low PF. As load increases, the mechanical work shows up as extra effective resistance, so PF rises.",
+    "extra_notes": "Lightly loaded or oversized motors waste capacity",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "motors",
+      "power_factor",
+      "field"
+    ]
+  },
+  {
+    "front": "<img src=\"ballast_lamp.png\"><br>What does the ballast do in a gas-discharge lamp circuit?",
+    "back": "An ionized gas conducts almost like a short. The series ballast's inductive reactance limits the current, with far less loss than a resistor would have.",
+    "extra_notes": "Fluorescent, mercury vapor, sodium vapor. Lamp ≈ R, ballast ≈ Xₗ",
+    "media": [
+      "ballast_lamp.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "ballast",
+      "field"
+    ]
+  },
+  {
+    "front": "Should feeders and overcurrent devices be sized from watts or from VA/amps? Why?",
+    "back": "From VA (amps). Conductors carry the total current, including the reactive part. Sizing from watts undersizes them when PF is low.",
+    "extra_notes": "That's why transformers and generators are rated in kVA",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "field",
+      "power_factor"
+    ]
+  },
+  {
+    "front": "Voltmeter × clamp-on ammeter gives you which quantity?",
+    "back": "Apparent power (VA), not watts. You need a wattmeter, PF meter or power analyzer to read true power or PF.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "field",
+      "va"
+    ]
+  },
+  {
+    "front": "<img src=\"starting_resistor.png\"><br>A motor (3 Ω wire R) draws 34 A inrush on 240 V. How do you size a series starting resistor to limit it to 20 A?",
+    "back": "1. Motor Z = 240 / 34 ≈ 7.06 Ω. Xₗ = √(7.06² − 3²).<br>2. Target Z = 240 / 20 = 12 Ω. Needed Rₜ = √(12² − Xₗ²).<br>3. Added R = Rₜ − 3 Ω.<br><b>Don't</b> just subtract 12 − 7.06.",
+    "extra_notes": "Practical Application 1",
+    "media": [
+      "starting_resistor.png"
+    ],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "field",
+      "motors",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "A 0.1 H inductor with 10 Ω of wire resistance goes on 480 V, 60 Hz. Can you ignore the 10 Ω?",
+    "back": "No. Xₗ = 37.7 Ω, so Q ≈ 3.8 (well under 10). Use Z = √(10² + 37.7²) and I = E / Z.",
+    "extra_notes": "Practical Application 2",
+    "media": [],
+    "tags": [
+      "unit17",
+      "rl_series",
+      "field",
+      "pitfall"
+    ]
+  }
+]

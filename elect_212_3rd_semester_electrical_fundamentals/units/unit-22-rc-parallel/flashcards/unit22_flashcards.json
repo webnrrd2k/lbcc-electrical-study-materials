@@ -1,0 +1,498 @@
+[
+  {
+    "front": "What is the same across every branch of a parallel R-C circuit?",
+    "back": "The voltage (magnitude and phase).<br><img src=\"rc_parallel_circuit.png\">",
+    "extra_notes": "Summary",
+    "media": [
+      "rc_parallel_circuit.png"
+    ],
+    "tags": [
+      "unit22",
+      "basics"
+    ]
+  },
+  {
+    "front": "Phase of the resistive branch current?",
+    "back": "In phase with the voltage.<br><img src=\"branch_currents_rc.png\">",
+    "extra_notes": "",
+    "media": [
+      "branch_currents_rc.png"
+    ],
+    "tags": [
+      "unit22",
+      "phase"
+    ]
+  },
+  {
+    "front": "Phase of the capacitive branch current?",
+    "back": "Leads the voltage by 90°.<br><img src=\"branch_currents_rc.png\">",
+    "extra_notes": "",
+    "media": [
+      "branch_currents_rc.png"
+    ],
+    "tags": [
+      "unit22",
+      "phase"
+    ]
+  },
+  {
+    "front": "<img src=\"branch_currents_rc.png\"><br>How many degrees apart are Iᵣ and Ic in parallel?",
+    "back": "90°",
+    "extra_notes": "Review Q1",
+    "media": [
+      "branch_currents_rc.png"
+    ],
+    "tags": [
+      "unit22",
+      "phase"
+    ]
+  },
+  {
+    "front": "Does total current lead or lag in parallel R-C?",
+    "back": "Leads, by an angle between 0° and 90°.<br><img src=\"total_current_lead.png\">",
+    "extra_notes": "",
+    "media": [
+      "total_current_lead.png"
+    ],
+    "tags": [
+      "unit22",
+      "phase"
+    ]
+  },
+  {
+    "front": "What sets the phase angle in parallel R-C?",
+    "back": "How current splits between branches: tan θ = Ic/Iᵣ = R/Xc.",
+    "extra_notes": "Book says \"resistance to capacitance\"",
+    "media": [],
+    "tags": [
+      "unit22",
+      "phase"
+    ]
+  },
+  {
+    "front": "In parallel R-C, does a bigger capacitor make the circuit more or less capacitive?",
+    "back": "MORE capacitive — lower Xc draws more Ic (opposite of series R-C).",
+    "extra_notes": "Bigger R also makes it more capacitive",
+    "media": [],
+    "tags": [
+      "unit22",
+      "phase",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "In a parallel phasor diagram, what is the reference and which way does Ic point?",
+    "back": "Voltage is the reference (0°). Ic points UP (leading). Iᵣ lies along E.<br><img src=\"parallel_rc_phasor.png\">",
+    "extra_notes": "Il pointed down in Unit 18",
+    "media": [
+      "parallel_rc_phasor.png"
+    ],
+    "tags": [
+      "unit22",
+      "phasor"
+    ]
+  },
+  {
+    "front": "<img src=\"rc_parallel_circuit.png\"><br>30 Ω ∥ Xc 20 Ω on 240 V: branch currents?",
+    "back": "Iᵣ = 240/30 = <b>8 A</b>; Ic = 240/20 = <b>12 A</b>.",
+    "extra_notes": "Example 22–1",
+    "media": [
+      "rc_parallel_circuit.png"
+    ],
+    "tags": [
+      "unit22",
+      "branch_current"
+    ]
+  },
+  {
+    "front": "Branch current formulas?",
+    "back": "Iᵣ = E/R; Ic = E/Xc",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit22",
+      "branch_current",
+      "formula"
+    ]
+  },
+  {
+    "front": "Capacitance for Xc = 20 Ω at 60 Hz?",
+    "back": "C = 1/(377 × 20) = <b>132.6 µF</b>",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit22",
+      "capacitance"
+    ]
+  },
+  {
+    "front": "Total current formula in parallel R-C?",
+    "back": "Iₜ = √(Iᵣ² + Ic²)<br><img src=\"current_triangle_rc.png\">",
+    "extra_notes": "Iᵣ = √(Iₜ² − Ic²), Ic = √(Iₜ² − Iᵣ²)",
+    "media": [
+      "current_triangle_rc.png"
+    ],
+    "tags": [
+      "unit22",
+      "total_current",
+      "formula"
+    ]
+  },
+  {
+    "front": "Iᵣ = 8 A, Ic = 12 A. Iₜ?",
+    "back": "√(64 + 144) = <b>14.42 A</b> (not 20 A)<br><img src=\"current_triangle_rc.png\">",
+    "extra_notes": "",
+    "media": [
+      "current_triangle_rc.png"
+    ],
+    "tags": [
+      "unit22",
+      "total_current"
+    ]
+  },
+  {
+    "front": "<img src=\"clamp_readings_rc.png\"><br>Feeder clamp reads 14.4 A while branches read 8 A and 12 A. Fault?",
+    "back": "No — the branch currents are 90° apart and add as vectors.",
+    "extra_notes": "",
+    "media": [
+      "clamp_readings_rc.png"
+    ],
+    "tags": [
+      "unit22",
+      "total_current",
+      "field"
+    ]
+  },
+  {
+    "front": "Several capacitor branches plus a resistor: how do you get Iₜ?",
+    "back": "Add the capacitor currents straight (same phase), then Iₜ = √(Iᵣ² + Ic total²).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit22",
+      "total_current"
+    ]
+  },
+  {
+    "front": "Simplest way to find Z when E and Iₜ are known?",
+    "back": "Z = E/Iₜ = 240/14.422 = <b>16.64 Ω</b>",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit22",
+      "impedance"
+    ]
+  },
+  {
+    "front": "Product-over-vector-sum formula for parallel R-C?",
+    "back": "Z = R·Xc / √(R² + Xc²)",
+    "extra_notes": "600/36.06 = 16.64 Ω",
+    "media": [],
+    "tags": [
+      "unit22",
+      "impedance",
+      "formula"
+    ]
+  },
+  {
+    "front": "Reciprocal formula for parallel R-C impedance?",
+    "back": "Z = 1 / √((1/R)² + (1/Xc)²)",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit22",
+      "impedance",
+      "formula"
+    ]
+  },
+  {
+    "front": "Is parallel Z larger or smaller than R and Xc?",
+    "back": "Smaller than both.",
+    "extra_notes": "16.64 < 20 < 30",
+    "media": [],
+    "tags": [
+      "unit22",
+      "impedance"
+    ]
+  },
+  {
+    "front": "<img src=\"z_parallel_rc.png\"><br>Which formula gives Z for 30 Ω ∥ Xc 20 Ω?",
+    "back": "Only R·Xc/√(R² + Xc²) = <b>16.64 Ω</b>. √(R² + Xc²) = 36.06 is the series answer; R·Xc/(R + Xc) = 12 ignores the 90°.",
+    "extra_notes": "",
+    "media": [
+      "z_parallel_rc.png"
+    ],
+    "tags": [
+      "unit22",
+      "impedance",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Can you draw an impedance triangle with R and Xc as legs for a parallel circuit?",
+    "back": "No — draw the current triangle instead.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit22",
+      "impedance",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Power values for the 30 Ω ∥ 20 Ω, 240 V example?",
+    "back": "P = 240 × 8 = <b>1920 W</b>; VARsc = 240 × 12 = <b>2880</b>; VA = 240 × 14.42 = <b>3461</b>.<br><img src=\"power_triangle_22.png\">",
+    "extra_notes": "",
+    "media": [
+      "power_triangle_22.png"
+    ],
+    "tags": [
+      "unit22",
+      "power"
+    ]
+  },
+  {
+    "front": "Formula linking P, VARs and VA (any circuit)?",
+    "back": "VA = √(P² + VARs²)",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit22",
+      "power",
+      "formula"
+    ]
+  },
+  {
+    "front": "How is the parallel power triangle related to the current triangle?",
+    "back": "It's the current triangle × E.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit22",
+      "power",
+      "triangles"
+    ]
+  },
+  {
+    "front": "You know VARs and Xc but not E. Find E.",
+    "back": "E = √(VARs × Xc)  (also √(P × R), √(VA × Z))",
+    "extra_notes": "From VARs = E²/Xc",
+    "media": [],
+    "tags": [
+      "unit22",
+      "power",
+      "formula"
+    ]
+  },
+  {
+    "front": "PF formulas for parallel R-C?",
+    "back": "PF = P/VA = Iᵣ/Iₜ = Z/R",
+    "extra_notes": "55.47% in the main example",
+    "media": [],
+    "tags": [
+      "unit22",
+      "power_factor",
+      "formula"
+    ]
+  },
+  {
+    "front": "Why is parallel PF Z/R, not R/Z?",
+    "back": "Parallel Z < R, so R/Z would exceed 1 — impossible for PF.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit22",
+      "power_factor",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Why can't voltage ratios give PF in a parallel circuit?",
+    "back": "Voltage is the same on every branch, so Eᵣ/Eₜ is always 1.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit22",
+      "power_factor"
+    ]
+  },
+  {
+    "front": "Main example θ?",
+    "back": "cos⁻¹(0.5547) = <b>56.31°</b>, current leading.<br><img src=\"total_current_lead.png\">",
+    "extra_notes": "",
+    "media": [
+      "total_current_lead.png"
+    ],
+    "tags": [
+      "unit22",
+      "theta"
+    ]
+  },
+  {
+    "front": "Other trig ratios for θ in parallel R-C?",
+    "back": "tan θ = Ic/Iᵣ = VARs/P; sin θ = Ic/Iₜ = VARs/VA<br><img src=\"parallel_rc_phasor.png\">",
+    "extra_notes": "",
+    "media": [
+      "parallel_rc_phasor.png"
+    ],
+    "tags": [
+      "unit22",
+      "theta",
+      "formula"
+    ]
+  },
+  {
+    "front": "Given PF and VA, how do you get P and VARs?",
+    "back": "P = VA × PF; VARs = √(VA² − P²) (or VA × sin θ).",
+    "extra_notes": "Example 22–2",
+    "media": [],
+    "tags": [
+      "unit22",
+      "power_factor"
+    ]
+  },
+  {
+    "front": "Example 22–2: PF 47.1%, VA 4086.13, 33.15 µF at 400 Hz. First three steps?",
+    "back": "θ = cos⁻¹(0.471) ≈ 61.9°; P = 4086.13 × 0.471 = 1924.5 W; VARs = √(VA² − P²) = 3604.6.<br><img src=\"example_22_2_power.png\">",
+    "extra_notes": "",
+    "media": [
+      "example_22_2_power.png"
+    ],
+    "tags": [
+      "unit22",
+      "example_22_2"
+    ]
+  },
+  {
+    "front": "Example 22–2: Xc and voltage?",
+    "back": "Xc = 1/(2π × 400 × 0.00003315) = <b>12 Ω</b> (377 doesn't apply at 400 Hz); E = √(3604.6 × 12) = <b>208 V</b>.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit22",
+      "example_22_2"
+    ]
+  },
+  {
+    "front": "<img src=\"example_22_2_circuit.png\"><br>Example 22–2: currents, R and Z?",
+    "back": "Ic = 17.33 A, Iᵣ = 9.25 A, Iₜ = 19.64 A; R = 22.49 Ω; Z = 10.59 Ω.",
+    "extra_notes": "",
+    "media": [
+      "example_22_2_circuit.png"
+    ],
+    "tags": [
+      "unit22",
+      "example_22_2"
+    ]
+  },
+  {
+    "front": "Key first move in a parallel circuit when E isn't given?",
+    "back": "Find E (it's the bridge into every branch) — e.g., √(VARs × Xc), √(P × R) or √(VA × Z).",
+    "extra_notes": "Mirror of finding I first in series",
+    "media": [],
+    "tags": [
+      "unit22",
+      "method"
+    ]
+  },
+  {
+    "front": "Book typos in Example 22–2?",
+    "back": "\"1 Hz\" on top of the Xc fraction (should be 1); θ shown as 61.9° then 61.93° (rounding).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit22",
+      "errata"
+    ]
+  },
+  {
+    "front": "Wrong-file check: what is this chapter's real title?",
+    "back": "Unit 22: Resistive-Capacitive Parallel Circuits.",
+    "extra_notes": "The PDF filename said R-L-C series",
+    "media": [],
+    "tags": [
+      "unit22",
+      "errata"
+    ]
+  },
+  {
+    "front": "<img src=\"pf_correction_circuit.png\"><br>How are power-factor correction capacitors connected?",
+    "back": "In PARALLEL with the load (across the line) — never in series.",
+    "extra_notes": "",
+    "media": [
+      "pf_correction_circuit.png"
+    ],
+    "tags": [
+      "unit22",
+      "field",
+      "pf_correction"
+    ]
+  },
+  {
+    "front": "<img src=\"pf_correction_vectors.png\"><br>How does a parallel capacitor reduce feeder current on a motor circuit?",
+    "back": "Its leading current cancels part of the motor's lagging current; the feeder carries the smaller vector sum.",
+    "extra_notes": "",
+    "media": [
+      "pf_correction_vectors.png"
+    ],
+    "tags": [
+      "unit22",
+      "field",
+      "pf_correction"
+    ]
+  },
+  {
+    "front": "A capacitor uses no watts. Does it draw real line current?",
+    "back": "Yes — e.g., 132.6 µF on 240 V draws 12 A. Feeders/disconnects are sized at 135% of capacitor rated current (NEC 460.8).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit22",
+      "field",
+      "nec"
+    ]
+  },
+  {
+    "front": "Motors shut off but PF capacitors stay on. Result?",
+    "back": "The plant goes leading; voltage can rise. Banks are often switched with the load or automatically.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit22",
+      "field",
+      "pf_correction"
+    ]
+  },
+  {
+    "front": "Series vs parallel R-C: what changes?",
+    "back": "Series: current shared, Z = √(R² + Xc²), PF = R/Z, bigger C → more resistive. Parallel: voltage shared, Z = R·Xc/√(R² + Xc²), PF = Z/R, bigger C → more capacitive.<br><img src=\"series_vs_parallel_rc.png\">",
+    "extra_notes": "",
+    "media": [
+      "series_vs_parallel_rc.png"
+    ],
+    "tags": [
+      "unit22",
+      "comparison"
+    ]
+  },
+  {
+    "front": "40 Ω ∥ 132.6 µF on 120 V, 60 Hz: first step?",
+    "back": "Convert C to Xc: 1/(377 × 0.0001326) = 20 Ω. Then Iᵣ = 3 A, Ic = 6 A, Iₜ = √45 ≈ 6.71 A.",
+    "extra_notes": "Review Q2",
+    "media": [],
+    "tags": [
+      "unit22",
+      "practical"
+    ]
+  },
+  {
+    "front": "208 V, 46 A, 4975 W (parallel R-C). Route to R and C?",
+    "back": "Iᵣ = 4975/208; R = 208/Iᵣ; Ic = √(46² − Iᵣ²); Xc = 208/Ic; C = 1/(377 Xc).",
+    "extra_notes": "Review Q6–7",
+    "media": [],
+    "tags": [
+      "unit22",
+      "practical"
+    ]
+  }
+]

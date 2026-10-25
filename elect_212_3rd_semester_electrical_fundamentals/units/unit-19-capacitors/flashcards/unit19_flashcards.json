@@ -1,0 +1,956 @@
+[
+  {
+    "front": "What does a capacitor oppose?",
+    "back": "A change of <b>voltage</b>. (An inductor opposes a change of current.)",
+    "extra_notes": "Summary",
+    "media": [],
+    "tags": [
+      "unit19",
+      "basics"
+    ]
+  },
+  {
+    "front": "How is the simplest capacitor built?",
+    "back": "Two metal plates separated by an insulator called the dielectric.<br><img src=\"cap_construction.png\">",
+    "extra_notes": "19–1",
+    "media": [
+      "cap_construction.png"
+    ],
+    "tags": [
+      "unit19",
+      "basics"
+    ]
+  },
+  {
+    "front": "<img src=\"cap_construction.png\"><br>What is the dielectric?",
+    "back": "The insulating material between a capacitor's plates.",
+    "extra_notes": "Review Q1",
+    "media": [
+      "cap_construction.png"
+    ],
+    "tags": [
+      "unit19",
+      "basics"
+    ]
+  },
+  {
+    "front": "<img src=\"cap_symbols.png\"><br>Identify these schematic symbols.",
+    "back": "Nonpolarized, polarized (electrolytic), variable, trimmer.",
+    "extra_notes": "Figures 19–2, 19–29",
+    "media": [
+      "cap_symbols.png"
+    ],
+    "tags": [
+      "unit19",
+      "symbols"
+    ]
+  },
+  {
+    "front": "Three factors that determine capacitance?",
+    "back": "1. Surface area of the plates<br>2. Distance between the plates<br>3. Type of dielectric<br><img src=\"capacitance_factors.png\">",
+    "extra_notes": "Review Q2",
+    "media": [
+      "capacitance_factors.png"
+    ],
+    "tags": [
+      "unit19",
+      "capacitance"
+    ]
+  },
+  {
+    "front": "<img src=\"capacitance_factors.png\"><br>How does each factor change capacitance?",
+    "back": "More area → more C. Plates closer → more C. Higher dielectric constant → more C.",
+    "extra_notes": "",
+    "media": [
+      "capacitance_factors.png"
+    ],
+    "tags": [
+      "unit19",
+      "capacitance"
+    ]
+  },
+  {
+    "front": "What happens when a capacitor is connected to a DC source?",
+    "back": "Electrons leave the plate on the + terminal and pile onto the plate on the − terminal. Current flows until the capacitor voltage equals the source, then stops.<br><img src=\"rc_circuit.png\">",
+    "extra_notes": "",
+    "media": [
+      "rc_circuit.png"
+    ],
+    "tags": [
+      "unit19",
+      "charging"
+    ]
+  },
+  {
+    "front": "When does current flow in a capacitor circuit?",
+    "back": "Only while the capacitor is charging or discharging.",
+    "extra_notes": "On AC, it's always charging/discharging, so current flows continuously",
+    "media": [],
+    "tags": [
+      "unit19",
+      "charging"
+    ]
+  },
+  {
+    "front": "What happens when the battery is removed from a charged capacitor?",
+    "back": "It stays charged as long as there's no path for the electrons between the plates.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "charging",
+      "safety"
+    ]
+  },
+  {
+    "front": "What is leakage current?",
+    "back": "Current that creeps through the imperfect dielectric and slowly discharges the capacitor. Excessive leakage = a \"leaky\" capacitor.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "leakage"
+    ]
+  },
+  {
+    "front": "Book error: \"leakage current is proportional to the resistance of the dielectric.\" Fix it.",
+    "back": "It's inversely related: higher dielectric resistance means LESS leakage (I = V/R).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "leakage",
+      "errata"
+    ]
+  },
+  {
+    "front": "In what form does a capacitor store energy?",
+    "back": "In an electrostatic field, in the dielectric.",
+    "extra_notes": "Review Q4. Inductors use a magnetic field",
+    "media": [],
+    "tags": [
+      "unit19",
+      "energy"
+    ]
+  },
+  {
+    "front": "What does \"electrostatic\" mean?",
+    "back": "Electric charges that are stationary (not moving).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "energy"
+    ]
+  },
+  {
+    "front": "What is dielectric stress?",
+    "back": "The dielectric's electron orbits stretch toward the positive plate when charged. This is where the energy is stored, like a drawn bowstring.<br><img src=\"dielectric_stress.png\">",
+    "extra_notes": "",
+    "media": [
+      "dielectric_stress.png"
+    ],
+    "tags": [
+      "unit19",
+      "energy",
+      "dielectric"
+    ]
+  },
+  {
+    "front": "<img src=\"dielectric_stress.png\"><br>What is the dielectric stress proportional to?",
+    "back": "The voltage between the plates.",
+    "extra_notes": "Too much voltage breaks the dielectric down (short)",
+    "media": [
+      "dielectric_stress.png"
+    ],
+    "tags": [
+      "unit19",
+      "dielectric",
+      "rating"
+    ]
+  },
+  {
+    "front": "What does a capacitor's voltage rating mean?",
+    "back": "The maximum voltage the dielectric is designed to withstand without breaking down.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "rating"
+    ]
+  },
+  {
+    "front": "Life-span rule: run a capacitor at half its rated voltage. Result?",
+    "back": "About 8 times longer life than at full rated voltage.",
+    "extra_notes": "U.S. military study",
+    "media": [],
+    "tags": [
+      "unit19",
+      "rating"
+    ]
+  },
+  {
+    "front": "Why can a capacitor deliver thousands of amps briefly?",
+    "back": "Energy stored slowly is released almost instantly when the leads are shorted.",
+    "extra_notes": "Camera flash: ~500 V capacitor dumps into a xenon tube",
+    "media": [],
+    "tags": [
+      "unit19",
+      "energy",
+      "safety"
+    ]
+  },
+  {
+    "front": "Why is handing someone a charged capacitor dangerous?",
+    "back": "It can deliver enough energy to put a heart into fibrillation.",
+    "extra_notes": "Book caution",
+    "media": [],
+    "tags": [
+      "unit19",
+      "safety"
+    ]
+  },
+  {
+    "front": "Energy stored in a capacitor (formula)?",
+    "back": "W = ½ × C × V² (joules)",
+    "extra_notes": "Not in the book. Double V = 4× energy",
+    "media": [],
+    "tags": [
+      "unit19",
+      "energy",
+      "formula"
+    ]
+  },
+  {
+    "front": "What is the dielectric constant?",
+    "back": "How many times more capacitance a material gives compared with vacuum (K = 1). Unitless.<br><img src=\"dielectric_constants.png\">",
+    "extra_notes": "Book labels it F/in. — a typo",
+    "media": [
+      "dielectric_constants.png"
+    ],
+    "tags": [
+      "unit19",
+      "dielectric"
+    ]
+  },
+  {
+    "front": "Dielectric constants of air, paper, mica, water, ceramic?",
+    "back": "Air ≈ 1.006, paper ≈ 3.5, mica ≈ 6.4–7, pure water 81, ceramic up to ~1200.<br><img src=\"dielectric_constants.png\">",
+    "extra_notes": "",
+    "media": [
+      "dielectric_constants.png"
+    ],
+    "tags": [
+      "unit19",
+      "dielectric"
+    ]
+  },
+  {
+    "front": "Air capacitor = 3 µF. Insert a material (same spacing) and it's 15 µF. K?",
+    "back": "15 / 3 = <b>5</b>",
+    "extra_notes": "Review Q3",
+    "media": [],
+    "tags": [
+      "unit19",
+      "dielectric"
+    ]
+  },
+  {
+    "front": "What is the basic unit of capacitance, and who is it named for?",
+    "back": "The farad (F), after Michael Faraday.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "units"
+    ]
+  },
+  {
+    "front": "Define one farad.",
+    "back": "A change of 1 volt across the plates moves 1 coulomb of charge.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "units"
+    ]
+  },
+  {
+    "front": "Formula linking charge, capacitance and voltage?",
+    "back": "Q = C × V (coulombs = farads × volts)",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "units",
+      "formula"
+    ]
+  },
+  {
+    "front": "Why is the farad rarely used?",
+    "back": "It's enormous. A 1 F air capacitor with plates 1 in. apart would need about 1,108 square miles of plate.",
+    "extra_notes": "Example 19–1",
+    "media": [],
+    "tags": [
+      "unit19",
+      "units"
+    ]
+  },
+  {
+    "front": "Values of µF, nF and pF?",
+    "back": "µF = 10⁻⁶ F, nF = 10⁻⁹ F, pF = 10⁻¹² F",
+    "extra_notes": "pF also written µµF or mmF",
+    "media": [],
+    "tags": [
+      "unit19",
+      "units"
+    ]
+  },
+  {
+    "front": "An old motor capacitor is marked \"35 MFD.\" What does MFD mean?",
+    "back": "Microfarads (35 µF), not megafarads.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "units",
+      "field"
+    ]
+  },
+  {
+    "front": "Formula for capacitors in parallel?",
+    "back": "Cₜ = C₁ + C₂ + C₃<br><img src=\"caps_parallel.png\">",
+    "extra_notes": "Same effect as bigger plates",
+    "media": [
+      "caps_parallel.png"
+    ],
+    "tags": [
+      "unit19",
+      "parallel"
+    ]
+  },
+  {
+    "front": "<img src=\"caps_parallel.png\"><br>20, 30 and 60 µF in parallel?",
+    "back": "<b>110 µF</b>",
+    "extra_notes": "Figure 19–12",
+    "media": [
+      "caps_parallel.png"
+    ],
+    "tags": [
+      "unit19",
+      "parallel"
+    ]
+  },
+  {
+    "front": "Formulas for capacitors in series?",
+    "back": "1/Cₜ = 1/C₁ + 1/C₂ + …; two: C₁C₂/(C₁ + C₂); N equal: C/N<br><img src=\"caps_series.png\">",
+    "extra_notes": "Same effect as wider plate spacing",
+    "media": [
+      "caps_series.png"
+    ],
+    "tags": [
+      "unit19",
+      "series"
+    ]
+  },
+  {
+    "front": "<img src=\"caps_series.png\"><br>20, 30 and 60 µF in series?",
+    "back": "<b>10 µF</b>",
+    "extra_notes": "Example 19–2",
+    "media": [
+      "caps_series.png"
+    ],
+    "tags": [
+      "unit19",
+      "series"
+    ]
+  },
+  {
+    "front": "How do capacitor combinations compare with resistors?",
+    "back": "Opposite: capacitors ADD in parallel and use reciprocals in series.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "series",
+      "parallel",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "When can you use Cₜ = C/N?",
+    "back": "Only when all the series capacitors are the same value.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "series"
+    ]
+  },
+  {
+    "front": "Voltage across each capacitor in parallel?",
+    "back": "The full applied voltage. Each must be rated for it.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "parallel",
+      "rating"
+    ]
+  },
+  {
+    "front": "<img src=\"series_voltage_split.png\"><br>Two equal capacitors in series on 480 V. Voltage on each?",
+    "back": "240 V each (equal capacitors split evenly).",
+    "extra_notes": "Practical App 3: two 50 µF 370 V caps = 25 µF for a 480 V job",
+    "media": [
+      "series_voltage_split.png"
+    ],
+    "tags": [
+      "unit19",
+      "series",
+      "rating",
+      "field"
+    ]
+  },
+  {
+    "front": "Unequal capacitors in series: which gets the most voltage?",
+    "back": "The SMALLEST capacitance (voltage is inversely proportional to C).",
+    "extra_notes": "Check each one's rating",
+    "media": [],
+    "tags": [
+      "unit19",
+      "series",
+      "rating"
+    ]
+  },
+  {
+    "front": "2.2 µF + 280 nF + 470 pF in parallel. First step?",
+    "back": "Convert to one unit: 2.2 µF + 0.28 µF + 0.00047 µF ≈ 2.48 µF.",
+    "extra_notes": "Practice 4",
+    "media": [],
+    "tags": [
+      "unit19",
+      "parallel",
+      "units",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "How do capacitors charge and discharge?",
+    "back": "At an exponential rate: fast at first, slowing as they approach full (or empty).<br><img src=\"charge_curve.png\">",
+    "extra_notes": "",
+    "media": [
+      "charge_curve.png"
+    ],
+    "tags": [
+      "unit19",
+      "rc"
+    ]
+  },
+  {
+    "front": "How much does the voltage change in each time constant?",
+    "back": "63.2% of the change still remaining.<br><img src=\"charge_curve.png\">",
+    "extra_notes": "",
+    "media": [
+      "charge_curve.png"
+    ],
+    "tags": [
+      "unit19",
+      "rc"
+    ]
+  },
+  {
+    "front": "<img src=\"charge_curve.png\"><br>Charging to 100 V: voltage after 1, 2, 3, 4, 5 τ?",
+    "back": "63.2, 86.5, 95, 98.2, ~99.3 V (book rounds 86.4)",
+    "extra_notes": "",
+    "media": [
+      "charge_curve.png"
+    ],
+    "tags": [
+      "unit19",
+      "rc"
+    ]
+  },
+  {
+    "front": "<img src=\"discharge_curve.png\"><br>Discharging from 100 V: voltage after 1, 2, 3, 4, 5 τ?",
+    "back": "36.8, 13.5, 5, 1.8, ~0.7 V",
+    "extra_notes": "",
+    "media": [
+      "discharge_curve.png"
+    ],
+    "tags": [
+      "unit19",
+      "rc"
+    ]
+  },
+  {
+    "front": "How many time constants to fully charge or discharge?",
+    "back": "Five.",
+    "extra_notes": "Summary",
+    "media": [],
+    "tags": [
+      "unit19",
+      "rc"
+    ]
+  },
+  {
+    "front": "RC time constant formula and units?",
+    "back": "τ = R × C (ohms × farads = seconds)",
+    "extra_notes": "τ = tau",
+    "media": [],
+    "tags": [
+      "unit19",
+      "rc",
+      "formula"
+    ]
+  },
+  {
+    "front": "Rearranged time-constant formulas?",
+    "back": "R = τ / C and C = τ / R. Total time = 5τ.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "rc",
+      "formula"
+    ]
+  },
+  {
+    "front": "50 µF and 100 kΩ: τ and total charge time?",
+    "back": "τ = 0.00005 × 100,000 = <b>5 s</b>; total = <b>25 s</b>.",
+    "extra_notes": "Example 19–3",
+    "media": [],
+    "tags": [
+      "unit19",
+      "rc"
+    ]
+  },
+  {
+    "front": "100 pF must fully charge in 0.2 s. What resistance?",
+    "back": "τ = 0.2 / 5 = 0.04 s; R = 0.04 / (100 × 10⁻¹²) = <b>400 MΩ</b>.",
+    "extra_notes": "Example 19–4: divide total by 5 first",
+    "media": [],
+    "tags": [
+      "unit19",
+      "rc",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "500 kΩ, total charge time 15 s. Capacitance?",
+    "back": "τ = 3 s; C = 3 / 500,000 = <b>6 µF</b>.",
+    "extra_notes": "Example 19–5",
+    "media": [],
+    "tags": [
+      "unit19",
+      "rc"
+    ]
+  },
+  {
+    "front": "What are charge and discharge times proportional to?",
+    "back": "Both the capacitance and the resistance in the circuit.",
+    "extra_notes": "Summary",
+    "media": [],
+    "tags": [
+      "unit19",
+      "rc"
+    ]
+  },
+  {
+    "front": "Name common applications for capacitors.",
+    "back": "PF correction, motor start/run, SCR/Triac phase shift, filtering pulsating DC, RC timing, frequency/pulse circuits.",
+    "extra_notes": "19–9",
+    "media": [],
+    "tags": [
+      "unit19",
+      "applications"
+    ]
+  },
+  {
+    "front": "Nonpolarized capacitors: other name, and where can they be used?",
+    "back": "\"AC capacitors.\" They work on AC or DC, either way around.",
+    "extra_notes": "Review Q9: yes on DC",
+    "media": [],
+    "tags": [
+      "unit19",
+      "nonpolarized"
+    ]
+  },
+  {
+    "front": "How is an oil-filled paper capacitor built, and where is it used?",
+    "back": "Metal-foil plates separated by oil-soaked paper. Used for motor run/start capacitors and PF correction.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "nonpolarized",
+      "field"
+    ]
+  },
+  {
+    "front": "What does the dot, arrow or dash on an oil-filled capacitor mark?",
+    "back": "The terminal connected to the plate nearest the metal case (the one most likely to short to ground on failure).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "nonpolarized",
+      "field"
+    ]
+  },
+  {
+    "front": "Which side should the identified terminal connect to, and why?",
+    "back": "The LINE side, not the start winding. A short then goes straight to ground and trips the breaker fast. Via the start winding, reactance limits the fault and the winding can overheat.<br><img src=\"identified_terminal.png\">",
+    "extra_notes": "Figures 19–21 / 19–22",
+    "media": [
+      "identified_terminal.png"
+    ],
+    "tags": [
+      "unit19",
+      "nonpolarized",
+      "field"
+    ]
+  },
+  {
+    "front": "<img src=\"identified_terminal.png\"><br>The identified mark is on the compressor's run-winding terminal. Wrong?",
+    "back": "Not necessarily. Trace it: if that terminal is the same node as the line, it's correct. The rule is keep it off the START winding.",
+    "extra_notes": "Practical App 1",
+    "media": [
+      "identified_terminal.png"
+    ],
+    "tags": [
+      "unit19",
+      "nonpolarized",
+      "field",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Polarized capacitors: other name, and where can they be used?",
+    "back": "Electrolytic capacitors. DC only, observing the marked polarity.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "polarized"
+    ]
+  },
+  {
+    "front": "What happens if a polarized capacitor is reversed?",
+    "back": "It can be damaged and sometimes explodes.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "polarized",
+      "safety"
+    ]
+  },
+  {
+    "front": "Main advantage of electrolytic capacitors?",
+    "back": "Very high capacitance in a small case (the oxide insulating film is only a few molecules thick).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "polarized"
+    ]
+  },
+  {
+    "front": "Wet-type electrolytic: construction and response to reversed polarity?",
+    "back": "Aluminum foil + borax electrolyte forming an oxide film. Reversed, the film dissolves and it shorts — but it REFORMS when polarity is corrected.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "polarized"
+    ]
+  },
+  {
+    "front": "Dry-type electrolytic: what's different?",
+    "back": "The electrolyte is held in gauze (leak-proof), but reversed polarity PERMANENTLY damages it.",
+    "extra_notes": "Review Q11",
+    "media": [],
+    "tags": [
+      "unit19",
+      "polarized"
+    ]
+  },
+  {
+    "front": "How is an AC electrolytic capacitor made?",
+    "back": "Two wet-type electrolytics back-to-back (negative to negative) in one case. Each half-cycle one forms while the other shorts.<br><img src=\"ac_electrolytic.png\">",
+    "extra_notes": "Review Q10. Used as small-motor start caps and ceiling-fan run caps",
+    "media": [
+      "ac_electrolytic.png"
+    ],
+    "tags": [
+      "unit19",
+      "polarized"
+    ]
+  },
+  {
+    "front": "How does a variable capacitor work?",
+    "back": "Movable plates on a shaft interleave with fixed plates, changing the effective area. Air dielectric, rated in pF.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "variable"
+    ]
+  },
+  {
+    "front": "What is a trimmer capacitor?",
+    "back": "A small variable capacitor: a screw moves one plate closer to or farther from a fixed plate.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "variable"
+    ]
+  },
+  {
+    "front": "How are capacitor color codes read, in which unit?",
+    "back": "Digits, multiplier, tolerance (and voltage/class), with the value in picofarads. There's no single universal standard.",
+    "extra_notes": "Check manufacturer data",
+    "media": [],
+    "tags": [
+      "unit19",
+      "markings"
+    ]
+  },
+  {
+    "front": "Postage-stamp mica: what does a 6-dot code add over a 5-dot?",
+    "back": "The third dot becomes a third digit.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "markings"
+    ]
+  },
+  {
+    "front": "Mica code: first dot white vs black?",
+    "back": "White = EIA standard (silver = paper dielectric). Black = JAN (Joint Army-Navy, military).",
+    "extra_notes": "Review Q15 starts with black",
+    "media": [],
+    "tags": [
+      "unit19",
+      "markings"
+    ]
+  },
+  {
+    "front": "On a ceramic capacitor, what does the wide band mean?",
+    "back": "The temperature coefficient.",
+    "extra_notes": "19–15",
+    "media": [],
+    "tags": [
+      "unit19",
+      "markings"
+    ]
+  },
+  {
+    "front": "What is a temperature coefficient?",
+    "back": "How much capacitance changes with temperature, in ppm/°C. P = increases with heat; N = decreases.",
+    "extra_notes": "NP0 ≈ zero",
+    "media": [],
+    "tags": [
+      "unit19",
+      "markings"
+    ]
+  },
+  {
+    "front": "What is a dipped tantalum capacitor?",
+    "back": "A match-head-shaped capacitor coded with color bands/dots for value, tolerance and voltage.",
+    "extra_notes": "19–16",
+    "media": [],
+    "tags": [
+      "unit19",
+      "markings"
+    ]
+  },
+  {
+    "front": "<img src=\"film_code.png\"><br>Read the film capacitor code \"105 K\".",
+    "back": "10 + five zeros = 1,000,000 pF = <b>1 µF</b>; K = ±10%.",
+    "extra_notes": "19–17",
+    "media": [
+      "film_code.png"
+    ],
+    "tags": [
+      "unit19",
+      "markings"
+    ]
+  },
+  {
+    "front": "Tolerance letters J, K, M, H?",
+    "back": "J ±5%, K ±10%, M ±20%, H ±3%",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "markings"
+    ]
+  },
+  {
+    "front": "Read \"253 H\".",
+    "back": "25 + 3 zeros = 25,000 pF = <b>0.025 µF</b>, ±3%.",
+    "extra_notes": "Review Q13",
+    "media": [],
+    "tags": [
+      "unit19",
+      "markings"
+    ]
+  },
+  {
+    "front": "First step before testing any capacitor?",
+    "back": "Discharge it through a resistor/discharge tool and verify zero volts with a meter.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "testing",
+      "safety"
+    ]
+  },
+  {
+    "front": "<img src=\"ohmmeter_test.png\"><br>What does a good capacitor do on an analog ohmmeter?",
+    "back": "The needle swings up-scale, then returns to infinity. Reversing the leads swings about twice as far, then returns.",
+    "extra_notes": "Stays low = shorted",
+    "media": [
+      "ohmmeter_test.png"
+    ],
+    "tags": [
+      "unit19",
+      "testing"
+    ]
+  },
+  {
+    "front": "Why does the needle swing twice as far when you reverse the leads?",
+    "back": "The capacitor is already charged to the meter's voltage, so reversing adds that charge to the new one.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "testing"
+    ]
+  },
+  {
+    "front": "<img src=\"leakage_test.png\"><br>How do you test a capacitor for leakage?",
+    "back": "Apply rated DC through a microammeter in series. Once charged, current should be zero (or near it).",
+    "extra_notes": "Summary bullet",
+    "media": [
+      "leakage_test.png"
+    ],
+    "tags": [
+      "unit19",
+      "testing"
+    ]
+  },
+  {
+    "front": "What is a HIPOT?",
+    "back": "A dielectric test set (\"high potential\"): variable high voltage, a voltmeter and a microammeter, used to test dielectric strength at rated voltage.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "testing"
+    ]
+  },
+  {
+    "front": "<img src=\"capacitance_test.png\"><br>How do you measure actual capacitance with AC?",
+    "back": "Apply AC (≤ rated voltage), measure current. Xc = E / I, then C = 1 / (2πf × Xc).",
+    "extra_notes": "Finds open plates. At 60 Hz, C(µF) ≈ 2652 × I / E",
+    "media": [
+      "capacitance_test.png"
+    ],
+    "tags": [
+      "unit19",
+      "testing",
+      "formula"
+    ]
+  },
+  {
+    "front": "Two tests needed for a large AC capacitor?",
+    "back": "1. Dielectric strength (short/leakage).<br>2. Capacitance value (open plates).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "testing"
+    ]
+  },
+  {
+    "front": "Is a capacitor safe once the power is off?",
+    "back": "No. It can stay charged for a long time. Verify zero volts (VFD buses, PF banks, power supplies).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "safety",
+      "field"
+    ]
+  },
+  {
+    "front": "How should you discharge a capacitor?",
+    "back": "Through a properly sized resistor or discharge tool — not a screwdriver.",
+    "extra_notes": "A dead short can weld tools and throw molten metal",
+    "media": [],
+    "tags": [
+      "unit19",
+      "safety",
+      "field"
+    ]
+  },
+  {
+    "front": "What does the NEC require for PF-correction capacitors?",
+    "back": "A means of discharging stored voltage (bleed resistors) — for low-voltage caps, to 50 V or less within 1 minute (Article 460).",
+    "extra_notes": "Don't trust it; measure",
+    "media": [],
+    "tags": [
+      "unit19",
+      "safety",
+      "nec"
+    ]
+  },
+  {
+    "front": "Replacing a run capacitor: which ratings must match?",
+    "back": "Same µF (within tolerance), same OR HIGHER voltage rating. 440 V can replace 370 V; never the reverse.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "field"
+    ]
+  },
+  {
+    "front": "Start vs run capacitors: interchangeable?",
+    "back": "No. Start caps (AC electrolytic, high µF) are intermittent duty only. Run caps (oil/film) are continuous duty.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "field"
+    ]
+  },
+  {
+    "front": "Signs of a failed run capacitor?",
+    "back": "Bulged top, leaking oil, motor hums but won't start, motor runs hot. A dual cap (HERM/FAN/C) can fail on one section.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit19",
+      "field"
+    ]
+  },
+  {
+    "front": "A 240 VAC circuit needs a 10 µF cap; the spare is 350 WVDC. What must you compare?",
+    "back": "The AC PEAK (240 × 1.414 ≈ 339 V) against the DC rating. It barely fits — and an AC-duty rating is preferred.",
+    "extra_notes": "Practical App 2",
+    "media": [],
+    "tags": [
+      "unit19",
+      "field",
+      "rating",
+      "pitfall"
+    ]
+  }
+]

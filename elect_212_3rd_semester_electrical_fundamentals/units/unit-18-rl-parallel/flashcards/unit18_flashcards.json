@@ -1,0 +1,615 @@
+[
+  {
+    "front": "Why do so many real circuits contain R and L in parallel?",
+    "back": "Every load on a branch circuit is in parallel, and mixed loads are common: lights + fan motor, heat strips + compressor.<br><img src=\"branch_loads.png\">",
+    "extra_notes": "Why You Need to Know",
+    "media": [
+      "branch_loads.png"
+    ],
+    "tags": [
+      "unit18",
+      "intro",
+      "field"
+    ]
+  },
+  {
+    "front": "What is the same across every branch of a parallel R-L circuit?",
+    "back": "The voltage, in both magnitude and phase: Eₜ = Eᵣ = Eₗ.<br><img src=\"rl_parallel_circuit.png\">",
+    "extra_notes": "Summary bullet 1",
+    "media": [
+      "rl_parallel_circuit.png"
+    ],
+    "tags": [
+      "unit18",
+      "basics"
+    ]
+  },
+  {
+    "front": "Phase of the resistive branch current?",
+    "back": "In phase with the voltage.<br><img src=\"branch_currents_wave.png\">",
+    "extra_notes": "Summary",
+    "media": [
+      "branch_currents_wave.png"
+    ],
+    "tags": [
+      "unit18",
+      "basics",
+      "phase"
+    ]
+  },
+  {
+    "front": "Phase of the inductive branch current?",
+    "back": "Lags the voltage by 90°.<br><img src=\"branch_currents_wave.png\">",
+    "extra_notes": "Summary",
+    "media": [
+      "branch_currents_wave.png"
+    ],
+    "tags": [
+      "unit18",
+      "basics",
+      "phase"
+    ]
+  },
+  {
+    "front": "<img src=\"branch_currents_wave.png\"><br>In parallel, how many degrees apart are Iᵣ and Iₗ?",
+    "back": "90°",
+    "extra_notes": "Review Q1",
+    "media": [
+      "branch_currents_wave.png"
+    ],
+    "tags": [
+      "unit18",
+      "basics",
+      "phase"
+    ]
+  },
+  {
+    "front": "In a parallel phasor diagram, what is the 0° reference, and why?",
+    "back": "Voltage. It's the one quantity shared by every branch. (In series it was current.)<br><img src=\"parallel_phasor.png\">",
+    "extra_notes": "Iᵣ lies along E; Iₗ points down (lagging)",
+    "media": [
+      "parallel_phasor.png"
+    ],
+    "tags": [
+      "unit18",
+      "phasor"
+    ]
+  },
+  {
+    "front": "What sets the phase angle between total current and voltage in parallel R-L?",
+    "back": "How the current is split: the ratio of Iᵣ to Iₗ (set by R vs Xₗ).",
+    "extra_notes": "18–1",
+    "media": [],
+    "tags": [
+      "unit18",
+      "basics"
+    ]
+  },
+  {
+    "front": "In parallel, does a BIGGER resistance make the circuit more or less resistive?",
+    "back": "Less. A bigger R draws less current, so the inductive branch dominates and PF drops. (Opposite of series.)",
+    "extra_notes": "The branch with more current dominates",
+    "media": [],
+    "tags": [
+      "unit18",
+      "basics",
+      "exception"
+    ]
+  },
+  {
+    "front": "<img src=\"rl_parallel_circuit.png\"><br>What is this circuit, and what is each branch current?",
+    "back": "R-L parallel. Iᵣ = 240/15 = <b>16 A</b>; Iₗ = 240/20 = <b>12 A</b>.",
+    "extra_notes": "Figure 18–4",
+    "media": [
+      "rl_parallel_circuit.png"
+    ],
+    "tags": [
+      "unit18",
+      "branch_current"
+    ]
+  },
+  {
+    "front": "Formula for the resistive branch current?",
+    "back": "Iᵣ = E / R",
+    "extra_notes": "Voltage is the same as the supply",
+    "media": [],
+    "tags": [
+      "unit18",
+      "branch_current",
+      "formula"
+    ]
+  },
+  {
+    "front": "Formula for the inductive branch current?",
+    "back": "Iₗ = E / Xₗ",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit18",
+      "branch_current",
+      "formula"
+    ]
+  },
+  {
+    "front": "Watts in the 15 Ω / 20 Ω / 240 V example?",
+    "back": "P = E × Iᵣ = 240 × 16 = <b>3840 W</b>",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit18",
+      "power"
+    ]
+  },
+  {
+    "front": "VARs in the 15 Ω / 20 Ω / 240 V example?",
+    "back": "VARs = E × Iₗ = 240 × 12 = <b>2880 VARs</b>",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit18",
+      "power"
+    ]
+  },
+  {
+    "front": "Inductance for Xₗ = 20 Ω at 60 Hz?",
+    "back": "L = 20 / 377 = <b>0.0531 H</b>",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit18",
+      "inductance"
+    ]
+  },
+  {
+    "front": "Formula for total current in parallel R-L?",
+    "back": "Iₜ = √(Iᵣ² + Iₗ²)<br><img src=\"current_triangle.png\">",
+    "extra_notes": "Rearranged: Iᵣ = √(Iₜ² − Iₗ²), Iₗ = √(Iₜ² − Iᵣ²)",
+    "media": [
+      "current_triangle.png"
+    ],
+    "tags": [
+      "unit18",
+      "total_current",
+      "formula"
+    ]
+  },
+  {
+    "front": "Iᵣ = 16 A and Iₗ = 12 A. Total current?",
+    "back": "√(16² + 12²) = <b>20 A</b> (not 28 A)<br><img src=\"current_triangle.png\">",
+    "extra_notes": "",
+    "media": [
+      "current_triangle.png"
+    ],
+    "tags": [
+      "unit18",
+      "total_current"
+    ]
+  },
+  {
+    "front": "Why can't you add Iᵣ + Iₗ directly?",
+    "back": "They're 90° apart, so they peak at different times. They add as vectors (Pythagorean theorem).",
+    "extra_notes": "Summary bullet 4",
+    "media": [],
+    "tags": [
+      "unit18",
+      "total_current",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Iᵣ = 6.5 A, Iₗ = 8 A. Iₜ?",
+    "back": "√(6.5² + 8²) ≈ <b>10.3 A</b>",
+    "extra_notes": "Review Q6",
+    "media": [],
+    "tags": [
+      "unit18",
+      "total_current"
+    ]
+  },
+  {
+    "front": "<img src=\"clamp_readings.png\"><br>Branch clamps read 16 A and 12 A, feeder reads 20 A. Fault?",
+    "back": "No. Mixed R and L branch currents add as vectors, so the feeder reads less than the straight sum.",
+    "extra_notes": "",
+    "media": [
+      "clamp_readings.png"
+    ],
+    "tags": [
+      "unit18",
+      "total_current",
+      "field"
+    ]
+  },
+  {
+    "front": "Two inductive branches draw 9 A and 6 A. Total inductive current?",
+    "back": "<b>15 A</b>. Same-type currents are in phase, so they add straight. Then combine with Iᵣ by the Pythagorean theorem.",
+    "extra_notes": "Example 18–2",
+    "media": [],
+    "tags": [
+      "unit18",
+      "total_current",
+      "multi_branch"
+    ]
+  },
+  {
+    "front": "Easiest way to find Z if you know E and Iₜ?",
+    "back": "Z = Eₜ / Iₜ = 240 / 20 = <b>12 Ω</b>",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit18",
+      "impedance"
+    ]
+  },
+  {
+    "front": "Reciprocal formula for parallel R-L impedance?",
+    "back": "Z = 1 / √((1/R)² + (1/Xₗ)²)",
+    "extra_notes": "Square the reciprocals, add, root, then take the reciprocal again",
+    "media": [],
+    "tags": [
+      "unit18",
+      "impedance",
+      "formula"
+    ]
+  },
+  {
+    "front": "Product-over-vector-sum formula for parallel R-L impedance?",
+    "back": "Z = (R × Xₗ) / √(R² + Xₗ²)",
+    "extra_notes": "15 × 20 / 25 = 12 Ω",
+    "media": [],
+    "tags": [
+      "unit18",
+      "impedance",
+      "formula"
+    ]
+  },
+  {
+    "front": "Is parallel Z bigger or smaller than R and Xₗ?",
+    "back": "Smaller than both (12 Ω is less than 15 and 20).",
+    "extra_notes": "Adding a path lowers total opposition",
+    "media": [],
+    "tags": [
+      "unit18",
+      "impedance"
+    ]
+  },
+  {
+    "front": "Can you draw an impedance triangle (R and Xₗ as legs) for a parallel circuit?",
+    "back": "No. That only works in series. In parallel, use the reciprocal formula, product-over-vector-sum, or E/Iₜ.<br><img src=\"z_parallel_formulas.png\">",
+    "extra_notes": "Book's Helpful Hint",
+    "media": [
+      "z_parallel_formulas.png"
+    ],
+    "tags": [
+      "unit18",
+      "impedance",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "<img src=\"z_parallel_formulas.png\"><br>Which of these gives the parallel Z for 15 Ω ∥ 20 Ω?",
+    "back": "Only R·Xₗ / √(R² + Xₗ²) = <b>12 Ω</b>. √(R² + Xₗ²) = 25 Ω is the series answer; R·Xₗ / (R + Xₗ) = 8.57 Ω ignores the 90°.",
+    "extra_notes": "",
+    "media": [
+      "z_parallel_formulas.png"
+    ],
+    "tags": [
+      "unit18",
+      "impedance",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "R = 24 Ω ∥ Xₗ = 20 Ω. Z?",
+    "back": "(24 × 20) / √(24² + 20²) = <b>15.4 Ω</b>",
+    "extra_notes": "Review Q7. 31.2 Ω would be the series mistake",
+    "media": [],
+    "tags": [
+      "unit18",
+      "impedance"
+    ]
+  },
+  {
+    "front": "<img src=\"example_18_2_circuit.png\"><br>Two inductors (40 Ω and 60 Ω) in parallel with a resistor. First step for Z?",
+    "back": "Combine the inductors first with the ordinary reciprocal formula: 1/(1/40 + 1/60) = <b>24 Ω</b>. Then use the vector formula with R.",
+    "extra_notes": "Example 18–2",
+    "media": [
+      "example_18_2_circuit.png"
+    ],
+    "tags": [
+      "unit18",
+      "impedance",
+      "multi_branch"
+    ]
+  },
+  {
+    "front": "Is the power triangle different for parallel circuits?",
+    "back": "No. Watts, VARs and VA add the same way in any circuit: VA = √(P² + VARs²).<br><img src=\"power_triangle_18.png\">",
+    "extra_notes": "Summary bullet 6",
+    "media": [
+      "power_triangle_18.png"
+    ],
+    "tags": [
+      "unit18",
+      "power"
+    ]
+  },
+  {
+    "front": "Apparent power in the 240 V, 20 A example?",
+    "back": "VA = E × Iₜ = 240 × 20 = <b>4800 VA</b>",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit18",
+      "power"
+    ]
+  },
+  {
+    "front": "How is the parallel power triangle related to the current triangle?",
+    "back": "It's the current triangle multiplied by E (16/12/20 A × 240 V).",
+    "extra_notes": "Same shape, same angle",
+    "media": [],
+    "tags": [
+      "unit18",
+      "power",
+      "triangles"
+    ]
+  },
+  {
+    "front": "You know VA and Z but not E. How do you find E?",
+    "back": "VA = E²/Z, so E = √(VA × Z).",
+    "extra_notes": "Example 18–2: √(6120 × 21.176) = 360 V",
+    "media": [],
+    "tags": [
+      "unit18",
+      "power",
+      "formula"
+    ]
+  },
+  {
+    "front": "VA = 325, PF = 66%. True power?",
+    "back": "P = 325 × 0.66 ≈ <b>214.5 W</b>",
+    "extra_notes": "Review Q8",
+    "media": [],
+    "tags": [
+      "unit18",
+      "power"
+    ]
+  },
+  {
+    "front": "VA = 465, P = 320 W. VARs?",
+    "back": "√(465² − 320²) ≈ <b>337 VARs</b>",
+    "extra_notes": "Review Q9",
+    "media": [],
+    "tags": [
+      "unit18",
+      "power"
+    ]
+  },
+  {
+    "front": "PF formulas for a parallel R-L circuit?",
+    "back": "PF = P / VA = Iᵣ / Iₜ = Z / R",
+    "extra_notes": "80% in the main example",
+    "media": [],
+    "tags": [
+      "unit18",
+      "power_factor",
+      "formula"
+    ]
+  },
+  {
+    "front": "Why is parallel PF Z/R instead of R/Z?",
+    "back": "Parallel Z is smaller than R, so R/Z would exceed 1, and PF can never exceed 1.",
+    "extra_notes": "Series uses R/Z",
+    "media": [],
+    "tags": [
+      "unit18",
+      "power_factor",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "R = 8 Ω, Z = 5 Ω (parallel). PF?",
+    "back": "Z/R = 5/8 = <b>62.5%</b>",
+    "extra_notes": "Example 18–1",
+    "media": [],
+    "tags": [
+      "unit18",
+      "power_factor"
+    ]
+  },
+  {
+    "front": "Why can't voltage ratios give PF in a parallel circuit?",
+    "back": "The voltage is the same on every branch, so Eᵣ/Eₜ is always 1. Use currents instead.",
+    "extra_notes": "Mirror of the series rule",
+    "media": [],
+    "tags": [
+      "unit18",
+      "power_factor",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Main example PF and θ?",
+    "back": "PF = 3840/4800 = 16/20 = 12/15 = <b>80%</b>; θ = cos⁻¹(0.8) = <b>36.87°</b>, current lagging.<br><img src=\"total_current_wave.png\">",
+    "extra_notes": "",
+    "media": [
+      "total_current_wave.png"
+    ],
+    "tags": [
+      "unit18",
+      "power_factor",
+      "theta"
+    ]
+  },
+  {
+    "front": "What is the relationship between θ and PF in any AC circuit?",
+    "back": "cos θ = PF",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit18",
+      "theta"
+    ]
+  },
+  {
+    "front": "Other trig ratios for θ in parallel R-L?",
+    "back": "tan θ = Iₗ / Iᵣ = VARs / P<br>sin θ = Iₗ / Iₜ = VARs / VA<br><img src=\"parallel_phasor.png\">",
+    "extra_notes": "",
+    "media": [
+      "parallel_phasor.png"
+    ],
+    "tags": [
+      "unit18",
+      "theta",
+      "formula"
+    ]
+  },
+  {
+    "front": "Book wording check: \"PF is the relationship of apparent power to true power.\" Correct?",
+    "back": "Backwards. PF = true power ÷ apparent power. The book's formulas are right.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit18",
+      "errata",
+      "power_factor"
+    ]
+  },
+  {
+    "front": "<img src=\"example_18_2_circuit.png\"><br>Example 18–2: R 45 Ω, Xₗ 40 and 60 Ω, VA 6120. Find E and Iₜ.",
+    "back": "Xₗₜ = 24 Ω → Z = 21.176 Ω → E = √(6120 × 21.176) = <b>360 V</b> → Iₜ = 360 / 21.176 = <b>17 A</b>.",
+    "extra_notes": "",
+    "media": [
+      "example_18_2_circuit.png"
+    ],
+    "tags": [
+      "unit18",
+      "multi_branch"
+    ]
+  },
+  {
+    "front": "Example 18–2 branch currents? Check Iₜ.",
+    "back": "Iᵣ = 8 A, Iₗ₁ = 9 A, Iₗ₂ = 6 A. Iₗ = 15 A, √(8² + 15²) = 17 A ✓",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit18",
+      "multi_branch"
+    ]
+  },
+  {
+    "front": "Example 18–2 PF and θ?",
+    "back": "P = 2880 W, so PF = 2880/6120 = <b>47.06%</b>; θ = <b>61.93°</b>.<br><img src=\"example_18_2_power.png\">",
+    "extra_notes": "",
+    "media": [
+      "example_18_2_power.png"
+    ],
+    "tags": [
+      "unit18",
+      "multi_branch",
+      "power_factor"
+    ]
+  },
+  {
+    "front": "Book typo in Example 18–2: \"P = 359.996 V × 8 V\"?",
+    "back": "Should be 8 <b>A</b>.",
+    "extra_notes": "Also Fig 18–13's VARs labels differ slightly from the text (rounding)",
+    "media": [],
+    "tags": [
+      "unit18",
+      "errata"
+    ]
+  },
+  {
+    "front": "<img src=\"branch_loads.png\"><br>Give real examples of parallel R-L loads.",
+    "back": "Ceiling fan with a light kit; a branch with incandescent lamps, fluorescent fixtures and motors; heat-pump compressor + heat strips.",
+    "extra_notes": "Figure 18–16",
+    "media": [
+      "branch_loads.png"
+    ],
+    "tags": [
+      "unit18",
+      "field"
+    ]
+  },
+  {
+    "front": "Heat pump: 34 A compressor at 70% PF plus 10 kW strip heat on 240 V. How do you find total current?",
+    "back": "Compressor Iᵣ = 34 × 0.7 = 23.8 A, Iₗ = √(34² − 23.8²) ≈ 24.3 A. Strip = 41.7 A resistive. Iₜ = √((23.8 + 41.7)² + 24.3²) ≈ <b>69.8 A</b>.<br><img src=\"heat_pump_vectors.png\">",
+    "extra_notes": "Practical App 2. Not 34 + 41.7 = 75.7 A",
+    "media": [
+      "heat_pump_vectors.png"
+    ],
+    "tags": [
+      "unit18",
+      "field",
+      "practical",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "500 W of lamps + an inductive load on 120 V; total 7 A. Steps to find the load's inductance?",
+    "back": "Iᵣ = 500/120 = 4.17 A → Iₗ = √(7² − 4.17²) → Xₗ = 120/Iₗ → L = Xₗ/377.",
+    "extra_notes": "Practical App 1",
+    "media": [],
+    "tags": [
+      "unit18",
+      "field",
+      "practical"
+    ]
+  },
+  {
+    "front": "Adding resistive load in parallel with a motor does what to the PF?",
+    "back": "Raises it. More resistive current, same VARs, so the angle shrinks. (The VARs don't go away.)",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit18",
+      "field",
+      "power_factor"
+    ]
+  },
+  {
+    "front": "Where are power-factor-correction capacitors connected relative to motors?",
+    "back": "In parallel (across the line), so their leading current cancels the motors' lagging current.",
+    "extra_notes": "Coming in the capacitance units",
+    "media": [],
+    "tags": [
+      "unit18",
+      "field",
+      "preview"
+    ]
+  },
+  {
+    "front": "Why do NEC load calculations often add amps straight even though the physics says vector sum?",
+    "back": "It's a deliberate, conservative simplification: the straight sum is never smaller than the vector sum.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit18",
+      "field",
+      "nec"
+    ]
+  },
+  {
+    "front": "Series vs parallel R-L: what's shared, and which PF ratios work?",
+    "back": "Series: current shared; PF = R/Z = Eᵣ/Eₜ. Parallel: voltage shared; PF = Z/R = Iᵣ/Iₜ. P/VA works for both.<br><img src=\"series_vs_parallel.png\">",
+    "extra_notes": "",
+    "media": [
+      "series_vs_parallel.png"
+    ],
+    "tags": [
+      "unit18",
+      "comparison"
+    ]
+  },
+  {
+    "front": "Practice 15 asks for \"the reactance\" when Xₗ = 48 Ω is given. What does it mean?",
+    "back": "Almost certainly inductance: L = 48 / 377 ≈ 0.127 H.",
+    "extra_notes": "Likely book typo",
+    "media": [],
+    "tags": [
+      "unit18",
+      "errata"
+    ]
+  }
+]

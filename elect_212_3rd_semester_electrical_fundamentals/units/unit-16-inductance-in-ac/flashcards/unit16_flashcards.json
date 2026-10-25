@@ -1,0 +1,694 @@
+[
+  {
+    "front": "What is inductance (L), and what is its unit?",
+    "back": "A coil's ability to induce voltage in itself, opposing any change in current. Measured in henrys (H).",
+    "extra_notes": "1 mH = 0.001 H",
+    "media": [],
+    "tags": [
+      "unit16",
+      "inductance"
+    ]
+  },
+  {
+    "front": "Which loads are treated as inductive?",
+    "back": "Anything with a coil: motors, transformers, ballasts, chokes, solenoids, contactor/relay coils.",
+    "extra_notes": "A single conductor's inductance is tiny and usually ignored",
+    "media": [],
+    "tags": [
+      "unit16",
+      "inductance"
+    ]
+  },
+  {
+    "front": "When does a magnetic field induce a voltage in a coil?",
+    "back": "Whenever flux cuts the coil, i.e. whenever the current (and its field) changes.",
+    "extra_notes": "Unit 13 fact 1",
+    "media": [],
+    "tags": [
+      "unit16",
+      "inductance"
+    ]
+  },
+  {
+    "front": "What is CEMF?",
+    "back": "Counter-electromotive force: the induced voltage, which always opposes the applied voltage.<br><img src=\"cemf_180.png\">",
+    "extra_notes": "Lenz's law",
+    "media": [
+      "cemf_180.png"
+    ],
+    "tags": [
+      "unit16",
+      "inductance",
+      "cemf"
+    ]
+  },
+  {
+    "front": "What is the induced voltage proportional to?",
+    "back": "The RATE OF CHANGE of current, not the amount of current.<br><img src=\"rate_of_change.png\">",
+    "extra_notes": "",
+    "media": [
+      "rate_of_change.png"
+    ],
+    "tags": [
+      "unit16",
+      "inductance"
+    ]
+  },
+  {
+    "front": "What does an inductor oppose?",
+    "back": "A CHANGE in current.",
+    "extra_notes": "Like a flywheel for current",
+    "media": [],
+    "tags": [
+      "unit16",
+      "inductance"
+    ]
+  },
+  {
+    "front": "<img src=\"cemf_180.png\"><br>What is the phase relationship between applied voltage and induced voltage?",
+    "back": "180° (exactly opposite).",
+    "extra_notes": "",
+    "media": [
+      "cemf_180.png"
+    ],
+    "tags": [
+      "unit16",
+      "cemf"
+    ]
+  },
+  {
+    "front": "A coil (6 Ω wire) on 120 VAC draws 0.8 A. How much voltage pushes current through the wire resistance?",
+    "back": "E = 0.8 × 6 = <b>4.8 V</b>. The rest is used overcoming the CEMF.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "cemf"
+    ]
+  },
+  {
+    "front": "Same coil: what is the induced voltage? Why not 120 − 4.8?",
+    "back": "√(120² − 4.8²) = <b>119.904 V</b>. The resistive drop and the CEMF are 90° apart, so subtract as vectors.<br><img src=\"coil_voltages.png\">",
+    "extra_notes": "The book's earlier 120 − 116 = 4 example is only a rough illustration",
+    "media": [
+      "coil_voltages.png"
+    ],
+    "tags": [
+      "unit16",
+      "cemf",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "<img src=\"ohmmeter_coil.png\"><br>A contactor coil reads 6 Ω on an ohmmeter. Does it draw 120/6 = 20 A on 120 VAC?",
+    "back": "No. The ohmmeter shows only wire resistance. Reactance limits the AC current to far less.",
+    "extra_notes": "",
+    "media": [
+      "ohmmeter_coil.png"
+    ],
+    "tags": [
+      "unit16",
+      "ohmmeter",
+      "pitfall",
+      "field"
+    ]
+  },
+  {
+    "front": "What is inductive reactance (Xₗ)?",
+    "back": "The current-limiting effect of inductance, in ohms. It isn't resistance: it comes from the CEMF and produces no heat.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "reactance"
+    ]
+  },
+  {
+    "front": "Formula for Xₗ?",
+    "back": "Xₗ = 2πfL  (f in Hz, L in H, Xₗ in Ω)",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "reactance",
+      "formula"
+    ]
+  },
+  {
+    "front": "Rearranged reactance formulas?",
+    "back": "L = Xₗ / (2πf) and f = Xₗ / (2πL)",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "reactance",
+      "formula"
+    ]
+  },
+  {
+    "front": "What number should you memorize for 60 Hz, and why?",
+    "back": "<b>377</b> (2π × 60 = 376.99). At 60 Hz, Xₗ = 377 × L and L = Xₗ / 377.",
+    "extra_notes": "Doesn't apply at other frequencies",
+    "media": [],
+    "tags": [
+      "unit16",
+      "reactance"
+    ]
+  },
+  {
+    "front": "How does Ohm's law work with reactance?",
+    "back": "Put Xₗ in place of R: I = E / Xₗ, E = I × Xₗ, Xₗ = E / I.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "reactance",
+      "formula"
+    ]
+  },
+  {
+    "front": "Three factors that set induced voltage (and therefore Xₗ)?",
+    "back": "1. Number of turns<br>2. Strength of the magnetic field<br>3. Speed of the cutting action (frequency)",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "reactance"
+    ]
+  },
+  {
+    "front": "What physical features set a coil's inductance?",
+    "back": "Number of turns, how close together they are, wire/coil size, and core material (iron ≫ air).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "inductance"
+    ]
+  },
+  {
+    "front": "0.8 H on 120 V, 60 Hz. Xₗ and current?",
+    "back": "Xₗ = 377 × 0.8 = <b>301.6 Ω</b>; I = 120 / 301.6 = <b>0.398 A</b>.",
+    "extra_notes": "Example 16–1",
+    "media": [],
+    "tags": [
+      "unit16",
+      "reactance"
+    ]
+  },
+  {
+    "front": "36 V, 400 Hz, 0.2 A. Find L.",
+    "back": "Xₗ = 36/0.2 = 180 Ω; L = 180 / (2π × 400) = <b>0.0716 H</b>.",
+    "extra_notes": "Example 16–2: 377 does NOT apply at 400 Hz",
+    "media": [],
+    "tags": [
+      "unit16",
+      "reactance"
+    ]
+  },
+  {
+    "front": "A coil draws 24 A on 480 V, 60 Hz. Current at 400 Hz?",
+    "back": "L doesn't change. Current scales with 1/f: 24 × 60/400 = <b>3.6 A</b>.<br><img src=\"xl_vs_frequency.png\">",
+    "extra_notes": "Example 16–3",
+    "media": [
+      "xl_vs_frequency.png"
+    ],
+    "tags": [
+      "unit16",
+      "reactance",
+      "frequency"
+    ]
+  },
+  {
+    "front": "Does inductance change when the frequency changes?",
+    "back": "No. L is set by construction. Xₗ changes, because Xₗ is proportional to f.",
+    "extra_notes": "Exception: iron cores saturate at high current",
+    "media": [],
+    "tags": [
+      "unit16",
+      "inductance",
+      "frequency"
+    ]
+  },
+  {
+    "front": "What is a pure inductor's Xₗ at DC (0 Hz)?",
+    "back": "Zero. Only the wire resistance limits current.",
+    "extra_notes": "An AC coil on DC will burn up",
+    "media": [],
+    "tags": [
+      "unit16",
+      "reactance",
+      "exception",
+      "field"
+    ]
+  },
+  {
+    "front": "Raise the frequency: what happens to Xₗ and current?",
+    "back": "Xₗ goes up and current goes down (in proportion).<br><img src=\"xl_vs_frequency.png\">",
+    "extra_notes": "",
+    "media": [
+      "xl_vs_frequency.png"
+    ],
+    "tags": [
+      "unit16",
+      "reactance",
+      "frequency"
+    ]
+  },
+  {
+    "front": "60 Hz coil or transformer on 50 Hz: what happens?",
+    "back": "Xₗ drops about 17%, so current rises about 20%. It runs hotter, and an iron core may saturate.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "frequency",
+      "field"
+    ]
+  },
+  {
+    "front": "50 Hz magnetic ballast on 60 Hz: overcurrent risk?",
+    "back": "No. Xₗ is higher at 60 Hz, so current is lower. The likely trouble is underpowered or poor lamp starting.",
+    "extra_notes": "Practical Application 1",
+    "media": [],
+    "tags": [
+      "unit16",
+      "frequency",
+      "field"
+    ]
+  },
+  {
+    "front": "What happens to an iron-core inductor at high current?",
+    "back": "The core saturates, inductance drops, and current climbs quickly. Air cores don't saturate.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "inductance",
+      "exception"
+    ]
+  },
+  {
+    "front": "Unit pitfall: 33 mH in the reactance formula?",
+    "back": "Convert to henrys first: 0.033 H. Likewise kHz → Hz.",
+    "extra_notes": "Practice Problem 2",
+    "media": [],
+    "tags": [
+      "unit16",
+      "reactance",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "<img src=\"inductor_symbols.png\"><br>What do these two schematic symbols mean?",
+    "back": "Plain coil = air-core inductor. Coil with parallel lines = iron-core inductor.",
+    "extra_notes": "16–3",
+    "media": [
+      "inductor_symbols.png"
+    ],
+    "tags": [
+      "unit16",
+      "symbols"
+    ]
+  },
+  {
+    "front": "Total inductance of inductors in series?",
+    "back": "Lₜ = L₁ + L₂ + L₃ (likewise Xₗₜ = Xₗ₁ + Xₗ₂ + Xₗ₃)<br><img src=\"inductors_series.png\">",
+    "extra_notes": "16–4",
+    "media": [
+      "inductors_series.png"
+    ],
+    "tags": [
+      "unit16",
+      "series_parallel",
+      "formula"
+    ]
+  },
+  {
+    "front": "Three 0.6, 0.4 and 0.5 H inductors in series: Lₜ?",
+    "back": "<b>1.5 H</b>",
+    "extra_notes": "Example 16–4",
+    "media": [],
+    "tags": [
+      "unit16",
+      "series_parallel"
+    ]
+  },
+  {
+    "front": "Total inductance of inductors in parallel?",
+    "back": "1/Lₜ = 1/L₁ + 1/L₂ + 1/L₃ (product-over-sum for two; L/N for N equal ones)<br><img src=\"inductors_parallel.png\">",
+    "extra_notes": "Same forms for Xₗ",
+    "media": [
+      "inductors_parallel.png"
+    ],
+    "tags": [
+      "unit16",
+      "series_parallel",
+      "formula"
+    ]
+  },
+  {
+    "front": "2.5, 1.8 and 1.2 H in parallel: Lₜ?",
+    "back": "1 / (0.4 + 0.556 + 0.833) = <b>0.559 H</b>",
+    "extra_notes": "Example 16–6",
+    "media": [],
+    "tags": [
+      "unit16",
+      "series_parallel"
+    ]
+  },
+  {
+    "front": "Sanity check for parallel inductance?",
+    "back": "The total must be smaller than the smallest inductor.",
+    "extra_notes": "Forgetting the final reciprocal is the classic error",
+    "media": [],
+    "tags": [
+      "unit16",
+      "series_parallel",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "When do the simple series/parallel inductor formulas NOT apply?",
+    "back": "When the coils are magnetically coupled (mutual inductance), e.g. close together or sharing a core.",
+    "extra_notes": "Transformers work this way",
+    "media": [],
+    "tags": [
+      "unit16",
+      "series_parallel",
+      "exception"
+    ]
+  },
+  {
+    "front": "In a pure inductor, how are current and voltage related in phase?",
+    "back": "Current LAGS the applied voltage by 90°.<br><img src=\"lag_90.png\">",
+    "extra_notes": "16–6",
+    "media": [
+      "lag_90.png"
+    ],
+    "tags": [
+      "unit16",
+      "phase"
+    ]
+  },
+  {
+    "front": "Explain the 90° lag in three steps.",
+    "back": "1. Induced V is max when current changes fastest (at its zero crossing), so current leads the induced V by 90°.<br>2. Induced V is 180° from the applied V.<br>3. So current lags the applied V by 90°.<br><img src=\"rate_of_change.png\">",
+    "extra_notes": "",
+    "media": [
+      "rate_of_change.png"
+    ],
+    "tags": [
+      "unit16",
+      "phase"
+    ]
+  },
+  {
+    "front": "What does \"ELI the ICE man\" mean?",
+    "back": "ELI: in an inductor (L), E comes before I (current lags).<br>ICE: in a capacitor (C), I comes before E (current leads).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "phase"
+    ]
+  },
+  {
+    "front": "Is the lag exactly 90° in a real coil?",
+    "back": "No. Wire resistance makes it a bit less. Loaded motors are often 30–40°.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "phase",
+      "exception"
+    ]
+  },
+  {
+    "front": "<img src=\"power_inductive.png\"><br>How much true power does a pure inductor use?",
+    "back": "Zero watts. Energy is stored in the field and returned each cycle.",
+    "extra_notes": "16–7",
+    "media": [
+      "power_inductive.png"
+    ],
+    "tags": [
+      "unit16",
+      "power"
+    ]
+  },
+  {
+    "front": "In a pure inductor, what fraction of the time do V and I have the same sign?",
+    "back": "50%. Same sign: energy goes into the field. Opposite sign: it returns. Net zero.",
+    "extra_notes": "Figure 16–15 A–D",
+    "media": [],
+    "tags": [
+      "unit16",
+      "power"
+    ]
+  },
+  {
+    "front": "General power formula for any circuit?",
+    "back": "P = E × I × cos θ",
+    "extra_notes": "θ = phase angle between voltage and current",
+    "media": [],
+    "tags": [
+      "unit16",
+      "power",
+      "formula"
+    ]
+  },
+  {
+    "front": "cos θ for a resistive vs a pure inductive circuit?",
+    "back": "Resistive: cos 0° = 1 (P = E × I). Pure inductive: cos 90° = 0 (P = 0).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "power"
+    ]
+  },
+  {
+    "front": "Where does the power an inductor DOES use come from?",
+    "back": "Losses: I²R in the wire, plus eddy-current and hysteresis losses in the iron core.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "power"
+    ]
+  },
+  {
+    "front": "What are VARs?",
+    "back": "Volt-amperes-reactive: reactive power, the power that charges and returns the magnetic field.",
+    "extra_notes": "16–8",
+    "media": [],
+    "tags": [
+      "unit16",
+      "vars"
+    ]
+  },
+  {
+    "front": "Formulas for VARs?",
+    "back": "VARs = Eₗ × Iₗ = Eₗ² / Xₗ = Iₗ² × Xₗ",
+    "extra_notes": "Use the inductor's own voltage and current",
+    "media": [],
+    "tags": [
+      "unit16",
+      "vars",
+      "formula"
+    ]
+  },
+  {
+    "front": "Are VARs harmless because they're not true power?",
+    "back": "No. They're real current in real conductors, which heats wires and transformers. That's why reactors carry kVAR ratings.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "vars",
+      "field"
+    ]
+  },
+  {
+    "front": "Inductor on 480 V drawing 125 A: minimum kVAR rating?",
+    "back": "480 × 125 / 1000 = <b>60 kVAR</b>. Less than that and it would likely be destroyed.",
+    "extra_notes": "Example 16–7",
+    "media": [],
+    "tags": [
+      "unit16",
+      "vars"
+    ]
+  },
+  {
+    "front": "What is the Q of an inductor?",
+    "back": "Quality: the ratio of reactance to resistance. Q = Xₗ / R (no units).<br><img src=\"coil_model.png\">",
+    "extra_notes": "16–9",
+    "media": [
+      "coil_model.png"
+    ],
+    "tags": [
+      "unit16",
+      "q"
+    ]
+  },
+  {
+    "front": "Q formulas, rearranged?",
+    "back": "Q = Xₗ / R, Xₗ = Q × R, R = Xₗ / Q",
+    "extra_notes": "Review Q11–13",
+    "media": [],
+    "tags": [
+      "unit16",
+      "q",
+      "formula"
+    ]
+  },
+  {
+    "front": "High Q vs low Q coil construction?",
+    "back": "Large wire → low R → high Q. Many turns of fine wire → high R → low Q.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "q"
+    ]
+  },
+  {
+    "front": "Above what Q is a coil treated as pure?",
+    "back": "Q ≥ 10. The resistance is then negligible.<br><img src=\"coil_q10.png\">",
+    "extra_notes": "Xₗ 100, R 10 → Z = 100.5 Ω",
+    "media": [
+      "coil_q10.png"
+    ],
+    "tags": [
+      "unit16",
+      "q"
+    ]
+  },
+  {
+    "front": "What is impedance (Z)?",
+    "back": "The total current-limiting effect (R and X combined), in ohms.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "impedance"
+    ]
+  },
+  {
+    "front": "Why does Z = √(R² + Xₗ²), not R + Xₗ?",
+    "back": "R and Xₗ are 90° apart, so they form the legs of a right triangle, and Z is the hypotenuse.<br><img src=\"coil_q10.png\">",
+    "extra_notes": "",
+    "media": [
+      "coil_q10.png"
+    ],
+    "tags": [
+      "unit16",
+      "impedance",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "480 V, 60 Hz, 0.6 A, 150 Ω wire resistance. Find L.",
+    "back": "Z = 480/0.6 = 800 Ω. Xₗ = √(800² − 150²) = 785.8 Ω. L = 785.8/377 = <b>2.084 H</b>.<br><img src=\"coil_true_l.png\">",
+    "extra_notes": "Procedure: Z = E/I → remove R → L = Xₗ/2πf",
+    "media": [
+      "coil_true_l.png"
+    ],
+    "tags": [
+      "unit16",
+      "impedance",
+      "q"
+    ]
+  },
+  {
+    "front": "E/I measured on a coil gives you Xₗ or Z?",
+    "back": "Z. It's only about equal to Xₗ when Q ≥ 10.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "impedance",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "<img src=\"inductive_kick.png\"><br>What is inductive kick?",
+    "back": "When a coil's circuit opens, its collapsing field produces a voltage spike many times the supply voltage.",
+    "extra_notes": "Arcing contacts; it's why coils get diodes, snubbers or MOVs",
+    "media": [
+      "inductive_kick.png"
+    ],
+    "tags": [
+      "unit16",
+      "field",
+      "safety"
+    ]
+  },
+  {
+    "front": "Why discharge large windings after a DC winding-resistance or DLRO test?",
+    "back": "The DC test current stores energy in the field, and breaking the leads can produce a dangerous kick. Let the test set discharge it.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "field",
+      "safety",
+      "testing"
+    ]
+  },
+  {
+    "front": "Why must you never open a loaded CT secondary?",
+    "back": "With nothing to limit it, the secondary voltage can rise to lethal levels. Short the secondary before disconnecting a meter or relay.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "field",
+      "safety",
+      "testing"
+    ]
+  },
+  {
+    "front": "Why does a stuck-open contactor armature burn out the coil?",
+    "back": "The air gap lowers L, so Xₗ is low and the coil keeps drawing inrush current (several × sealed current).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "field"
+    ]
+  },
+  {
+    "front": "Why do inductive loads lower power factor?",
+    "back": "They make current lag voltage, adding reactive current. Utilities surcharge low PF; capacitors correct it.",
+    "extra_notes": "Preview of later units",
+    "media": [],
+    "tags": [
+      "unit16",
+      "field",
+      "preview"
+    ]
+  },
+  {
+    "front": "What are VFD line reactors?",
+    "back": "Series inductors (rated in % impedance / kVAR) that limit inrush and fault current and smooth harmonics.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit16",
+      "field"
+    ]
+  },
+  {
+    "front": "Replacement inductor: 324 V across it, 18 A, 1.2 Ω wire resistance, 480 V supply. Which voltage do you use?",
+    "back": "The 324 V measured across the inductor, not the 480 V supply. Z = 324/18, remove R, then L = Xₗ/377. VARs from the inductor's own V and I.",
+    "extra_notes": "Practical Application 2: compute Q to judge whether R matters",
+    "media": [],
+    "tags": [
+      "unit16",
+      "field",
+      "practical",
+      "pitfall"
+    ]
+  }
+]

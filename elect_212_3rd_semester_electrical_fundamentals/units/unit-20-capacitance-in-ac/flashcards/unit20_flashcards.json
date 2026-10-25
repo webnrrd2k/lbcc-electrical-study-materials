@@ -1,0 +1,627 @@
+[
+  {
+    "front": "Why are capacitors called the opposite of inductors?",
+    "back": "Almost every behaviour is reversed: Xc falls with frequency (Xl rises), current leads (Xl lags), Xc → ∞ at DC (Xl → 0).",
+    "extra_notes": "Intro",
+    "media": [],
+    "tags": [
+      "unit20",
+      "intro"
+    ]
+  },
+  {
+    "front": "Can current flow THROUGH a capacitor?",
+    "back": "No electrons cross the dielectric. But on AC, current flows continuously in the circuit as the capacitor charges, discharges and recharges — it \"appears\" to flow through.<br><img src=\"cap_ac_circuit.png\">",
+    "extra_notes": "Review Q1",
+    "media": [
+      "cap_ac_circuit.png"
+    ],
+    "tags": [
+      "unit20",
+      "current_flow"
+    ]
+  },
+  {
+    "front": "<img src=\"tanks_analogy.png\"><br>Explain the two-tank analogy.",
+    "back": "A reversing pump moves water back and forth between two tanks: flow never stops, but no water passes directly from tank to tank. Same as electrons charging each plate in turn.",
+    "extra_notes": "Figure 20–2",
+    "media": [
+      "tanks_analogy.png"
+    ],
+    "tags": [
+      "unit20",
+      "current_flow"
+    ]
+  },
+  {
+    "front": "Why does current \"appear to flow\" through a capacitor?",
+    "back": "Because the AC voltage continuously rises, falls and reverses, keeping the capacitor charging and discharging.",
+    "extra_notes": "Summary",
+    "media": [],
+    "tags": [
+      "unit20",
+      "current_flow"
+    ]
+  },
+  {
+    "front": "Does a capacitor block AC or DC?",
+    "back": "It blocks steady DC (after charging) and passes AC — more easily at higher frequency.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "current_flow",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "What is the impressed voltage?",
+    "back": "The voltage built up across the plates by the stored charge. It opposes the applied voltage and limits current.<br><img src=\"impressed_180.png\">",
+    "extra_notes": "20–2",
+    "media": [
+      "impressed_180.png"
+    ],
+    "tags": [
+      "unit20",
+      "reactance"
+    ]
+  },
+  {
+    "front": "<img src=\"impressed_180.png\"><br>Phase relationship of impressed and applied voltage?",
+    "back": "180° apart.",
+    "extra_notes": "",
+    "media": [
+      "impressed_180.png"
+    ],
+    "tags": [
+      "unit20",
+      "reactance",
+      "phase"
+    ]
+  },
+  {
+    "front": "What is capacitive reactance?",
+    "back": "The current-limiting effect of a capacitor (its countervoltage), symbol Xc, measured in ohms.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "reactance"
+    ]
+  },
+  {
+    "front": "Formula for Xc?",
+    "back": "Xc = 1 / (2πfC)  (f in Hz, C in farads)",
+    "extra_notes": "At 60 Hz: Xc = 1/(377C)",
+    "media": [],
+    "tags": [
+      "unit20",
+      "reactance",
+      "formula"
+    ]
+  },
+  {
+    "front": "Rearranged Xc formulas?",
+    "back": "C = 1 / (2πf·Xc) and f = 1 / (2πC·Xc)",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "reactance",
+      "formula"
+    ]
+  },
+  {
+    "front": "Two factors that determine capacitive reactance?",
+    "back": "Capacitance and frequency — Xc is INVERSELY proportional to both.<br><img src=\"xc_vs_frequency.png\">",
+    "extra_notes": "Review Q2",
+    "media": [
+      "xc_vs_frequency.png"
+    ],
+    "tags": [
+      "unit20",
+      "reactance"
+    ]
+  },
+  {
+    "front": "35 µF on 120 V, 60 Hz: Xc and current?",
+    "back": "Xc = 1/(377 × 0.000035) = <b>75.79 Ω</b>; I = 120/75.79 = <b>1.58 A</b>.",
+    "extra_notes": "Example 20–1",
+    "media": [],
+    "tags": [
+      "unit20",
+      "reactance"
+    ]
+  },
+  {
+    "front": "480 V, 60 Hz, 2.6 A: capacitance?",
+    "back": "Xc = 480/2.6 = 184.6 Ω; C = 1/(377 × 184.6) = <b>14.37 µF</b>.",
+    "extra_notes": "Example 20–2",
+    "media": [],
+    "tags": [
+      "unit20",
+      "reactance"
+    ]
+  },
+  {
+    "front": "Most common Xc calculation error?",
+    "back": "Leaving C in µF instead of converting to farads (35 µF = 0.000035 F). Also forgetting the reciprocal (1/x).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "reactance",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Xc of a capacitor at DC?",
+    "back": "Infinite — it blocks steady DC (opposite of an inductor, whose Xl = 0 at DC).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "reactance",
+      "exception"
+    ]
+  },
+  {
+    "front": "Frequency doubles. What happens to Xc and current?",
+    "back": "Xc halves; current doubles.<br><img src=\"xc_vs_frequency.png\">",
+    "extra_notes": "20–8",
+    "media": [
+      "xc_vs_frequency.png"
+    ],
+    "tags": [
+      "unit20",
+      "frequency"
+    ]
+  },
+  {
+    "front": "<img src=\"charge_rate_freq.png\"><br>Why does Xc drop as frequency rises?",
+    "back": "Current is charge per second (I = Q/t). At higher frequency the same charge moves in less time, so more current flows for the same voltage.",
+    "extra_notes": "30 Hz → 1 C/s; 60 Hz → 2 C/s",
+    "media": [
+      "charge_rate_freq.png"
+    ],
+    "tags": [
+      "unit20",
+      "frequency"
+    ]
+  },
+  {
+    "front": "300 Ω at 60 Hz. Xc at 100 Hz?",
+    "back": "300 × 60/100 = <b>180 Ω</b>",
+    "extra_notes": "Practice 6",
+    "media": [],
+    "tags": [
+      "unit20",
+      "frequency"
+    ]
+  },
+  {
+    "front": "Book table error check: 470 nF at 400 Hz?",
+    "back": "<b>846.6 Ω</b> (the book's Table 20–1 says kΩ). Also 470 nF @ 1 kHz = 338.6 Ω and 750 nF @ 400 Hz = 530.5 Ω.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "errata",
+      "frequency"
+    ]
+  },
+  {
+    "front": "Phase of current vs voltage in a pure capacitive circuit?",
+    "back": "Current LEADS the applied voltage by 90°.<br><img src=\"lead_90.png\">",
+    "extra_notes": "Review Q3/Q4",
+    "media": [
+      "lead_90.png"
+    ],
+    "tags": [
+      "unit20",
+      "phase"
+    ]
+  },
+  {
+    "front": "What does \"ELI the ICE man\" say about capacitors?",
+    "back": "ICE: in a capacitor (C), current (I) comes before voltage (E).<br><img src=\"r_l_c_phase.png\">",
+    "extra_notes": "",
+    "media": [
+      "r_l_c_phase.png"
+    ],
+    "tags": [
+      "unit20",
+      "phase"
+    ]
+  },
+  {
+    "front": "<img src=\"lead_90.png\"><br>Why is capacitor current maximum when voltage is zero?",
+    "back": "Current depends on how fast the charge changes. At 0° the voltage (and charge) is changing fastest; at 90° it's at peak and momentarily not changing, so current = 0.",
+    "extra_notes": "Q = C × V",
+    "media": [
+      "lead_90.png"
+    ],
+    "tags": [
+      "unit20",
+      "phase"
+    ]
+  },
+  {
+    "front": "<img src=\"r_l_c_phase.png\"><br>Compare phase in R, L and C circuits.",
+    "back": "R: in phase. L: current lags 90°. C: current leads 90°.",
+    "extra_notes": "",
+    "media": [
+      "r_l_c_phase.png"
+    ],
+    "tags": [
+      "unit20",
+      "phase"
+    ]
+  },
+  {
+    "front": "Charge on a capacitor vs applied voltage?",
+    "back": "In phase: Q = C × V, so charge is zero when voltage is zero and peaks when voltage peaks.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "phase"
+    ]
+  },
+  {
+    "front": "True power in a pure capacitive circuit?",
+    "back": "Zero watts — energy stored while charging is returned while discharging.<br><img src=\"power_capacitive.png\">",
+    "extra_notes": "20–5",
+    "media": [
+      "power_capacitive.png"
+    ],
+    "tags": [
+      "unit20",
+      "power"
+    ]
+  },
+  {
+    "front": "<img src=\"power_capacitive.png\"><br>What do the gold and red areas represent?",
+    "back": "Gold: V and I same sign — charging, storing energy in the electrostatic field. Red: opposite signs — discharging, returning energy.",
+    "extra_notes": "",
+    "media": [
+      "power_capacitive.png"
+    ],
+    "tags": [
+      "unit20",
+      "power"
+    ]
+  },
+  {
+    "front": "Why does P = E × I × cos θ give zero for a pure capacitor?",
+    "back": "θ = 90° and cos 90° = 0.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "power",
+      "formula"
+    ]
+  },
+  {
+    "front": "What unit is capacitor power measured in?",
+    "back": "VARs (volt-amperes-reactive), written VARsC.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "power"
+    ]
+  },
+  {
+    "front": "Formulas for VARsC?",
+    "back": "VARsC = Ec × Ic = Ic² × Xc = Ec² / Xc",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "power",
+      "formula"
+    ]
+  },
+  {
+    "front": "How are capacitive and inductive VARs related?",
+    "back": "180° out of phase — they cancel each other.<br><img src=\"vars_opposite.png\">",
+    "extra_notes": "Basis of power-factor correction",
+    "media": [
+      "vars_opposite.png"
+    ],
+    "tags": [
+      "unit20",
+      "power",
+      "pf_correction"
+    ]
+  },
+  {
+    "front": "<img src=\"vars_opposite.png\"><br>Why do plants install capacitor banks rated in kVAR?",
+    "back": "Their leading (capacitive) VARs cancel the motors' lagging (inductive) VARs, so the utility supplies less current and PF improves.",
+    "extra_notes": "",
+    "media": [
+      "vars_opposite.png"
+    ],
+    "tags": [
+      "unit20",
+      "power",
+      "pf_correction",
+      "field"
+    ]
+  },
+  {
+    "front": "Q of a capacitor: formula?",
+    "back": "Q = R / Xc, where R is the dielectric's (leakage) resistance.<br><img src=\"cap_q_model.png\">",
+    "extra_notes": "Flipped from an inductor's Q = Xl/R",
+    "media": [
+      "cap_q_model.png"
+    ],
+    "tags": [
+      "unit20",
+      "quality"
+    ]
+  },
+  {
+    "front": "Other Q formulas for a capacitor?",
+    "back": "Q = VARsC / P, and approximately Q ≈ 1/PF (accurate when Q is high).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "quality",
+      "formula"
+    ]
+  },
+  {
+    "front": "Is a capacitor's Q usually high or low? What lowers it?",
+    "back": "Very high. A leaky dielectric (lower R) lowers Q.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "quality"
+    ]
+  },
+  {
+    "front": "What is a capacitor's voltage rating really the rating of?",
+    "back": "The dielectric.",
+    "extra_notes": "20–7",
+    "media": [],
+    "tags": [
+      "unit20",
+      "voltage_rating"
+    ]
+  },
+  {
+    "front": "A nonpolarized capacitor is marked in VAC. What value is that?",
+    "back": "RMS — compare directly with the circuit's RMS voltage.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "voltage_rating"
+    ]
+  },
+  {
+    "front": "Marked VDC, WVDC or PEAK. How do you use it on AC?",
+    "back": "It's a PEAK value: compare it with the circuit's RMS × 1.414.<br><img src=\"voltage_rating.png\">",
+    "extra_notes": "",
+    "media": [
+      "voltage_rating.png"
+    ],
+    "tags": [
+      "unit20",
+      "voltage_rating",
+      "formula"
+    ]
+  },
+  {
+    "front": "How are electrolytic (polarized) capacitors rated?",
+    "back": "Always in DC volts.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "voltage_rating"
+    ]
+  },
+  {
+    "front": "<img src=\"voltage_rating.png\"><br>300 WVDC capacitor on a 240 V line. OK?",
+    "back": "No: 240 × 1.414 = 339 V peak, which exceeds 300 V.",
+    "extra_notes": "Example 20–3",
+    "media": [
+      "voltage_rating.png"
+    ],
+    "tags": [
+      "unit20",
+      "voltage_rating"
+    ]
+  },
+  {
+    "front": "600 VDC capacitor on 480 VAC. OK?",
+    "back": "No: 480 × 1.414 ≈ 679 V peak > 600 V.",
+    "extra_notes": "Review Q7 / Practical App 1",
+    "media": [],
+    "tags": [
+      "unit20",
+      "voltage_rating",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "A 350 VAC capacitor is equivalent to what DC rating?",
+    "back": "About 350 × 1.414 ≈ 495 V peak (DC).",
+    "extra_notes": "Review Q10",
+    "media": [],
+    "tags": [
+      "unit20",
+      "voltage_rating"
+    ]
+  },
+  {
+    "front": "Life gain at half the rated voltage?",
+    "back": "About 8×.",
+    "extra_notes": "Review Q8",
+    "media": [],
+    "tags": [
+      "unit20",
+      "voltage_rating"
+    ]
+  },
+  {
+    "front": "Is there a standard for how capacitor voltage ratings are marked?",
+    "back": "No — you'll see VOLTS AC, VOLTS DC, PEAK VOLTS and WVDC. Read the label carefully.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "voltage_rating"
+    ]
+  },
+  {
+    "front": "In series, how do capacitive REACTANCES combine?",
+    "back": "They add: Xct = Xc1 + Xc2 + Xc3 (same angle).<br><img src=\"series_caps_example.png\">",
+    "extra_notes": "Capacitance uses reciprocals",
+    "media": [
+      "series_caps_example.png"
+    ],
+    "tags": [
+      "unit20",
+      "series"
+    ]
+  },
+  {
+    "front": "In parallel, how do capacitive REACTANCES combine?",
+    "back": "Reciprocal formula: 1/Xct = 1/Xc1 + 1/Xc2 + 1/Xc3.<br><img src=\"parallel_caps_example.png\">",
+    "extra_notes": "Capacitance adds",
+    "media": [
+      "parallel_caps_example.png"
+    ],
+    "tags": [
+      "unit20",
+      "parallel"
+    ]
+  },
+  {
+    "front": "<img src=\"series_caps_example.png\"><br>10, 30, 15 µF in series on 480 V, 60 Hz. Xct, Ct and I?",
+    "back": "Xct = 265 + 88 + 177 = <b>530.5 Ω</b>; Ct = <b>5 µF</b>; I = <b>0.905 A</b>.",
+    "extra_notes": "Example 20–4",
+    "media": [
+      "series_caps_example.png"
+    ],
+    "tags": [
+      "unit20",
+      "series"
+    ]
+  },
+  {
+    "front": "In that series circuit, which capacitor has the largest voltage drop?",
+    "back": "The smallest one (10 µF): 240 V. Drops are 240, 80, 160 V.",
+    "extra_notes": "Check each cap's rating",
+    "media": [],
+    "tags": [
+      "unit20",
+      "series",
+      "voltage_rating"
+    ]
+  },
+  {
+    "front": "Do the series capacitor voltage drops add straight?",
+    "back": "Yes — all capacitor drops are in phase with each other (240 + 80 + 160 = 480 V).",
+    "extra_notes": "Unlike R + L drops",
+    "media": [],
+    "tags": [
+      "unit20",
+      "series"
+    ]
+  },
+  {
+    "front": "<img src=\"parallel_caps_example.png\"><br>50, 75, 20 µF in parallel, 787 VARs at 60 Hz. Find E.",
+    "back": "Xct = 18.29 Ω; E = √(VARs × Xct) = √(787 × 18.29) ≈ <b>120 V</b>.",
+    "extra_notes": "Example 20–5",
+    "media": [
+      "parallel_caps_example.png"
+    ],
+    "tags": [
+      "unit20",
+      "parallel"
+    ]
+  },
+  {
+    "front": "Formula for E from VARs and reactance?",
+    "back": "E = √(VARs × X)",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "parallel",
+      "formula"
+    ]
+  },
+  {
+    "front": "Do VARs from several capacitors add?",
+    "back": "Yes — same-type VARs add straight in series or parallel.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "power"
+    ]
+  },
+  {
+    "front": "Capacitor drawn onto a higher voltage than rated: two effects?",
+    "back": "VARs rise with V² (480 → 600 V ≈ +56% kVAR) and the dielectric is overstressed.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "field"
+    ]
+  },
+  {
+    "front": "Why can PF capacitors overheat on VFD/electronic systems?",
+    "back": "Their Xc drops at harmonic frequencies, so they draw extra harmonic current and can resonate with system inductance.",
+    "extra_notes": "Detuned PF banks",
+    "media": [],
+    "tags": [
+      "unit20",
+      "field",
+      "frequency"
+    ]
+  },
+  {
+    "front": "Field formula to check a run capacitor at 60 Hz?",
+    "back": "C (µF) ≈ 2652 × I ÷ E (current through it, voltage across it).",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit20",
+      "field",
+      "formula"
+    ]
+  },
+  {
+    "front": "Add a series capacitor to reduce current from 24 A to 16 A on 480 V. Method?",
+    "back": "Existing Xc = 480/24; needed total = 480/16; series Xc's add, so the new cap supplies the difference in Xc. Convert that Xc to µF.",
+    "extra_notes": "Practice 7",
+    "media": [],
+    "tags": [
+      "unit20",
+      "series",
+      "practical"
+    ]
+  },
+  {
+    "front": "Four equal capacitors in series must total 20 µF. Value of each?",
+    "back": "C/N = 20 µF → each = 80 µF; each sees ¼ of the line voltage.",
+    "extra_notes": "Review Q11–12",
+    "media": [],
+    "tags": [
+      "unit20",
+      "series",
+      "practical"
+    ]
+  }
+]

@@ -1,0 +1,466 @@
+[
+  {
+    "front": "How is solving an R-C series circuit different from R-L series?",
+    "back": "Same procedure. Swap Xl→Xc, VARsL→VARsC, and the current LEADS instead of lags.",
+    "extra_notes": "Intro",
+    "media": [],
+    "tags": [
+      "unit21",
+      "intro"
+    ]
+  },
+  {
+    "front": "In a pure capacitive circuit, does current lead or lag?",
+    "back": "Leads the voltage by 90°.",
+    "extra_notes": "Review Q1",
+    "media": [],
+    "tags": [
+      "unit21",
+      "phase"
+    ]
+  },
+  {
+    "front": "In an R-C series circuit, by how much are V and I out of phase?",
+    "back": "Between 0° and 90°, with current LEADING.<br><img src=\"wave_rc_lead.png\">",
+    "extra_notes": "",
+    "media": [
+      "wave_rc_lead.png"
+    ],
+    "tags": [
+      "unit21",
+      "phase"
+    ]
+  },
+  {
+    "front": "What sets the phase angle in R-C series?",
+    "back": "The ratio of R to Xc (tan θ = Xc/R) — the book says \"capacitance\", but it's capacitive reactance.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit21",
+      "phase"
+    ]
+  },
+  {
+    "front": "In series R-C, does a bigger capacitor make the circuit more or less resistive?",
+    "back": "MORE resistive — a bigger C has less Xc, so the angle shrinks.",
+    "extra_notes": "Counter-intuitive",
+    "media": [],
+    "tags": [
+      "unit21",
+      "phase",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "What is the same everywhere in a series R-C circuit?",
+    "back": "The current: Iₜ = Iᵣ = Ic.<br><img src=\"rc_series_circuit.png\">",
+    "extra_notes": "",
+    "media": [
+      "rc_series_circuit.png"
+    ],
+    "tags": [
+      "unit21",
+      "series"
+    ]
+  },
+  {
+    "front": "Phase of Eᵣ and Ec relative to the current?",
+    "back": "Eᵣ in phase with I; Ec lags I by 90° (i.e., I leads Ec).<br><img src=\"phasor_rc.png\">",
+    "extra_notes": "So Eᵣ and Ec are 90° apart",
+    "media": [
+      "phasor_rc.png"
+    ],
+    "tags": [
+      "unit21",
+      "phasor"
+    ]
+  },
+  {
+    "front": "Which three groups organize R-C circuit quantities?",
+    "back": "Resistive (R, Eᵣ, Iᵣ, P), capacitive (Xc, Ec, Ic, VARsc, C), total (Z, Eₜ, Iₜ, VA, PF, θ).<br><img src=\"three_groups_rc.png\">",
+    "extra_notes": "",
+    "media": [
+      "three_groups_rc.png"
+    ],
+    "tags": [
+      "unit21",
+      "three_groups"
+    ]
+  },
+  {
+    "front": "<img src=\"three_groups_rc.png\"><br>Golden rule for Ohm's law in R-C circuits?",
+    "back": "Only inside one group; cross groups with the right triangle.",
+    "extra_notes": "",
+    "media": [
+      "three_groups_rc.png"
+    ],
+    "tags": [
+      "unit21",
+      "three_groups"
+    ]
+  },
+  {
+    "front": "Impedance formula for series R-C?",
+    "back": "Z = √(R² + Xc²)<br><img src=\"impedance_triangle_rc.png\">",
+    "extra_notes": "R = √(Z² − Xc²), Xc = √(Z² − R²)",
+    "media": [
+      "impedance_triangle_rc.png"
+    ],
+    "tags": [
+      "unit21",
+      "impedance",
+      "formula"
+    ]
+  },
+  {
+    "front": "<img src=\"rc_series_circuit.png\"><br>R = 12 Ω, Xc = 16 Ω. Z and I on 240 V?",
+    "back": "Z = √(144 + 256) = <b>20 Ω</b>; I = 240/20 = <b>12 A</b>.",
+    "extra_notes": "Main example",
+    "media": [
+      "rc_series_circuit.png"
+    ],
+    "tags": [
+      "unit21",
+      "impedance"
+    ]
+  },
+  {
+    "front": "Why isn't Z = 12 + 16 = 28 Ω?",
+    "back": "R and Xc are 90° apart, so they add as vectors.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit21",
+      "impedance",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "Z = 84 Ω, R = 32 Ω. Xc?",
+    "back": "√(84² − 32²) ≈ <b>77.7 Ω</b>",
+    "extra_notes": "Review Q4",
+    "media": [],
+    "tags": [
+      "unit21",
+      "impedance"
+    ]
+  },
+  {
+    "front": "20 Ω resistor + 110.5 µF at 60 Hz. First step?",
+    "back": "Convert C to Xc: 1/(377 × 0.0001105) ≈ 24 Ω. Then Z = √(20² + 24²) ≈ 31.2 Ω.",
+    "extra_notes": "Review Q2",
+    "media": [],
+    "tags": [
+      "unit21",
+      "impedance"
+    ]
+  },
+  {
+    "front": "Xc = 50 Ω at 60 Hz. At 1000 Hz?",
+    "back": "50 × 60/1000 = <b>3 Ω</b>",
+    "extra_notes": "Review Q5",
+    "media": [],
+    "tags": [
+      "unit21",
+      "reactance"
+    ]
+  },
+  {
+    "front": "Voltage drop formulas in series R-C?",
+    "back": "Eᵣ = I × R; Ec = I × Xc",
+    "extra_notes": "Example: 144 V and 192 V",
+    "media": [],
+    "tags": [
+      "unit21",
+      "voltage"
+    ]
+  },
+  {
+    "front": "Capacitance from Xc in the main example?",
+    "back": "C = 1/(377 × 16) = <b>165.8 µF</b>",
+    "extra_notes": "21–6",
+    "media": [],
+    "tags": [
+      "unit21",
+      "capacitance"
+    ]
+  },
+  {
+    "front": "Total voltage from the drops?",
+    "back": "Eₜ = √(Eᵣ² + Ec²)<br><img src=\"voltage_triangle_rc.png\">",
+    "extra_notes": "Ec = √(Eₜ² − Eᵣ²)",
+    "media": [
+      "voltage_triangle_rc.png"
+    ],
+    "tags": [
+      "unit21",
+      "voltage",
+      "formula"
+    ]
+  },
+  {
+    "front": "<img src=\"meter_drops_rc.png\"><br>Meters read 144 V on R and 192 V on C on a 240 V supply. Problem?",
+    "back": "No — the drops are 90° apart: √(144² + 192²) = 240 V.",
+    "extra_notes": "",
+    "media": [
+      "meter_drops_rc.png"
+    ],
+    "tags": [
+      "unit21",
+      "voltage",
+      "field"
+    ]
+  },
+  {
+    "front": "When checking a series capacitor's voltage rating, which voltage do you use?",
+    "back": "The capacitor's own drop Ec (× 1.414 if rated in VDC) — not the supply.",
+    "extra_notes": "Review Q6",
+    "media": [],
+    "tags": [
+      "unit21",
+      "voltage",
+      "rating",
+      "pitfall"
+    ]
+  },
+  {
+    "front": "True power formula in R-C series?",
+    "back": "P = Eᵣ × I (resistive values only) = 144 × 12 = <b>1728 W</b>",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit21",
+      "power"
+    ]
+  },
+  {
+    "front": "Reactive power formula?",
+    "back": "VARsc = Ec × I = 192 × 12 = <b>2304 VARs</b>",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit21",
+      "power"
+    ]
+  },
+  {
+    "front": "Apparent power?",
+    "back": "VA = Eₜ × I = 240 × 12 = <b>2880 VA</b>, or √(P² + VARsc²)<br><img src=\"power_triangle_rc.png\">",
+    "extra_notes": "",
+    "media": [
+      "power_triangle_rc.png"
+    ],
+    "tags": [
+      "unit21",
+      "power",
+      "formula"
+    ]
+  },
+  {
+    "front": "Which part of an R-C circuit produces watts?",
+    "back": "Only the resistor.",
+    "extra_notes": "Summary",
+    "media": [],
+    "tags": [
+      "unit21",
+      "power"
+    ]
+  },
+  {
+    "front": "How are the impedance, voltage and power triangles related?",
+    "back": "Similar triangles: voltage = impedance × I; power = impedance × I². Same angle θ.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit21",
+      "triangles"
+    ]
+  },
+  {
+    "front": "Power factor formulas for series R-C?",
+    "back": "PF = P/VA = R/Z = Eᵣ/Eₜ",
+    "extra_notes": "60% in the main example",
+    "media": [],
+    "tags": [
+      "unit21",
+      "power_factor"
+    ]
+  },
+  {
+    "front": "Main example θ?",
+    "back": "cos⁻¹(0.6) = <b>53.13°</b>, current leading.<br><img src=\"wave_rc_lead.png\">",
+    "extra_notes": "",
+    "media": [
+      "wave_rc_lead.png"
+    ],
+    "tags": [
+      "unit21",
+      "theta"
+    ]
+  },
+  {
+    "front": "Other trig ratios for θ in R-C series?",
+    "back": "tan θ = Xc/R = VARsc/P; sin θ = Xc/Z = Ec/Eₜ",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit21",
+      "theta",
+      "formula"
+    ]
+  },
+  {
+    "front": "<img src=\"lead_vs_lag.png\"><br>Same numbers, R-L vs R-C: what's different about PF?",
+    "back": "The number is the same; the direction differs — R-L is LAGGING, R-C is LEADING.",
+    "extra_notes": "",
+    "media": [
+      "lead_vs_lag.png"
+    ],
+    "tags": [
+      "unit21",
+      "power_factor"
+    ]
+  },
+  {
+    "front": "PF = 76%. Phase angle?",
+    "back": "cos⁻¹(0.76) ≈ <b>40.5°</b>",
+    "extra_notes": "Review Q3",
+    "media": [],
+    "tags": [
+      "unit21",
+      "theta"
+    ]
+  },
+  {
+    "front": "Eₜ = 460 V and θ = 44°. Ec?",
+    "back": "Ec = Eₜ × sin θ ≈ 460 × 0.695 ≈ <b>320 V</b>",
+    "extra_notes": "Practice 8",
+    "media": [],
+    "tags": [
+      "unit21",
+      "theta"
+    ]
+  },
+  {
+    "front": "Example 21–1: R 5 W, C₁ 3.75 VARs, C₂ 5.625 VARs on 42.5 V. VA and I?",
+    "back": "VARs add: 9.375. VA = √(5² + 9.375²) = <b>10.625</b>; I = 10.625/42.5 = <b>0.25 A</b>.<br><img src=\"example_21_1_power.png\">",
+    "extra_notes": "",
+    "media": [
+      "example_21_1_power.png"
+    ],
+    "tags": [
+      "unit21",
+      "multi_component"
+    ]
+  },
+  {
+    "front": "<img src=\"example_21_1_circuit.png\"><br>Example 21–1: Xc and C of each capacitor?",
+    "back": "Ec₁ = 15 V → Xc₁ = 60 Ω → 44.2 µF. Ec₂ = 22.5 V → Xc₂ = 90 Ω → 29.5 µF.",
+    "extra_notes": "",
+    "media": [
+      "example_21_1_circuit.png"
+    ],
+    "tags": [
+      "unit21",
+      "multi_component"
+    ]
+  },
+  {
+    "front": "Book error: Example 21–1 computes C₁ = 1/(377 × 30 Ω). Fix?",
+    "back": "Should be 60 Ω (the answer 44.2 µF is correct for 60 Ω). Also Figs 21–9/21–10 show 3.73 VARs; it's 3.75.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit21",
+      "errata"
+    ]
+  },
+  {
+    "front": "A 2 W, 120 V lamp must run on 480 V with a series capacitor. Voltage across the cap?",
+    "back": "√(480² − 120²) = <b>464.8 V</b> (not 360 V).<br><img src=\"lamp_dropper_triangle.png\">",
+    "extra_notes": "Example 21–2",
+    "media": [
+      "lamp_dropper_triangle.png"
+    ],
+    "tags": [
+      "unit21",
+      "dropper"
+    ]
+  },
+  {
+    "front": "<img src=\"lamp_dropper.png\"><br>Capacitor value for that lamp dropper?",
+    "back": "I = 2/120 = 0.01667 A → Xc ≈ 27.9 kΩ → C ≈ <b>95 nF</b>.",
+    "extra_notes": "",
+    "media": [
+      "lamp_dropper.png"
+    ],
+    "tags": [
+      "unit21",
+      "dropper"
+    ]
+  },
+  {
+    "front": "Why use a capacitor instead of a resistor to drop voltage?",
+    "back": "The capacitor drops voltage with essentially no watts (reactive power); a resistor would waste ~6 W as heat.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit21",
+      "dropper",
+      "field"
+    ]
+  },
+  {
+    "front": "Exception to the lamp-dropper calculation?",
+    "back": "It assumes the lamp is a constant resistance; a cold filament or an LED doesn't behave that way.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit21",
+      "dropper",
+      "exception"
+    ]
+  },
+  {
+    "front": "Why can too much leading PF be a problem?",
+    "back": "Over-correction raises voltage and can upset generators/regulators. Aim for ~0.95–1.0, not as capacitive as possible.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit21",
+      "field",
+      "power_factor"
+    ]
+  },
+  {
+    "front": "Where do you meet series R-C circuits on the job?",
+    "back": "RC snubbers across contacts/triacs, phase-shift networks, capacitive droppers in pilot lights and small supplies.",
+    "extra_notes": "",
+    "media": [],
+    "tags": [
+      "unit21",
+      "field"
+    ]
+  },
+  {
+    "front": "RC circuit: 120 V, resistor 25 Ω dropping 65 V. Steps to find C?",
+    "back": "I = 65/25; Ec = √(120² − 65²); Xc = Ec/I; C = 1/(377·Xc).",
+    "extra_notes": "Review Q7",
+    "media": [],
+    "tags": [
+      "unit21",
+      "practical"
+    ]
+  },
+  {
+    "front": "240 V, 20 A, 3 kW in a series RC circuit. PF and the route to C?",
+    "back": "PF = 3000/4800 = <b>62.5%</b>. R = P/I², Z = E/I, Xc = √(Z² − R²), C = 1/(377·Xc).",
+    "extra_notes": "Review Q8",
+    "media": [],
+    "tags": [
+      "unit21",
+      "practical"
+    ]
+  }
+]
