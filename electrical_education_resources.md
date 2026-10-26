@@ -3,6 +3,7 @@
 **Resources that I've found useful**
 
 - **[Dave Gordon](https://www.youtube.com/@davegordon6819) A good mix of math, clear explanation and solid visuals. Check him out, especially for AC fundamentals.
+- **The online circuit simulator at [https://www.falstad.com/circuit/circuitjs.html](https://www.falstad.com/circuit/circuitjs.html)
 - **[Jim Pytel](https://www.youtube.com/@bigbadtech) and [Allen Davis](https://www.youtube.com/@allendavis169/playlists) both from [BIGBADTECH](https://www.youtube.com/@bigbadtech)** Community college electrical/electronics instructors, and has full lecture series on DC and AC circuits, transformers, motors, motor controls and PLCs. They're aimed squarely at technicians and electricians, and works through the math without drowning you in it. Also free open textbooks that match his videos, including [Introduction to Motor Controls](https://openoregon.pressbooks.pub/motorcontrols/chapter/motor-controls-introduction/) and an [electronics series](https://openoregon.pressbooks.pub/electronics2/back-matter/about-the-author/).
 - **[Michel van Biezen](https://www.youtube.com/@MichelvanBiezen)** has hundreds of short whiteboard videos, each a single worked problem. They cover RLC, phasors, three-phase, transformers and more. They're less polished, but excellent when you're stuck on a specific type of problem.
 - **[ALL ABOUT ELECTRONICS](https://www.youtube.com/@ALLABOUTELECTRONICS)** covers more EE-level theory with clean diagrams: network theorems, AC analysis, power factor and transformers.
