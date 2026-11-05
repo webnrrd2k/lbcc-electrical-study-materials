@@ -23,7 +23,7 @@ Pick your class to see its materials.
 
 More classes will be added as they're covered.
 
-### Interactive tools
+### Tools
 
 - **[RLC Circuit Dashboard](https://webnrrd2k.github.io/rlc-dashboard)** ([source](https://github.com/webnrrd2k/rlc-dashboard)) — adjust R, L, C, and frequency and see impedance, current, phase angle, and phasor diagrams update live. Runs in any browser, including on your phone.
 
