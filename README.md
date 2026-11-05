@@ -30,6 +30,17 @@ More classes will be added as they're covered.
 - **[Lab 2 — Start/Stop/Jog - Wiring Diagrams](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring%2Btrouble/labs/lab_2_startstopjog/wiring-diagrams.html)**  — Clearly labeled and layed-out wiring diagram for Lab 2.
 
 - **[Lab 3 —  Lab #3 Forward/Reverse Controls - Wiring Diagrams](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls)**  — Plan of attack and clear wiring diagram for Lab 3.
+    + [Wiring Diagram - PRELIMINARY](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/wiring_diagrams/wire-labels.html)
+    + [Wiring Diagram Text Only - PRELIMINARY](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/wiring_diagrams/wiring-diagrams-text-only.md)
+    + Wire Labels [HTMl](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/wiring_diagrams/wire-labels.html) [CSV](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/wiring_diagrams/wire-labels.csv)
+
+
+
+
+
+
+
+    
     + Plan of Attack [PDF](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/lab3-plan.pdf) or [Markdown](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/lab3-plan.md)
     + [Tasks to complete](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/lab3-tasks.org) is the task-by-task list in Emacs org-mode format, but It's a plain-text document, so should be usable as a checklist by anyone. Changing the extension to .txt and it should open correctly. It has 11 milestones (M0–M10), sub-milestones and checkboxes
 
