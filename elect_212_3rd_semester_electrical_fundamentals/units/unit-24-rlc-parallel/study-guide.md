@@ -1,7 +1,5 @@
 # Unit 24 Study Guide: R-L-C Parallel Circuits
 
-Oct 22, 2026 · @Jeff
-
 ## Why this chapter matters
 
 This is the last of the circuit-solving units, and the most practical. Real plant wiring is **parallel**: motors, lights, heaters and PF capacitors all hang across the same line. This chapter shows how inductive and capacitive **currents** cancel in parallel. That one idea explains three things you'll meet on the job:

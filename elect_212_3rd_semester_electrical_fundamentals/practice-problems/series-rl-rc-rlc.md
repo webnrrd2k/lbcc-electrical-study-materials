@@ -1,7 +1,5 @@
 # Study Guide: Series RL, RC & RLC Practice Problems
 
-Oct 22, 2026 · @Jeff
-
 ## What these problem sets test
 
 All three worksheets have the same format. Each gives five series circuits with Eₜ and the ohm values (R, Xₗ, Xᶜ), and asks you to fill in the table:

@@ -1,7 +1,5 @@
 # Unit 15 Study Guide: Alternating Current
 
-Oct 22, 2026 · @Jeff
-
 ## Why this chapter matters
 
 About 99% of what you'll work on is AC. This chapter answers three practical questions:

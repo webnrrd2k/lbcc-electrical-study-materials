@@ -1,6 +1,6 @@
 # Lab 2 Motor Control: Start / Stop / Jog, Matched to My Panel
 
-This redraws the LAB2-F20 circuit so it lines up with the photos of Jeff Polaski's panel. Figure 1 puts each part where it sits on the door and backplate. Figure 2 is the same ladder diagram as the lab sheet, labeled with the same tags, places, wire colors and wire numbers. An orange 1 marks a problem described at the bottom of the page.
+This redraws the LAB2-F20 circuit so it lines up with the photos of the panel. Figure 1 puts each part where it sits on the door and backplate. Figure 2 is the same ladder diagram as the lab sheet, labeled with the same tags, places, wire colors and wire numbers. An orange 1 marks a problem described at the bottom of the page.
 
 red: 24 V control (hot side) white: 24 V common (X4N side) / 120 V neutral black: 120 V hot ribbed black: cord neutral green: ground wire number (same as the lab sheet)
 

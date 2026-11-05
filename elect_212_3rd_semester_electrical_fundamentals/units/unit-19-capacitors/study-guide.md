@@ -1,7 +1,5 @@
 # Unit 19 Study Guide: Capacitors
 
-Oct 22, 2026 · @Jeff
-
 ## Why this chapter matters
 
 Capacitors are the third basic AC load, after resistors and inductors. On the job you'll meet them as motor start and run capacitors, power-factor correction banks, VFD and power-supply filter capacitors, and in timing circuits. They also store energy and can hurt you **after the power is off**.

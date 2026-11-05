@@ -1,7 +1,5 @@
 # Unit 20 Study Guide: Capacitance in AC Circuits
 
-Oct 22, 2026 · @Jeff
-
 ## Why this chapter matters
 
 Capacitors are the third AC load type and the **mirror image of inductors**. This unit shows how a capacitor limits AC current (capacitive reactance), why its current **leads** the voltage, and how to read its voltage rating correctly. Those three ideas are the foundation for power-factor correction, motor run capacitors and the R-C and R-L-C circuits in the next units.

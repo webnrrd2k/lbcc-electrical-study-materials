@@ -1,7 +1,5 @@
 # Unit 22 Study Guide: Resistive-Capacitive Parallel Circuits
 
-Oct 22, 2026 · @Jeff
-
 ## Why this chapter matters
 
 This unit is Unit 18 (R-L parallel) with the inductor swapped for a capacitor. The procedure is the same. The capacitive branch current **leads** instead of lagging. It's the last "two-element" circuit before the units that combine R, L and C, and it's the circuit picture behind **power-factor correction capacitors**, which are always connected in parallel with the load.

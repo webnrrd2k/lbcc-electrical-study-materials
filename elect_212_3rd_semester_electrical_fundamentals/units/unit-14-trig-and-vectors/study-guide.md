@@ -1,7 +1,5 @@
 # Unit 14 Study Guide: Basic Trigonometry and Vectors
 
-Oct 22, 2026 · @Jeff
-
 ## Why this chapter exists
 
 In DC, volts × amps = watts. In AC that stops being true, because voltage and current don't always peak at the same moment. A coil (motor, transformer, ballast) makes current lag voltage. A capacitor makes it lead. Ideal pure inductance or capacitance gives a 90° shift. Real loads land somewhere between 0° and 90°.

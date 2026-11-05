@@ -1,7 +1,5 @@
 # Unit 17 Study Guide: Resistive-Inductive Series Circuits
 
-Oct 22, 2026 · @Jeff
-
 ## Why this chapter matters
 
 Real loads are almost never pure resistance or pure inductance. A motor, transformer or magnetic ballast acts like **a resistor and an inductor in series**: the wire and the useful work look resistive, and the coil looks inductive. This chapter shows how to solve that combination. It also introduces **power factor**, which shows up on industrial power bills and in later units on PF correction.

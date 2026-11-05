@@ -1,7 +1,5 @@
 # Unit 18 Study Guide: Resistive-Inductive Parallel Circuits
 
-Oct 22, 2026 · @Jeff
-
 ## Why this chapter matters
 
 Almost every real branch circuit is a **parallel** circuit with mixed loads: lights next to a fan motor, heat strips next to a compressor, receptacles feeding a bit of everything. This chapter shows how to find the total current, impedance and power factor when resistive and inductive loads share the same voltage.

@@ -1,7 +1,5 @@
 # Unit 23 Study Guide: R-L-C Series Circuits
 
-Oct 22, 2026 · @Jeff
-
 ## Why this chapter matters
 
 This is where everything from Units 16–22 comes together. With R, L and C all in one series loop, the inductor and capacitor **fight each other**: their reactances (and VARs) point in opposite directions and partly cancel. That cancellation explains three things you'll meet in the field:

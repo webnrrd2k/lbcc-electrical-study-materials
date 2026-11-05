@@ -1,7 +1,5 @@
 # Study Guide: Polar & Rectangular Form Practice Problems
 
-Oct 22, 2026 · @Jeff
-
 ## Why Polar and Rectangular Form Matter
 
 Every AC quantity you've worked with since Unit 14 has a **size and an angle**: a voltage at 30°, a current lagging 53°, an impedance of 12 Ω resistance plus 16 Ω reactance. Polar and rectangular form are two ways to write those quantities as single numbers so you can do Ohm's law and Kirchhoff's laws on them directly, without drawing a triangle every time.

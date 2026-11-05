@@ -1,7 +1,5 @@
 # Unit 21 Study Guide: Resistive-Capacitive Series Circuits
 
-Oct 22, 2026 · @Jeff
-
 ## Why this chapter matters
 
 This unit is Unit 17 (R-L series) with the inductor swapped for a capacitor. The procedure is identical. The **only real changes** are that Xₗ becomes Xᶜ, VARsₗ becomes VARsᶜ, and the current **leads** instead of lagging. If Unit 17 made sense, this one will too.

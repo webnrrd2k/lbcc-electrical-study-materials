@@ -1,7 +1,5 @@
 # Unit 16 Study Guide: Inductance in AC Circuits
 
-Oct 22, 2026 · @Jeff
-
 ## Why this chapter matters
 
 Most loads you'll wire have a coil in them: motors, transformers, magnetic ballasts, contactor and relay coils, line reactors. A coil limits AC current in a way that isn't resistance, and it makes current **lag** voltage. That lag is the root of power factor, VARs, and why a meter's volts × amps doesn't equal watts on a motor circuit.
