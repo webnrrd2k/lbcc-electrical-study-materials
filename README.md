@@ -19,9 +19,7 @@ Pick your class to see its materials.
 | Class | Topics | What's there |
 |-------|--------|--------------|
 | [ELECT 212 — Electrical Fundamentals (3rd semester)](elect_212_3rd_semester_electrical_fundamentals/) | AC theory: trig and vectors, AC waveforms, inductance, capacitance, R-L, R-C and R-L-C series and parallel circuits (Units 14–24) | 11 study guides, 637 flashcards, 2 practice-problem sets, formula cheat sheet |
-> | [ELECT 435A — Motor Control Wiring and Troubleshooting](https://github.com/webnrrd2k/lbcc-electrical-study-materials/tree/main/elect_435a_motor_control_wiring%2Btrouble/labs/lab_2_startstopjog) | Lab 2 Start/Stop/Run wiring diagrams| What to physically hook up |
-
-WTF? Why Doesn't this update?
+| [ELECT 435A — Motor Control Wiring and Troubleshooting](https://github.com/webnrrd2k/lbcc-electrical-study-materials/tree/main/elect_435a_motor_control_wiring%2Btrouble/labs/lab_2_startstopjog) | Lab 2 Start/Stop/Run wiring diagrams| What to physically hook up |
 
 More classes will be added as they're covered.
 
