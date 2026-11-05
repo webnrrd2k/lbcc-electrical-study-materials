@@ -27,8 +27,6 @@ More classes will be added as they're covered.
 
 - **[RLC Circuit Dashboard](https://webnrrd2k.github.io/rlc-dashboard)** ([source](https://github.com/webnrrd2k/rlc-dashboard)) — adjust R, L, C, and frequency and see impedance, current, phase angle, and phasor diagrams update live. Runs in any browser, including on your phone.
 
-- **[RLC Circuit Dashboard](https://webnrrd2k.github.io/rlc-dashboard)** ([source](https://github.com/webnrrd2k/rlc-dashboard)) — adjust R, L, C, and frequency and see impedance, current, phase angle, and phasor diagrams update live. Runs in any browser, including on your phone.
-
 - **[Lab 2 — Start/Stop/Jog - Wiring Diagrams](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring%2Btrouble/labs/lab_2_startstopjog/wiring-diagrams.html)**  — Clearly labeled and layed-out wiring diagram for Lab 2.
 
 
