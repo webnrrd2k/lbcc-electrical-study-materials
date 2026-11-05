@@ -1,0 +1,119 @@
+From 8307932a35226fa1c6cb0f391f2583fe1ab01dd7 Mon Sep 17 00:00:00 2001
+From: webnrrd2k <polaskinator@gmail.com>
+Date: Thu, 5 Nov 2026 12:03:20 -0800
+Subject: [PATCH] Fix README links for GitHub and Pages; add ELECT 435A lab
+ index
+
+- Fix broken ELECT 435A link in the main README (now points at the class folder)
+- Add ELECT 435A class index (Lab 2 Start/Stop/Jog, Lab 3 Forward/Reverse)
+- Add Lab 2 folder README
+- Rename Lab 2 files to wiring-diagrams.html / wiring-diagrams-text-only.md
+  (clean URL, and stops the .md's Pages output overwriting the .html)
+- Link .html pages via the Pages site so the SVG diagrams render from GitHub too
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01LpfkRjDDdczcvJ1ETVSpkT
+---
+ README.md                                     |  9 +++--
+ .../README.md                                 | 34 +++++++++++++++++++
+ .../labs/lab_2_startstopjog/README.md         |  6 ++++
+ ... Panel.md => wiring-diagrams-text-only.md} |  0
+ ... to My Panel.html => wiring-diagrams.html} |  0
+ 5 files changed, 46 insertions(+), 3 deletions(-)
+ create mode 100644 elect_435a_motor_control_wiring+trouble/README.md
+ create mode 100644 elect_435a_motor_control_wiring+trouble/labs/lab_2_startstopjog/README.md
+ rename elect_435a_motor_control_wiring+trouble/labs/lab_2_startstopjog/{Lab 2 Motor Control_ Wiring Matched to My Panel.md => wiring-diagrams-text-only.md} (100%)
+ rename elect_435a_motor_control_wiring+trouble/labs/lab_2_startstopjog/{Lab 2 Motor Control_ Wiring Matched to My Panel.html => wiring-diagrams.html} (100%)
+
+diff --git a/README.md b/README.md
+index 027eb02..fbf326d 100644
+--- a/README.md
++++ b/README.md
+@@ -19,7 +19,7 @@ Pick your class to see its materials.
+ | Class | Topics | What's there |
+ |-------|--------|--------------|
+ | [ELECT 212 — Electrical Fundamentals (3rd semester)](elect_212_3rd_semester_electrical_fundamentals/) | AC theory: trig and vectors, AC waveforms, inductance, capacitance, R-L, R-C and R-L-C series and parallel circuits (Units 14–24) | 11 study guides, 637 flashcards, 2 practice-problem sets, formula cheat sheet |
+-| [ELECT 435A — Motor Control Wiring and Troubleshooting](lbcc-electrical-study-materials/tree/main/elect_435a_motor_control_wiring%2Btrouble/labs/lab_2_startstopjog) | Lab 2 Start/Stop/Run wiring diagrams| What to physically hook up |
++| [ELECT 435A — Motor Control Wiring and Troubleshooting](elect_435a_motor_control_wiring%2Btrouble/) | Motor control labs: Lab 2 Start/Stop/Jog, Lab 3 Forward/Reverse (coming soon) | Wiring diagrams: what to physically hook up, plus troubleshooting notes |
+ 
+ More classes will be added as they're covered.
+ 
+@@ -36,10 +36,13 @@ More classes will be added as they're covered.
+ ├── README.md                    (this page)
+ └── <class folder>/              (one per class, e.g. elect_212_...)
+     ├── README.md                (that class's table of contents)
+-    ├── units/                   (one folder per unit: study guide + flashcards)
+-    └── practice-problems/
++    ├── units/                   (lecture classes: one folder per unit, study guide + flashcards)
++    ├── practice-problems/
++    └── labs/                    (lab classes: one folder per lab, wiring diagrams + troubleshooting)
+ ```
+ 
++Everything here can be read on GitHub or on the website version at **https://webnrrd2k.github.io/lbcc-electrical-study-materials/**. Interactive pages and diagrams (`.html` files) only display properly on the website version, so links to them always go there.
++
+ Each class has its own page listing everything for that class, unit by unit.
+ 
+ ---
+diff --git a/elect_435a_motor_control_wiring+trouble/README.md b/elect_435a_motor_control_wiring+trouble/README.md
+new file mode 100644
+index 0000000..ba538de
+--- /dev/null
++++ b/elect_435a_motor_control_wiring+trouble/README.md
+@@ -0,0 +1,34 @@
++# ELECT 435A — Motor Control Wiring and Troubleshooting
++
++Wiring diagrams and troubleshooting notes for the ELECT 435A motor control labs.
++
++[← Back to all classes](../README.md)
++
++---
++
++## Labs
++
++### Lab 2 — Start/Stop/Jog
++
++- **[Wiring Diagrams](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring%2Btrouble/labs/lab_2_startstopjog/wiring-diagrams.html)**: the physical layout of the panel and the lab ladder diagram, with a wire list and problems to check. ([text-only version](labs/lab_2_startstopjog/wiring-diagrams-text-only.md))
++
++### Lab 3 — Forward/Reverse Controls
++
++- Wiring Diagrams (*coming soon*)
++- Troubleshooting (*coming soon*)
++
++---
++
++## Folder layout
++
++```
++elect_435a_motor_control_wiring+trouble/
++├── README.md                          (this page)
++└── labs/
++    └── lab_2_startstopjog/
++        ├── README.md
++        ├── wiring-diagrams.html       (the diagrams; opens as a web page)
++        └── wiring-diagrams-text-only.md
++```
++
++> **Why the wiring-diagram link goes to webnrrd2k.github.io:** GitHub shows `.html` files as source code instead of drawing them. The link points to this repository's GitHub Pages site, which shows the diagrams as a normal web page, so it works the same whether you start on GitHub or on the Pages site.
+diff --git a/elect_435a_motor_control_wiring+trouble/labs/lab_2_startstopjog/README.md b/elect_435a_motor_control_wiring+trouble/labs/lab_2_startstopjog/README.md
+new file mode 100644
+index 0000000..866ed8a
+--- /dev/null
++++ b/elect_435a_motor_control_wiring+trouble/labs/lab_2_startstopjog/README.md
+@@ -0,0 +1,6 @@
++# Lab 2 — Start/Stop/Jog
++
++[← Back to ELECT 435A](../../README.md)
++
++- **[Wiring Diagrams](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring%2Btrouble/labs/lab_2_startstopjog/wiring-diagrams.html)**: the physical layout of the panel and the lab ladder diagram, with a wire list and problems to check.
++- [Text-only version](wiring-diagrams-text-only.md): the same notes without the diagrams. Readable directly on GitHub.
+diff --git a/elect_435a_motor_control_wiring+trouble/labs/lab_2_startstopjog/Lab 2 Motor Control_ Wiring Matched to My Panel.md b/elect_435a_motor_control_wiring+trouble/labs/lab_2_startstopjog/wiring-diagrams-text-only.md
+similarity index 100%
+rename from elect_435a_motor_control_wiring+trouble/labs/lab_2_startstopjog/Lab 2 Motor Control_ Wiring Matched to My Panel.md
+rename to elect_435a_motor_control_wiring+trouble/labs/lab_2_startstopjog/wiring-diagrams-text-only.md
+diff --git a/elect_435a_motor_control_wiring+trouble/labs/lab_2_startstopjog/Lab 2 Motor Control_ Wiring Matched to My Panel.html b/elect_435a_motor_control_wiring+trouble/labs/lab_2_startstopjog/wiring-diagrams.html
+similarity index 100%
+rename from elect_435a_motor_control_wiring+trouble/labs/lab_2_startstopjog/Lab 2 Motor Control_ Wiring Matched to My Panel.html
+rename to elect_435a_motor_control_wiring+trouble/labs/lab_2_startstopjog/wiring-diagrams.html
+-- 
+2.43.0
+
