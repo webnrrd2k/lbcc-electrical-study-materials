@@ -1,0 +1,88 @@
+label,lands_on,color,door_channel
+1,STOP1 1 (door),red,yes
+1,TB7 (top),red,yes
+2,STOP1 2 (door),red,
+2,STOP2 1 (door),red,
+3,STOP2 2 (door),red,yes
+3,FWD 3 (door),red,yes
+3,FWD 3 (door),red,yes
+3,REV 3 (door),red,yes
+3,REV 3 (door),red,yes
+3,FW 7L4,red,yes
+3,FW 7L4,red,yes
+3,RV 7L4,red,yes
+4,FWD 4 (door),red,yes
+4,FLS 21 (door),red,yes
+4,FLS 21 (door),red,yes
+4,OLF 14/22 (= FW 8T4),red,yes
+5,FLS 22 (door),red,yes
+5,RV aux 31,red,yes
+6,RV aux 32,red,
+6,FW A1,red,
+7,OLF A2 (= FW coil A2),red,
+7,OLF 95,red,
+8,OLF 96,white,
+8,TB5 (bottom),white,
+8,OLR 96,white,
+8,OLF 96,white,
+9,REV 4 (door),red,yes
+9,RLS 21 (door),red,yes
+9,RLS 21 (door),red,yes
+9,OLR 14/22 (= RV 8T4),red,yes
+10,RLS 22 (door),red,yes
+10,FW aux 31,red,yes
+11,FW aux 32,red,
+11,RV A1,red,
+12,OLR A2 (= RV coil A2),red,
+12,OLR 95,red,
+13,TB8 (top),red,
+13,FW aux 23,red,
+14,FW aux 24,red,yes
+14,FWDON X1 (door),red,yes
+15,REVON X2 (door),white,yes
+15,FWDON X2 (door),white,yes
+15,FWDON X2 (door),white,yes
+15,TB6 (bottom),white,yes
+16,TB9 (top),red,
+16,RV aux 23,red,
+17,RV aux 24,red,yes
+17,REVON X1 (door),red,yes
+24,CB2-2 (bottom),red,
+24,TB7 (bottom),red,
+G,TBG1 (top),green,
+G,TBG1 (bottom),green,
+G,Transformer X4,green,
+H,CB1-1 (top),black,
+H1,CB1-2 (bottom),black,
+H1,Transformer H1,black,
+L1,3PHIN socket 24 (L1),black,
+L1,FW 1L1,black,
+L1,FW 1L1,black,
+L1,RV 5L3,black,
+L2,3PHIN socket 21 (L2),black,
+L2,FW 3L2,black,
+L2,FW 3L2,black,
+L2,RV 3L2,black,
+L3,3PHIN socket 14 (L3),black,
+L3,FW 5L3,black,
+L3,FW 5L3,black,
+L3,RV 1L1,black,
+N,TB1 (top),white,
+N2,TB1 (bottom),white,
+N2,Transformer H4,white,
+T1,OLF 2T1,black,
+T1,TB-T1 (bottom),black,
+T1,OLR 2T1,black,
+T1,TB-T1 (bottom),black,
+T2,OLF 4T2,black,
+T2,TB-T2 (bottom),black,
+T2,OLR 4T2,black,
+T2,TB-T2 (bottom),black,
+T3,OLF 6T3,black,
+T3,TB-T3 (bottom),black,
+T3,OLR 6T3,black,
+T3,TB-T3 (bottom),black,
+X1,Transformer X1,red,
+X1,CB2-1 (top),red,
+X4,Transformer X4,white,
+X4,TB4 (bottom),white,
