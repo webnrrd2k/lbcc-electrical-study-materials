@@ -29,6 +29,13 @@ More classes will be added as they're covered.
 
 - **[Lab 2 — Start/Stop/Jog - Wiring Diagrams](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring%2Btrouble/labs/lab_2_startstopjog/wiring-diagrams.html)**  — Clearly labeled and layed-out wiring diagram for Lab 2.
 
+- **[Lab 3 —  Lab #3 Forward/Reverse Controls - Wiring Diagrams](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls)**  — Plan of attack and clear wiring diagram for Lab 3.
+    + [Plan of Attack](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/
+lab3-plan.md)
+    + [Tasks to complete](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/
+lab3-tasks.org)
+
+
 
 ---
 

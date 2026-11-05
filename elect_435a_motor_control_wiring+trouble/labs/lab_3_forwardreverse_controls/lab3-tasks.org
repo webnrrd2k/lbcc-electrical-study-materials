@@ -1,0 +1,287 @@
+#+TITLE: ELECT 435A — Lab 3 Forward/Reverse: Task List
+#+AUTHOR: Jeff
+#+DATE: <2026-11-05 Thu>
+#+STARTUP: overview
+#+TODO: TODO NEXT SUBMITTED WAITING | DONE CANCELED
+#+TAGS: milestone(m) canvas(c) report(r) video(v) photo(p) instructor(i) hardware(h)
+#+PROPERTY: Effort_ALL 0:15 0:30 1:00 2:00 3:00 4:00 6:00
+
+Background, tables and reasoning are in [[file:lab3-plan.md][lab3-plan.md]].
+
+* Read me first
+- *Real deadline:* the box has to be wired, tested, *powered*, *filmed* and *photographed*
+  before drop-off (Fri <2026-11-20 Fri> / Sat <2026-11-21 Sat>; hard limit Tue <2026-11-24 Tue 18:00>).
+  It comes back with 4 faults installed, so the Nov 30 Canvas dates only say when to upload.
+- Major milestones are top-level headings tagged =:milestone:=.
+  Minor milestones are second-level headings tagged =:milestone:=.
+- =C-c a= agenda view picks up the SCHEDULED/DEADLINE dates. =C-c C-c= on a
+  checkbox toggles it. =[/]= cookies show progress.
+
+* Milestone map
+| #  | Milestone                                 | Target          | Hard limit           |
+|----+-------------------------------------------+-----------------+----------------------|
+| M0 | Oriented: videos watched, plan made       | Sun Nov 08      |                      |
+| M1 | Diagrams done (Constructor + hand-drawn)  | Tue Nov 10      | (report, Dec 12)     |
+| M2 | All components mounted                    | Tue Nov 10      |                      |
+| M3 | Control wiring done + Check In 1          | Sun Nov 15      | Check In 1 Nov 16    |
+| M4 | Power wiring done + self-inspection       | Tue Nov 17      |                      |
+| M5 | Pre-power test quiz 100%                  | Wed Nov 18      | before power-on      |
+| M6 | Powered, filmed, photographed             | Thu Nov 19      | before drop-off      |
+| M7 | Box dropped off                           | Fri Nov 20      | Tue Nov 24 6 pm      |
+| M8 | Box picked up                             | Thu/Fri Nov 26-27? | confirm (Thanksgiving) |
+| M9 | Timed troubleshooting done                | Fri Dec 04      | Mon Dec 07           |
+| M10| Report submitted                          | Thu Dec 10      | Sat Dec 12           |
+
+* Admin — do this week [0/3]                                     :instructor:
+** TODO Email Tedde Titus (ttitus@lbcc.edu): set drop-off AND pick-up appointment
+   SCHEDULED: <2026-11-06 Fri>
+   - Ask: is pick-up Thu/Fri Nov 26-27 (Thanksgiving)? Alternate days?
+   - Ask: is Tue Nov 24 a drop-off option, or only Fri Nov 20 / Sat Nov 21?
+** TODO Ask the instructor about the Canvas gaps (one email)
+   SCHEDULED: <2026-11-06 Fri>
+   - [ ] Testing/Operation/Procedure: confirm they're done before drop-off
+   - [ ] No "Check In 3" in the module. Intentional?
+   - [ ] Where is the "Timed Troubleshooting Video Upload" assignment?
+   - [ ] Operation video: 9 scenes (page) vs 8 tests (sheet) vs 10 (rubric)?
+   - [ ] Testing worksheet: is a self-made paper sheet OK?
+   - [ ] Wire color for 7 and 12 (coil A2 to OL 95): red or white?
+** TODO Put the other class deadlines in the agenda
+   - Test #2 Start/Stop/Jog + Ch 8 HW: <2026-11-16 Mon>
+   - Ch 7 HW: <2026-11-23 Mon>
+   - Ch 12 HW: <2026-12-06 Sun>
+   - Final Exam: <2026-12-14 Mon>
+
+* M0 Orientation [0/4]                                              :milestone:
+  SCHEDULED: <2026-11-05 Thu> DEADLINE: <2026-11-08 Sun>
+** TODO Watch Circuit Operation video (20:42), notes on the ladder           :video:
+   :PROPERTIES:
+   :Effort:   1:00
+   :END:
+   [[file:ELECT-435A-Lab3-Circuit [amJ3XY5agPo].mkv]]
+   - [ ] Trace rung 5 (FWD) and rung 7 (REV) with a highlighter
+   - [ ] Note the interlocks: RV 31-32 in the FW rung, FW 31-32 in the REV rung
+   - [ ] Note the limit switches: FLS (NC 21-22) in FW, RLS in REV
+   - [ ] Note the power side: RV swaps L1 and L3
+** TODO Watch Installation & Wiring video (6:49)                            :video:
+   :PROPERTIES:
+   :Effort:   0:30
+   :END:
+   [[file:ELECT-435A-Lab3-Wiring [D7uTXLA_n8g].mkv]]
+** TODO Read the reference docs [0/5]
+   - [ ] [[file:LAB3-F20b(Ladder Diagram)-1.pdf][Ladder diagram]], print 2 copies (one to mark up while wiring, one for troubleshooting)
+   - [ ] [[file:Additional Specifications for Lab 3-3_ ELECT 435A - Motor Control Wiring & Trouble - 70156.pdf][Additional Specifications]]
+   - [ ] [[file:LAB3-COMPONENTS-1.PNG][Component layout]] and [[file:LAB3-FRONT PANEL-1.PNG][Front panel layout]]
+   - [ ] [[file:Proper Grounding of the Motor Control Transformer-2.pdf][Transformer grounding]]: green goes directly to X4 *at the transformer*
+   - [ ] Read the [[file:Lab 3 Selloff.pdf][Selloff rubric]] and [[file:Forward_Reverse Lab Report.pdf][Report rubric]] *now*, so you know what's graded
+** TODO Make/verify your own wire list (draft in lab3-plan.md §8)
+   :PROPERTIES:
+   :Effort:   1:00
+   :END:
+   - [ ] Mark the 9 door-crossing wires: 1, 3, 4, 5, 9, 10, 14, 15, 17
+   - [ ] Mark the door-side jumpers: 2 (STOP1→STOP2), 3 (STOP2→FWD→REV), 15 (FWDON X2→REVON X2)
+
+* M1 Report setup + diagrams [0/4]                          :milestone:report:
+  DEADLINE: <2026-11-10 Tue>
+** TODO Create report doc: cover sheet + all section headers
+   SCHEDULED: <2026-11-06 Fri>
+   Headers in order: WIRING SECTION / Testing Worksheets / TESTING SECTION /
+   TROUBLESHOOTING SECTION / SELL-OFF SECTION. Label every sub-item.
+** TODO Constructor ladder diagram (20 pts)
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
+   - [ ] Draw it in Constructor (match LAB3-F20b)
+   - [ ] Print/export it. See the "Getting Line Ladder Diagrams into your Lab Reports" video (Intro module)
+   - [ ] Insert into WIRING SECTION
+** TODO Hand-drawn ladder diagram (20 pts)
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
+   - [ ] Straightedge, every device/terminal/wire number labeled, neat
+   - [ ] Scan and insert into WIRING SECTION
+** TODO Make the paper Testing Worksheet (20 rows)
+   Columns: Q# / meter lead placement / expected / actual / fixed?
+   Keep the original. Retyped worksheets get no credit.
+
+* M2 Components installed [0/3]                           :milestone:hardware:
+  SCHEDULED: <2026-11-07 Sat> DEADLINE: <2026-11-10 Tue>
+** TODO Backplate DIN rail, left → right
+   - [ ] Transformer (check primary links per ladder)
+   - [ ] CB1
+   - [ ] TBG1-3 (green)
+   - [ ] TB1-3 (120V-N)
+   - [ ] TB4-6 (24V-N) + comb jumper
+   - [ ] TB7-9 (24V-H) + comb jumper
+   - [ ] CB2
+   - [ ] 3PHIN (CR socket)
+   - [ ] FR (FW) contactor + OLF
+   - [ ] RV contactor + OLR
+   - [ ] TB-T1, T2, T3 (3PH POWER)
+   - [ ] *End stops between every component* (not between TBs)
+** TODO Door devices (front view, left → right)
+   - [ ] STOP1 (red), FWD (green), STOP2 (red), REV (green)
+   - [ ] FLS, RLS limit switches
+   - [ ] FWDON, REVON pilot lights (red)
+** TODO Cable trays in place; door channel identified
+
+* M3 Control wiring complete + Check In 1 [0/6]           :milestone:hardware:
+  DEADLINE: <2026-11-15 Sun>
+  Rules: in the top, out the bottom · no copper showing · max 2 wires/terminal ·
+  *1 wire per CB terminal* · hot+neutral run together · nothing on unused terminals ·
+  16 AWG stranded only · no wire nuts.
+** TODO 120 VAC input (black H / white N / green G)
+   - [ ] Cord H → CB1-1; CB1-2 → transformer H1
+   - [ ] Cord N → TB1; TB1 → transformer
+   - [ ] Cord G → TBG1
+** TODO 24 VAC secondary + grounding
+   - [ ] X1 → CB2-1 (red); CB2-2 → TB7 = wire 24 (red)
+   - [ ] X4 → TB4 (white)
+   - [ ] TBG1 → *X4 terminal on the transformer* (green)
+** TODO Rungs 5-6: FORWARD
+   - [ ] 1: TB7 → STOP1-1
+   - [ ] 2: STOP1-2 → STOP2-1 (door)
+   - [ ] 3: STOP2-2 → FWD-3 → REV-3 (door) → FW 7L4 → RV 7L4
+   - [ ] 4: FWD-4 → FLS-21 (door) → FW 14/22
+   - [ ] 5: FLS-22 → RV 31
+   - [ ] 6: RV 32 → FW A1
+   - [ ] 7: FW A2 → OLF 95
+   - [ ] 8: OLF 96 → TB5 (white)
+** TODO Rungs 7-8: REVERSE
+   - [ ] 9: REV-4 → RLS-21 (door) → RV 14/22
+   - [ ] 10: RLS-22 → FW 31
+   - [ ] 11: FW 32 → RV A1
+   - [ ] 12: RV A2 → OLR 95
+   - [ ] 8: OLR 96 → wire 8 / TB5 (white)
+** TODO Rungs 9-10: pilot lights
+   - [ ] 13: TB8 → FW 23;  14: FW 24 → FWDON X1
+   - [ ] 16: TB9 → RV 23;  17: RV 24 → REVON X1
+   - [ ] 15: FWDON X2 → REVON X2 (door) → TB6 (white)
+   - [ ] Count door-channel wires: exactly *9*
+** TODO Check In 1 (10 pts)                                     :canvas:photo:
+   DEADLINE: <2026-11-16 Mon 23:59>
+   - [ ] Photos: front of controls / rear of control panel / top-down wiring area
+   - [ ] Crop close to the box
+   - [ ] Word doc: title page (name, class, lab #) + 3 photos → PDF → upload
+
+* M4 Power wiring + self-inspection [0/2]                 :milestone:hardware:
+  DEADLINE: <2026-11-17 Tue>
+** TODO 3-phase (simulated) power circuit, all black
+   - [ ] 3PHIN L1 (24) → FW 1L1 and RV 5L3
+   - [ ] 3PHIN L2 (21) → FW 3L2 and RV 3L2
+   - [ ] 3PHIN L3 (14) → FW 5L3 and RV 1L1
+   - [ ] OLF/OLR 2T1 → TB-T1;  4T2 → TB-T2;  6T3 → TB-T3
+** TODO Selloff self-inspection (100 pts graded at drop-off) [0/11]
+   - [ ] Neat, industry-standard wiring
+   - [ ] No exposed copper (inspect every terminal)
+   - [ ] No loose wires: tug-test and re-torque *every* screw
+   - [ ] All door wires in the *right* cable tray; none in the left; no solo neutrals
+   - [ ] 3-phase fully wired, CR socket → terminal blocks
+   - [ ] Exactly 9 wires in the door channel
+   - [ ] Every component in its layout position
+   - [ ] Trays not overstuffed, not bypassed, wires not too tight
+   - [ ] All tray covers on
+   - [ ] Correct colors everywhere (red/white 24 V, black/white 120 V, black 3φ, green ground)
+   - [ ] Max 2 wires/terminal, 1 per CB terminal, nothing on unused terminals
+
+* M5 Testing Prior to Power ON — 100% (100 pts) [0/4]            :milestone:canvas:
+  SCHEDULED: <2026-11-18 Wed> DEADLINE: <2026-11-30 Mon 23:59>
+  *Power OFF the whole time.* >1 MΩ = OL. <1000 Ω = "less than 1000". Unlimited attempts.
+** TODO Take quiz, recording each reading on the *paper* worksheet
+** TODO Fix anything wrong and log it ("Items you fixed" is a report item)
+** TODO Retake until 100%
+** TODO Screenshot / print the quiz for the report
+
+* M6 Powered, filmed, photographed [0/5]                 :milestone:video:photo:
+  SCHEDULED: <2026-11-19 Thu> DEADLINE: <2026-11-20 Fri>
+** TODO First power-on (only after M5 is at 100%)
+** TODO Rehearse the 10 tests (expected results in lab3-plan.md §5)
+   - [ ] Print [[file:LAB 3 OPERATIONAL DEMONSTRATION.pdf][the demo sheet]]
+   - [ ] Watch [[file:ELECT 435A LAB3 OPERATION DEMO [AAsnMvPTKYE].mkv][instructor's demo video]] (2:42)
+** TODO Film Operation video (100 pts)                              :canvas:video:
+   DEADLINE: <2026-11-30 Mon 23:59>
+   Horizontal, close, buttons + lights + contactors visible. Have a helper.
+   - [ ] 5 s of phone showing date & time
+   - [ ] 1 FWD & STOP1
+   - [ ] 2 REV & STOP2
+   - [ ] 3 OLF (FWD, OL test on OLF) then reset
+   - [ ] 4 OLR (REV, OL test on OLR) then reset
+   - [ ] 5 FWD limit (FWD, RLS = nothing, FLS = stop)
+   - [ ] 6 REV limit (REV, FLS = nothing, RLS = stop)
+   - [ ] 7 FWD interlock (FWD, REV = nothing, STOP2)
+   - [ ] 8 REV interlock (REV, FWD = nothing, STOP1)
+   - [ ] 9 FWD & STOP2  (rubric item, not on printed sheet)
+   - [ ] 10 REV & STOP1 (rubric item, not on printed sheet)
+   - [ ] Watch it back: is every item clearly visible? Upload.
+** TODO Procedure Component Install & Wiring photos (55 pts)        :canvas:photo:
+   DEADLINE: <2026-11-30 Mon 23:59>
+   - [ ] 1 Front panel: all buttons + lights in one shot
+   - [ ] 2 Rear of front panel, trays *open*
+   - [ ] 3 Starter area: right of CB2, between horizontal trays, covers *off*
+   - [ ] 4 Transformer → left of CB2, *grounding clearly visible*
+   - [ ] 5 Top-down overview, trays *installed*
+   - [ ] Upload in that order
+** TODO Check In 2 (10 pts): same 3 views as Check In 1          :canvas:photo:
+   DEADLINE: <2026-11-23 Mon 23:59>
+   Take the photos now, while the box is still here. Covers back on afterward.
+
+* M7 Drop-off [0/3]                                        :milestone:instructor:
+  SCHEDULED: <2026-11-20 Fri> DEADLINE: <2026-11-24 Tue 18:00>
+** TODO Covers on, final look against selloff list. *Don't disassemble anything.*
+** TODO Drop off in RR101 (Fri Nov 20 1-9 pm or Sat Nov 21 8 am-2 pm)
+** TODO Controller Drop-off assignment (10 pts): enter pick-up appointment    :canvas:
+   DEADLINE: <2026-11-24 Tue 23:59>
+
+* Report drafting, part 1 (while it's fresh) [0/2]                    :report:
+  SCHEDULED: <2026-11-21 Sat> DEADLINE: <2026-11-25 Wed>
+** TODO WIRING SECTION: Summary (≥2 ¶, 10) + Conclusion (≥2 ¶, 20)
+   Summary = what you did. Conclusion = what you learned, with specifics
+   (e.g., why the door jumpers give 9 wires, why X4 is grounded at the transformer).
+** TODO Testing Worksheets + TESTING SECTION
+   - [ ] Scan the *original* paper worksheet (20)
+   - [ ] Description of testing process + quiz printout
+   - [ ] Items you fixed
+   - [ ] Summary ≥2 ¶ (10) + Conclusion ≥2 ¶ (20)
+
+* M8 Pick-up                                              :milestone:instructor:
+** WAITING Pick up box (Thu/Fri; confirm date, likely Thanksgiving week)
+   SCHEDULED: <2026-11-26 Thu>
+
+* M9 Timed Troubleshooting (2 pts + report 80 pts) [0/5]           :milestone:
+  DEADLINE: <2026-12-07 Mon 23:59>
+** TODO Prep (before opening the quiz)
+   - [ ] Re-study the ladder until you can predict any meter reading
+   - [ ] Clean ladder copy, wire list, meter + fresh battery, lab3-plan.md §5 test table
+   - [ ] Blank fault log in table format: Error # / Description / Problem caused / How found / Fix
+   - [ ] Block 4 uninterrupted hours
+** TODO Run the 4-hour session (honor system, no outside help)
+   :PROPERTIES:
+   :Effort:   4:00
+   :END:
+   - [ ] Start quiz; set timer just under 4 h
+   - [ ] Run the 10 operation tests first, noting which fail (that tells you where to look)
+   - [ ] Power OFF → ohmmeter; power ON only with a voltmeter
+   - [ ] Log *every* fault in detail as you find it (4 installed + any loose wires found at inspection)
+   - [ ] *Transformer fault*: write down your exact meter steps (20 report pts)
+   - [ ] Answer the 2 quiz questions before time expires
+** TODO Film troubleshooting operation video (same tests) and upload  :canvas:video:
+   Upload to "Lab 3 - Timed Troubleshooting Video Upload" (look under Assignments, not Modules)
+** TODO Check In 4 (10 pts): same 3 views                         :canvas:photo:
+   DEADLINE: <2026-12-06 Sun 23:59>
+** TODO Draft TROUBLESHOOTING SECTION while it's fresh                     :report:
+   - [ ] Errors Found Table, *table* format, very detailed (10 + 20)
+   - [ ] How did you find the transformer problem? (meter procedure; if found by accident, the procedure you *should* have used) (20)
+   - [ ] Summary ≥2 ¶ (10) + Conclusion ≥2 ¶ (20; include the whole lab, not just this section)
+
+* M10 Forward/Reverse Lab Report (275 pts) [0/4]           :milestone:report:canvas:
+  SCHEDULED: <2026-12-08 Tue> DEADLINE: <2026-12-12 Sat 23:59>
+** WAITING Get selloff results from the instructor (ask by ~Dec 8 if not posted)
+** TODO SELL-OFF SECTION
+   - [ ] Points lost and why, with your final score (say so if none were lost) (20)
+   - [ ] *Project Conclusion* (50): substantial, well beyond 2 ¶. Concrete things learned,
+         each backed by a specific example from this lab. Summarizing what you did doesn't count.
+** TODO Final pass against the rubric
+   - [ ] Cover sheet (5)
+   - [ ] Sections in required order, headers exactly as specified, every item labeled
+   - [ ] Every summary/conclusion ≥2 ¶ and clearly labeled as summary vs. conclusion
+** TODO Export PDF and upload (target Thu Dec 10)
+   DEADLINE: <2026-12-12 Sat 23:59>
