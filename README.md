@@ -19,7 +19,7 @@ Pick your class to see its materials.
 | Class | Topics | What's there |
 |-------|--------|--------------|
 | [ELECT 212 — Electrical Fundamentals (3rd semester)](elect_212_3rd_semester_electrical_fundamentals/) | AC theory: trig and vectors, AC waveforms, inductance, capacitance, R-L, R-C and R-L-C series and parallel circuits (Units 14–24) | 11 study guides, 637 flashcards, 2 practice-problem sets, formula cheat sheet |
-| [ELECT 435A — Motor Control Wiring and Troubleshooting](lbcc-electrical-study-materials/tree/main/elect_435a_motor_control_wiring%2Btrouble/labs/lab_2_startstopjog) | Lab 2 Start/Stop/Run wiring diagrams| What to physically hook up |
+| [ELECT 435A — Motor Control Wiring and Troubleshooting](elect_435a_motor_control_wiring%2Btrouble/) | Motor control labs: Lab 2 Start/Stop/Jog, Lab 3 Forward/Reverse (coming soon) | Wiring diagrams: what to physically hook up, plus troubleshooting notes |
 
 More classes will be added as they're covered.
 
@@ -36,9 +36,12 @@ More classes will be added as they're covered.
 ├── README.md                    (this page)
 └── <class folder>/              (one per class, e.g. elect_212_...)
     ├── README.md                (that class's table of contents)
-    ├── units/                   (one folder per unit: study guide + flashcards)
-    └── practice-problems/
+    ├── units/                   (lecture classes: one folder per unit, study guide + flashcards)
+    ├── practice-problems/
+    └── labs/                    (lab classes: one folder per lab, wiring diagrams + troubleshooting)
 ```
+
+Everything here can be read on GitHub or on the website version at **https://webnrrd2k.github.io/lbcc-electrical-study-materials/**. Interactive pages and diagrams (`.html` files) only display properly on the website version, so links to them always go there.
 
 Each class has its own page listing everything for that class, unit by unit.
 
