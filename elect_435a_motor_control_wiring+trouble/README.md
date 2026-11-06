@@ -14,7 +14,9 @@ Wiring diagrams and troubleshooting notes for the ELECT 435A motor control labs.
 
 ### Lab 3 —  Lab #3 Forward/Reverse Controls 
 
-- **[Wiring Diagrams](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/wiring-diagrams.html)**
+
+/wiring-diagrams.html
+- **[Wiring Diagrams](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/wiring_diagrams/wiring-diagrams.html)**
     + [Plan of Attack](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/lab3-plan.md) 
     + [Tasks to complete](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/lab3-tasks.org) is the task-by-task list in Emacs org-mode format. It's a plain-text document, so should be usable as a checklist by anyone by changing the file extension to .txt and it should open correctly. It has 11 milestones (M0–M10), sub-milestones and checkboxes, all in order.
 
