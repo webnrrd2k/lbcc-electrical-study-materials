@@ -6,7 +6,7 @@ Nov 9, 2026 · @Jeff
 
 A transformer trades voltage for current at almost no cost in power: step the voltage up 10× and the current drops to 1/10. That one trick is why AC beat DC for power distribution, and why nearly every electrical job you will do sits downstream of a transformer.
 
-This guide follows the instructor's "Basic Transformers" slide deck (472 slides). It adds the textbook-style theory the slides skip, and it flags slide errors in section 13. I didn't have the textbook chapter itself, so the theory here is standard material, not quoted from the book.
+This guide follows the instructor's "Basic Transformers" slide deck (472 slides). It adds the textbook-style theory the slides skip, and it flags slide errors in section 13. Section 15 adds the transformer material from the course textbook, Electrical Wiring—Commercial (18th ed., 2023 NEC), mainly Chapters 13 and 18. That book covers installation and the NEC, not transformer theory, so the theory in sections 2–3 is standard material rather than from the book.
 
 **Intuition: a magnetic gearbox.** Gears trade speed for torque. A small gear driving a big gear gives less speed but more torque, and the power (speed × torque) is the same minus friction. A transformer trades voltage for current the same way. The gear-tooth ratio becomes the turns ratio, and friction becomes core and copper losses.
 
@@ -792,3 +792,126 @@ Slide 139's reason for additive polarity (HV winding next to the core) is not th
 3. Check each half of a 120/240 V winding, not just the total kVA.
 4. Zero-volt test before closing a delta or paralleling transformers.
 5. Lower %Z means more fault current downstream. Check AIC ratings when a transformer is replaced.
+
+## 15. What the textbook adds
+
+*Electrical Wiring—Commercial* (Simmons, Mullin, Ode & Smith, 18th ed., 2023 NEC) treats transformers from the installer's side: which NEC rules apply, how banks are connected, and how much fault current they deliver. The page numbers below are the book's printed page numbers.
+
+### 15.1 Where to find it in the book
+
+| Topic | Book location |
+| --- | --- |
+| Liquid-filled vs dry-type, overcurrent protection, connections | Ch. 13, pp. 313–319 |
+| Separately derived 480 → 208Y/120 V worked example | Ch. 13, Fig. 13-3 (p. 317) |
+| Utility supply: pad-mount, unit substation, vault; metering | Ch. 13, pp. 319–323 |
+| Transformer secondary conductors (240.21(C)) | Ch. 8, p. 237 |
+| Harmonics and K-rated transformers | Ch. 5 (p. 111) and Ch. 8 (pp. 242–244) |
+| High-leg panelboards, 408.36(B) | Ch. 12, p. 296 |
+| Fault current at transformer terminals, Table 18-1 | Ch. 18, pp. 481–486 |
+| Backfeed through a transformer from a generator or PV inverter | Ch. 16 (p. 432) and Ch. 22 (p. 550) |
+
+### 15.2 Liquid-filled vs dry-type (Ch. 13)
+
+- **Liquid-filled:** windings in mineral oil (combustible), silicone, seed-oil (natural ester) or other non-toxic liquids. The liquid insulates HV from LV and carries heat to the tank, radiators or fans.
+- **Askarel** (PCBs) was nonflammable and good indoors, but it's toxic. Federal law (Toxic Substances Control Act, 1976) and EPA rules ended its use. Old units have been replaced or had the liquid swapped out.
+- **Dry-type:** lighter, simpler to install, no leak containment or coolant changes. Core and coils are open to air. Fans can be added to carry more load.
+- A **unit substation** puts the HV switch, the dry-type transformer and the secondary distribution section in one lineup.
+
+### 15.3 NEC 450.3 in practice (Fig. 13-2 and 13-3)
+
+- 450.3 overcurrent devices protect **the transformer only**. The conductors on each side may need their own protection (Articles 240 and 310).
+- Table 450.3(A) is for over 1,000 V. It depends on the transformer's %Z (up to 6%, or 6–10%), fuse vs breaker, and whether the location is **supervised** (qualified people maintain and monitor it). Supervised locations get higher limits.
+- Table 450.3(B) is for 1,000 V or less. These are the 125% / 167% / 300% primary-only and 250% primary-plus-secondary rules from section 5.4.
+- A transformer with manufacturer's coordinated thermal overload protection can skip individual primary protection, if the feeder protection is no more than 6× primary FLC (%Z up to 6%) or 4× (%Z 6–10%).
+
+**The book's worked example (Fig. 13-3):** 50 kVA, 480 V delta primary, 208Y/120 V secondary, installed as a separately derived system.
+
+| Step | Primary | Secondary |
+| --- | --- | --- |
+| FLC = kVA × 1,000 ÷ (E × 1.732) | 50,000 ÷ (480 × 1.732) = 60 A | 50,000 ÷ (208 × 1.732) = 139 A |
+| × 125% | 75 A → next standard size: 80 A dual-element time-delay fuses in a 100 A switch | 174 A → 175 A fuses or breaker |
+| Maximum allowed | 60 × 250% = 150 A (only with secondary protection) | — |
+
+The 175 A secondary device also protects the panelboard (408.36) and the secondary conductors (240.21(C)).
+
+The same figure labels the grounding parts of a separately derived system, all in 250.30(A): the **system bonding jumper**, the **supply-side bonding jumper**, the **grounding electrode conductor** and the **grounding electrode**. The equipment grounding conductor on the primary is sized by 250.122.
+
+### 15.4 Transformer connections (Ch. 13)
+
+| Connection | What it gives you | Key point |
+| --- | --- | --- |
+| Single-phase 120/240 V | 120 V or 120/240 V, 2- or 3-wire | The center tap must be grounded (Art. 250 Part II) |
+| Open delta (two transformers) | 3Ø, or 3Ø plus 1Ø from a center tap on one unit | Useful where the utility has only two primary phases, or 3Ø load may grow (add the third unit later). Also lets a delta bank limp along if one unit fails |
+| Three-wire delta | 3Ø only | One phase may be grounded: a **corner-grounded delta**. Overcurrent devices generally aren't allowed in the grounded phase |
+| Four-wire (high-leg) delta | 240 V 3Ø plus 120/240 V 1Ø | A–N and C–N = 120 V. **B–N = 208 V** (the high leg) |
+| Four-wire wye | 208Y/120, 480Y/277, 600Y/347 | The most common commercial system. Line-to-neutral loads on any phase |
+
+**Open-delta capacity:** two units deliver 86.6% of their combined rating, or 57.7% of what three would give in full delta. Both ways land on the same number:
+
+```latex
+(100 + 100)\ kVA \times 0.866 = 173\ kVA \qquad 300\ kVA \times 0.577 = 173\ kVA
+```
+
+For open delta feeding 3Ø loads only, the center tap isn't connected.
+
+**High-leg delta rules** (also Ch. 12, p. 296):
+
+- The high leg (also called red leg or wild leg) can't be used for line-to-neutral loads. At 208 V to ground it would overvolt any 120 V load.
+- Mark it **orange** (or other effective means) wherever the neutral is present: NEC 110.15, 230.56.
+- It must be the **B phase**, in the center position in panelboards and switchboards: 408.3(E)(1).
+- Panels with a high leg must carry a field-applied warning, filled in as "Caution \_\_\_ Phase Has \_\_\_ Volts to Ground" (408.3(F)).
+- **Meter-socket trap:** many utilities require the high leg on the *right-hand* position (C) in self-contained meter sockets of 200 A or less, then back to the center (B) in the service disconnect. CT-metered services over 200 A avoid this.
+
+The book shows every 3Ø connection with a **delta primary**. That's the most common choice because the primary needs only three conductors. For anything unusual, get engineering or manufacturer help.
+
+### 15.5 Utility side, metering and backfeed (Ch. 13, 16, 22)
+
+- **NEC vs NESC:** utility equipment up to the **service point** follows the National Electrical Safety Code, and premises wiring after it follows the NEC (90.2(D)(5)). The utility decides where the service point is.
+- Supply arrangements: pad-mount transformers feeding a bus duct, unit substations (owner-furnished, common in industrial plants), pad-mount enclosures with the CTs inside ("transclosures"), and transformers in underground vaults (Art. 450 Part III).
+- **Metering:** a single tenant may be metered on the **primary** side with PTs and CTs, often with 15-minute demand registers for kW and kVAR. High demand or low PF raises the bill. Up to 200 A is usually direct-metered. Larger services use 320 A sockets or CT metering, with the utility wiring from the CTs to the meter.
+- **Backfeed:** a generator without a listed transfer switch, or a PV inverter, can push power back through the service transformer. The book's PV example: 240 V from an inverter can show up as 12,000 V or more on the utility primary. That's why inverters must be utility-interactive (anti-islanding) and why transfer switches must be listed.
+
+### 15.6 Secondary conductors and panelboards
+
+- Conductors leaving a transformer secondary follow 240.21(C). The rules work like the feeder tap rules in 240.21(B). You have to account for the voltage ratio when checking whether primary protection covers the secondary.
+- Panelboards fed through a transformer need overcurrent protection on the **secondary** side (408.36(B)). The exception: a 2-wire primary to 2-wire secondary, or a 3-wire delta–delta, can be protected by the primary device through the ratio (240.21(C)(1)).
+- Service conductors only have the utility's transformer primary fuses ahead of them. Those fuses protect the utility transformer, not your conductors, so keep service conductors inside a building as short as possible.
+
+### 15.7 Harmonics and K-rated transformers (Ch. 5, 8)
+
+- Non-linear loads can overheat a transformer **without** tripping its overcurrent device (NEC 450.3 Informational Note 2).
+- Symptoms to recognize: overheated neutrals, hot or failed transformers, hot lugs and busbars, unexplained breaker trips, flickering lights.
+- Fixes the book lists: oversize (derate) the transformer, use a K-rated transformer, and run separate neutrals for non-linear loads. IEEE C57.110 covers transformer capability with non-sinusoidal current.
+
+### 15.8 Fault current from a transformer (Ch. 18)
+
+The book adds two refinements to the section 8 formula:
+
+1. **±10% impedance tolerance.** Listed transformers of 25 kVA and up can have actual %Z up to 10% below the nameplate value. For the worst case, the book multiplies the marked %Z by 0.9.
+2. **Voltage swings.** A 10% higher system voltage means 10% more fault current.
+
+```latex
+I_{SC} = I_{FL} \times \frac{100}{\%Z \times 0.9}
+```
+
+**Book example (Problem 1):** 225 kVA, 208Y/120 V, 2 %Z, infinite primary.
+
+| Marked %Z | Multiplier = 100 ÷ (%Z × 0.9) | Fault current (FLC 625 A) |
+| --- | --- | --- |
+| 1% | 111.11 | 69,444 A |
+| 2% | 55.56 | 34,725 A |
+| 4% | 27.78 | 17,363 A |
+
+FLC = 225,000 ÷ (208 × 1.732) = 625 A.
+
+**Conductors cut the fault current (Problem 2, point-to-point method):** 25 ft of three parallel 250 kcmil copper in PVC from that transformer reduces 34,725 A to about 30,558 A at the service. The method computes a factor f from the conductor length, the conductor constant C and the voltage, then multiplies by M = 1 ÷ (1 + f) (here f = 0.130, M = 0.88).
+
+- Motors running at the moment of a fault act as generators briefly and add current ("motor contribution").
+- Good practice in the book: pick interrupting ratings at least 25% above the calculated available fault current.
+- **Marking:** 110.24(A) requires the available fault current, and the date it was calculated, on non-dwelling service equipment. 110.24(B) requires it to be rechecked when changes (such as a bigger or lower-%Z utility transformer) affect it. 110.16(B) (new in 2023) requires an arc-flash label on non-dwelling service and feeder equipment rated 1,000 A or more.
+
+### 15.9 Other textbook points worth knowing
+
+- **Unbalanced voltage** (Ch. 7): causes include large single-phase loads, open connections at a transformer secondary, open-delta banks, and single-phase transformers with unequal %Z in the same 3Ø bank. A little voltage unbalance makes a lot of extra heat in the motor phase with the highest current. Some lights dimming while others brighten points to a bad utility transformer winding.
+- **Class 2 transformers** (Ch. 20) for low-voltage remote control are built to limit their own output: on overload, the voltage drops. Others use an auto-reset thermal device or fuse links.
+- **Plan symbols** (Ch. 2 and Appendix): a dry-type transformer is tagged with a number keyed to the transformer schedule (for example "T45"). The one-line symbol shows the delta primary and grounded-wye secondary.
