@@ -1,0 +1,2397 @@
+[
+ {
+  "front": "Why is AC (not DC) used for power distribution?",
+  "back": "AC can be transformed. Stepping voltage up cuts current, so power travels long distances on smaller wire with less I²R loss.<br><img src=\"grid_steps.png\">",
+  "extra_notes": "Doubling voltage halves current and cuts line loss to 1/4.",
+  "media": [
+   "grid_steps.png"
+  ],
+  "tags": [
+   "transformers",
+   "basics"
+  ]
+ },
+ {
+  "front": "Why won't a transformer work on steady DC?",
+  "back": "Only a CHANGING flux induces voltage. Steady DC makes constant flux, so nothing is induced, and the winding only sees its low resistance (it can overheat).",
+  "extra_notes": "Faraday's law: induced voltage depends on rate of change of flux.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "basics"
+  ]
+ },
+ {
+  "front": "How is energy transferred from primary to secondary in a conventional transformer?",
+  "back": "Magnetically, through a shared changing flux in the iron core. There is no electrical connection between windings.<br><img src=\"xfmr_basic.png\">",
+  "extra_notes": "Exception: the autotransformer, which shares one winding.",
+  "media": [
+   "xfmr_basic.png"
+  ],
+  "tags": [
+   "transformers",
+   "basics"
+  ]
+ },
+ {
+  "front": "In the slide demo, what happens to the lamp as the coils move closer, and when an iron core is added?",
+  "back": "It gets brighter both times. More of the primary's flux links the secondary (better coupling). Iron carries flux far more easily than air.",
+  "extra_notes": "Iron has high permeability.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "basics"
+  ]
+ },
+ {
+  "front": "What mechanical device is a transformer most like?",
+  "back": "A gearbox. Gears trade speed for torque; a transformer trades voltage for current. Turns ratio = gear ratio, and power stays (almost) the same.",
+  "extra_notes": "Friction in gears ≈ core and copper losses.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "basics"
+  ]
+ },
+ {
+  "front": "State the power rule that solves most transformer problems.",
+  "back": "Power in ≈ power out:  E<sub>P</sub> × I<sub>P</sub> = E<sub>S</sub> × I<sub>S</sub> (VA in = VA out).<br><img src=\"step_up_down.png\">",
+  "extra_notes": "If more VA comes out than goes in, your math is wrong.",
+  "media": [
+   "step_up_down.png"
+  ],
+  "tags": [
+   "transformers",
+   "basics",
+   "formula"
+  ]
+ },
+ {
+  "front": "Which side of a transformer carries the higher current?",
+  "back": "The low-voltage side. High voltage side = low current.",
+  "extra_notes": "Check every current answer with a VA check.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "basics"
+  ]
+ },
+ {
+  "front": "Higher voltage lets you use smaller conductors. What is the trade-off?",
+  "back": "Insulation and clearances. Higher voltage needs thicker insulation and more spacing.",
+  "extra_notes": "Conductor area needed for a given loss goes as 1/V².",
+  "media": [],
+  "tags": [
+   "transformers",
+   "basics"
+  ]
+ },
+ {
+  "front": "Power transformer vs distribution transformer?",
+  "back": "Power transformer: between generator and primary distribution (substations, large). Distribution transformer: from primary distribution (4–35 kV) to the customer's service (e.g., 120/240 V).",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "basics"
+  ]
+ },
+ {
+  "front": "Are 'primary' and 'secondary' fixed labels?",
+  "back": "No. Primary = the side the power enters. Feed a step-down unit from its low side and it becomes a step-up unit.",
+  "extra_notes": "H/X marks voltage level; primary/secondary marks power direction.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "basics"
+  ]
+ },
+ {
+  "front": "Write the transformer EMF equation and define each term.",
+  "back": "E<sub>rms</sub> = 4.44 × f × N × Φ<sub>max</sub>. f = frequency (Hz), N = turns, Φmax = peak core flux (Wb).",
+  "extra_notes": "Every turn sees the same flux, so voltage per turn is the same on both windings.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "theory",
+   "formula"
+  ]
+ },
+ {
+  "front": "What happens if a 60 Hz transformer is run on 50 Hz at the same voltage?",
+  "back": "Flux rises about 20% (E = 4.44 f N Φ). The core can saturate, magnetizing current jumps, and it overheats.",
+  "extra_notes": "Overvoltage has the same effect.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "theory"
+  ]
+ },
+ {
+  "front": "What is excitation (magnetizing) current?",
+  "back": "The small current the primary draws with no load, to magnetize the core. Typically a few percent of FLC or less, lagging voltage by nearly 90°.",
+  "extra_notes": "An unloaded transformer looks like an inductor.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "theory"
+  ]
+ },
+ {
+  "front": "How does the primary 'know' that load was added to the secondary?",
+  "back": "Secondary current makes an opposing flux. The primary automatically draws more current to cancel it and keep core flux constant.",
+  "extra_notes": "The load sets the current; the transformer just passes it through.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "theory"
+  ]
+ },
+ {
+  "front": "Why are transformer cores laminated?",
+  "back": "Thin, insulated silicon-steel sheets break up eddy-current paths, so the circulating currents (and their heat) stay small.<br><img src=\"laminations.png\">",
+  "extra_notes": "Solid iron would act like a shorted turn.",
+  "media": [
+   "laminations.png"
+  ],
+  "tags": [
+   "transformers",
+   "core"
+  ]
+ },
+ {
+  "front": "What are eddy currents?",
+  "back": "Circulating currents induced in the core iron itself by the changing flux. They waste power as heat.",
+  "extra_notes": "Reduced by thin insulated laminations.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "core"
+  ]
+ },
+ {
+  "front": "What is hysteresis loss, and how is it reduced?",
+  "back": "Energy lost each cycle re-magnetizing the iron. Reduced by using silicon steel with a narrow hysteresis loop.",
+  "extra_notes": "Hysteresis + eddy = core (iron) loss.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "core"
+  ]
+ },
+ {
+  "front": "Core loss vs copper loss: which changes with load?",
+  "back": "Core (iron) loss is roughly constant whenever energized. Copper (I²R) loss rises with the square of load current.<br><img src=\"efficiency_curve.png\">",
+  "extra_notes": "Max efficiency occurs where they're equal.",
+  "media": [
+   "efficiency_curve.png"
+  ],
+  "tags": [
+   "transformers",
+   "core",
+   "efficiency"
+  ]
+ },
+ {
+  "front": "Core form vs shell form construction?",
+  "back": "Core form: windings surround the core legs. Shell form: the core surrounds the windings.<br><img src=\"core_shell.png\">",
+  "extra_notes": "Core form is common on HV/large units; shell form on small units.",
+  "media": [
+   "core_shell.png"
+  ],
+  "tags": [
+   "transformers",
+   "core"
+  ]
+ },
+ {
+  "front": "The slides say core air gaps increase efficiency. Is that right?",
+  "back": "No. Air gaps raise magnetizing current and lower efficiency. They're used deliberately in reactors, ballasts, neon and flyback transformers to store energy or limit current.",
+  "extra_notes": "Slide 48 error.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "core",
+   "slide-error"
+  ]
+ },
+ {
+  "front": "Transformer efficiency formula and typical range?",
+  "back": "%Eff = P<sub>out</sub> ÷ P<sub>in</sub> × 100. Typically 96–99%.",
+  "extra_notes": "Among the most efficient machines made.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "efficiency",
+   "formula"
+  ]
+ },
+ {
+  "front": "Why does oversizing a transformer 'for safety' waste energy?",
+  "back": "Core loss is paid 24/7 whether loaded or not. A lightly loaded big unit runs at low efficiency.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "efficiency"
+  ]
+ },
+ {
+  "front": "Write the turns, voltage and current ratio equation.",
+  "back": "N<sub>P</sub>/N<sub>S</sub> = E<sub>P</sub>/E<sub>S</sub> = I<sub>S</sub>/I<sub>P</sub>",
+  "extra_notes": "Voltage goes WITH turns; current goes AGAINST turns.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratio",
+   "formula"
+  ]
+ },
+ {
+  "front": "What is TTR?",
+  "back": "Transformer turns ratio: primary turns to secondary turns, usually written high side to low side (e.g., 10:1).",
+  "extra_notes": "Also the name of the field test that measures it.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratio"
+  ]
+ },
+ {
+  "front": "What is 'ampere-turns balance'?",
+  "back": "I<sub>P</sub> × N<sub>P</sub> = I<sub>S</sub> × N<sub>S</sub>. Primary ampere-turns equal secondary ampere-turns.",
+  "extra_notes": "Same as saying current ratio is the inverse of turns ratio.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratio"
+  ]
+ },
+ {
+  "front": "1Ø 2,400–480 V transformer, I<sub>P</sub> = 15 A. Find TTR and I<sub>S</sub>.",
+  "back": "TTR = 2,400 ÷ 480 = 5:1. I<sub>S</sub> = 5 × 15 = 75 A. Check: 2,400×15 = 480×75 = 36,000 VA.",
+  "extra_notes": "Slides 59–60.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratio",
+   "problem"
+  ]
+ },
+ {
+  "front": "480–120 V (4:1) transformer. 240 V is applied to the primary. Secondary voltage?",
+  "back": "240 ÷ 4 = 60 V.",
+  "extra_notes": "The output is always proportional to the input.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratio",
+   "problem"
+  ]
+ },
+ {
+  "front": "480–120 V (4:1) transformer. 240 V is applied to the SECONDARY. What appears on the primary?",
+  "back": "240 × 4 = 960 V.",
+  "extra_notes": "The ratio is fixed and works both directions. That's how backfeed happens.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratio",
+   "problem",
+   "safety"
+  ]
+ },
+ {
+  "front": "What is reflected impedance?",
+  "back": "The primary sees the load impedance times the turns ratio squared: Z<sub>P</sub> = (N<sub>P</sub>/N<sub>S</sub>)² × Z<sub>S</sub>.",
+  "extra_notes": "A 2 Ω load on a 10:1 transformer looks like 200 Ω from the primary.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratio",
+   "theory",
+   "formula"
+  ]
+ },
+ {
+  "front": "A winding is tapped. Which turns do you use to compute TTR?",
+  "back": "The whole winding, unless the problem says which tap is used. E.g., 2,400 V to a center-tapped 240 V winding = 10:1.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratio"
+  ]
+ },
+ {
+  "front": "Primary taps: 1,200 turns (240 V), 1,040 turns (208 V), 600 turns (120 V); secondary 120 turns, 24 V. Using the 1,040 tap, what is the ratio and primary voltage?",
+  "back": "1,040 ÷ 120 = 8.67:1; 8.67 × 24 V = 208 V.",
+  "extra_notes": "Slide 239.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratio",
+   "taps",
+   "problem"
+  ]
+ },
+ {
+  "front": "A 2:1 transformer is fed 438 V instead of 480 V. Output?",
+  "back": "219 V (not 240 V). A transformer can't correct low supply voltage; pick a tap that matches the actual supply.",
+  "extra_notes": "Slide 240.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratio",
+   "taps",
+   "problem"
+  ]
+ },
+ {
+  "front": "The slides say more primary turns makes a stronger field and more secondary current. What's actually true?",
+  "back": "At a fixed supply voltage, more primary turns means LESS flux and LOWER secondary voltage. Secondary current is set by the load.",
+  "extra_notes": "Slide 53 error.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratio",
+   "slide-error"
+  ]
+ },
+ {
+  "front": "What is backfeeding a transformer?",
+  "back": "Energizing it from the 'wrong' side, usually the secondary. It steps the voltage up to full primary voltage on lines thought to be dead.<br><img src=\"backfeed.png\">",
+  "extra_notes": "Classic case: a generator plugged into a house without a transfer switch.",
+  "media": [
+   "backfeed.png"
+  ],
+  "tags": [
+   "transformers",
+   "backfeed",
+   "safety"
+  ]
+ },
+ {
+  "front": "Before working on a transformer, which sides must be disconnected?",
+  "back": "BOTH primary and secondary. LOTO, test, and ground as necessary (work between grounds).",
+  "extra_notes": "Any transformer can be backfed.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "backfeed",
+   "safety"
+  ]
+ },
+ {
+  "front": "When removing an installed transformer, which leads come off first?",
+  "back": "The secondary (low-voltage) leads, to remove the backfeed path.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "backfeed",
+   "safety"
+  ]
+ },
+ {
+  "front": "Why are transformers rated in VA, not watts?",
+  "back": "Heating depends on current, and current depends on VA regardless of power factor. A watt rating would let low-PF loads overheat the unit.<br><img src=\"va_vs_watts.png\">",
+  "extra_notes": "Slide 78: 50 kW at PF 0.7 = 71.4 kVA vs 55.6 kVA at PF 0.9.",
+  "media": [
+   "va_vs_watts.png"
+  ],
+  "tags": [
+   "transformers",
+   "ratings"
+  ]
+ },
+ {
+  "front": "FLC vs FLA?",
+  "back": "Same thing: full-load current/amps, the current the transformer can carry continuously at rated conditions.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratings"
+  ]
+ },
+ {
+  "front": "Single-phase full-load current formula?",
+  "back": "I<sub>FL</sub> = VA ÷ E = kVA × 1,000 ÷ E.",
+  "extra_notes": "Three-phase: divide by E × 1.732.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratings",
+   "formula"
+  ]
+ },
+ {
+  "front": "1Ø 25 kVA, 240–120 V. Primary and secondary FLC?",
+  "back": "Primary: 25,000 ÷ 240 = 104.2 A. Secondary: 25,000 ÷ 120 = 208.3 A.",
+  "extra_notes": "kVA primary = kVA secondary.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratings",
+   "problem"
+  ]
+ },
+ {
+  "front": "1Ø 2,000 kVA, 12 kV–2.4 kV. Primary and secondary FLC?",
+  "back": "Primary: 2,000,000 ÷ 12,000 = 166.7 A. Secondary: 2,000,000 ÷ 2,400 = 833.3 A.",
+  "extra_notes": "833.3 ÷ 166.7 = 5 = TTR.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratings",
+   "problem"
+  ]
+ },
+ {
+  "front": "How can you get the TTR from the full-load currents?",
+  "back": "Divide the secondary FLC by the primary FLC (high current ÷ low current).",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratings",
+   "ratio"
+  ]
+ },
+ {
+  "front": "Single-phase amps-per-kVA rule of thumb?",
+  "back": "Amps per kVA = 1,000 ÷ V. 120 V → 8.33, 240 V → 4.17, 480 V → 2.08, 2,400 V → 0.42.<br><img src=\"amps_per_kva.png\">",
+  "extra_notes": "The slide's rounded chart (4, 2, 0.4) reads a few percent low.",
+  "media": [
+   "amps_per_kva.png"
+  ],
+  "tags": [
+   "transformers",
+   "ratings"
+  ]
+ },
+ {
+  "front": "Name the common single-phase distribution transformer sizes.",
+  "back": "10, 15, 25, 37.5, 50, 75, 100, 150, 167 kVA.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratings"
+  ]
+ },
+ {
+  "front": "A 50 kW load at PF 0.85 needs what size transformer?",
+  "back": "VA = W ÷ PF = 50,000 ÷ 0.85 = 58.8 kVA → next standard size up: 75 kVA.",
+  "extra_notes": "Never round down.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratings",
+   "sizing",
+   "problem"
+  ]
+ },
+ {
+  "front": "Clamp-on: 200 A on each leg of a 240 V single-phase 60 kVA transformer. Load and % loaded?",
+  "back": "200 × 240 = 48 kVA. 48 ÷ 60 = 80% loaded.",
+  "extra_notes": "Slides 86–87.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratings",
+   "load-check",
+   "problem"
+  ]
+ },
+ {
+  "front": "Unbalanced 120/240 V: L1 = 20 A, L2 = 30 A, N = 10 A. kVA load?",
+  "back": "(20 + 30) × 120 V = 6 kVA. Ignore the neutral current.",
+  "extra_notes": "Each 120 V half delivers its line current at 120 V.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratings",
+   "load-check",
+   "problem"
+  ]
+ },
+ {
+  "front": "What is the limitation of a load check with a clamp meter?",
+  "back": "It's a snapshot. Peak demand (hot afternoon, evening) matters more than a single reading.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratings",
+   "load-check"
+  ]
+ },
+ {
+  "front": "What is BIL?",
+  "back": "Basic Impulse Insulation Level: the peak lightning-type surge voltage (kV crest) the insulation can withstand without damage.",
+  "extra_notes": "Much higher than operating voltage, e.g., ~95 kV BIL for 15 kV-class gear.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "ratings",
+   "nameplate"
+  ]
+ },
+ {
+  "front": "Name 8 items found on a transformer nameplate.",
+  "back": "Any 8: manufacturer, serial no., kVA, phases, frequency, HV and LV voltages, FLCs, temperature rise, %Z, polarity, connection diagram, tap table, cooling/insulation type, BIL, weight, oil volume.",
+  "extra_notes": "NEC 450.11 requires marking. The nameplate is a formal document.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "nameplate"
+  ]
+ },
+ {
+  "front": "In '12,470 – 240', what does the dash mean?",
+  "back": "It separates the windings. First voltage = the side receiving power (primary), second = secondary.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "nameplate",
+   "notation"
+  ]
+ },
+ {
+  "front": "120/240 vs 240/120: what's the difference?",
+  "back": "120/240 = two separate 120 V coils (can be series for 3-wire or parallel). 240/120 = one 240 V coil with a center tap (3-wire only; can't parallel).<br><img src=\"voltage_notation.png\">",
+  "extra_notes": "Order matters!",
+  "media": [
+   "voltage_notation.png"
+  ],
+  "tags": [
+   "transformers",
+   "nameplate",
+   "notation"
+  ]
+ },
+ {
+  "front": "What is a dry-type transformer?",
+  "back": "A self air-cooled transformer: air circulates through vents in a sheet-metal case. Most indoor building transformers.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "cooling"
+  ]
+ },
+ {
+  "front": "Two jobs of oil in an oil-immersed transformer?",
+  "back": "Cooling (carries heat to tank and fins by convection) and insulation. It also keeps paper insulation from drying out and oxidizing.",
+  "extra_notes": "Mineral oil is flammable, so NEC Art. 450 Part II has stricter rules for it.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "cooling"
+  ]
+ },
+ {
+  "front": "How does natural convection cool an oil-filled transformer?",
+  "back": "Hot oil near the core rises (less dense), carries heat to the tank and radiators, cools, sinks, and returns.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "cooling"
+  ]
+ },
+ {
+  "front": "What is Askarel, and what precautions apply?",
+  "back": "A nonflammable synthetic insulating liquid made of PCBs. Banned from new manufacture since the late 1970s. Toxic: avoid contact and fumes; it's hazardous waste.",
+  "extra_notes": "Less fire hazard than oil, but a health hazard.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "cooling",
+   "safety"
+  ]
+ },
+ {
+  "front": "What ambient temperature are transformer ratings based on?",
+  "back": "40 °C maximum (30 °C average over 24 h).",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "temperature"
+  ]
+ },
+ {
+  "front": "A 65 °C rise transformer in a 40 °C ambient: average max winding temperature?",
+  "back": "40 + 65 = 105 °C. The hot spot runs higher still (insulation class covers it).<br><img src=\"temp_rise.png\">",
+  "extra_notes": "Slide 106.",
+  "media": [
+   "temp_rise.png"
+  ],
+  "tags": [
+   "transformers",
+   "temperature",
+   "problem"
+  ]
+ },
+ {
+  "front": "Same kVA: 55 °C rise vs 65 °C rise unit. Which has more overload headroom?",
+  "back": "The 55 °C (lower-rise) unit. More copper/iron and better cooling: the 'young, healthy runner'.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "temperature"
+  ]
+ },
+ {
+  "front": "Besides load current, name 4 factors that limit transformer loading.",
+  "back": "Cooling medium, ambient temperature, duration of overloads, rated temperature rise, altitude (also harmonics, blocked vents, low oil).",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "temperature",
+   "loading"
+  ]
+ },
+ {
+  "front": "Overload vs fault?",
+  "back": "Overload: more than rated current through the normal path; damage is slow, from heat. Fault: current through an abnormal path, often many times rated; protection must clear it fast.",
+  "extra_notes": "An overload is NOT a fault.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "loading"
+  ]
+ },
+ {
+  "front": "Why can a transformer tolerate short overloads?",
+  "back": "Thermal mass: temperature lags load by minutes to hours. Long overloads still age insulation fast (rule of thumb: life halves per ~8–10 °C over rating).",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "loading"
+  ]
+ },
+ {
+  "front": "NEC 450.3(B) (≤1,000 V): what are the two overcurrent protection options?",
+  "back": "1) Primary only at ≤125% of primary FLC. 2) Primary up to 250% WITH secondary protection at ≤125% of secondary FLC.",
+  "extra_notes": "Next standard size up allowed when ≥9 A. Check your enforced NEC edition.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "protection",
+   "NEC"
+  ]
+ },
+ {
+  "front": "Why is transformer primary protection sized well above 100% of FLC?",
+  "back": "Inrush: energizing can draw roughly 8–12× FLC for a few cycles while the core magnetizes.",
+  "extra_notes": "Time-delay fuses are common on primaries.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "protection"
+  ]
+ },
+ {
+  "front": "Does protecting the transformer protect the secondary conductors?",
+  "back": "No. Secondary conductors need their own protection under NEC 240.21(C) (10 ft / 25 ft rules, etc.).",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "protection",
+   "NEC"
+  ]
+ },
+ {
+  "front": "What do H and X terminal markings mean?",
+  "back": "H = high-voltage terminals (H1, H2, H0...). X = low-voltage terminals (X1, X2, X0...).",
+  "extra_notes": "H/X is about voltage level, not which side is the primary.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "polarity"
+  ]
+ },
+ {
+  "front": "The basic polarity rule?",
+  "back": "H1 and X1 are positive at the same instant (H2 and X2 negative).",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "polarity"
+  ]
+ },
+ {
+  "front": "Facing the low-voltage side, where is H1 normally?",
+  "back": "On your left (back-left bushing).",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "polarity"
+  ]
+ },
+ {
+  "front": "Additive vs subtractive: where is X1?",
+  "back": "Subtractive: X1 on the SAME side as H1 ('same side subtractive'). Additive: X1 diagonally opposite H1.<br><img src=\"polarity_add_sub.png\">",
+  "extra_notes": "",
+  "media": [
+   "polarity_add_sub.png"
+  ],
+  "tags": [
+   "transformers",
+   "polarity"
+  ]
+ },
+ {
+  "front": "Can polarity be changed from outside the transformer?",
+  "back": "No. It's set by winding direction and how the leads are brought out. You connect to suit it.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "polarity"
+  ]
+ },
+ {
+  "front": "Which single-phase transformers are normally additive?",
+  "back": "Units of 200 kVA or less with HV of 8,660 V or less (ANSI C57.12.00). Larger or higher-voltage units are subtractive.",
+  "extra_notes": "Most pole-top distribution transformers are additive.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "polarity"
+  ]
+ },
+ {
+  "front": "Why is subtractive polarity preferred on large/HV units?",
+  "back": "Lower voltage stress between adjacent HV and LV leads: half the DIFFERENCE of the voltages vs half the SUM for additive.",
+  "extra_notes": "Slide 472.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "polarity"
+  ]
+ },
+ {
+  "front": "Can an additive and a subtractive transformer be paralleled?",
+  "back": "Yes, if you connect by H1/X1 markings (polarity), not by physical bushing position.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "polarity",
+   "parallel"
+  ]
+ },
+ {
+  "front": "Describe the AC polarity test.",
+  "back": "Jumper H1 to the adjacent LV terminal. Apply low AC across H1–H2. Measure H2 to the other adjacent LV terminal. Higher than applied = additive; lower = subtractive.<br><img src=\"polarity_test.png\">",
+  "extra_notes": "",
+  "media": [
+   "polarity_test.png"
+  ],
+  "tags": [
+   "transformers",
+   "polarity",
+   "testing"
+  ]
+ },
+ {
+  "front": "Polarity test on a 4:1 unit with 120 V applied. What do additive and subtractive read?",
+  "back": "Secondary = 30 V. Additive: 120 + 30 = 150 V. Subtractive: 120 − 30 = 90 V.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "polarity",
+   "testing",
+   "problem"
+  ]
+ },
+ {
+  "front": "Describe the DC 'kick' polarity test.",
+  "back": "Analog DC voltmeter on the LV winding. Briefly connect a battery to the HV winding (+ on the lead you call H1). Up-scale kick on MAKE → the LV lead on meter + is X1.<br><img src=\"kick_test.png\">",
+  "extra_notes": "The break kick goes the other way; ignore it. Keep hands off: breaking DC on a winding makes a voltage spike.",
+  "media": [
+   "kick_test.png"
+  ],
+  "tags": [
+   "transformers",
+   "polarity",
+   "testing"
+  ]
+ },
+ {
+  "front": "Why does the kick test only deflect momentarily?",
+  "back": "Voltage is induced only while flux is changing (when current starts or stops). Steady DC = no induced voltage.",
+  "extra_notes": "Lenz/Faraday.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "polarity",
+   "theory"
+  ]
+ },
+ {
+  "front": "Series vs parallel connection of a 120/240 V secondary (25 kVA)?",
+  "back": "Series (X2–X3 jumpered): 120/240 V 3-wire, 104 A. Parallel (X1–X3, X2–X4): 120 V 2-wire, 208 A.<br><img src=\"series_parallel_sec.png\">",
+  "extra_notes": "kVA is the same either way.",
+  "media": [
+   "series_parallel_sec.png"
+  ],
+  "tags": [
+   "transformers",
+   "connections"
+  ]
+ },
+ {
+  "front": "Two secondary coils in series with one reversed: what happens?",
+  "back": "The voltages cancel: about 0 V instead of the sum.<br><img src=\"series_wrong.png\">",
+  "extra_notes": "",
+  "media": [
+   "series_wrong.png"
+  ],
+  "tags": [
+   "transformers",
+   "connections"
+  ]
+ },
+ {
+  "front": "Two secondary coils in parallel with one reversed: what happens?",
+  "back": "A dead short across both coils: huge current, blown fuse, damaged windings.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "connections",
+   "safety"
+  ]
+ },
+ {
+  "front": "Does paralleling secondaries increase available kVA?",
+  "back": "No. It only changes how the available current is delivered (more amps at lower voltage).",
+  "extra_notes": "25 kVA ÷ 240 = 104 A; 25 kVA ÷ 120 = 208 A.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "connections"
+  ]
+ },
+ {
+  "front": "Requirements for paralleling two transformers?",
+  "back": "Same voltage ratio (and tap), same/similar %Z, correct polarity; for 3Ø also same phase sequence and angular displacement.",
+  "extra_notes": "Mismatched ratio → circulating current even at no load. Mismatched %Z → unequal sharing.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "parallel"
+  ]
+ },
+ {
+  "front": "50 kVA and 100 kVA transformers in parallel share a 75 kVA load. How much does each carry?",
+  "back": "50 kVA unit: 75 × 50/150 = 25 kVA. 100 kVA unit: 75 × 100/150 = 50 kVA.",
+  "extra_notes": "Assumes matched %Z.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "parallel",
+   "problem"
+  ]
+ },
+ {
+  "front": "Test before making the final parallel connection?",
+  "back": "Read voltage across the open connection. ~0 V → connect. Voltage present (~double) → polarity wrong, DO NOT connect.<br><img src=\"parallel_test.png\">",
+  "extra_notes": "Connecting wrong = huge circulating current.",
+  "media": [
+   "parallel_test.png"
+  ],
+  "tags": [
+   "transformers",
+   "parallel",
+   "safety"
+  ]
+ },
+ {
+  "front": "In a paralleled bank, one transformer's primary fuse blows. Is its primary dead?",
+  "back": "No. The other unit backfeeds it through the paralleled secondaries. Its primary stays at full voltage. The good unit may also be overloaded.",
+  "extra_notes": "Treat all primaries in a parallel bank as hot.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "parallel",
+   "backfeed",
+   "safety"
+  ]
+ },
+ {
+  "front": "Why is the center point of a 120/240 V 3-wire secondary grounded?",
+  "back": "To limit voltage to ground (120 V), provide a fault-current path, and limit voltages from lightning, surges or primary contact.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "3-wire",
+   "grounding"
+  ]
+ },
+ {
+  "front": "If the 120/240 V neutral were NOT grounded and L1 faulted to ground, what would L2's voltage to ground be?",
+  "back": "240 V.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "3-wire",
+   "grounding"
+  ]
+ },
+ {
+  "front": "What current does the neutral of a 120/240 V 3-wire system carry?",
+  "back": "The DIFFERENCE between L1 and L2 currents (the unbalance). Balanced = 0 A.",
+  "extra_notes": "The slide's 'sum of the unbalanced load' wording is wrong.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "3-wire",
+   "slide-error"
+  ]
+ },
+ {
+  "front": "25 kVA 120/240 V: side 1 = 167 A, side 2 = 42 A. How loaded is each half?",
+  "back": "Each half is rated 12.5 kVA = 104 A. Side 1: 167/104 = 160% (60% overloaded). Side 2: 42/104 = 40% loaded.<br><img src=\"unbalanced_25.png\">",
+  "extra_notes": "Total is exactly 25 kVA, yet one winding is overloaded. (Slide says '40% underloaded' — it's 40% loaded.)",
+  "media": [
+   "unbalanced_25.png"
+  ],
+  "tags": [
+   "transformers",
+   "unbalanced",
+   "problem"
+  ]
+ },
+ {
+  "front": "75 kVA 12,500–120/240 V. Loads: 6 kVA @240 V, 3 kVA @120 V on L1 side, 3.6 kVA @120 V on L2 side. Find L1, L2, N and primary currents.",
+  "back": "240 V load 25 A; 3 kVA = 25 A; 3.6 kVA = 30 A. L1 = 50 A, L2 = 55 A, N = 5 A. Primary ≈ 12,600 ÷ 12,500 ≈ 1.0 A. Loaded 16.8%.<br><img src=\"three_wire_75.png\">",
+  "extra_notes": "Slides 227–231.",
+  "media": [
+   "three_wire_75.png"
+  ],
+  "tags": [
+   "transformers",
+   "unbalanced",
+   "problem"
+  ]
+ },
+ {
+  "front": "Open neutral on 120/240 V: what happens to the 120 V loads?",
+  "back": "Loads on opposite sides go in SERIES across 240 V. Voltage divides by resistance: the lighter load (higher R) gets the HIGHER voltage.",
+  "extra_notes": "Lights going bright/dim when a load cycles = open neutral. Emergency.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "open-neutral",
+   "safety"
+  ]
+ },
+ {
+  "front": "Open neutral: 3 kVA and 3.6 kVA 120 V loads on opposite sides. Voltage on each?",
+  "back": "R = 4.8 Ω and 4.0 Ω; I = 240 ÷ 8.8 = 27.3 A. 3 kVA load: 131 V. 3.6 kVA load: 109 V.<br><img src=\"open_neutral.png\">",
+  "extra_notes": "The slide figure has these reversed.",
+  "media": [
+   "open_neutral.png"
+  ],
+  "tags": [
+   "transformers",
+   "open-neutral",
+   "problem",
+   "slide-error"
+  ]
+ },
+ {
+  "front": "What does %Z mean on a transformer nameplate?",
+  "back": "The percent of rated primary voltage needed to push full-load current through a shorted secondary.",
+  "extra_notes": "Tells you fault current and voltage regulation.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "impedance"
+  ]
+ },
+ {
+  "front": "Why is transformer impedance given in percent instead of ohms?",
+  "back": "One number works for both sides. In ohms, HV and LV values differ (by the turns ratio squared).",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "impedance"
+  ]
+ },
+ {
+  "front": "A 480 V transformer has 5 %Z. At what voltage does FLA flow with the secondary shorted, and what is the fault current at 480 V?",
+  "back": "0.05 × 480 = 24 V. At 480 V the fault current is 480/24 = 20 × FLA.<br><img src=\"pctz_test.png\">",
+  "extra_notes": "5% = 1/20.",
+  "media": [
+   "pctz_test.png"
+  ],
+  "tags": [
+   "transformers",
+   "impedance",
+   "problem"
+  ]
+ },
+ {
+  "front": "Maximum short-circuit current formula from %Z?",
+  "back": "I<sub>SC</sub> = I<sub>FL</sub> × 100 ÷ %Z (infinite source).<br><img src=\"fault_multiplier.png\">",
+  "extra_notes": "Real fault current is somewhat lower; this is the worst case.",
+  "media": [
+   "fault_multiplier.png"
+  ],
+  "tags": [
+   "transformers",
+   "impedance",
+   "formula"
+  ]
+ },
+ {
+  "front": "25 kVA, 240 V, 2 %Z. Maximum fault current?",
+  "back": "FLC = 104.2 A. I<sub>SC</sub> = 104.2 × 100/2 = 5,208 A.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "impedance",
+   "problem"
+  ]
+ },
+ {
+  "front": "How is %Z measured (short-circuit test)?",
+  "back": "Short the secondary (ammeter in series), voltmeter on the primary, raise primary voltage from a Variac until rated FLC flows. %Z = that primary voltage ÷ rated × 100.",
+  "extra_notes": "Slides call this 'determining FLC' and say record the secondary voltage — it's %Z and the PRIMARY voltage.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "impedance",
+   "testing",
+   "slide-error"
+  ]
+ },
+ {
+  "front": "Low %Z vs high %Z: trade-offs?",
+  "back": "Low %Z: better voltage regulation, but higher fault current (higher AIC and arc-flash). High %Z: limits fault current, but more voltage drop/dip under load.",
+  "extra_notes": "%Z is a design choice, not a quality grade (slide 196 overstates this).",
+  "media": [],
+  "tags": [
+   "transformers",
+   "impedance"
+  ]
+ },
+ {
+  "front": "A transformer is replaced with one of lower %Z. What must you check downstream?",
+  "back": "Interrupting ratings / SCCR of breakers and fuses (NEC 110.9), the available fault current marking (110.24), and arc-flash labels.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "impedance",
+   "NEC",
+   "safety"
+  ]
+ },
+ {
+  "front": "What is an isolation transformer?",
+  "back": "A 1:1 transformer used only for isolation: blocks spikes/noise, breaks ground loops, feeds sensitive equipment.",
+  "extra_notes": "Often has a grounded electrostatic shield.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "isolation"
+  ]
+ },
+ {
+  "front": "What grounding does an isolation transformer secondary need?",
+  "back": "It's a separately derived system (NEC 250.30): system bonding jumper, grounding electrode conductor, supply-side bonding jumper.",
+  "extra_notes": "Without it, a ground fault on the secondary won't trip anything.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "isolation",
+   "grounding"
+  ]
+ },
+ {
+  "front": "What is a buck-boost transformer?",
+  "back": "A small isolating transformer wired as an autotransformer with its LV winding in series with the line, to raise or lower voltage ~5–27%.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "buck-boost"
+  ]
+ },
+ {
+  "front": "Boost vs buck connection: 120 V supply, 24 V winding?",
+  "back": "Boost (additive): 120 + 24 = 144 V. Buck (subtractive): 120 − 24 = 96 V.<br><img src=\"buck_boost.png\">",
+  "extra_notes": "",
+  "media": [
+   "buck_boost.png"
+  ],
+  "tags": [
+   "transformers",
+   "special",
+   "buck-boost",
+   "problem"
+  ]
+ },
+ {
+  "front": "Why is correct voltage important for motors?",
+  "back": "Low voltage raises motor current, lowers torque and raises temperature, shortening insulation life.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "buck-boost"
+  ]
+ },
+ {
+  "front": "A 1 kVA buck-boost unit (24 V secondary) boosts 120 V to 144 V. About how much load can it feed?",
+  "back": "Secondary current limit = 1,000 ÷ 24 = 41.7 A. Load ≈ 41.7 × 144 ≈ 6 kVA.",
+  "extra_notes": "It only carries the 'difference' power. Size by load current.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "buck-boost",
+   "problem"
+  ]
+ },
+ {
+  "front": "What is an autotransformer?",
+  "back": "A one-winding transformer: the same winding is both primary and secondary.<br><img src=\"autotransformer.png\">",
+  "extra_notes": "Most efficient type; the shared section carries only the difference current.",
+  "media": [
+   "autotransformer.png"
+  ],
+  "tags": [
+   "transformers",
+   "special",
+   "autotransformer"
+  ]
+ },
+ {
+  "front": "Two disadvantages of autotransformers?",
+  "back": "1) No isolation between HV and LV sides. 2) If the common winding opens while stepping down, full line voltage appears at the load.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "autotransformer",
+   "safety"
+  ]
+ },
+ {
+  "front": "What is a Variac?",
+  "back": "A variable autotransformer: a brush rides on the winding to give adjustable output from 0 to slightly above line voltage.",
+  "extra_notes": "Used in the lab bench supplies.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "autotransformer"
+  ]
+ },
+ {
+  "front": "NEC-permitted uses of autotransformers (from the slides)?",
+  "back": "Systems with a grounded conductor common to both sides; motor starting; theater dimming; lighting ballasts; buck/boost under certain conditions.",
+  "extra_notes": "NEC 210.9, 215.11, 450.4.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "autotransformer",
+   "NEC"
+  ]
+ },
+ {
+  "front": "What is a control transformer?",
+  "back": "Steps 240/480 V down to 120 V (or 24 V) for control circuits (coils, pilot lights, PLC I/O).",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "control"
+  ]
+ },
+ {
+  "front": "Dual-primary control transformer (240 × 480): how are primaries connected for each voltage?",
+  "back": "480 V: primaries in SERIES (jumper H2–H3). 240 V: primaries in PARALLEL (H1–H3, H2–H4).<br><img src=\"control_xfmr.png\">",
+  "extra_notes": "Slide 247 mislabels the parallel case.",
+  "media": [
+   "control_xfmr.png"
+  ],
+  "tags": [
+   "transformers",
+   "special",
+   "control",
+   "slide-error"
+  ]
+ },
+ {
+  "front": "Why is one side (X2) of a control transformer secondary often grounded?",
+  "back": "So a ground fault in the control circuit blows the fuse instead of energizing a coil and starting a motor.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "control",
+   "safety"
+  ]
+ },
+ {
+  "front": "Neon sign transformer voltages and currents?",
+  "back": "Primary 120/240 V; secondary 2,000–15,000 V; 30–120 mA. Self air-cooled, mounted in the sign.",
+  "extra_notes": "Current-limiting by design. NEC Art. 600. Lethal despite mA rating.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "neon"
+  ]
+ },
+ {
+  "front": "What does a constant-current transformer do, and where is it used?",
+  "back": "Holds secondary current constant (usually 6.6 A) as load changes. Used on series streetlights and airport runway lighting.<br><img src=\"cct.png\">",
+  "extra_notes": "Primary typically 2,400 V.",
+  "media": [
+   "cct.png"
+  ],
+  "tags": [
+   "transformers",
+   "special",
+   "cct"
+  ]
+ },
+ {
+  "front": "Why are series streetlights/runway lights fed from a CCT?",
+  "back": "Series wiring saves copper, and lamp brightness tracks current closely, so regulating current keeps brightness steady.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "cct"
+  ]
+ },
+ {
+  "front": "How does a CCT regulate current mechanically?",
+  "back": "A movable coil floats; the windings' fields repel. More current pushes them apart, increasing leakage and reducing current. A counterweight and oil dashpot prevent 'hunting'.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "cct"
+  ]
+ },
+ {
+  "front": "Why must you never open a live series lighting (CCT) circuit?",
+  "back": "The regulator drives voltage to maximum trying to keep current flowing: several kV across the opening.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "cct",
+   "safety"
+  ]
+ },
+ {
+  "front": "In a series lighting circuit, what keeps the circuit closed when a lamp fails?",
+  "back": "A film cutout or a reactor (reactance coil) at each lamp.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "cct"
+  ]
+ },
+ {
+  "front": "What is a K-rated transformer?",
+  "back": "One built to withstand extra heating from harmonic currents drawn by non-linear loads.<br><img src=\"harmonics.png\">",
+  "extra_notes": "K-1 = linear loads only; common ratings K-4, K-13, K-20.",
+  "media": [
+   "harmonics.png"
+  ],
+  "tags": [
+   "transformers",
+   "special",
+   "k-rated"
+  ]
+ },
+ {
+  "front": "Name 5 loads that produce harmonics.",
+  "back": "Any 5: switch-mode power supplies (PCs, TVs), VFDs, LED/fluorescent ballasts, UPSs, PV inverters, arc furnaces, welders, solid-state dimmers/heater controls, HVDC converters.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "k-rated"
+  ]
+ },
+ {
+  "front": "Why can the neutral of a 4-wire wye carry more current than the phases?",
+  "back": "Triplen harmonics (3rd, 9th...) from non-linear loads add in the neutral instead of cancelling.",
+  "extra_notes": "K-rated units often have a double-size neutral.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "k-rated",
+   "3-phase"
+  ]
+ },
+ {
+  "front": "How do you determine what K-rating is needed?",
+  "back": "Measure K-factor with a power-quality meter with the system fully loaded.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "k-rated"
+  ]
+ },
+ {
+  "front": "What is a no-load tap changer (NLTC), and the key rule for using it?",
+  "back": "A switch that changes the turns ratio (taps usually in 2½% steps). It must only be moved with the transformer DE-ENERGIZED.",
+  "extra_notes": "Substation load tap changers (LTCs) are different: they work under load.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "taps",
+   "safety"
+  ]
+ },
+ {
+  "front": "Secondary voltage is too low. Do you move to a higher or lower % primary tap?",
+  "back": "LOWER % tap (fewer primary turns) raises the output. Higher % tap lowers it.<br><img src=\"tap_direction.png\">",
+  "extra_notes": "E.g., 95% tap raises output ~5%.",
+  "media": [
+   "tap_direction.png"
+  ],
+  "tags": [
+   "transformers",
+   "special",
+   "taps"
+  ]
+ },
+ {
+  "front": "What does a transformer pressure relief device do?",
+  "back": "A spring-loaded valve vents internal pressure from a fault or overheating so the tank doesn't rupture, then reseals. A flag stays up; often has alarm/trip contacts.",
+  "extra_notes": "A tripped PRD means a serious internal event: test before re-energizing.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "safety"
+  ]
+ },
+ {
+  "front": "Wye: relationship of line and phase voltage and current?",
+  "back": "E<sub>L</sub> = 1.732 × E<sub>P</sub>; I<sub>L</sub> = I<sub>P</sub>.<br><img src=\"wye_delta.png\">",
+  "extra_notes": "E.g., 208 V line → 120 V phase.",
+  "media": [
+   "wye_delta.png"
+  ],
+  "tags": [
+   "transformers",
+   "3-phase"
+  ]
+ },
+ {
+  "front": "Delta: relationship of line and phase voltage and current?",
+  "back": "E<sub>L</sub> = E<sub>P</sub>; I<sub>L</sub> = 1.732 × I<sub>P</sub>.",
+  "extra_notes": "Phase current inside a delta can't be clamped from outside.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "3-phase"
+  ]
+ },
+ {
+  "front": "Three-phase kVA formula?",
+  "back": "kVA = E<sub>L</sub> × I<sub>L</sub> × 1.732 ÷ 1,000.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "3-phase",
+   "formula"
+  ]
+ },
+ {
+  "front": "Forming a wye from three 1Ø cans: what gets connected together?",
+  "back": "The non-polarity terminals (H2s or X2s). That common point is the neutral; the polarity terminals become the lines.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "3-phase",
+   "banks"
+  ]
+ },
+ {
+  "front": "Forming a delta from three 1Ø cans?",
+  "back": "Polarity to non-polarity around the loop (X1 of A to X2 of B, etc.). No neutral.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "3-phase",
+   "banks"
+  ]
+ },
+ {
+  "front": "Advantages of three single-phase cans over one 3Ø tank?",
+  "back": "Replace one failed unit, keep one spare, run open-delta on two units (57.7% capacity).",
+  "extra_notes": "A single 3Ø tank is smaller, cheaper and more efficient.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "3-phase",
+   "banks"
+  ]
+ },
+ {
+  "front": "Test before closing a delta?",
+  "back": "Read voltage across the open corner. ~0 V (small reading OK) → close. ~2× winding voltage → a winding is reversed; DO NOT close.<br><img src=\"delta_close.png\">",
+  "extra_notes": "Use a meter rated for at least 2× winding voltage.",
+  "media": [
+   "delta_close.png"
+  ],
+  "tags": [
+   "transformers",
+   "3-phase",
+   "banks",
+   "safety"
+  ]
+ },
+ {
+  "front": "The four basic 3Ø transformer connections?",
+  "back": "Delta–delta, delta–wye, wye–delta, wye–wye.",
+  "extra_notes": "Delta–wye (e.g., 480 V → 208Y/120) is most common in buildings.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "3-phase"
+  ]
+ },
+ {
+  "front": "What are instrument transformers for?",
+  "back": "Step high voltage/current down to safe standard values (120 V, 5 A) for meters, relays and SCADA, and isolate those devices from the primary.",
+  "extra_notes": "Small VA, high accuracy.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument"
+  ]
+ },
+ {
+  "front": "PT vs CT connection and secondary rating?",
+  "back": "PT: in PARALLEL, 120 V secondary (115 V older). CT: in SERIES, 5 A secondary.<br><img src=\"pt_ct_connect.png\">",
+  "extra_notes": "",
+  "media": [
+   "pt_ct_connect.png"
+  ],
+  "tags": [
+   "transformers",
+   "instrument"
+  ]
+ },
+ {
+  "front": "The opposite safety rules for PTs and CTs?",
+  "back": "Never SHORT a PT secondary. Never OPEN a CT secondary.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "safety"
+  ]
+ },
+ {
+  "front": "Why must you never short a PT secondary?",
+  "back": "A PT is a voltage source; a short draws destructive current (slides: primary current could rise ~200×).",
+  "extra_notes": "PT primaries are fused; never remove a ground from an energized PT.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "pt",
+   "safety"
+  ]
+ },
+ {
+  "front": "Why must PT fuses/switches be opened when working on connected equipment?",
+  "back": "A PT can backfeed: voltage on its secondary steps up to full primary voltage.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "pt",
+   "backfeed"
+  ]
+ },
+ {
+  "front": "Why must you never open the secondary of an energized CT?",
+  "back": "The CT is driven by primary current. With nothing to oppose the flux, it acts as a step-up transformer: thousands of volts, shock, arcing, insulation and core damage.<br><img src=\"ct_open_hazard.png\">",
+  "extra_notes": "Short it at the shorting block or test switch first.",
+  "media": [
+   "ct_open_hazard.png"
+  ],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct",
+   "safety"
+  ]
+ },
+ {
+  "front": "Standard CT secondary current?",
+  "back": "5 A at rated primary current, regardless of primary rating.",
+  "extra_notes": "1 A secondaries also exist (common outside N. America, long runs).",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct"
+  ]
+ },
+ {
+  "front": "Name 4 CT types.",
+  "back": "Window/donut/ring, split-core, bar type, wound type, bushing type.",
+  "extra_notes": "Window CTs are less accurate at low ratios than wound CTs.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct"
+  ]
+ },
+ {
+  "front": "A 600:5 CT has 300 A in the primary. Secondary current?",
+  "back": "600:5 = 120:1, so 300 ÷ 120 = 2.5 A.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct",
+   "problem"
+  ]
+ },
+ {
+  "front": "Shortcut for finding the ratio of an X:5 CT?",
+  "back": "Double the primary number and drop the last zero. 600:5 → 120:1; 2000:5 → 400:1.",
+  "extra_notes": "Works because ÷5 = ×2 ÷10.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct"
+  ]
+ },
+ {
+  "front": "CT current ratio vs turns ratio?",
+  "back": "I<sub>S</sub>/I<sub>P</sub> = N<sub>P</sub>/N<sub>S</sub>. A 600:5 window CT has 120 secondary turns.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct",
+   "formula"
+  ]
+ },
+ {
+  "front": "600:5 multi-ratio CT (X1–X2 20, X2–X3 10, X3–X4 50, X4–X5 40 turns). Which taps give 150:5?",
+  "back": "150:5 = 30:1 → 20 + 10 → X1–X3. Leave other taps open.<br><img src=\"ct_taps.png\">",
+  "extra_notes": "Slides 381–382.",
+  "media": [
+   "ct_taps.png"
+  ],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct",
+   "problem"
+  ]
+ },
+ {
+  "front": "Tapped CT: X1–X2 = 40, X1–X3 = 60, X1–X4 = 160, X1–X5 = 240 turns. Which taps give 500:5?",
+  "back": "500:5 = 100:1 → 160 − 60 = 100 → X3–X4.",
+  "extra_notes": "Slide 383.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct",
+   "problem"
+  ]
+ },
+ {
+  "front": "On a multi-ratio CT, what do you do with the unused taps?",
+  "back": "Leave them OPEN. Don't short them.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct"
+  ]
+ },
+ {
+  "front": "How does passing the primary through a window CT twice change its ratio?",
+  "back": "It halves it: 200:5 becomes 100:5. New ratio = nameplate ratio ÷ number of passes.<br><img src=\"ct_window.png\">",
+  "extra_notes": "",
+  "media": [
+   "ct_window.png"
+  ],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct"
+  ]
+ },
+ {
+  "front": "How do you count 'turns' on a window CT?",
+  "back": "Count passes THROUGH the window, not loops around the outside. One loop around the housing = 2 passes.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct"
+  ]
+ },
+ {
+  "front": "200:5 CT with 3 and with 4 passes?",
+  "back": "3 passes: 66.7:5 (13.3:1). 4 passes: 50:5 (10:1).",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct",
+   "problem"
+  ]
+ },
+ {
+  "front": "2500/5 donut CT. How many passes for a 125:1 ratio?",
+  "back": "2500/5 = 500:1; 500 ÷ 125 = 4 passes.",
+  "extra_notes": "Slide 394.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct",
+   "problem"
+  ]
+ },
+ {
+  "front": "What is CT burden?",
+  "back": "Everything connected to the secondary: meters, relays, transducers, and lead wire resistance (VA or ohms).",
+  "extra_notes": "Excess burden reduces accuracy.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct"
+  ]
+ },
+ {
+  "front": "What is CT saturation, and what is the knee point?",
+  "back": "Past a point, more primary current gives no more secondary current. The bend in the excitation curve is the knee point.<br><img src=\"ct_saturation.png\">",
+  "extra_notes": "A saturated protection CT under-reports fault current; relay may not trip.",
+  "media": [
+   "ct_saturation.png"
+  ],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct"
+  ]
+ },
+ {
+  "front": "Name 4 factors affecting CT accuracy.",
+  "back": "Burden, accuracy class, rating factor, load, external magnetic fields, temperature, physical configuration, tap selected.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct"
+  ]
+ },
+ {
+  "front": "How many points should a CT secondary circuit be grounded at?",
+  "back": "One point only (IEEE C57.13.3). NEC Art. 250 Part X covers instrument transformer grounding.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct",
+   "grounding"
+  ]
+ },
+ {
+  "front": "Should spare CTs be stored open or shorted?",
+  "back": "Shorted, including in storage and shipping.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct",
+   "safety"
+  ]
+ },
+ {
+  "front": "Can you megger a CT secondary with the primary energized?",
+  "back": "No — not even with no load.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct",
+   "safety"
+  ]
+ },
+ {
+  "front": "What is special about CT test switches?",
+  "back": "They're make-before-break: a shorting contact closes across the CT leads before the blade opens the meter circuit, so the CT is never open.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct"
+  ]
+ },
+ {
+  "front": "How does a CT shorting terminal block work?",
+  "back": "A metal bar runs down the block. Screws through the bar tie terminals to it; one screw always ties it to ground. Screws on a CT's terminals short and ground that CT.<br><img src=\"shorting_block.png\">",
+  "extra_notes": "",
+  "media": [
+   "shorting_block.png"
+  ],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct"
+  ]
+ },
+ {
+  "front": "CT polarity rule?",
+  "back": "Current IN on polarity (H1) means current OUT on polarity (X1) at the same instant.<br><img src=\"ct_polarity.png\">",
+  "extra_notes": "CT polarity is always subtractive. Marks: H1/X1 or a dot.",
+  "media": [
+   "ct_polarity.png"
+  ],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct",
+   "polarity"
+  ]
+ },
+ {
+  "front": "What goes wrong if instrument transformer polarity is reversed?",
+  "back": "Meters read backward, revenue meters record power in the wrong direction, protective relays cover the wrong zone or misoperate.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "polarity"
+  ]
+ },
+ {
+  "front": "Two 800:5 CTs, 400 A primary, secondaries share a middle meter. When does the middle meter read 0 A?",
+  "back": "When the two CTs' 2.5 A secondary currents meet head-on in the shared meter: they cancel there and circulate through the outer meters (2.5 A each).",
+  "extra_notes": "Trace current out of X1 and back to its own X2 by the lowest-impedance path.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "ct",
+   "problem"
+  ]
+ },
+ {
+  "front": "What is a transducer (in metering/SCADA)?",
+  "back": "A device that converts CT/PT signals (or other physical quantities) into a standard signal, often 4–20 mA or a voltage, for a PLC/RTU/SCADA.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "scada"
+  ]
+ },
+ {
+  "front": "SCADA vs HMI?",
+  "back": "SCADA: the overall supervisory control and data acquisition system talking to RTUs/PLCs. HMI: the operator's graphical screen within it.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "scada"
+  ]
+ },
+ {
+  "front": "What should you inspect before accepting a transformer shipment?",
+  "back": "On the truck: damaged bushings, oil leaks, bulged/dented tank, broken gauges, overheating/arc signs, lead condition. Note damage before signing.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "inspection"
+  ]
+ },
+ {
+  "front": "List the pre-energization field tests from the slides.",
+  "back": "Insulation resistance, turns ratio (TTR), polarity, winding resistance, power factor, CT saturation.",
+  "extra_notes": "Plus oil tests (dielectric, moisture, DGA) on liquid-filled units.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "testing"
+  ]
+ },
+ {
+  "front": "Insulation resistance test: what does it measure and how is it done?",
+  "back": "Leakage through insulation, with a DC megohmmeter: each winding to ground and winding to winding. Higher megohms = less leakage.",
+  "extra_notes": "Record as a baseline; trend it, temperature-corrected. PI and DAR ratios show moisture.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "testing"
+  ]
+ },
+ {
+  "front": "TTR test: what does it check?",
+  "back": "Low-voltage AC test confirming the HV-to-other-windings ratio at no load, on every tap of every winding.",
+  "extra_notes": "Catches shorted turns and wrong tap position. NETA ATS tolerance ≈ 0.5%.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "testing"
+  ]
+ },
+ {
+  "front": "Winding resistance test finds what?",
+  "back": "Loose connections, broken strands, poor tap-changer contacts. Low-resistance DC test; compare phases and factory data, temperature-corrected.",
+  "extra_notes": "Discharge the winding afterward.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "testing"
+  ]
+ },
+ {
+  "front": "What does an insulation power factor test measure?",
+  "back": "Ratio of resistive (loss) current to capacitive current under AC. Rising PF means insulation is degrading (moisture, contamination).",
+  "extra_notes": "Good insulation is well under 1%. Compare to the same unit's history.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "testing"
+  ]
+ },
+ {
+  "front": "Why are power factor readings compared to previous readings rather than other equipment?",
+  "back": "Trend on the same unit is what reveals deterioration; values vary between designs.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "testing"
+  ]
+ },
+ {
+  "front": "Purpose of CT saturation testing?",
+  "back": "Confirms the CT won't saturate at its required burden; also verifies ratio and polarity vs manufacturer data.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "testing",
+   "ct"
+  ]
+ },
+ {
+  "front": "Name 5 periodic transformer maintenance items.",
+  "back": "Keep records; maintain oil level; keep moisture out; keep parts clean/rust-free; test winding insulation and oil; lubricate moving parts; keep enclosures tight; check fans, arresters, gauges, grounds.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "maintenance"
+  ]
+ },
+ {
+  "front": "After disconnecting a transformer, why ground the windings?",
+  "back": "To discharge stored capacitive energy, especially after DC testing. Leave personal grounds on until all work is done.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "safety"
+  ]
+ },
+ {
+  "front": "Steps to make a transformer safe to work on?",
+  "back": "Open both sides, LOTO all sources, test for absence of voltage on both sides, apply grounds, work between grounds.",
+  "extra_notes": "NFPA 70E Art. 120.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "safety"
+  ]
+ },
+ {
+  "front": "Safe energization practices?",
+  "back": "Verify grounds/tools removed, operate remotely if possible, know emergency shutoffs and first aid, wear required PPE, stand clear.",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "safety"
+  ]
+ },
+ {
+  "front": "Why must transformer cases and metal enclosures (and fences) be grounded?",
+  "back": "To limit touch voltage from insulation failure and provide a low-impedance fault path so the OCPD trips fast.",
+  "extra_notes": "NEC 450.10, Art. 250.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "grounding",
+   "NEC"
+  ]
+ },
+ {
+  "front": "Three requirements of an effective ground-fault current path?",
+  "back": "Electrically continuous; able to safely carry any likely fault current for its duration; low impedance to trip the OCPD quickly.",
+  "extra_notes": "NEC 250.4.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "grounding"
+  ]
+ },
+ {
+  "front": "How does fault current divide among paths?",
+  "back": "It uses all available paths, dividing inversely to their impedance, and returns to its source (the transformer secondary).",
+  "extra_notes": "",
+  "media": [],
+  "tags": [
+   "transformers",
+   "grounding"
+  ]
+ },
+ {
+  "front": "Classic grounding mistake on a new building transformer?",
+  "back": "Missing system bonding jumper (no fault path), or bonding neutral to ground at both the transformer and downstream panel (neutral current on grounding conductors).",
+  "extra_notes": "Bond at one location only (NEC 250.30).",
+  "media": [],
+  "tags": [
+   "transformers",
+   "grounding",
+   "NEC"
+  ]
+ },
+ {
+  "front": "Liquid-filled transformers: name 4 liquids used today, and the liquid's two jobs.",
+  "back": "Mineral oil (combustible), silicone fluid, seed-oil (natural ester) coolants, other non-toxic high-dielectric liquids. Jobs: insulate HV from LV windings, and carry heat from core and coils to the tank/radiators/fans.",
+  "extra_notes": "Textbook Ch. 13.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "cooling",
+   "textbook"
+  ]
+ },
+ {
+  "front": "Why did askarel disappear, even though it was nonflammable?",
+  "back": "It's a PCB mixture, found highly toxic. The Toxic Substances Control Act (1976) and EPA rules ended its use; old units were replaced or refilled.",
+  "extra_notes": "Textbook Ch. 13.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "cooling",
+   "safety",
+   "textbook"
+  ]
+ },
+ {
+  "front": "Advantages of dry-type over liquid-filled transformers?",
+  "back": "Lighter, simpler to install, no leak precautions or containment, no coolant replacement. Fans can be added to carry more load.",
+  "extra_notes": "Textbook Ch. 13.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "cooling",
+   "textbook"
+  ]
+ },
+ {
+  "front": "What three sections make up a unit substation?",
+  "back": "High-voltage switch, dry-type transformer, secondary distribution section, all in one lineup.",
+  "extra_notes": "Often owner-furnished; common in industrial plants. Textbook Ch. 13.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "installation",
+   "textbook"
+  ]
+ },
+ {
+  "front": "NEC 450.3 overcurrent devices protect what?",
+  "back": "The transformer only. Conductors supplying or leaving it may need their own protection (Articles 240 and 310).",
+  "extra_notes": "Textbook Ch. 13.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "protection",
+   "NEC",
+   "textbook"
+  ]
+ },
+ {
+  "front": "NEC Table 450.3(A) vs 450.3(B)?",
+  "back": "(A): over 1,000 V, varies with %Z (≤6% or 6–10%), fuse vs breaker, and supervised vs any location. (B): 1,000 V or less (125/167/300% primary-only, or 250% primary with secondary protection).",
+  "extra_notes": "Supervised locations get higher limits.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "protection",
+   "NEC",
+   "textbook"
+  ]
+ },
+ {
+  "front": "Can a transformer with manufacturer's coordinated thermal overload protection skip primary protection?",
+  "back": "Yes, if the feeder overcurrent device is set at no more than 6× primary FLC (%Z ≤6%) or 4× (%Z 6–10%).",
+  "extra_notes": "Textbook Fig. 13-2.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "protection",
+   "NEC",
+   "textbook"
+  ]
+ },
+ {
+  "front": "50 kVA, 480 V → 208Y/120 V 3Ø. Primary FLC, 125% primary fuse, and max primary fuse (with secondary protection)?",
+  "back": "FLC = 50,000 ÷ (480 × 1.732) = 60 A. 125% = 75 A → next standard 80 A dual-element fuses (100 A switch). Max = 60 × 250% = 150 A.",
+  "extra_notes": "Textbook Fig. 13-3.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "protection",
+   "problem",
+   "textbook"
+  ]
+ },
+ {
+  "front": "Same 50 kVA, 480–208Y/120 V transformer: secondary FLC and overcurrent device?",
+  "back": "FLC = 50,000 ÷ (208 × 1.732) = 139 A. ×125% = 174 A → 175 A fuses or breaker. It also protects the panel (408.36) and secondary conductors (240.21(C)).",
+  "extra_notes": "Textbook Fig. 13-3.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "protection",
+   "problem",
+   "textbook"
+  ]
+ },
+ {
+  "front": "Name the four grounding/bonding parts of a separately derived system (NEC 250.30(A)).",
+  "back": "System bonding jumper, supply-side bonding jumper, grounding electrode conductor, grounding electrode.",
+  "extra_notes": "Primary EGC sized per 250.122. Textbook Fig. 13-3.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "grounding",
+   "NEC",
+   "textbook"
+  ]
+ },
+ {
+  "front": "What is an open-delta bank, and when is it used?",
+  "back": "Two transformers giving 3Ø (and 1Ø via a center tap on one). Used where the utility has only two primary phases nearby, for small 3Ø loads, or where a third unit will be added later.",
+  "extra_notes": "Textbook Ch. 13.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "3-phase",
+   "banks",
+   "textbook"
+  ]
+ },
+ {
+  "front": "Two 100 kVA transformers in open delta: capacity?",
+  "back": "(100 + 100) × 0.866 = 173 kVA, or 300 × 0.577 = 173 kVA.<br><img src=\"open_delta.png\">",
+  "extra_notes": "86.6% of the two nameplates, 57.7% of a full 3-unit delta.",
+  "media": [
+   "open_delta.png"
+  ],
+  "tags": [
+   "transformers",
+   "3-phase",
+   "banks",
+   "problem",
+   "textbook"
+  ]
+ },
+ {
+  "front": "What is a corner-grounded delta?",
+  "back": "A 3-wire delta secondary with one phase grounded. Phase voltages are unchanged; overcurrent devices generally aren't allowed in the grounded phase.",
+  "extra_notes": "Textbook Ch. 13.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "3-phase",
+   "grounding",
+   "textbook"
+  ]
+ },
+ {
+  "front": "120/240 V 4-wire (high-leg) delta: voltages A–N, C–N, B–N, and phase-to-phase?",
+  "back": "A–N and C–N = 120 V; B–N = 208 V (high leg); every phase-to-phase = 240 V.<br><img src=\"high_leg_delta.png\">",
+  "extra_notes": "B can't serve line-to-neutral loads.",
+  "media": [
+   "high_leg_delta.png"
+  ],
+  "tags": [
+   "transformers",
+   "3-phase",
+   "high-leg",
+   "textbook"
+  ]
+ },
+ {
+  "front": "High-leg identification and position rules?",
+  "back": "Mark it orange (or other effective means) wherever the neutral is present (110.15, 230.56). It's the B phase, in the center position (408.3(E)(1)). Panel warning: 'Caution ___ Phase Has ___ Volts to Ground' (408.3(F)).",
+  "extra_notes": "Also called red leg or wild leg.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "3-phase",
+   "high-leg",
+   "NEC",
+   "textbook"
+  ]
+ },
+ {
+  "front": "High-leg meter-socket trap?",
+  "back": "Many utilities want the high leg on the RIGHT-hand (C) position in self-contained meter sockets ≤200 A, then back in the CENTER (B) at the service disconnect.",
+  "extra_notes": "CT-metered services over 200 A avoid it. Textbook Ch. 13.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "3-phase",
+   "high-leg",
+   "textbook"
+  ]
+ },
+ {
+  "front": "Most common system in modern commercial buildings, and its usual voltages?",
+  "back": "3Ø 4-wire wye: 208Y/120, 480Y/277, 600Y/347 V. Line-to-neutral loads can go on any phase.",
+  "extra_notes": "Primaries are usually delta (only 3 conductors). Textbook Ch. 13.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "3-phase",
+   "textbook"
+  ]
+ },
+ {
+  "front": "NEC vs NESC: which applies to the utility's transformer?",
+  "back": "The NESC applies up to the service point (utility equipment); the NEC applies to premises wiring after it (90.2(D)(5)). The utility sets the service point.",
+  "extra_notes": "Check who furnishes the service conductors before you bid.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "installation",
+   "NEC",
+   "textbook"
+  ]
+ },
+ {
+  "front": "What is primary (high-voltage) metering?",
+  "back": "The utility meters on the transformer's HV side with PTs and CTs, often with 15-minute demand registers for kW and kVAR. High demand or low PF raises the rate.",
+  "extra_notes": "Used for single-tenant buildings. Textbook Ch. 13.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "metering",
+   "textbook"
+  ]
+ },
+ {
+  "front": "Up to what size is a service typically direct-metered (self-contained socket)?",
+  "back": "200 A. Larger: 320 A sockets (some utilities) or CT metering; the utility wires CTs to the meter.",
+  "extra_notes": "Textbook Ch. 13.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "instrument",
+   "metering",
+   "textbook"
+  ]
+ },
+ {
+  "front": "Panelboards fed through a transformer: where must overcurrent protection be?",
+  "back": "On the secondary side (408.36(B)). Exception: 2-wire to 2-wire, or 3-wire delta–delta, can be protected by the primary device through the ratio (240.21(C)(1)).",
+  "extra_notes": "Textbook Ch. 12.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "protection",
+   "NEC",
+   "textbook"
+  ]
+ },
+ {
+  "front": "What protects service conductors before the service disconnect?",
+  "back": "Only the utility's transformer primary fuses, which protect the utility transformer, not the conductors. Keep service conductors inside buildings short.",
+  "extra_notes": "Textbook Ch. 13.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "protection",
+   "textbook"
+  ]
+ },
+ {
+  "front": "Can harmonics overheat a transformer without tripping its overcurrent device?",
+  "back": "Yes (NEC 450.3 Informational Note 2). Fixes: oversize the transformer, use K-rated, run separate neutrals for non-linear loads.",
+  "extra_notes": "IEEE C57.110. Textbook Ch. 8.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "special",
+   "k-rated",
+   "textbook"
+  ]
+ },
+ {
+  "front": "Why does the textbook multiply the marked %Z by 0.9 in fault calculations?",
+  "back": "Listed transformers ≥25 kVA have ±10% impedance tolerance. Actual %Z may be 10% lower, which means more fault current: the worst case.",
+  "extra_notes": "I_SC = I_FL × 100 ÷ (%Z × 0.9).",
+  "media": [],
+  "tags": [
+   "transformers",
+   "impedance",
+   "textbook"
+  ]
+ },
+ {
+  "front": "225 kVA, 208Y/120 V, 2 %Z (infinite primary, book method). Fault current at the terminals?",
+  "back": "FLC = 225,000 ÷ (208 × 1.732) = 625 A. Multiplier = 100 ÷ (2 × 0.9) = 55.56. I_SC = 625 × 55.56 = 34,725 A.",
+  "extra_notes": "1% → 69,444 A; 4% → 17,363 A. Textbook Problem 1, Ch. 18.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "impedance",
+   "problem",
+   "textbook"
+  ]
+ },
+ {
+  "front": "How do service conductors change the available fault current, and what method does the book use?",
+  "back": "Their impedance lowers it. Point-to-point method: f from length, conductor constant C and voltage; M = 1 ÷ (1 + f); I_end = I_start × M. Example: 34,725 A → about 30,558 A over 25 ft of 3 × 250 kcmil Cu in PVC.",
+  "extra_notes": "Textbook Problem 2, Ch. 18.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "impedance",
+   "textbook"
+  ]
+ },
+ {
+  "front": "Besides the transformer, what else adds to or raises available fault current?",
+  "back": "Motor contribution (running motors act as generators briefly) and higher system voltage (+10% V → +10% fault current).",
+  "extra_notes": "Book recommends interrupting ratings ≥25% above calculated. Textbook Ch. 18.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "impedance",
+   "textbook"
+  ]
+ },
+ {
+  "front": "What do NEC 110.24(A) and (B) require?",
+  "back": "(A) Non-dwelling service equipment field-marked with available fault current and the calculation date. (B) Recalculate and re-mark when changes (e.g., bigger or lower-%Z utility transformer) affect it.",
+  "extra_notes": "110.16(B), new in 2023: arc-flash label on non-dwelling service/feeder equipment ≥1,000 A.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "impedance",
+   "NEC",
+   "textbook"
+  ]
+ },
+ {
+  "front": "How can a PV inverter or generator create a hazard on the utility primary?",
+  "back": "By backfeeding through the service transformer: 240 V can appear as 12,000 V or more on the primary. Hence listed transfer switches and utility-interactive (anti-islanding) inverters.",
+  "extra_notes": "Textbook Ch. 16 and 22.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "backfeed",
+   "safety",
+   "textbook"
+  ]
+ },
+ {
+  "front": "Name 4 transformer-related causes of unbalanced voltage.",
+  "back": "Large single-phase loads, open connections at a transformer secondary, open-delta banks, unequal %Z of 1Ø transformers in a 3Ø bank (also unequal/open capacitor banks).",
+  "extra_notes": "Small voltage unbalance = big extra heat in a motor. Textbook Ch. 7.",
+  "media": [],
+  "tags": [
+   "transformers",
+   "3-phase",
+   "loading",
+   "textbook"
+  ]
+ }
+]

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lab 2 Motor Control: Wiring Matched to My Panel</title>
+<style>
+:root{color-scheme:light}
+body{margin:0;background:#f6f6f4;color:#1c1c1c;font:15px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+main{max-width:1180px;margin:0 auto;padding:28px 20px 60px}
+h1{font-size:26px;margin:0 0 4px} h2{font-size:20px;margin:38px 0 8px} h3{font-size:16px;margin:18px 0 4px}
+.lede{color:#555;margin:0 0 18px}
+figure{margin:14px 0;background:#fff;border:1px solid #ddd;border-radius:10px;padding:10px}
+figure svg{width:100%;height:auto;display:block}
+figcaption{font-size:13.5px;color:#555;padding:8px 6px 2px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;margin:6px 4px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.ln{display:inline-block;width:28px;height:4px;border-radius:2px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:3px;border:1px solid #888;margin-right:6px;vertical-align:-1px}
+table{border-collapse:collapse;width:100%;font-size:13.5px;background:#fff}
+th,td{border-bottom:1px solid #e3e3e3;padding:6px 8px;text-align:left;vertical-align:top}
+th{background:#f0f0ee}
+.issue{background:#fff;border:1px solid #ddd;border-left:5px solid #e07800;border-radius:8px;padding:10px 14px;margin:10px 0}
+.issue.minor{border-left-color:#999}
+.num{display:inline-block;background:#e07800;color:#fff;border-radius:50%;width:22px;height:22px;text-align:center;font-weight:700;font-size:13px;line-height:22px;margin-right:6px}
+.minor .num{background:#888}
+.ok{color:#1d7a35}
+svg .h{font-size:15px;font-weight:700;fill:#333}
+svg .dn{font-size:12.5px;font-weight:700;fill:#222}
+svg .ds{font-size:11px;fill:#555}
+svg .dl{font-size:11px;fill:#777;font-style:italic}
+svg .tl{font-size:11px;fill:#222}
+svg .tlw{font-size:11px;fill:#fff;font-weight:700}
+svg .tls{font-size:10px;fill:#111}
+svg .wt{font-size:10.5px;font-weight:700;fill:#111}
+svg .mk{font-size:12px;font-weight:800;fill:#fff}
+</style></head><body><main>
+<h1>Lab 2 Motor Control: Start / Stop / Jog, Matched to My Panel</h1>
+<p class="lede">This redraws the LAB2-F20 circuit so it lines up with the photos of Jeff Polaski's panel. Figure 1 puts each part where it sits on the door and backplate. Figure 2 is the same ladder diagram as the lab sheet, labeled with the same tags, places, wire colors and wire numbers. An orange <span class="num">1</span> marks a problem described at the bottom of the page.</p>
+
+<div class="legend">
+<span><span class="ln" style="background:#d0262b"></span>red: 24 V control (hot side)</span>
+<span><span class="ln" style="background:#fff;outline:1.5px solid #888"></span>white: 24 V common (X4N side) / 120 V neutral</span>
+<span><span class="ln" style="background:#151515"></span>black: 120 V hot</span>
+<span><span class="ln" style="background:repeating-linear-gradient(90deg,#151515 0 5px,#fff 5px 8px)"></span>ribbed black: cord neutral</span>
+<span><span class="ln" style="background:#1d8a3c"></span>green: ground</span>
+<span><span class="sw" style="background:#fff;border-radius:8px"></span>wire number (same as the lab sheet)</span>
+</div>
+
+<h2>Figure 1: Physical wiring diagram (laid out like your photos)</h2>
+<figure><svg viewBox="0 0 1600 1040" role="img" aria-label="Physical wiring diagram laid out like the panel photos: door devices on top, backplate below, every wire drawn in its real color with its schematic wire number.">
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#bbb" stroke-width="1"/></pattern></defs>
+<rect x="30" y="30" width="1410" height="330" rx="10" fill="#e6e8ea" stroke="#999" stroke-width="1.5"/>
+<text x="45" y="55" class="h">DOOR — seen from the inside (your photo 2). Left/right is mirrored vs. the front.</text>
+<rect x="40" y="252" width="1395" height="96" fill="#d3d6d9" stroke="#b5b8bb"/>
+<text x="48" y="345" class="dl">door wire duct</text>
+<circle cx="130" cy="140" r="34" fill="#2b2b2b"/><circle cx="130" cy="140" r="20" fill="#e33" opacity=".85"/>
+<text x="130" y="74" text-anchor="middle" class="dn">PL2 (spare)</text>
+<text x="130" y="88" text-anchor="middle" class="ds">not used</text>
+<circle cx="115" cy="215" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="115" y="206" text-anchor="middle" class="tl">X2</text>
+<circle cx="145" cy="215" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="145" y="206" text-anchor="middle" class="tl">X1</text>
+<circle cx="260" cy="140" r="34" fill="#2b2b2b"/><circle cx="260" cy="140" r="20" fill="#e33" opacity=".85"/>
+<text x="260" y="74" text-anchor="middle" class="dn">PL1 MOTOR-ON</text>
+<text x="260" y="88" text-anchor="middle" class="ds">red pilot, 24 V</text>
+<circle cx="245" cy="215" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="245" y="206" text-anchor="middle" class="tl">X2</text>
+<circle cx="275" cy="215" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="275" y="206" text-anchor="middle" class="tl">X1</text>
+<circle cx="440" cy="130" r="32" fill="#2b2b2b"/><rect x="422" y="148" width="36" height="58" rx="3" fill="#1d8a3c"/>
+<text x="440" y="74" text-anchor="middle" class="dn">SS1 selector</text>
+<text x="440" y="88" text-anchor="middle" class="ds">NO block · not used</text>
+<circle cx="425" cy="215" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="425" y="206" text-anchor="middle" class="tl">3</text>
+<circle cx="455" cy="215" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="455" y="206" text-anchor="middle" class="tl">4</text>
+<rect x="590" y="95" width="60" height="50" rx="4" fill="#2b2b2b"/><rect x="602" y="110" width="36" height="96" rx="3" fill="#1d8a3c"/>
+<text x="620" y="74" text-anchor="middle" class="dn">PB4 JOG</text>
+<text x="620" y="88" text-anchor="middle" class="ds">green · NO 3–4</text>
+<circle cx="605" cy="215" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="605" y="206" text-anchor="middle" class="tl">3</text>
+<circle cx="635" cy="215" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="635" y="206" text-anchor="middle" class="tl">4</text>
+<rect x="760" y="95" width="60" height="50" rx="4" fill="#2b2b2b"/><rect x="772" y="110" width="36" height="96" rx="3" fill="#d97a6a"/>
+<text x="790" y="74" text-anchor="middle" class="dn">PB3 (unlabeled)</text>
+<text x="790" y="88" text-anchor="middle" class="ds">red · NC · not used</text>
+<circle cx="775" cy="215" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="775" y="206" text-anchor="middle" class="tl">1</text>
+<circle cx="805" cy="215" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="805" y="206" text-anchor="middle" class="tl">2</text>
+<rect x="950" y="95" width="60" height="50" rx="4" fill="#2b2b2b"/><rect x="962" y="110" width="36" height="96" rx="3" fill="#1d8a3c"/>
+<text x="980" y="74" text-anchor="middle" class="dn">PB2 START</text>
+<text x="980" y="88" text-anchor="middle" class="ds">green · NO 3–4</text>
+<circle cx="965" cy="215" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="965" y="206" text-anchor="middle" class="tl">3</text>
+<circle cx="995" cy="215" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="995" y="206" text-anchor="middle" class="tl">4</text>
+<rect x="1120" y="95" width="60" height="50" rx="4" fill="#2b2b2b"/><rect x="1132" y="110" width="36" height="96" rx="3" fill="#d97a6a"/>
+<text x="1150" y="74" text-anchor="middle" class="dn">PB1 STOP</text>
+<text x="1150" y="88" text-anchor="middle" class="ds">red · NC 1–2</text>
+<circle cx="1135" cy="215" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="1135" y="206" text-anchor="middle" class="tl">1</text>
+<circle cx="1165" cy="215" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="1165" y="206" text-anchor="middle" class="tl">2</text>
+<text x="1290" y="110" class="ds">Also on the front, not wired:</text>
+<text x="1290" y="126" class="ds">LS1, LS2 limit switches</text>
+<text x="1290" y="142" class="ds">(AutomationDirect AAP2T10Z11)</text>
+<rect x="30" y="395" width="1545" height="625" rx="10" fill="#eef0f1" stroke="#999" stroke-width="1.5"/>
+<rect x="40" y="420" width="1425" height="108" fill="#d3d6d9" stroke="#b5b8bb"/>
+<text x="48" y="414" class="h">BACKPLATE (your photos 3–5)</text>
+<text x="1340" y="524" class="dl">top wire duct</text>
+<rect x="40" y="898" width="1530" height="95" fill="#d3d6d9" stroke="#b5b8bb"/>
+<text x="48" y="1008" class="dl">bottom wire duct</text>
+<rect x="1470" y="252" width="98" height="741" fill="#d3d6d9" stroke="#b5b8bb"/>
+<text x="1519" y="640" class="dl" transform="rotate(90 1519 640)" text-anchor="middle">right duct / door loop</text>
+<rect x="58" y="560" width="174" height="300" rx="6" fill="#2b2b2b"/>
+<rect x="66" y="640" width="158" height="140" rx="3" fill="#f2f2f2"/>
+<text x="145" y="662" text-anchor="middle" class="dn">T1  HPS SP50PR</text>
+<text x="145" y="680" text-anchor="middle" class="ds">50 VA control transformer</text>
+<text x="145" y="700" text-anchor="middle" class="ds">primary 120 V (top)</text>
+<text x="145" y="716" text-anchor="middle" class="ds">secondary 24 V (bottom)</text>
+<circle cx="80" cy="578" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<text x="80" y="604" text-anchor="middle" class="tlw">H1</text>
+<circle cx="120" cy="578" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<text x="120" y="604" text-anchor="middle" class="tlw">H3</text>
+<circle cx="160" cy="578" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<text x="160" y="604" text-anchor="middle" class="tlw">H2</text>
+<circle cx="200" cy="578" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<text x="200" y="604" text-anchor="middle" class="tlw">H4</text>
+<circle cx="80" cy="842" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<text x="80" y="826" text-anchor="middle" class="tlw">X4</text>
+<circle cx="120" cy="842" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<text x="120" y="826" text-anchor="middle" class="tlw">X2</text>
+<circle cx="160" cy="842" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<text x="160" y="826" text-anchor="middle" class="tlw">X3</text>
+<circle cx="200" cy="842" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<text x="200" y="826" text-anchor="middle" class="tlw">X1</text>
+<rect x="80" y="584" width="40" height="5" fill="#c9a43a"/><rect x="160" y="584" width="40" height="5" fill="#c9a43a"/>
+<rect x="120" y="831" width="40" height="5" fill="#c9a43a"/>
+<text x="145" y="760" text-anchor="middle" class="ds">brass links: H1–H3, H2–H4,</text>
+<text x="145" y="774" text-anchor="middle" class="ds">X2–X3  ✓ correct for 120→24</text>
+<rect x="270" y="580" width="60" height="262" rx="5" fill="#f7f7f7" stroke="#888"/>
+<rect x="282" y="660" width="36" height="60" rx="3" fill="#222"/>
+<text x="300" y="752" text-anchor="middle" class="dn">CB1</text>
+<text x="300" y="768" text-anchor="middle" class="ds">FAZ-B1.5</text>
+<text x="300" y="782" text-anchor="middle" class="ds">primary</text>
+<circle cx="300" cy="597" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="300" y="617" text-anchor="middle" class="tl">1</text>
+<circle cx="300" cy="825" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="300" y="815" text-anchor="middle" class="tl">2</text>
+<rect x="710" y="580" width="60" height="262" rx="5" fill="#f7f7f7" stroke="#888"/>
+<rect x="722" y="660" width="36" height="60" rx="3" fill="#222"/>
+<text x="740" y="752" text-anchor="middle" class="dn">CB2</text>
+<text x="740" y="768" text-anchor="middle" class="ds">AZ-B2</text>
+<text x="740" y="782" text-anchor="middle" class="ds">24 V sec.</text>
+<circle cx="740" cy="597" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="740" y="617" text-anchor="middle" class="tl">1</text>
+<circle cx="740" cy="825" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="740" y="815" text-anchor="middle" class="tl">2</text>
+<rect x="360" y="625" width="20" height="172" fill="#b9e06a" stroke="#777"/>
+<circle cx="370" cy="642" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<circle cx="370" cy="780" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<text x="370" y="815" text-anchor="middle" class="tls" transform="rotate(-90 370 815)" dy="4">TBG1</text>
+<rect x="382" y="625" width="20" height="172" fill="#b9e06a" stroke="#777"/>
+<circle cx="392" cy="642" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/>
+<circle cx="392" cy="780" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/>
+<text x="392" y="815" text-anchor="middle" class="tls" transform="rotate(-90 392 815)" dy="4">TBG2</text>
+<rect x="404" y="625" width="20" height="172" fill="#b9e06a" stroke="#777"/>
+<circle cx="414" cy="642" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/>
+<circle cx="414" cy="780" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/>
+<text x="414" y="815" text-anchor="middle" class="tls" transform="rotate(-90 414 815)" dy="4">TBG3</text>
+<text x="392.0" y="872" text-anchor="middle" class="dn">GND</text>
+<rect x="440" y="625" width="20" height="172" fill="#a9adb1" stroke="#777"/>
+<circle cx="450" cy="642" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<circle cx="450" cy="780" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<text x="450" y="815" text-anchor="middle" class="tls" transform="rotate(-90 450 815)" dy="4">TB1</text>
+<rect x="462" y="625" width="20" height="172" fill="#a9adb1" stroke="#777"/>
+<circle cx="472" cy="642" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/>
+<circle cx="472" cy="780" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/>
+<text x="472" y="815" text-anchor="middle" class="tls" transform="rotate(-90 472 815)" dy="4">TB2</text>
+<rect x="484" y="625" width="20" height="172" fill="#a9adb1" stroke="#777"/>
+<circle cx="494" cy="642" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/>
+<circle cx="494" cy="780" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/>
+<text x="494" y="815" text-anchor="middle" class="tls" transform="rotate(-90 494 815)" dy="4">TB3</text>
+<text x="472.0" y="872" text-anchor="middle" class="dn">120V</text>
+<rect x="530" y="625" width="20" height="172" fill="#a9adb1" stroke="#777"/>
+<circle cx="540" cy="642" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<circle cx="540" cy="780" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<text x="540" y="815" text-anchor="middle" class="tls" transform="rotate(-90 540 815)" dy="4">TB4</text>
+<rect x="552" y="625" width="20" height="172" fill="#a9adb1" stroke="#777"/>
+<circle cx="562" cy="642" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<circle cx="562" cy="780" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<text x="562" y="815" text-anchor="middle" class="tls" transform="rotate(-90 562 815)" dy="4">TB5</text>
+<rect x="574" y="625" width="20" height="172" fill="#a9adb1" stroke="#777"/>
+<circle cx="584" cy="642" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<circle cx="584" cy="780" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<text x="584" y="815" text-anchor="middle" class="tls" transform="rotate(-90 584 815)" dy="4">TB6</text>
+<rect x="534" y="706" width="56" height="9" rx="3" fill="#e07800"/>
+<text x="562.0" y="872" text-anchor="middle" class="dn">COM</text>
+<rect x="620" y="625" width="20" height="172" fill="#a9adb1" stroke="#777"/>
+<circle cx="630" cy="642" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<circle cx="630" cy="780" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<text x="630" y="815" text-anchor="middle" class="tls" transform="rotate(-90 630 815)" dy="4">TB7</text>
+<rect x="642" y="625" width="20" height="172" fill="#a9adb1" stroke="#777"/>
+<circle cx="652" cy="642" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<circle cx="652" cy="780" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<text x="652" y="815" text-anchor="middle" class="tls" transform="rotate(-90 652 815)" dy="4">TB8</text>
+<rect x="664" y="625" width="20" height="172" fill="#a9adb1" stroke="#777"/>
+<circle cx="674" cy="642" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<circle cx="674" cy="780" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/>
+<text x="674" y="815" text-anchor="middle" class="tls" transform="rotate(-90 674 815)" dy="4">TB9</text>
+<rect x="624" y="706" width="56" height="9" rx="3" fill="#e07800"/>
+<text x="652.0" y="872" text-anchor="middle" class="dn">24V</text>
+<rect x="990" y="625" width="20" height="172" fill="#a9adb1" stroke="#777"/>
+<circle cx="1000" cy="642" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/>
+<circle cx="1000" cy="780" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/>
+<text x="1000" y="815" text-anchor="middle" class="tls" transform="rotate(-90 1000 815)" dy="4">TBL1</text>
+<rect x="1012" y="625" width="20" height="172" fill="#a9adb1" stroke="#777"/>
+<circle cx="1022" cy="642" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/>
+<circle cx="1022" cy="780" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/>
+<text x="1022" y="815" text-anchor="middle" class="tls" transform="rotate(-90 1022 815)" dy="4">TBL2</text>
+<rect x="1034" y="625" width="20" height="172" fill="#a9adb1" stroke="#777"/>
+<circle cx="1044" cy="642" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/>
+<circle cx="1044" cy="780" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/>
+<text x="1044" y="815" text-anchor="middle" class="tls" transform="rotate(-90 1044 815)" dy="4">TBL3</text>
+<text x="1022.0" y="872" text-anchor="middle" class="dn">3PH</text>
+<text x="392" y="888" text-anchor="middle" class="ds">bonds to DIN rail</text>
+<text x="562" y="888" text-anchor="middle" class="ds">orange jumpers = X4N bus</text>
+<text x="652" y="888" text-anchor="middle" class="ds" dx="40">jumpers = 24 bus</text>
+<rect x="808" y="598" width="150" height="244" rx="5" fill="#f2f2ee" stroke="#888"/>
+<rect x="826" y="650" width="114" height="120" rx="6" fill="#dfe3e6" stroke="#999"/>
+<text x="883" y="690" text-anchor="middle" class="dn">CR1</text>
+<text x="883" y="706" text-anchor="middle" class="ds">750-2C-24A relay</text>
+<text x="883" y="720" text-anchor="middle" class="ds">on 8-pin socket</text>
+<text x="883" y="740" text-anchor="middle" class="ds">coil = pins 2 &amp; 7</text>
+<text x="883" y="754" text-anchor="middle" class="ds">(A1 &amp; A2)</text>
+<circle cx="825" cy="615" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="825" y="631" text-anchor="middle" class="tl">1</text>
+<circle cx="848" cy="615" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="848" y="631" text-anchor="middle" class="tl">3</text>
+<circle cx="871" cy="615" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="871" y="631" text-anchor="middle" class="tl">4</text>
+<circle cx="894" cy="615" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="894" y="631" text-anchor="middle" class="tl">8</text>
+<circle cx="917" cy="615" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="917" y="631" text-anchor="middle" class="tl">6</text>
+<circle cx="940" cy="615" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="940" y="631" text-anchor="middle" class="tl">5</text>
+<circle cx="835" cy="826" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="835" y="817" text-anchor="middle" class="tl">7 (A2)</text>
+<circle cx="935" cy="826" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="935" y="817" text-anchor="middle" class="tl">2 (A1)</text>
+<rect x="1088" y="560" width="214" height="142" rx="5" fill="#c9cfd8" stroke="#666"/>
+<text x="1195" y="635" text-anchor="middle" class="dn">M  contactor</text>
+<text x="1195" y="651" text-anchor="middle" class="ds">WEG CWC07 (24 V coil)</text>
+<circle cx="1110" cy="577" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="1110" y="595" text-anchor="middle" class="tl">1L1</text>
+<circle cx="1155" cy="577" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="1155" y="595" text-anchor="middle" class="tl">3L2</text>
+<circle cx="1200" cy="577" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="1200" y="595" text-anchor="middle" class="tl">5L3</text>
+<circle cx="1245" cy="577" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="1245" y="595" text-anchor="middle" class="tl">7L4</text>
+<circle cx="1285" cy="577" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="1285" y="595" text-anchor="middle" class="tl">A1</text>
+<circle cx="1110" cy="686" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="1110" y="676" text-anchor="middle" class="tl">2T1</text>
+<circle cx="1155" cy="686" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="1155" y="676" text-anchor="middle" class="tl">4T2</text>
+<circle cx="1200" cy="686" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="1200" y="676" text-anchor="middle" class="tl">6T3</text>
+<circle cx="1245" cy="686" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="1245" y="676" text-anchor="middle" class="tl">8T4</text>
+<circle cx="1285" cy="686" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="1285" y="676" text-anchor="middle" class="tl">A2</text>
+<rect x="1088" y="712" width="214" height="168" rx="5" fill="#c9cfd8" stroke="#666"/>
+<text x="1195" y="790" text-anchor="middle" class="dn">OL1  overload</text>
+<text x="1195" y="806" text-anchor="middle" class="ds">WEG RW17-1D</text>
+<circle cx="1110" cy="730" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="1110" y="748" text-anchor="middle" class="tl">14/22</text>
+<circle cx="1285" cy="730" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="1285" y="748" text-anchor="middle" class="tl">A2</text>
+<circle cx="1110" cy="862" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="1110" y="852" text-anchor="middle" class="tl">96</text>
+<circle cx="1165" cy="862" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="1165" y="852" text-anchor="middle" class="tl">98</text>
+<circle cx="1220" cy="862" r="5" fill="#eee" stroke="#555" stroke-width="1.2"/><text x="1220" y="852" text-anchor="middle" class="tl">97</text>
+<circle cx="1285" cy="862" r="5" fill="#c9c9c9" stroke="#555" stroke-width="1.2"/><text x="1285" y="852" text-anchor="middle" class="tl">95</text>
+<text x="1192" y="842" text-anchor="middle" class="ds">95–96 NC   97–98 NO</text>
+<path d="M1245,691 L1245,708 L1110,708 L1110,725" fill="none" stroke="#555" stroke-width="1.3" stroke-dasharray="3 3"/>
+<path d="M1285,691 L1285,725" fill="none" stroke="#555" stroke-width="1.3" stroke-dasharray="3 3"/>
+<text x="1176" y="722" text-anchor="middle" class="ds" style="font-size:9.5px">built-in: 8T4→14/22, A2→A2</text>
+<text x="44" y="478" class="ds">← cord in</text>
+<path d="M40.0,430.0 L300.0,430.0 L300.0,597.0" fill="none" stroke="#151515" stroke-width="3" stroke-linejoin="round"/>
+<path d="M40.0,437.0 L446.0,437.0 L446.0,642.0" fill="none" stroke="#151515" stroke-width="3" stroke-linejoin="round"/>
+<path d="M40.0,437.0 L446.0,437.0 L446.0,642.0" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="3 4"/>
+<path d="M40.0,444.0 L370.0,444.0 L370.0,642.0" fill="none" stroke="#1d8a3c" stroke-width="3" stroke-linejoin="round"/>
+<path d="M300.0,825.0 L300.0,878.0 L252.0,878.0 L252.0,451.0 L80.0,451.0 L80.0,578.0" fill="none" stroke="#151515" stroke-width="3" stroke-linejoin="round"/>
+<path d="M450.0,780.0 L450.0,906.0 L242.0,906.0 L242.0,458.0 L200.0,458.0 L200.0,578.0" fill="none" stroke="#7a7a7a" stroke-width="4.4" stroke-linejoin="round"/>
+<path d="M450.0,780.0 L450.0,906.0 L242.0,906.0 L242.0,458.0 L200.0,458.0 L200.0,578.0" fill="none" stroke="#fbfbfb" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M76.0,842.0 L76.0,915.5 L370.0,915.5 L370.0,780.0" fill="none" stroke="#1d8a3c" stroke-width="3" stroke-linejoin="round"/>
+<path d="M84.0,842.0 L84.0,925.0 L540.0,925.0 L540.0,780.0" fill="none" stroke="#7a7a7a" stroke-width="4.4" stroke-linejoin="round"/>
+<path d="M84.0,842.0 L84.0,925.0 L540.0,925.0 L540.0,780.0" fill="none" stroke="#fbfbfb" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M200.0,842.0 L200.0,934.5 L1478.0,934.5 L1478.0,465.0 L740.0,465.0 L740.0,597.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M740.0,825.0 L740.0,878.0 L630.0,878.0 L630.0,780.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M630.0,642.0 L630.0,472.0 L1487.0,472.0 L1487.0,260.0 L1135.0,260.0 L1135.0,215.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1165.0,215.0 L1165.0,269.5 L962.0,269.5 L962.0,215.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M825.0,615.0 L825.0,479.0 L1496.0,479.0 L1496.0,279.0 L968.0,279.0 L968.0,215.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M848.0,615.0 L848.0,486.0 L1505.0,486.0 L1505.0,288.5 L992.0,288.5 L992.0,215.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M935.0,826.0 L935.0,944.0 L1514.0,944.0 L1514.0,298.0 L998.0,298.0 L998.0,215.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M835.0,826.0 L835.0,953.5 L1285.0,953.5 L1285.0,862.0" fill="none" stroke="#7a7a7a" stroke-width="4.4" stroke-linejoin="round"/>
+<path d="M835.0,826.0 L835.0,953.5 L1285.0,953.5 L1285.0,862.0" fill="none" stroke="#fbfbfb" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M1289.0,730.0 L1322.0,730.0 L1322.0,878.0 L1289.0,878.0 L1289.0,866.0" fill="none" stroke="#7a7a7a" stroke-width="4.4" stroke-linejoin="round"/>
+<path d="M1289.0,730.0 L1322.0,730.0 L1322.0,878.0 L1289.0,878.0 L1289.0,866.0" fill="none" stroke="#fbfbfb" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M1110.0,862.0 L1110.0,963.0 L562.0,963.0 L562.0,780.0" fill="none" stroke="#7a7a7a" stroke-width="4.4" stroke-linejoin="round"/>
+<path d="M1110.0,862.0 L1110.0,963.0 L562.0,963.0 L562.0,780.0" fill="none" stroke="#fbfbfb" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M652.0,642.0 L652.0,493.0 L891.0,493.0 L891.0,615.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M897.0,615.0 L897.0,500.0 L1523.0,500.0 L1523.0,307.5 L605.0,307.5 L605.0,215.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M635.0,215.0 L635.0,317.0 L1532.0,317.0 L1532.0,507.0 L914.0,507.0 L914.0,615.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M920.0,615.0 L920.0,514.0 L1285.0,514.0 L1285.0,577.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M674.0,642.0 L674.0,521.0 L1245.0,521.0 L1245.0,577.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1110.0,730.0 L1068.0,730.0 L1068.0,528.0 L1541.0,528.0 L1541.0,326.5 L280.0,326.5 L280.0,215.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M240.0,215.0 L240.0,336.0 L1550.0,336.0 L1550.0,972.5 L584.0,972.5 L584.0,780.0" fill="none" stroke="#7a7a7a" stroke-width="4.4" stroke-linejoin="round"/>
+<path d="M240.0,215.0 L240.0,336.0 L1550.0,336.0 L1550.0,972.5 L584.0,972.5 L584.0,780.0" fill="none" stroke="#fbfbfb" stroke-width="2.4" stroke-linejoin="round"/>
+<rect x="292.0" y="569.0" width="16" height="16" rx="8" fill="#fff" stroke="#151515" stroke-width="1.6"/><text x="300.0" y="581.0" text-anchor="middle" class="wt">H</text>
+<rect x="438.0" y="614.0" width="16" height="16" rx="8" fill="#fff" stroke="#151515" stroke-width="1.6"/><text x="446.0" y="626.0" text-anchor="middle" class="wt">N</text>
+<rect x="362.0" y="614.0" width="16" height="16" rx="8" fill="#fff" stroke="#1d8a3c" stroke-width="1.6"/><text x="370.0" y="626.0" text-anchor="middle" class="wt">G</text>
+<rect x="289.0" y="837.0" width="22" height="16" rx="8" fill="#fff" stroke="#151515" stroke-width="1.6"/><text x="300.0" y="849.0" text-anchor="middle" class="wt">H1</text>
+<rect x="69.0" y="550.0" width="22" height="16" rx="8" fill="#fff" stroke="#151515" stroke-width="1.6"/><text x="80.0" y="562.0" text-anchor="middle" class="wt">H1</text>
+<rect x="439.0" y="792.0" width="22" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="450.0" y="804.0" text-anchor="middle" class="wt">N2</text>
+<rect x="189.0" y="550.0" width="22" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="200.0" y="562.0" text-anchor="middle" class="wt">N1</text>
+<rect x="65.0" y="854.0" width="22" height="16" rx="8" fill="#fff" stroke="#1d8a3c" stroke-width="1.6"/><text x="76.0" y="866.0" text-anchor="middle" class="wt">X4</text>
+<rect x="359.0" y="792.0" width="22" height="16" rx="8" fill="#fff" stroke="#1d8a3c" stroke-width="1.6"/><text x="370.0" y="804.0" text-anchor="middle" class="wt">X4</text>
+<rect x="73.0" y="874.0" width="22" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="84.0" y="886.0" text-anchor="middle" class="wt">X4</text>
+<rect x="529.0" y="792.0" width="22" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="540.0" y="804.0" text-anchor="middle" class="wt">X4</text>
+<rect x="189.0" y="854.0" width="22" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="200.0" y="866.0" text-anchor="middle" class="wt">X1</text>
+<rect x="729.0" y="569.0" width="22" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="740.0" y="581.0" text-anchor="middle" class="wt">X1</text>
+<rect x="729.0" y="837.0" width="22" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="740.0" y="849.0" text-anchor="middle" class="wt">24</text>
+<rect x="619.0" y="792.0" width="22" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="630.0" y="804.0" text-anchor="middle" class="wt">24</text>
+<rect x="622.0" y="614.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="630.0" y="626.0" text-anchor="middle" class="wt">1</text>
+<rect x="1127.0" y="227.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="1135.0" y="239.0" text-anchor="middle" class="wt">1</text>
+<rect x="1157.0" y="227.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="1165.0" y="239.0" text-anchor="middle" class="wt">2</text>
+<rect x="954.0" y="227.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="962.0" y="239.0" text-anchor="middle" class="wt">2</text>
+<rect x="817.0" y="587.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="825.0" y="599.0" text-anchor="middle" class="wt">2</text>
+<rect x="960.0" y="245.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="968.0" y="257.0" text-anchor="middle" class="wt">2</text>
+<rect x="840.0" y="587.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="848.0" y="599.0" text-anchor="middle" class="wt">3</text>
+<rect x="984.0" y="227.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="992.0" y="239.0" text-anchor="middle" class="wt">3</text>
+<rect x="927.0" y="838.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="935.0" y="850.0" text-anchor="middle" class="wt">3</text>
+<rect x="990.0" y="245.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="998.0" y="257.0" text-anchor="middle" class="wt">3</text>
+<rect x="827.0" y="838.0" width="16" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="835.0" y="850.0" text-anchor="middle" class="wt">4</text>
+<rect x="1277.0" y="874.0" width="16" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="1285.0" y="886.0" text-anchor="middle" class="wt">4</text>
+<rect x="1301.0" y="722.0" width="16" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="1309.0" y="734.0" text-anchor="middle" class="wt">4</text>
+<rect x="1289.0" y="870.0" width="16" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="1297.0" y="882.0" text-anchor="middle" class="wt">4</text>
+<rect x="1102.0" y="874.0" width="16" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="1110.0" y="886.0" text-anchor="middle" class="wt">5</text>
+<rect x="554.0" y="792.0" width="16" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="562.0" y="804.0" text-anchor="middle" class="wt">5</text>
+<rect x="644.0" y="614.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="652.0" y="626.0" text-anchor="middle" class="wt">7</text>
+<rect x="883.0" y="587.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="891.0" y="599.0" text-anchor="middle" class="wt">7</text>
+<rect x="889.0" y="569.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="897.0" y="581.0" text-anchor="middle" class="wt">7</text>
+<rect x="597.0" y="227.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="605.0" y="239.0" text-anchor="middle" class="wt">7</text>
+<rect x="627.0" y="227.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="635.0" y="239.0" text-anchor="middle" class="wt">8</text>
+<rect x="906.0" y="569.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="914.0" y="581.0" text-anchor="middle" class="wt">8</text>
+<rect x="912.0" y="587.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="920.0" y="599.0" text-anchor="middle" class="wt">8</text>
+<rect x="1277.0" y="549.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="1285.0" y="561.0" text-anchor="middle" class="wt">8</text>
+<rect x="666.0" y="614.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="674.0" y="626.0" text-anchor="middle" class="wt">9</text>
+<rect x="1237.0" y="549.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="1245.0" y="561.0" text-anchor="middle" class="wt">9</text>
+<rect x="1079.0" y="722.0" width="22" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="1090.0" y="734.0" text-anchor="middle" class="wt">10</text>
+<rect x="269.0" y="227.0" width="22" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="280.0" y="239.0" text-anchor="middle" class="wt">10</text>
+<rect x="229.0" y="227.0" width="22" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="240.0" y="239.0" text-anchor="middle" class="wt">11</text>
+<rect x="573.0" y="792.0" width="22" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="584.0" y="804.0" text-anchor="middle" class="wt">11</text>
+<circle cx="470" cy="660" r="11" fill="#e07800"/><text x="470" y="664.5" text-anchor="middle" class="mk">2</text>
+<circle cx="860" cy="878" r="11" fill="#e07800"/><text x="860" y="882.5" text-anchor="middle" class="mk">4</text>
+<circle cx="1340" cy="575" r="11" fill="#e07800"/><text x="1340" y="579.5" text-anchor="middle" class="mk">5</text>
+</svg>
+<figcaption>Parts are in the same left-to-right order as your photos. The door is shown from the inside, the way photo 2 sees it, so it is the mirror image of the front: from the front the order is STOP, START, (unlabeled red), JOG, selector, LS1, LS2, MOTOR-ON, spare pilot. The routes through the ducts are simplified. The terminal each wire lands on is what matters.</figcaption>
+</figure>
+
+<h2>Figure 2: The lab ladder, relabeled with the physical parts</h2>
+<figure><svg viewBox="0 0 1500 1230" role="img" aria-label="The lab ladder diagram redrawn with the same device tags, panel locations, wire colors and wire numbers as the physical diagram.">
+<path d="M150.0,60.0 L150.0,300.0 L260.0,300.0 L260.0,330.0" fill="none" stroke="#151515" stroke-width="3" stroke-linejoin="round"/>
+<rect x="142" y="206" width="16" height="48" fill="#fff"/><path d="M150,208 A14,22 0 0 1 150,252" fill="none" stroke="#222" stroke-width="2"/><circle cx="150" cy="208" r="2.5" fill="#222"/><circle cx="150" cy="252" r="2.5" fill="#222"/>
+<text x="170" y="222" text-anchor="start" class="dn">CB1</text><text x="170" y="238" text-anchor="start" class="ds">FAZ-B1.5 · panel, 1st breaker</text>
+<text x="150" y="50" text-anchor="middle" class="ds">Cord HOT (smooth black)</text>
+<rect x="142.0" y="112.0" width="16" height="16" rx="8" fill="#fff" stroke="#151515" stroke-width="1.6"/><text x="150.0" y="124.0" text-anchor="middle" class="wt">H</text><rect x="194.0" y="292.0" width="22" height="16" rx="8" fill="#fff" stroke="#151515" stroke-width="1.6"/><text x="205.0" y="304.0" text-anchor="middle" class="wt">H1</text>
+<path d="M600.0,60.0 L600.0,300.0 L485.0,300.0 L485.0,330.0" fill="none" stroke="#151515" stroke-width="3" stroke-linejoin="round"/>
+<path d="M600.0,60.0 L600.0,300.0 L485.0,300.0 L485.0,330.0" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="3 4"/>
+<circle cx="600" cy="240" r="10" fill="#fff" stroke="#333" stroke-width="1.4"/><line x1="594" y1="246" x2="606" y2="234" stroke="#333" stroke-width="1.4"/><text x="600" y="222" text-anchor="middle" class="dn">TB1</text><text x="600" y="266" text-anchor="middle" class="ds">120V group</text>
+<text x="594" y="50" text-anchor="end" class="ds">Cord NEUTRAL (ribbed black)</text>
+<circle cx="640" cy="120" r="11" fill="#e07800"/><text x="640" y="124.5" text-anchor="middle" class="mk">2</text>
+<path d="M485.0,300.0 L600.0,300.0" fill="none" stroke="#7a7a7a" stroke-width="4.4" stroke-linejoin="round"/>
+<path d="M485.0,300.0 L600.0,300.0" fill="none" stroke="#fbfbfb" stroke-width="2.4" stroke-linejoin="round"/>
+<rect x="518.5" y="292.0" width="43" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="540.0" y="304.0" text-anchor="middle" class="wt">N2→N1</text>
+<path d="M710.0,60.0 L710.0,410.0" fill="none" stroke="#1d8a3c" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="710" cy="240" r="10" fill="#fff" stroke="#333" stroke-width="1.4"/><line x1="704" y1="246" x2="716" y2="234" stroke="#333" stroke-width="1.4"/><text x="710" y="222" text-anchor="middle" class="dn">TBG1</text><text x="710" y="266" text-anchor="middle" class="ds">GND group</text>
+<text x="716" y="50" text-anchor="start" class="ds">Cord GROUND</text>
+<path d="M710.0,300.0 L760.0,300.0" fill="none" stroke="#1d8a3c" stroke-width="3" stroke-linejoin="round"/>
+<path d="M760,300 v10 M748,310 h24 M752,316 h16 M756,322 h8" stroke="#222" stroke-width="2" fill="none"/>
+<text x="790" y="300" text-anchor="start" class="ds">DIN rail / plate</text>
+<g stroke="#222" stroke-width="2" fill="none"><path d="M260,345 q10,-14 20,0 q10,-14 20,0 q10,-14 20,0 q10,-14 20,0 q10,-14 20,0 q10,-14 20,0 q10,-14 20,0 q10,-14 20,0 q10,-14 20,0 q10,-14 20,0 q10,-14 20,0 q10,-14 20,0 q5,-7 5,0"/><line x1="260" y1="356" x2="505" y2="356"/><line x1="260" y1="361" x2="505" y2="361"/><path d="M260,372 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q10,14 20,0 q5,7 5,0"/></g>
+<line x1="260" y1="330" x2="260" y2="345" stroke="#222" stroke-width="2"/><line x1="485" y1="330" x2="485" y2="345" stroke="#222" stroke-width="2"/>
+<text x="372" y="324" text-anchor="middle" class="dn">T1 · SP50PR 50 VA</text>
+<text x="330" y="434" text-anchor="middle" class="ds">panel, far left</text><text x="330" y="448" text-anchor="middle" class="ds">links H1–H3, H2–H4, X2–X3</text>
+<text x="250" y="340" text-anchor="end" class="tl">H1</text><text x="495" y="340" text-anchor="start" class="tl">H4</text>
+<text x="250" y="385" text-anchor="end" class="tl">X1</text><text x="495" y="385" text-anchor="start" class="tl">X4</text>
+<path d="M260.0,376.0 L260.0,410.0 L150.0,410.0 L150.0,1200.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<rect x="142" y="446" width="16" height="48" fill="#fff"/><path d="M150,448 A14,22 0 0 1 150,492" fill="none" stroke="#222" stroke-width="2"/><circle cx="150" cy="448" r="2.5" fill="#222"/><circle cx="150" cy="492" r="2.5" fill="#222"/>
+<text x="170" y="462" text-anchor="start" class="dn">CB2</text><text x="170" y="478" text-anchor="start" class="ds">AZ-B2 · panel, 2nd breaker</text>
+<rect x="194.0" y="402.0" width="22" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="205.0" y="414.0" text-anchor="middle" class="wt">X1</text><rect x="139.0" y="532.0" width="22" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="150.0" y="544.0" text-anchor="middle" class="wt">24</text>
+<text x="150" y="1220" text-anchor="middle" class="ds">24 V bus (TB7–TB9, orange jumpers)</text>
+<path d="M485.0,376.0 L485.0,410.0 L710.0,410.0" fill="none" stroke="#1d8a3c" stroke-width="3" stroke-linejoin="round"/>
+<rect x="571.5" y="402.0" width="57" height="16" rx="8" fill="#fff" stroke="#1d8a3c" stroke-width="1.6"/><text x="600.0" y="414.0" text-anchor="middle" class="wt">X4 bond</text>
+<circle cx="485" cy="410" r="4" fill="#222"/>
+<path d="M485.0,410.0 L485.0,525.0 L830.0,525.0 L830.0,1200.0" fill="none" stroke="#7a7a7a" stroke-width="4.4" stroke-linejoin="round"/>
+<path d="M485.0,410.0 L485.0,525.0 L830.0,525.0 L830.0,1200.0" fill="none" stroke="#fbfbfb" stroke-width="2.4" stroke-linejoin="round"/>
+<circle cx="765" cy="525" r="10" fill="#fff" stroke="#333" stroke-width="1.4"/><line x1="759" y1="531" x2="771" y2="519" stroke="#333" stroke-width="1.4"/><text x="765" y="507" text-anchor="middle" class="dn">TB4</text><text x="765" y="551" text-anchor="middle" class="ds">COM group</text>
+<rect x="589.0" y="517.0" width="22" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="600.0" y="529.0" text-anchor="middle" class="wt">X4</text>
+<text x="830" y="1220" text-anchor="middle" class="ds">X4N bus (TB4–TB6, orange jumpers)</text>
+<circle cx="830" cy="637" r="4" fill="#222"/>
+<circle cx="830" cy="1085" r="4" fill="#222"/>
+<path d="M150.0,637.0 L597.0,637.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M597.0,637.0 L830.0,637.0" fill="none" stroke="#7a7a7a" stroke-width="4.4" stroke-linejoin="round"/>
+<path d="M597.0,637.0 L830.0,637.0" fill="none" stroke="#fbfbfb" stroke-width="2.4" stroke-linejoin="round"/>
+<circle cx="150" cy="637" r="4" fill="#222"/>
+<circle cx="205" cy="637" r="10" fill="#fff" stroke="#333" stroke-width="1.4"/><line x1="199" y1="643" x2="211" y2="631" stroke="#333" stroke-width="1.4"/><text x="205" y="619" text-anchor="middle" class="dn">TB7</text><text x="205" y="663" text-anchor="middle" class="ds"></text>
+<rect x="290" y="611" width="40" height="34" fill="#fff"/><circle cx="295" cy="637" r="3" fill="#fff" stroke="#222" stroke-width="1.5"/><circle cx="325" cy="637" r="3" fill="#fff" stroke="#222" stroke-width="1.5"/><line x1="294" y1="641" x2="326" y2="641" stroke="#222" stroke-width="2.2"/><line x1="310" y1="641" x2="310" y2="623" stroke="#222" stroke-width="2"/><line x1="302" y1="617" x2="318" y2="617" stroke="#222" stroke-width="2"/><text x="290" y="655" text-anchor="end" class="tl">1</text><text x="330" y="655" text-anchor="start" class="tl">2</text><text x="310" y="597" text-anchor="middle" class="dn">PB1 STOP</text><text x="310" y="679" text-anchor="middle" class="ds">door · red NC block</text>
+<rect x="410" y="611" width="40" height="34" fill="#fff"/><circle cx="415" cy="637" r="3" fill="#fff" stroke="#222" stroke-width="1.5"/><circle cx="445" cy="637" r="3" fill="#fff" stroke="#222" stroke-width="1.5"/><line x1="414" y1="629" x2="446" y2="629" stroke="#222" stroke-width="2.2"/><line x1="430" y1="629" x2="430" y2="617" stroke="#222" stroke-width="2"/><line x1="422" y1="617" x2="438" y2="617" stroke="#222" stroke-width="2"/><text x="410" y="655" text-anchor="end" class="tl">3</text><text x="450" y="655" text-anchor="start" class="tl">4</text><text x="430" y="597" text-anchor="middle" class="dn">PB2 START</text><text x="430" y="679" text-anchor="middle" class="ds">door · green NO block</text>
+<circle cx="540" cy="637" r="16" fill="#fff" stroke="#222" stroke-width="2"/><text x="540" y="641" text-anchor="middle" class="tl">CR1</text><text x="518" y="625" text-anchor="end" class="tl">2</text><text x="562" y="625" text-anchor="start" class="tl">7</text>
+<text x="540" y="603" text-anchor="middle" class="dn">CR1 coil</text><text x="540" y="671" text-anchor="middle" class="ds">pins 2–7</text>
+<circle cx="597" cy="637" r="4" fill="#222"/>
+<rect x="646" y="625" width="28" height="24" fill="#fff"/><line x1="654" y1="625" x2="654" y2="649" stroke="#222" stroke-width="2.2"/><line x1="666" y1="625" x2="666" y2="649" stroke="#222" stroke-width="2.2"/><text x="644" y="621" text-anchor="end" class="tl">95</text><text x="676" y="621" text-anchor="start" class="tl">96</text><line x1="648" y1="649" x2="672" y2="625" stroke="#222" stroke-width="2"/><text x="660" y="603" text-anchor="middle" class="dn">OL1</text><text x="660" y="667" text-anchor="middle" class="ds">overload, bottom row</text>
+<circle cx="765" cy="637" r="10" fill="#fff" stroke="#333" stroke-width="1.4"/><line x1="759" y1="643" x2="771" y2="631" stroke="#333" stroke-width="1.4"/><text x="765" y="619" text-anchor="middle" class="dn">TB5</text><text x="765" y="663" text-anchor="middle" class="ds"></text>
+<rect x="242.0" y="629.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="250.0" y="641.0" text-anchor="middle" class="wt">1</text><rect x="362.0" y="629.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="370.0" y="641.0" text-anchor="middle" class="wt">2</text><rect x="482.0" y="629.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="490.0" y="641.0" text-anchor="middle" class="wt">3</text><rect x="567.0" y="629.0" width="16" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="575.0" y="641.0" text-anchor="middle" class="wt">4</text><rect x="612.0" y="629.0" width="16" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="620.0" y="641.0" text-anchor="middle" class="wt">4</text><rect x="704.0" y="629.0" width="16" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="712.0" y="641.0" text-anchor="middle" class="wt">5</text>
+<circle cx="608" cy="605" r="11" fill="#e07800"/><text x="608" y="609.5" text-anchor="middle" class="mk">4</text>
+<path d="M370.0,637.0 L370.0,748.0 L485.0,748.0 L485.0,637.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<rect x="416" y="736" width="28" height="24" fill="#fff"/><line x1="424" y1="736" x2="424" y2="760" stroke="#222" stroke-width="2.2"/><line x1="436" y1="736" x2="436" y2="760" stroke="#222" stroke-width="2.2"/><text x="414" y="732" text-anchor="end" class="tl">1</text><text x="446" y="732" text-anchor="start" class="tl">3</text><text x="430" y="782" text-anchor="middle" class="ds">CR1 pins 1–3 (seal-in)</text>
+<circle cx="370" cy="637" r="4" fill="#222"/><circle cx="485" cy="637" r="4" fill="#222"/>
+<rect x="362.0" y="692.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="370.0" y="704.0" text-anchor="middle" class="wt">2</text><rect x="477.0" y="692.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="485.0" y="704.0" text-anchor="middle" class="wt">3</text>
+<text x="845" y="625" text-anchor="start" class="ds">CR1 contacts: rungs 6, 7</text>
+<path d="M150.0,860.0 L570.0,860.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M570.0,860.0 L597.0,860.0 L597.0,637.0" fill="none" stroke="#7a7a7a" stroke-width="4.4" stroke-linejoin="round"/>
+<path d="M570.0,860.0 L597.0,860.0 L597.0,637.0" fill="none" stroke="#fbfbfb" stroke-width="2.4" stroke-linejoin="round"/>
+<circle cx="150" cy="860" r="4" fill="#222"/>
+<circle cx="205" cy="860" r="10" fill="#fff" stroke="#333" stroke-width="1.4"/><line x1="199" y1="866" x2="211" y2="854" stroke="#333" stroke-width="1.4"/><text x="205" y="842" text-anchor="middle" class="dn">TB8</text><text x="205" y="886" text-anchor="middle" class="ds"></text>
+<rect x="416" y="848" width="28" height="24" fill="#fff"/><line x1="424" y1="848" x2="424" y2="872" stroke="#222" stroke-width="2.2"/><line x1="436" y1="848" x2="436" y2="872" stroke="#222" stroke-width="2.2"/><text x="414" y="844" text-anchor="end" class="tl">8</text><text x="446" y="844" text-anchor="start" class="tl">6</text><text x="430" y="830" text-anchor="middle" class="dn">CR1 pins 8–6</text>
+<circle cx="540" cy="860" r="16" fill="#fff" stroke="#222" stroke-width="2"/><text x="540" y="864" text-anchor="middle" class="tl">M</text><text x="518" y="848" text-anchor="end" class="tl">A1</text><text x="562" y="848" text-anchor="start" class="tl">A2</text>
+<text x="540" y="896" text-anchor="middle" class="ds">contactor coil</text>
+<rect x="292.0" y="852.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="300.0" y="864.0" text-anchor="middle" class="wt">7</text><rect x="492.0" y="852.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="500.0" y="864.0" text-anchor="middle" class="wt">8</text><rect x="589.0" y="752.0" width="16" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="597.0" y="764.0" text-anchor="middle" class="wt">4</text>
+<circle cx="258" cy="834" r="11" fill="#e07800"/><text x="258" y="838.5" text-anchor="middle" class="mk">1</text>
+<text x="845" y="848" text-anchor="start" class="ds">M contacts: power + rung 9</text>
+<path d="M370.0,860.0 L370.0,972.0 L485.0,972.0 L485.0,860.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<rect x="410" y="946" width="40" height="34" fill="#fff"/><circle cx="415" cy="972" r="3" fill="#fff" stroke="#222" stroke-width="1.5"/><circle cx="445" cy="972" r="3" fill="#fff" stroke="#222" stroke-width="1.5"/><line x1="414" y1="964" x2="446" y2="964" stroke="#222" stroke-width="2.2"/><line x1="430" y1="964" x2="430" y2="952" stroke="#222" stroke-width="2"/><line x1="422" y1="952" x2="438" y2="952" stroke="#222" stroke-width="2"/><text x="410" y="990" text-anchor="end" class="tl">3</text><text x="450" y="990" text-anchor="start" class="tl">4</text><text x="430" y="932" text-anchor="middle" class="dn">PB4 JOG</text><text x="430" y="1014" text-anchor="middle" class="ds">door · green NO block</text>
+<circle cx="370" cy="860" r="4" fill="#222"/><circle cx="485" cy="860" r="4" fill="#222"/>
+<rect x="362.0" y="912.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="370.0" y="924.0" text-anchor="middle" class="wt">7</text><rect x="477.0" y="912.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="485.0" y="924.0" text-anchor="middle" class="wt">8</text>
+<path d="M150.0,1085.0 L830.0,1085.0" fill="none" stroke="#d0262b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M700.0,1085.0 L830.0,1085.0" fill="none" stroke="#7a7a7a" stroke-width="4.4" stroke-linejoin="round"/>
+<path d="M700.0,1085.0 L830.0,1085.0" fill="none" stroke="#fbfbfb" stroke-width="2.4" stroke-linejoin="round"/>
+<circle cx="150" cy="1085" r="4" fill="#222"/>
+<circle cx="205" cy="1085" r="10" fill="#fff" stroke="#333" stroke-width="1.4"/><line x1="199" y1="1091" x2="211" y2="1079" stroke="#333" stroke-width="1.4"/><text x="205" y="1067" text-anchor="middle" class="dn">TB9</text><text x="205" y="1111" text-anchor="middle" class="ds"></text>
+<rect x="416" y="1073" width="28" height="24" fill="#fff"/><line x1="424" y1="1073" x2="424" y2="1097" stroke="#222" stroke-width="2.2"/><line x1="436" y1="1073" x2="436" y2="1097" stroke="#222" stroke-width="2.2"/><text x="414" y="1069" text-anchor="end" class="tl">7L4</text><text x="446" y="1069" text-anchor="start" class="tl">14/22</text><text x="430" y="1049" text-anchor="middle" class="dn">M aux (4th pole)</text><text x="430" y="1119" text-anchor="middle" class="ds">contactor 7L4 → OL1 14/22</text>
+<circle cx="655" cy="1085" r="14" fill="#fff" stroke="#222" stroke-width="2"/><path d="M645,1075 l20,20 M665,1075 l-20,20" stroke="#222" stroke-width="1.6"/>
+<text x="655" y="1061" text-anchor="middle" class="dn">PL1 MOTOR-ON</text><text x="655" y="1119" text-anchor="middle" class="ds">door pilot X1–X2</text>
+<circle cx="765" cy="1085" r="10" fill="#fff" stroke="#333" stroke-width="1.4"/><line x1="759" y1="1091" x2="771" y2="1079" stroke="#333" stroke-width="1.4"/><text x="765" y="1067" text-anchor="middle" class="dn">TB6</text><text x="765" y="1111" text-anchor="middle" class="ds"></text>
+<rect x="292.0" y="1077.0" width="16" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="300.0" y="1089.0" text-anchor="middle" class="wt">9</text><rect x="534.0" y="1077.0" width="22" height="16" rx="8" fill="#fff" stroke="#d0262b" stroke-width="1.6"/><text x="545.0" y="1089.0" text-anchor="middle" class="wt">10</text><rect x="701.0" y="1077.0" width="22" height="16" rx="8" fill="#fff" stroke="#7a7a7a" stroke-width="1.6"/><text x="712.0" y="1089.0" text-anchor="middle" class="wt">11</text>
+<line x1="1110" y1="80" x2="1110" y2="980" stroke="#555" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1110" y="70" text-anchor="middle" class="dn">L1</text>
+<rect x="1103" y="230" width="14" height="40" fill="#fff" stroke="#222" stroke-width="1.6"/>
+<circle cx="1110" cy="420" r="10" fill="#fff" stroke="#333" stroke-width="1.4"/><line x1="1104" y1="426" x2="1116" y2="414" stroke="#333" stroke-width="1.4"/><text x="1110" y="402" text-anchor="middle" class="dn">TBL1</text><text x="1110" y="446" text-anchor="middle" class="ds"></text>
+<rect x="1096" y="628" width="28" height="24" fill="#fff"/><line x1="1104" y1="628" x2="1104" y2="652" stroke="#222" stroke-width="2.2"/><line x1="1116" y1="628" x2="1116" y2="652" stroke="#222" stroke-width="2.2"/><text x="1094" y="624" text-anchor="end" class="tl">1L1</text><text x="1126" y="624" text-anchor="start" class="tl">2T1</text>
+<path d="M1104,780 q-12,10 0,20 q12,10 0,20" fill="#fff" stroke="#222" stroke-width="2"/>
+<line x1="1230" y1="80" x2="1230" y2="980" stroke="#555" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1230" y="70" text-anchor="middle" class="dn">L2</text>
+<rect x="1223" y="230" width="14" height="40" fill="#fff" stroke="#222" stroke-width="1.6"/>
+<circle cx="1230" cy="420" r="10" fill="#fff" stroke="#333" stroke-width="1.4"/><line x1="1224" y1="426" x2="1236" y2="414" stroke="#333" stroke-width="1.4"/><text x="1230" y="402" text-anchor="middle" class="dn">TBL2</text><text x="1230" y="446" text-anchor="middle" class="ds"></text>
+<rect x="1216" y="628" width="28" height="24" fill="#fff"/><line x1="1224" y1="628" x2="1224" y2="652" stroke="#222" stroke-width="2.2"/><line x1="1236" y1="628" x2="1236" y2="652" stroke="#222" stroke-width="2.2"/><text x="1214" y="624" text-anchor="end" class="tl">3L2</text><text x="1246" y="624" text-anchor="start" class="tl">4T2</text>
+<path d="M1224,780 q-12,10 0,20 q12,10 0,20" fill="#fff" stroke="#222" stroke-width="2"/>
+<line x1="1350" y1="80" x2="1350" y2="980" stroke="#555" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1350" y="70" text-anchor="middle" class="dn">L3</text>
+<rect x="1343" y="230" width="14" height="40" fill="#fff" stroke="#222" stroke-width="1.6"/>
+<circle cx="1350" cy="420" r="10" fill="#fff" stroke="#333" stroke-width="1.4"/><line x1="1344" y1="426" x2="1356" y2="414" stroke="#333" stroke-width="1.4"/><text x="1350" y="402" text-anchor="middle" class="dn">TBL3</text><text x="1350" y="446" text-anchor="middle" class="ds"></text>
+<rect x="1336" y="628" width="28" height="24" fill="#fff"/><line x1="1344" y1="628" x2="1344" y2="652" stroke="#222" stroke-width="2.2"/><line x1="1356" y1="628" x2="1356" y2="652" stroke="#222" stroke-width="2.2"/><text x="1334" y="624" text-anchor="end" class="tl">5L3</text><text x="1366" y="624" text-anchor="start" class="tl">6T3</text>
+<path d="M1344,780 q-12,10 0,20 q12,10 0,20" fill="#fff" stroke="#222" stroke-width="2"/>
+<text x="1230" y="160" text-anchor="middle" class="ds">SW1 disconnect + fuses (off-panel, at the bench)</text>
+<text x="1230" y="470" text-anchor="middle" class="ds">3PH group, right of CR1</text>
+<text x="1385" y="645" text-anchor="start" class="dn">M main poles</text>
+<text x="1385" y="805" text-anchor="start" class="dn">OL1 heaters</text>
+<circle cx="1230" cy="1040" r="34" fill="#fff" stroke="#222" stroke-width="2"/>
+<text x="1230" y="1036" text-anchor="middle" class="tl">MOTOR</text><text x="1230" y="1052" text-anchor="middle" class="tl">½ HP</text>
+<path d="M1110,980 L1110,1000 L1200,1020 M1230,980 L1230,1006 M1350,980 L1350,1000 L1260,1020" fill="none" stroke="#555" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1230" y="1110" text-anchor="middle" class="ds">dashed = not wired in your photos</text>
+<circle cx="1470" cy="610" r="11" fill="#e07800"/><text x="1470" y="614.5" text-anchor="middle" class="mk">5</text>
+</svg>
+<figcaption>The rungs, contact numbers and wire numbers are all the same as on the lab sheet. What's added: each device is labeled with where it is on your panel, the wires are in their real colors, and CR1's coil is labeled with its socket pins 2 and 7. Those are what A1/A2 mean on an 8-pin octal relay.</figcaption>
+</figure>
+
+<h2>Wire list (from → to)</h2>
+<table><thead><tr><th>Wire</th><th>Color</th><th>From</th><th>To</th><th>Note</th></tr></thead><tbody>
+<tr><td><b>H</b></td><td><span class="sw" style="background:#151515"></span>black</td><td>Cord hot</td><td>CB1-1</td><td>Smooth conductor of the flat cord</td></tr>
+<tr><td><b>N</b></td><td><span class="sw" style="background:#151515"></span>ribbed black</td><td>Cord neutral</td><td>TB1 (top)</td><td>See problem 2</td></tr>
+<tr><td><b>G</b></td><td><span class="sw" style="background:#1d8a3c"></span>green</td><td>Cord ground</td><td>TBG1 (top)</td><td></td></tr>
+<tr><td><b>H1</b></td><td><span class="sw" style="background:#151515"></span>black</td><td>CB1-2</td><td>T1 H1</td><td>Loops below CB1, up the top duct</td></tr>
+<tr><td><b>N2/N1</b></td><td><span class="sw" style="background:#fff"></span>white</td><td>TB1 (bottom)</td><td>T1 H4</td><td>Via bottom duct, up beside T1</td></tr>
+<tr><td><b>X4</b></td><td><span class="sw" style="background:#1d8a3c"></span>green</td><td>T1 X4</td><td>TBG1 (bottom)</td><td>Grounds the 24 V common ✓</td></tr>
+<tr><td><b>X4</b></td><td><span class="sw" style="background:#fff"></span>white</td><td>T1 X4</td><td>TB4 (bottom)</td><td>Starts the X4N common bus</td></tr>
+<tr><td><b>X1</b></td><td><span class="sw" style="background:#d0262b"></span>red</td><td>T1 X1</td><td>CB2-1</td><td>Exact route not visible</td></tr>
+<tr><td><b>24</b></td><td><span class="sw" style="background:#d0262b"></span>red</td><td>CB2-2</td><td>TB7 (bottom)</td><td>Red loop under CB2</td></tr>
+<tr><td><b>1</b></td><td><span class="sw" style="background:#d0262b"></span>red</td><td>TB7 (top)</td><td>PB1 STOP 1</td><td>To the door</td></tr>
+<tr><td><b>2</b></td><td><span class="sw" style="background:#d0262b"></span>red</td><td>PB1 STOP 2</td><td>PB2 START 3</td><td>Jumper on the door</td></tr>
+<tr><td><b>2</b></td><td><span class="sw" style="background:#d0262b"></span>red</td><td>PB2 START 3</td><td>CR1 pin 1</td><td></td></tr>
+<tr><td><b>3</b></td><td><span class="sw" style="background:#d0262b"></span>red</td><td>PB2 START 4</td><td>CR1 pin 3 and pin 2 (A1)</td><td>See 'couldn't confirm'</td></tr>
+<tr><td><b>4</b></td><td><span class="sw" style="background:#fff"></span>white</td><td>CR1 pin 7 (A2)</td><td>OL1 95</td><td>See problem 4</td></tr>
+<tr><td><b>4</b></td><td><span class="sw" style="background:#fff"></span>white</td><td>OL1 A2 (= M coil A2)</td><td>OL1 95</td><td>White loop on the right of OL1</td></tr>
+<tr><td><b>5</b></td><td><span class="sw" style="background:#fff"></span>white</td><td>OL1 96</td><td>TB5 (bottom)</td><td></td></tr>
+<tr><td><b>7</b></td><td><span class="sw" style="background:#d0262b"></span>red</td><td>TB8 (top)</td><td>CR1 pin 8</td><td></td></tr>
+<tr><td><b>7</b></td><td><span class="sw" style="background:#d0262b"></span>red</td><td>CR1 pin 8</td><td>PB4 JOG 3</td><td></td></tr>
+<tr><td><b>8</b></td><td><span class="sw" style="background:#d0262b"></span>red</td><td>PB4 JOG 4</td><td>CR1 pin 6</td><td></td></tr>
+<tr><td><b>8</b></td><td><span class="sw" style="background:#d0262b"></span>red</td><td>CR1 pin 6</td><td>M A1</td><td></td></tr>
+<tr><td><b>9</b></td><td><span class="sw" style="background:#d0262b"></span>red</td><td>TB9 (top)</td><td>M 7L4</td><td></td></tr>
+<tr><td><b>10</b></td><td><span class="sw" style="background:#d0262b"></span>red</td><td>OL1 14/22 (= M 8T4)</td><td>PL1 X1</td><td>Red wire that runs up across the contactor face</td></tr>
+<tr><td><b>11</b></td><td><span class="sw" style="background:#fff"></span>white</td><td>PL1 X2</td><td>TB6 (bottom)</td><td></td></tr>
+</tbody></table>
+<p style="font-size:13px;color:#666">Each TB terminal is a feed-through, so its top and bottom screws are the same point. The orange comb jumpers tie TB4–TB6 into one X4N bus and TB7–TB9 into one 24 V bus. TB2, TB3, TBG2, TBG3, TBL1–3, OL1 97/98, PB3, SS1, PL2 and LS1/LS2 have nothing on them in this lab.</p>
+
+<h2>Problems and things to check</h2>
+
+<div class="issue"><span class="num">1</span><b>Schematic: JOG skips the STOP button.</b> Rung 7 is fed straight from TB8 on the 24 V bus, not from the far side of STOP. If someone is holding JOG, pressing STOP does nothing. M stays on until JOG is let go (or OL1 trips). In the usual "jog with a control relay" circuit, STOP comes first and feeds both the CR1 rung and the M rung, so STOP always wins. To fix it, feed wire 7 from wire 2 (the load side of STOP) instead of from TB8. Your panel is wired the way the lab sheet shows, so ask your instructor whether this is on purpose.</div>
+
+<div class="issue"><span class="num">2</span><b>The cord neutral is a black wire.</b> Your cord is a flat 3-wire cord where both current-carrying wires are black, and the neutral is marked only by ribs on its jacket. The black on TB1 has to be the ribbed one. If hot and neutral are swapped, CB1 ends up switching the neutral, and the transformer primary stays live even with CB1 off. Check it with the cord plugged in: CB1-1 should read about 120 V to ground, and TB1 about 0 V. Then put white tape on the neutral at both ends. The cord also comes in through a Halex clamp made for NM (Romex) cable. A grip listed for flexible cord is the right part, so check whether your instructor cares.</div>
+
+<div class="issue minor"><span class="num">3</span><b>Things the lab sheet doesn't make obvious (no change needed).</b> (a) On the 8-pin socket, CR1's "A1/A2" are pins 2 and 7. Its contacts are 1–3 and 8–6, which match the 750-series pinout. (b) The "M 7L4 – 14/22" contact on rung 9 is the contactor's 4th pole (7L4–8T4) used as a holding contact. You reach its bottom end through the overload's 14/22 pass-through terminal, because OL1 covers 8T4. (c) In the same way, the white loop at OL1 "A2" is really the contactor coil's A2. (d) The fuse sizes work: 50 VA ÷ 120 V ≈ 0.42 A primary, so CB1 at 1.5 A is under the 500% allowed for control transformers drawing less than 2 A. 50 VA ÷ 24 V ≈ 2.1 A secondary, which CB2 at 2 A fits.</div>
+
+<div class="issue minor"><span class="num">4</span><b>Wire 4 is white, but it isn't grounded.</b> Wire 4 runs from the coils to OL1-95, and it sits <i>upstream</i> of the OL contact. When OL1 trips with a coil energized, this "white" wire reads 24 V to ground. NFPA 79 keeps white for grounded conductors only, so strictly wire 4 should be red, or whatever your class uses for control wires. Wires 5 and 11 land straight on the X4N bus, so white is correct for them. This is a fine point, and plenty of lab panels do it the same way.</div>
+
+<div class="issue minor"><span class="num">5</span><b>The power circuit isn't built yet.</b> Nothing is on TBL1–3 or on M's 1L1/3L2/5L3, so the M contacts and OL1 heaters in the right half of the sheet aren't in your photos yet. When you wire the motor, set OL1's dial to the motor's nameplate full-load current. A ½ HP 3-phase motor is roughly 1–2.5 A depending on voltage, and the dial should read in that range.</div>
+
+<div class="issue minor"><span class="num">6</span><b>Small housekeeping items.</b> I couldn't see wire-number markers on the conductors. Adding them (1, 2, 3, ... 11) would tie the panel to the sheet in a way anyone can follow. The "TBL1-3" label sits under the CR1 socket rather than under the 3PH terminals. Also check that the door is bonded to the enclosure with a ground jumper, since it holds metal-bodied devices. That jumper isn't in the photos.</div>
+
+<h3>Things I couldn't confirm from the photos</h3>
+<p>I checked the transformer links, both breakers, the TB groups, the overload terminals (95/96/A2/14/22), the contactor (7L4/A1) and the door devices against your photos, and they match the sheet. The one place I couldn't trace every conductor is CR1's socket. There are five red ferrules on top, a red and a white on the bottom, and the relay hides part of it. Since the bottom white can only be wire 4, the bottom row is the coil, so I've shown wire 3 reaching pin 2 from START. Worth checking with a continuity test: pin 1 to START 3; pins 2 and 3 to START 4; pin 8 to TB8 and JOG 3; pin 6 to JOG 4 and M A1.</p>
+</main></body></html>
