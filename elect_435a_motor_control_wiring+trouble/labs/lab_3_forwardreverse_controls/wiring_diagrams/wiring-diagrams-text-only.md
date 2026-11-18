@@ -51,12 +51,12 @@ Text version of `wiring-diagrams.html`, without the drawings. **Preliminary:** d
 | 37 | **L2** | black | FW 3L2 | RV 3L2 | top duct |  |
 | 38 | **L3** | black | 3PHIN socket 14 (L3) | FW 5L3 | top duct |  |
 | 39 | **L3** | black | FW 5L3 | RV 1L1 | top duct | RV swaps L1 and L3 |
-| 40 | **T1** | black | OLF 2T1 | TB-T1 (bottom) | bottom duct |  |
-| 41 | **T1** | black | OLR 2T1 | TB-T1 (bottom) | bottom duct |  |
-| 42 | **T2** | black | OLF 4T2 | TB-T2 (bottom) | bottom duct |  |
-| 43 | **T2** | black | OLR 4T2 | TB-T2 (bottom) | bottom duct |  |
-| 44 | **T3** | black | OLF 6T3 | TB-T3 (bottom) | bottom duct |  |
-| 45 | **T3** | black | OLR 6T3 | TB-T3 (bottom) | bottom duct |  |
+| 40 | **T1** | black | OLF 2T1 | OLR 2T1 | bottom duct | Jumper OLF to OLR |
+| 41 | **T1** | black | OLR 2T1 | TB-T1 (bottom) | bottom duct | One wire per TB-T terminal |
+| 42 | **T2** | black | OLF 4T2 | OLR 4T2 | bottom duct | Jumper OLF to OLR |
+| 43 | **T2** | black | OLR 4T2 | TB-T2 (bottom) | bottom duct | One wire per TB-T terminal |
+| 44 | **T3** | black | OLF 6T3 | OLR 6T3 | bottom duct | Jumper OLF to OLR |
+| 45 | **T3** | black | OLR 6T3 | TB-T3 (bottom) | bottom duct | One wire per TB-T terminal |
 
 Door-channel wires (exactly 9): 1, 3, 4, 5, 9, 10, 14, 15, 17.
 
@@ -74,7 +74,7 @@ Door-channel wires (exactly 9): 1, 3, 4, 5, 9, 10, 14, 15, 17.
 
 6. **Transformer grounding: green goes to the X4 screw.** Per *Proper Grounding of the Motor Control Transformer*, the green bond lands directly on the transformer's X4 terminal, next to the white X4. Landing it at TB4 instead would be a code violation, even though Constructor draws it that way. Procedure photo 4 has to show it clearly.
 
-7. **The power circuit: RV swaps L1 and L3.** FW gets L1/L2/L3 on 1L1/3L2/5L3. RV gets L3/L2/L1. The diagram makes the line-side jumpers contactor to contactor (FW 1L1→RV 5L3, FW 3L2→RV 3L2, FW 5L3→RV 1L1), so each socket terminal has only one wire. On the load side, both overloads land on the bottom of TB-T1..T3 (2 wires per terminal, which is allowed). Nothing goes on the top of TB-T (the motor is simulated) or upstream of the socket. Before power-on, an ohmmeter check catches a swap. FW 1L1 to RV 5L3 should be ~0 Ω, and FW 1L1 to RV 1L1 should be OL.
+7. **The power circuit: RV swaps L1 and L3.** FW gets L1/L2/L3 on 1L1/3L2/5L3. RV gets L3/L2/L1. The diagram makes the line-side jumpers contactor to contactor (FW 1L1→RV 5L3, FW 3L2→RV 3L2, FW 5L3→RV 1L1), so each socket terminal has only one wire. On the load side, the TB-T terminals are too small for two wires, so each OLF output (2T1/4T2/6T3) jumpers to the same OLR terminal, and one wire runs from OLR to the bottom of TB-T1..T3. That puts two wires under each OLR load-side screw, which the overload's box clamp is made for. Nothing goes on the top of TB-T (the motor is simulated) or upstream of the socket. Before power-on, an ohmmeter check catches a swap. FW 1L1 to RV 5L3 should be ~0 Ω, and FW 1L1 to RV 1L1 should be OL.
 
 8. **Interlocking is electrical only.** FWD and REV are plain NO buttons with no button interlock. The only thing keeping FW and RV from both pulling in is each one's NC 31-32 in the other's rung. If your reversing pair has a mechanical interlock between them, install it too. Operation tests 7 and 8 film exactly this.
 

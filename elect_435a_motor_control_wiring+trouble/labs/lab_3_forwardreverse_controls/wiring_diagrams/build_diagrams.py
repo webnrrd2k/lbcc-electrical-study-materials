@@ -141,8 +141,9 @@ for ln, st, fw, rv in [('L1', '24', '1L1', '5L3'), ('L2', '21', '3L2', '3L2'), (
     seg(ln, 'black', f'SOCK.{st}', f'FW.{fw}', 'top', '', group=G)
     seg(ln, 'black', f'FW.{fw}', f'RV.{rv}', 'top', 'RV swaps L1 and L3' if ln != 'L2' else '', group=G)
 for tn, o, tb in [('T1', '2T1', 'TB-T1'), ('T2', '4T2', 'TB-T2'), ('T3', '6T3', 'TB-T3')]:
-    seg(tn, 'black', f'FW.{o}', f'{tb}.bot', 'bot', '', group=G)
-    seg(tn, 'black', f'RV.{o}', f'{tb}.bot', 'bot', '', group=G)
+    # TB-T terminals take only one wire, so OLF jumpers to OLR and OLR feeds TB-T (see note 7)
+    seg(tn, 'black', f'FW.{o}', f'RV.{o}', 'bot', 'Jumper OLF to OLR', group=G)
+    seg(tn, 'black', f'RV.{o}', f'{tb}.bot', 'bot', 'One wire per TB-T terminal', group=G)
 
 CROSS_NUMS = sorted({s['num'] for s in S if s['route'] == 'cross'}, key=lambda n: int(n))
 assert len([s for s in S if s['route'] == 'cross']) == 9, 'door channel must carry exactly 9 wires'
@@ -732,7 +733,9 @@ NOTES = [
     ('The power circuit: RV swaps L1 and L3.',
      'FW gets L1/L2/L3 on 1L1/3L2/5L3. RV gets L3/L2/L1. The diagram makes the line-side jumpers contactor to contactor '
      '(FW 1L1→RV 5L3, FW 3L2→RV 3L2, FW 5L3→RV 1L1), so each socket terminal has only one wire. On the '
-     'load side, both overloads land on the bottom of TB-T1..T3 (2 wires per terminal, which is allowed). '
+     'load side, the TB-T terminals are too small for two wires, so each OLF output (2T1/4T2/6T3) jumpers '
+     'to the same OLR terminal, and one wire runs from OLR to the bottom of TB-T1..T3. That puts two wires '
+     'under each OLR load-side screw, which the overload\'s box clamp is made for. '
      'Nothing goes on the top of TB-T (the motor is simulated) or upstream of the socket. Before power-on, '
      'an ohmmeter check catches a swap. FW 1L1 to RV 5L3 should be ~0 Ω, and FW 1L1 to RV 1L1 should be OL.', True),
     ('Interlocking is electrical only.',
