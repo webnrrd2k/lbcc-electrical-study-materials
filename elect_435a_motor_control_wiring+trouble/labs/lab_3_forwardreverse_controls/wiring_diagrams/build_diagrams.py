@@ -771,6 +771,132 @@ NOTES = [
      'Powered, the symptom is 24 V (hot to OL 95) but 0 V (hot to coil A2).', False),
 ]
 
+# ---------------------------------------------------------------------------
+# Build order, with quick checks after each stage. Each step:
+# (title, what to do, [(where the meter goes, what you do, what it should read), ...])
+# ---------------------------------------------------------------------------
+BUILD_INTRO = (
+    'Wire one section at a time and check it before you move on. A wrong contact block or a loose pin '
+    'takes seconds to find on the bench and an afternoon to find in a finished panel. '
+    '<b>Rules for every ohm/continuity check:</b> cord unplugged, 3PHIN feed unplugged, and <b>CB2 OFF</b>. '
+    'The transformer secondary connects the 24 V bus to common through a few ohms, so with CB2 on, '
+    'almost every control check reads "continuous" and tells you nothing. Clip leads help when you need '
+    'one hand on a button. "Open" means the meter reads OL.')
+
+BUILD = [
+    ('Bench-check the door devices (before wiring them)',
+     'Ohm across each contact by itself. This proves the contact blocks are the right type and on the right terminals.',
+     [('STOP1 1–2, STOP2 1–2', 'at rest', 'continuous (NC)'),
+      ('STOP1 1–2, STOP2 1–2', 'button pressed', 'open'),
+      ('FWD 3–4, REV 3–4', 'at rest', 'open (NO)'),
+      ('FWD 3–4, REV 3–4', 'button pressed', 'continuous'),
+      ('FLS 21–22, RLS 21–22', 'at rest', 'continuous (NC)'),
+      ('FLS 21–22, RLS 21–22', 'lever actuated', 'open. In the circuit, FLS opens wire 4 → 5 and drops FW only; '
+                                                  'RLS opens wire 9 → 10 and drops RV only'),
+      ('FLS 13–14, RLS 13–14', 'at rest / actuated', 'open / continuous (NO, not used in this lab)')]),
+    ('Bench-check each contactor and its aux block',
+     'With the aux block snapped on the front, push the contactor armature in by hand (unpowered) to operate '
+     'every contact. Do this for FW and RV.',
+     [('A1–A2', 'at rest', 'a definite resistance (the coil): not 0, not open'),
+      ('1L1–2T1, 3L2–4T2, 5L3–6T3, 7L4–8T4', 'at rest', 'open'),
+      ('1L1–2T1, 3L2–4T2, 5L3–6T3, 7L4–8T4', 'armature pushed in', 'continuous'),
+      ('aux 23–24', 'at rest / pushed in', 'open / continuous (NO, pilot light)'),
+      ('aux 31–32', 'at rest / pushed in', 'continuous / open (NC, interlock)')]),
+    ('Bench-check each overload and set it up',
+     'Set the FLA dial and the AUTO/HAND reset selector where your instructor wants them (HAND: you press R '
+     'after a trip; AUTO: it resets itself).',
+     [('95–96', 'normal', 'continuous (NC)'),
+      ('97–98', 'normal', 'open (NO, not used)'),
+      ('95–96 and 97–98', 'trip it with the test button, if your model has one', '95–96 open, 97–98 continuous. Press R to reset, then recheck 95–96')]),
+    ('Join each overload to its contactor, then check the pass-throughs right away',
+     'Plug the overload onto the contactor and <b>tighten the contactor\'s A2 and 2T1/4T2/6T3 screws</b> onto the '
+     'overload\'s pins. Then install the short wire from overload A2 to overload 95 (wire 7 on FW, 12 on RV; see note 10).',
+     [('overload A2 to contactor A1', 'at rest', 'coil resistance. Open = the A2 pin isn\'t clamped'),
+      ('overload 14/22 to contactor 7L4', 'at rest / armature pushed in', 'open / continuous. Proves the 14/22 pass-through'),
+      ('contactor 1L1 to overload 2T1 (same for L2, L3)', 'armature pushed in', 'continuous (through the heater)'),
+      ('contactor A1 to overload 96', 'after wire 7 or 12 is on', 'coil resistance. This one check proves the coil, the A2 pin, '
+                                                                     'wire 7/12 and the OL contact all at once')]),
+    ('Wire the 120 V supply and the transformer (cord, CB1, TB1, TBG1, T1, CB2, TB buses)',
+     'Install the primary links H1–H3 and H2–H4, the secondary link X2–X3, and the TB4–TB6 and TB7–TB9 comb jumpers.',
+     [('cord plug H to N', 'CB1 on / off', 'low resistance (transformer primary) / open'),
+      ('cord plug H and N to G', 'CB1 on', 'open'),
+      ('TBG1 to transformer X4', '—', 'continuous (X4 is bonded to ground)'),
+      ('TB7 to TB9, TB4 to TB6', '—', 'continuous (comb jumpers seated)'),
+      ('<b>Powered</b> (cord in, 3PHIN still unplugged): TB7 to TB4', 'CB2 on / off', '≈24 V AC / 0 V. Then unplug before you go on')]),
+    ('Wire the door (jumpers 2, 3, 4, 9, 15)',
+     'Check at the door ends of the wires before they go into the duct.',
+     [('wire 1 (STOP1 1) to wire 3 (STOP2 2)', 'at rest / either STOP pressed', 'continuous / open'),
+      ('wire 3 to wire 4 (FWD 4)', 'at rest / FWD pressed', 'open / continuous'),
+      ('wire 3 to wire 9 (REV 4)', 'at rest / REV pressed', 'open / continuous'),
+      ('wire 4 to wire 5 (FLS 22)', 'at rest / FLS actuated', 'continuous / open'),
+      ('wire 9 to wire 10 (RLS 22)', 'at rest / RLS actuated', 'continuous / open'),
+      ('FWDON X2 to REVON X2', '—', 'continuous (wire 15 jumper)')]),
+    ('Wire the forward and reverse rungs (wires 1–12)',
+     'CB2 OFF for all of these. TB7 is the 24 V bus, TB4 is common.',
+     [('TB7 to FW A1', 'nothing pressed', 'open'),
+      ('TB7 to FW A1', 'hold FWD', 'continuous'),
+      ('TB7 to FW A1', 'hold FWD and actuate FLS', 'open (limit switch)'),
+      ('TB7 to FW A1', 'hold FWD and press STOP1 or STOP2', 'open'),
+      ('TB7 to FW A1', 'no buttons, push FW\'s armature in', 'continuous (seal-in through 7L4 → 14/22)'),
+      ('RV 31 (wire 5) to RV 32 (wire 6)', 'at rest / RV armature pushed in', 'continuous / open. The interlock in the forward rung. '
+       '(Check it here, not from TB7: with an armature pushed in, a back path through both coils can fool the meter)'),
+      ('FW A2 to TB4', '—', 'continuous (wire 7, OLF 95–96, wire 8)'),
+      ('TB7 to TB4', 'nothing pressed / hold FWD', 'open / FW coil resistance. The whole forward rung in one check'),
+      ('Repeat for reverse: TB7 to RV A1', 'hold REV, then add RLS or a STOP', 'continuous, then open'),
+      ('FW 31 (wire 10) to FW 32 (wire 11)', 'at rest / FW armature pushed in', 'continuous / open (interlock in the reverse rung)'),
+      ('TB7 to RV A1', 'no buttons, push RV\'s armature in', 'continuous (seal-in)'),
+      ('RV A2 to TB4', '—', 'continuous (wire 12, OLR 95–96, wire 8)'),
+      ('TB7 to TB4', 'hold REV', 'RV coil resistance')]),
+    ('Wire the pilot lights (wires 13–17)',
+     'CB2 OFF.',
+     [('TB8 to FWDON X1', 'at rest / FW armature pushed in', 'open / continuous'),
+      ('TB9 to REVON X1', 'at rest / RV armature pushed in', 'open / continuous'),
+      ('FWDON X2 and REVON X2 to TB4', '—', 'continuous (wire 15)')]),
+    ('Wire the power circuit (L1–L3, T1–T3)',
+     '3PHIN feed unplugged. Watch for a phase swap: the one place the reversal can go wrong.',
+     [('FW 1L1 to RV 5L3, FW 5L3 to RV 1L1, FW 3L2 to RV 3L2', '—', '≈0 Ω'),
+      ('FW 1L1 to RV 1L1', '—', 'open (if it\'s continuous, L1/L3 aren\'t swapped)'),
+      ('socket 24 (L1) to TB-T1, TB-T2, TB-T3', 'nothing pushed', 'all open'),
+      ('socket 24 (L1) to TB-T1', 'FW armature pushed in', 'continuous'),
+      ('socket 24 (L1) to TB-T3', 'RV armature pushed in', 'continuous (RV swaps L1 and L3)'),
+      ('any L to any other L, any L to ground', '—', 'open')]),
+    ('First power-up: control circuit only',
+     'Cord in, 3PHIN still unplugged, CB2 on. If something doesn\'t work, put the black lead on TB4 and walk the red lead '
+     'down the rung (TB7, wire 2, wire 3, then hold FWD: wire 4, wire 5, A1). The fault is between the last point '
+     'with 24 V and the first with 0 V. If A1 has 24 V and the coil won\'t pull in, check A2: 24 V there means the '
+     'return (wire 7 / OL 95–96 / wire 8) is open.',
+     [('Press FWD', '—', 'FW pulls in, stays in after release, FWDON lights'),
+      ('Press REV while FW is running', '—', 'nothing happens (interlock)'),
+      ('Press STOP1, then STOP2 (restart in between)', '—', 'FW drops out each time'),
+      ('Actuate FLS while FW is running', '—', 'FW drops out; RV still starts with REV'),
+      ('Repeat all of the above for REV, REVON and RLS', '—', 'same, mirrored'),
+      ('Then, with the instructor: plug in 3PHIN', '—', 'run the operation tests on the lab sheet')]),
+]
+
+
+def build_html():
+    out = [f'<p>{BUILD_INTRO}</p>']
+    for i, (title, do, checks) in enumerate(BUILD, 1):
+        rows = ''.join(f'<tr><td>{a}</td><td>{b}</td><td>{c}</td></tr>' for a, b, c in checks)
+        out.append(f'<div class="step"><h3><span class="snum">{i}</span>{title}</h3><p>{do}</p>'
+                   f'<table><thead><tr><th style="width:34%">Meter on</th><th style="width:24%">Condition</th>'
+                   f'<th>Should read</th></tr></thead><tbody>{rows}</tbody></table></div>')
+    return '\n'.join(out)
+
+
+def build_md():
+    import re
+
+    def md(x):
+        return re.sub(r'</?b>', '**', x).replace('|', '\\|')
+    lines = ['## Build order, with quick checks along the way', '', md(BUILD_INTRO), '']
+    for i, (title, do, checks) in enumerate(BUILD, 1):
+        lines += [f'### {i}. {title}', '', md(do), '', '| Meter on | Condition | Should read |', '|---|---|---|']
+        lines += [f'| {md(a)} | {md(b)} | {md(c)} |' for a, b, c in checks]
+        lines.append('')
+    return lines
+
+
 
 def html_page(fig1, fig2):
     legend = (
@@ -825,6 +951,10 @@ th{{background:#f0f0ee}} tr.grp td{{background:#f7f3ea;font-weight:700}}
 .issue.minor{{border-left-color:#999}}
 .num{{display:inline-block;background:#e07800;color:#fff;border-radius:50%;width:22px;height:22px;text-align:center;font-weight:700;font-size:13px;line-height:22px;margin-right:6px}}
 .minor .num{{background:#888}}
+.step{{background:#fff;border:1px solid #ddd;border-left:5px solid #2f6db5;border-radius:8px;padding:8px 14px 12px;margin:12px 0}}
+.step h3{{font-size:16px;margin:4px 0 4px}} .step p{{margin:4px 0 8px}}
+.snum{{display:inline-block;background:#2f6db5;color:#fff;border-radius:50%;width:22px;height:22px;text-align:center;font-weight:700;font-size:13px;line-height:22px;margin-right:8px}}
+@media print{{.step{{break-inside:avoid}}}}
 svg .h{{font-size:15px;font-weight:700;fill:#333}}
 svg .dn{{font-size:12.5px;font-weight:700;fill:#222}}
 svg .ds{{font-size:11px;fill:#555}}
@@ -862,6 +992,9 @@ ones stay empty.</figcaption></figure>
 <figcaption>Same rungs, contacts and wire numbers as LAB3-F20b. The FW and RV contactors interlock electrically: each
 one's NC 31-32 is in the other's rung. The seal-in contacts (7L4 to 14/22) sit across the FWD and REV buttons. The
 limit switches drop out their own direction only.</figcaption></figure>
+
+<h2>Build order, with quick checks along the way</h2>
+{build_html()}
 
 <h2>Wire list (one row per physical conductor, in a sensible wiring order)</h2>
 <table><thead><tr><th>#</th><th>Wire</th><th>Color</th><th>From</th><th>To</th><th>Route</th><th>Note</th></tr></thead><tbody>
@@ -918,6 +1051,7 @@ def text_only():
              'Text version of `wiring-diagrams.html`, without the drawings. **Preliminary:** drawn from the '
              'lab sheet (LAB3-F20b) and the layout drawings, before the panel was built. Check the terminal '
              'positions on your own parts.', '',
+             ] + build_md() + [
              '## Wire list (one row per physical conductor)', '',
              '| # | Wire | Color | From | To | Route | Note |', '|---|---|---|---|---|---|---|']
     last = None
