@@ -81,10 +81,15 @@ for c, x0 in CONT.items():
         term(f'{c}.{t}', x0 + dx, 680, 'top', t, f'{c} {t}', tagd=26 + 22 * (k % 2))
     for k, (t, dx) in enumerate([('23', 148), ('24', 168), ('31', 188), ('32', 208)]):
         term(f'{c}.{t}', x0 + dx, 595, 'top', t, f'{c} aux {t}', tagd=22 + 20 * (k % 2))
-    term(f'{c}.1422', x0 + 96, 820, 'bot', '14/22', f'{OLN[c]} 14/22 (= {c} 8T4)', via=x0 - 12, lpos='below')
-    term(f'{c}.A2', x0 + 123, 820, 'bot', 'A2', f'{OLN[c]} A2 (= {c} coil A2)', lpos='below')
-    for k, (t, dx) in enumerate([('2T1', 15), ('4T2', 42), ('6T3', 69), ('96', 130), ('98', 155), ('97', 180), ('95', 205)]):
-        term(f'{c}.{t}', x0 + dx, 935, 'bot', t, f'{OLN[c]} {t}', tagd=26 + 20 * (k % 2) if k < 3 else 26)
+    # Overload face, laid out like the WEG RW17-1D on the panel: 14/22 and A2 in the top corners,
+    # the control row 96-98-97-95 across the middle (95 on the right, under A2), and the
+    # load terminals 2T1/4T2/6T3 along the bottom edge.
+    term(f'{c}.1422', x0 + 15, 820, 'bot', '14/22', f'{OLN[c]} 14/22 (= {c} 8T4)', via=x0 - 12, lpos='below', tagd=62)
+    term(f'{c}.A2', x0 + 205, 820, 'bot', 'A2', f'{OLN[c]} A2 (= {c} coil A2)', lpos='left')
+    for t, dx in [('96', 15), ('98', 78), ('97', 141), ('95', 205)]:
+        term(f'{c}.{t}', x0 + dx, 900, 'bot', t, f'{OLN[c]} {t}', lpos='left' if t == '95' else None)
+    for k, (t, dx) in enumerate([('2T1', 45), ('4T2', 110), ('6T3', 175)]):
+        term(f'{c}.{t}', x0 + dx, 940, 'bot', t, f'{OLN[c]} {t}', tagd=26 + 20 * (k % 2))
 
 # ---------------------------------------------------------------------------
 # Physical conductors, in a sensible wiring order.
@@ -396,8 +401,8 @@ def figure1():
         o.append(text(x0 + 110, 740, f'{c} contactor', 'dn'))
         o.append(text(x0 + 110, 756, '"FR" on the layout' if c == 'FW' else 'reversing', 'ds'))
         o.append(f'<rect x="{x0}" y="805" width="220" height="150" rx="5" fill="#c9cfd8" stroke="#666"/>')
-        o.append(text(x0 + 110, 880, f'{OLN[c]} overload', 'dn'))
-        o.append(text(x0 + 165, 905, '95–96 NC', 'ds'))
+        o.append(text(x0 + 100, 850, f'{OLN[c]} overload', 'dn'))
+        o.append(text(x0 + 100, 866, 'wire A2 → 95 yourself', 'ds'))
     # wires
     paths = build_paths()
     for s, pts in zip(S, paths):
@@ -413,6 +418,8 @@ def figure1():
                 o.append(text(t['x'], t['y'] + (19 if t['exit'] == 'top' else -11), t['label'], 'tlw'))
             elif t['exit'] == 'door':
                 o.append(text(t['x'], t['y'] - 9, t['label'], 'tl'))
+            elif t['lpos'] == 'left':
+                o.append(text(t['x'] - 9, t['y'] + 4, t['label'], 'tl', 'end'))
             elif t['lpos'] == 'below':
                 o.append(text(t['x'], t['y'] + 17, t['label'], 'tl'))
             else:
