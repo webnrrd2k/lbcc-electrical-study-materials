@@ -120,14 +120,14 @@ seg('4', 'red', 'FWD.4', 'FLS.21', 'door', 'Door jumper', group=G)
 seg('4', 'red', 'FLS.21', 'FW.1422', 'cross', 'FW holding contact, load side (14 on some contactors)', group=G)
 seg('5', 'red', 'FLS.22', 'RV.31', 'cross', 'Into the RV interlock (NC)', group=G)
 seg('6', 'red', 'RV.32', 'FW.A1', 'top', '', group=G)
-seg('7', 'red', 'FW.A2', 'FW.95', 'local', 'Short loop on OLF face. Color: see note 3', group=G)
+seg('7', 'red', 'FW.A2', 'FW.95', 'local', 'Short loop on OLF face. Field wire, NOT internal: see note 10. Color: see note 3', group=G)
 seg('8', 'white', 'FW.96', 'TB5.bot', 'bot', '', group=G)
 G = 'Rungs 7–8: REVERSE'
 seg('9', 'red', 'REV.4', 'RLS.21', 'door', 'Door jumper', group=G)
 seg('9', 'red', 'RLS.21', 'RV.1422', 'cross', 'RV holding contact, load side', group=G)
 seg('10', 'red', 'RLS.22', 'FW.31', 'cross', 'Into the FW interlock (NC)', group=G)
 seg('11', 'red', 'FW.32', 'RV.A1', 'top', '', group=G)
-seg('12', 'red', 'RV.A2', 'RV.95', 'local', 'Short loop on OLR face. Color: see note 3', group=G)
+seg('12', 'red', 'RV.A2', 'RV.95', 'local', 'Short loop on OLR face. Field wire, NOT internal: see note 10. Color: see note 3', group=G)
 seg('8', 'white', 'RV.96', 'FW.96', 'bot', 'OLR 96 joins OLF 96', group=G)
 G = 'Rungs 9–10: pilot lights'
 seg('13', 'red', 'TB8.top', 'FW.23', 'top', '', group=G)
@@ -745,6 +745,23 @@ NOTES = [
     ('Not used in this lab (leave empty).',
      'TB2, TB3, TBG2, TBG3, the selector switch, the limit switches\' NO 13-14, OLF/OLR 97-98, the other CR '
      'socket terminals, and the tops of TB-T1..T3. The spec says "No wiring to extra terminals".', True),
+    ('A2 to 95 is a wire YOU install. It is not internal.',
+     'Wires 7 (FW A2 → OLF 95) and 12 (RV A2 → OLR 95) are easy to skip, because the overload plugs right onto '
+     'the contactor and looks like one unit. But the overload\'s 95-96 is a <b>separate, isolated contact</b>. '
+     'Nothing inside connects it to the coil, because the maker can\'t know where you want it in your circuit '
+     '(common side, hot side, several starters, a PLC input). Leave 7 or 12 off and that coil has no return path, '
+     'so nothing happens when you press FWD or REV, even though every switch tests fine. '
+     '<br><br><b>Connections the parts make for you (don\'t wire these):</b> the two terminals of one contact '
+     '(1L1-2T1, 7L4-8T4, 31-32, 23-24, a pushbutton\'s pair), connected only when that contact is closed; '
+     'the overload\'s <b>A2</b> and <b>14/22</b> pass-throughs, which are the contactor\'s A2 and 8T4 '
+     '(note 5; the pin only connects if the contactor\'s screw is tightened on it); the overload\'s line side, which '
+     'plugs into the contactor\'s T terminals; and the top and bottom screws of one feed-through TB. '
+     '<br><b>Connections you must make:</b> everything else, including A2 → 95 (7, 12), 96 → common (8), '
+     'the transformer links (H1-H3, H2-H4, X2-X3) and the comb jumpers (TB4-TB6, TB7-TB9). '
+     '<br><b>Rule of thumb:</b> separate contacts on one device are never connected inside it. '
+     '<br><b>Check before power-on:</b> with the cord unplugged, ohm from each coil\'s A2 to OLF 96. It should read '
+     '~0 Ω through wire 7 or 12 and the closed OL contact. If it reads OL (open), that return is missing. '
+     'Powered, the symptom is 24 V (hot to OL 95) but 0 V (hot to coil A2).', False),
 ]
 
 
@@ -817,6 +834,9 @@ svg .wt{{font-size:10.5px;font-weight:700;fill:#111}}
 The wire numbers and from/to terminals follow LAB3-F20b. The physical position of terminals on your parts may
 differ (see note 1). Every wire number has a tag at <b>both ends</b>, so you can label as you go. Printable labels:
 <a href="wire-labels.html">wire-labels.html</a> ({nlab} labels).</div>
+<div class="prelim"><b>Commonly missed: wires 7 and 12 (coil A2 → overload 95).</b> They are not internal connections.
+Without them the coils have no return path and nothing pulls in. See note 10 for what the parts connect inside and
+what you have to wire.</div>
 <p class="lede">Figure 1 puts each part where it sits on the door and backplate, in the layout from
 <i>Additional Specifications for Lab 3</i>. Figure 2 is the same ladder as LAB3-F20b with the same rung numbers, tags,
 terminal numbers and wire numbers, plus wire colors and which wires cross the door. An orange
@@ -909,6 +929,7 @@ def text_only():
     for i, (title, body, _) in enumerate(NOTES, 1):
         b = re.sub(r'</?b>', '**', body)
         b = re.sub(r'</?i>', '*', b)
+        b = re.sub(r'(<br>)+', '\n\n   ', b)  # keep paragraph breaks inside the numbered item
         lines.append(f'{i}. **{title}** {b}')
         lines.append('')
     return '\n'.join(lines)
