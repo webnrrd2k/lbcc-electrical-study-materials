@@ -28,14 +28,14 @@ Text version of `wiring-diagrams.html`, without the drawings. **Preliminary:** d
 | 17 | **4** | red | FLS 21 (door) | OLF 14/22 (= FW 8T4) | **DOOR CHANNEL (right tray)** | FW holding contact, load side (14 on some contactors) |
 | 18 | **5** | red | FLS 22 (door) | RV aux 31 | **DOOR CHANNEL (right tray)** | Into the RV interlock (NC) |
 | 19 | **6** | red | RV aux 32 | FW A1 | top duct |  |
-| 20 | **7** | red | OLF A2 (= FW coil A2) | OLF 95 | on the overload face | Short loop on OLF face. Color: see note 3 |
+| 20 | **7** | red | OLF A2 (= FW coil A2) | OLF 95 | on the overload face | Short loop on OLF face. Field wire, NOT internal: see note 10. Color: see note 3 |
 | 21 | **8** | white | OLF 96 | TB5 (bottom) | bottom duct |  |
 | | **Rungs 7–8: REVERSE** | | | | | |
 | 22 | **9** | red | REV 4 (door) | RLS 21 (door) | door (jumper) | Door jumper |
 | 23 | **9** | red | RLS 21 (door) | OLR 14/22 (= RV 8T4) | **DOOR CHANNEL (right tray)** | RV holding contact, load side |
 | 24 | **10** | red | RLS 22 (door) | FW aux 31 | **DOOR CHANNEL (right tray)** | Into the FW interlock (NC) |
 | 25 | **11** | red | FW aux 32 | RV A1 | top duct |  |
-| 26 | **12** | red | OLR A2 (= RV coil A2) | OLR 95 | on the overload face | Short loop on OLR face. Color: see note 3 |
+| 26 | **12** | red | OLR A2 (= RV coil A2) | OLR 95 | on the overload face | Short loop on OLR face. Field wire, NOT internal: see note 10. Color: see note 3 |
 | 27 | **8** | white | OLR 96 | OLF 96 | bottom duct | OLR 96 joins OLF 96 |
 | | **Rungs 9–10: pilot lights** | | | | | |
 | 28 | **13** | red | TB8 (top) | FW aux 23 | top duct |  |
@@ -79,3 +79,13 @@ Door-channel wires (exactly 9): 1, 3, 4, 5, 9, 10, 14, 15, 17.
 8. **Interlocking is electrical only.** FWD and REV are plain NO buttons with no button interlock. The only thing keeping FW and RV from both pulling in is each one's NC 31-32 in the other's rung. If your reversing pair has a mechanical interlock between them, install it too. Operation tests 7 and 8 film exactly this.
 
 9. **Not used in this lab (leave empty).** TB2, TB3, TBG2, TBG3, the selector switch, the limit switches' NO 13-14, OLF/OLR 97-98, the other CR socket terminals, and the tops of TB-T1..T3. The spec says "No wiring to extra terminals".
+
+10. **A2 to 95 is a wire YOU install. It is not internal.** Wires 7 (FW A2 → OLF 95) and 12 (RV A2 → OLR 95) are easy to skip, because the overload plugs right onto the contactor and looks like one unit. But the overload's 95-96 is a **separate, isolated contact**. Nothing inside connects it to the coil, because the maker can't know where you want it in your circuit (common side, hot side, several starters, a PLC input). Leave 7 or 12 off and that coil has no return path, so nothing happens when you press FWD or REV, even though every switch tests fine. 
+
+   **Connections the parts make for you (don't wire these):** the two terminals of one contact (1L1-2T1, 7L4-8T4, 31-32, 23-24, a pushbutton's pair), connected only when that contact is closed; the overload's **A2** and **14/22** pass-throughs, which are the contactor's A2 and 8T4 (note 5; the pin only connects if the contactor's screw is tightened on it); the overload's line side, which plugs into the contactor's T terminals; and the top and bottom screws of one feed-through TB. 
+
+   **Connections you must make:** everything else, including A2 → 95 (7, 12), 96 → common (8), the transformer links (H1-H3, H2-H4, X2-X3) and the comb jumpers (TB4-TB6, TB7-TB9). 
+
+   **Rule of thumb:** separate contacts on one device are never connected inside it. 
+
+   **Check before power-on:** with the cord unplugged, ohm from each coil's A2 to OLF 96. It should read ~0 Ω through wire 7 or 12 and the closed OL contact. If it reads OL (open), that return is missing. Powered, the symptom is 24 V (hot to OL 95) but 0 V (hot to coil A2).
