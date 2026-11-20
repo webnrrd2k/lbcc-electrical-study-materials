@@ -6,7 +6,11 @@
 #+TAGS: milestone(m) canvas(c) report(r) video(v) photo(p) instructor(i) hardware(h)
 #+PROPERTY: Effort_ALL 0:15 0:30 1:00 2:00 3:00 4:00 6:00
 
-Background, tables and reasoning are in [[file:lab3-plan.md][lab3-plan.md]].
+The wiring diagrams, wire list, build order (with a quick meter check after each
+stage) and troubleshooting notes are on the Lab 3 wiring diagrams page:
+[[https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring%2Btrouble/labs/lab_3_forwardreverse_controls/wiring_diagrams/wiring-diagrams.html][Lab 3 Forward/Reverse - Wiring Diagrams]]
+"Build step N" below refers to the "Build order, with quick checks along the way"
+section of that page; "wire list" means its wire list table.
 
 * Read me first
 - *Real deadline:* the box has to be wired, tested, *powered*, *filmed* and *photographed*
@@ -14,15 +18,18 @@ Background, tables and reasoning are in [[file:lab3-plan.md][lab3-plan.md]].
   It comes back with 4 faults installed, so the Nov 30 Canvas dates only say when to upload.
 - Major milestones are top-level headings tagged =:milestone:=.
   Minor milestones are second-level headings tagged =:milestone:=.
-- =C-c a= agenda view picks up the SCHEDULED/DEADLINE dates. =C-c C-c= on a
+- Emacs: =C-c a= agenda view picks up the SCHEDULED/DEADLINE dates. =C-c C-c= on a
   checkbox toggles it. =[/]= cookies show progress.
+- Not using Emacs? This is plain text. Open lab3-tasks.txt (same content) in any
+  editor or print it, and mark each =[ ]= as =[X]= when done. TODO/DONE in front of
+  a heading is its status; =<2026-11-20 Fri>= is a date.
 
 * Milestone map
 | #  | Milestone                                 | Target          | Hard limit           |
 |----+-------------------------------------------+-----------------+----------------------|
 | M0 | Oriented: videos watched, plan made       | Sun Nov 08      |                      |
 | M1 | Diagrams done (Constructor + hand-drawn)  | Tue Nov 10      | (report, Dec 12)     |
-| M2 | All components mounted                    | Tue Nov 10      |                      |
+| M2 | Parts bench-checked + mounted             | Tue Nov 10      |                      |
 | M3 | Control wiring done + Check In 1          | Sun Nov 15      | Check In 1 Nov 16    |
 | M4 | Power wiring done + self-inspection       | Tue Nov 17      |                      |
 | M5 | Pre-power test quiz 100%                  | Wed Nov 18      | before power-on      |
@@ -73,12 +80,14 @@ Background, tables and reasoning are in [[file:lab3-plan.md][lab3-plan.md]].
    - [ ] [[file:LAB3-COMPONENTS-1.PNG][Component layout]] and [[file:LAB3-FRONT PANEL-1.PNG][Front panel layout]]
    - [ ] [[file:Proper Grounding of the Motor Control Transformer-2.pdf][Transformer grounding]]: green goes directly to X4 *at the transformer*
    - [ ] Read the [[file:Lab 3 Selloff.pdf][Selloff rubric]] and [[file:Forward_Reverse Lab Report.pdf][Report rubric]] *now*, so you know what's graded
-** TODO Make/verify your own wire list (draft in lab3-plan.md §8)
+** TODO Make/verify your own wire list (start from the wire list on the wiring diagrams page)
    :PROPERTIES:
    :Effort:   1:00
    :END:
    - [ ] Mark the 9 door-crossing wires: 1, 3, 4, 5, 9, 10, 14, 15, 17
-   - [ ] Mark the door-side jumpers: 2 (STOP1→STOP2), 3 (STOP2→FWD→REV), 15 (FWDON X2→REVON X2)
+   - [ ] Mark the door-side jumpers: 2 (STOP1→STOP2), 3 (STOP2→FWD→REV), 4 (FWD→FLS),
+         9 (REV→RLS), 15 (REVON X2→FWDON X2)
+   - [ ] Print and cut the wire labels (wire-labels.html / wire-labels.csv)
 
 * M1 Report setup + diagrams [0/4]                          :milestone:report:
   DEADLINE: <2026-11-10 Tue>
@@ -103,10 +112,28 @@ Background, tables and reasoning are in [[file:lab3-plan.md][lab3-plan.md]].
    Columns: Q# / meter lead placement / expected / actual / fixed?
    Keep the original. Retyped worksheets get no credit.
 
-* M2 Components installed [0/3]                           :milestone:hardware:
+* M2 Components bench-checked and installed [0/5]          :milestone:hardware:
   SCHEDULED: <2026-11-07 Sat> DEADLINE: <2026-11-10 Tue>
-** TODO Backplate DIN rail, left → right
-   - [ ] Transformer (check primary links per ladder)
+  Every ohm/continuity check: cord unplugged, 3PHIN feed unplugged, *CB2 OFF*.
+  "Open" = meter reads OL.
+** TODO Build step 1: bench-check the door devices (before wiring them)
+   - [ ] STOP1 1-2, STOP2 1-2: continuous at rest, open when pressed (NC)
+   - [ ] FWD 3-4, REV 3-4: open at rest, continuous when pressed (NO)
+   - [ ] FLS 21-22, RLS 21-22: continuous at rest, open when actuated (NC)
+   - [ ] FLS/RLS 13-14: open at rest (NO, not used in this lab)
+** TODO Build step 2: bench-check FW and RV contactors + aux blocks
+   Aux block snapped on; push the armature in by hand (unpowered).
+   - [ ] A1-A2: a definite coil resistance (not 0, not open)
+   - [ ] 1L1-2T1, 3L2-4T2, 5L3-6T3, 7L4-8T4: open at rest, continuous pushed in
+   - [ ] Aux 23-24: open / continuous (NO, pilot light)
+   - [ ] Aux 31-32: continuous / open (NC, interlock)
+** TODO Build step 3: bench-check OLF and OLR, set them up
+   - [ ] Set the FLA dial and AUTO/HAND reset where the instructor wants them
+   - [ ] 95-96 continuous (NC); 97-98 open (NO, not used)
+   - [ ] Trip with the test button (if any): 95-96 open, 97-98 continuous; press R, recheck
+** TODO Mount everything
+   Backplate DIN rail, left → right:
+   - [ ] Transformer (primary links H1-H3, H2-H4; secondary link X2-X3)
    - [ ] CB1
    - [ ] TBG1-3 (green)
    - [ ] TB1-3 (120V-N)
@@ -114,49 +141,77 @@ Background, tables and reasoning are in [[file:lab3-plan.md][lab3-plan.md]].
    - [ ] TB7-9 (24V-H) + comb jumper
    - [ ] CB2
    - [ ] 3PHIN (CR socket)
-   - [ ] FR (FW) contactor + OLF
+   - [ ] FW contactor + OLF
    - [ ] RV contactor + OLR
    - [ ] TB-T1, T2, T3 (3PH POWER)
    - [ ] *End stops between every component* (not between TBs)
-** TODO Door devices (front view, left → right)
+   Door devices (front view, left → right):
    - [ ] STOP1 (red), FWD (green), STOP2 (red), REV (green)
    - [ ] FLS, RLS limit switches
    - [ ] FWDON, REVON pilot lights (red)
-** TODO Cable trays in place; door channel identified
+   - [ ] Cable trays in place; door channel identified (right tray)
+** TODO Build step 4: join each overload to its contactor, check right away
+   - [ ] Plug overload on; tighten the contactor's A2 and 2T1/4T2/6T3 screws onto its pins
+   - [ ] Install wire 7 (OLF A2 → OLF 95) and wire 12 (OLR A2 → OLR 95).
+         *Field wires you install, NOT internal*
+   - [ ] Overload A2 to contactor A1: coil resistance (open = A2 pin not clamped)
+   - [ ] Overload 14/22 to contactor 7L4: open at rest, continuous pushed in
+   - [ ] Contactor 1L1 to overload 2T1 (and L2, L3): continuous when pushed in
+   - [ ] Contactor A1 to overload 96: coil resistance (proves coil, A2 pin, wire 7/12, OL contact)
 
-* M3 Control wiring complete + Check In 1 [0/6]           :milestone:hardware:
+* M3 Control wiring complete + Check In 1 [0/5]           :milestone:hardware:
   DEADLINE: <2026-11-15 Sun>
   Rules: in the top, out the bottom · no copper showing · max 2 wires/terminal ·
   *1 wire per CB terminal* · hot+neutral run together · nothing on unused terminals ·
-  16 AWG stranded only · no wire nuts.
-** TODO 120 VAC input (black H / white N / green G)
-   - [ ] Cord H → CB1-1; CB1-2 → transformer H1
-   - [ ] Cord N → TB1; TB1 → transformer
-   - [ ] Cord G → TBG1
-** TODO 24 VAC secondary + grounding
-   - [ ] X1 → CB2-1 (red); CB2-2 → TB7 = wire 24 (red)
-   - [ ] X4 → TB4 (white)
-   - [ ] TBG1 → *X4 terminal on the transformer* (green)
-** TODO Rungs 5-6: FORWARD
-   - [ ] 1: TB7 → STOP1-1
-   - [ ] 2: STOP1-2 → STOP2-1 (door)
-   - [ ] 3: STOP2-2 → FWD-3 → REV-3 (door) → FW 7L4 → RV 7L4
-   - [ ] 4: FWD-4 → FLS-21 (door) → FW 14/22
-   - [ ] 5: FLS-22 → RV 31
+  16 AWG stranded only · no wire nuts. Check each step before moving on.
+** TODO Build step 5: 120 VAC supply + transformer + 24 VAC secondary
+   - [ ] Cord H (black) → CB1-1; CB1-2 → transformer H1 (black)
+   - [ ] Cord N (white) → TB1 top; TB1 bottom → transformer H4 (white, "N2")
+   - [ ] Cord G (green) → TBG1 top
+   - [ ] TBG1 bottom → *X4 screw on the transformer* (green)
+   - [ ] Transformer X4 → TB4 (white)
+   - [ ] Transformer X1 → CB2-1 (red); CB2-2 → TB7 = wire 24 (red)
+   - [ ] Check: plug H to N: low resistance with CB1 on, open with CB1 off
+   - [ ] Check: plug H and N to G: open (CB1 on)
+   - [ ] Check: TBG1 to X4 continuous; TB7 to TB9 and TB4 to TB6 continuous
+   - [ ] Powered check (cord in, 3PHIN unplugged): TB7 to TB4 ≈24 VAC CB2 on, 0 V off.
+         Unplug before going on
+** TODO Build step 6: door jumpers (2, 3, 4, 9, 15)
+   - [ ] 2: STOP1-2 → STOP2-1
+   - [ ] 3: STOP2-2 → FWD-3 → REV-3
+   - [ ] 4: FWD-4 → FLS-21
+   - [ ] 9: REV-4 → RLS-21
+   - [ ] 15: REVON X2 → FWDON X2 (white)
+   - [ ] Check (door ends): STOP1-1 to wire 3 continuous, open with either STOP pressed
+   - [ ] Check: 3 to 4 closes with FWD; 3 to 9 closes with REV
+   - [ ] Check: 4 to 5 opens with FLS; 9 to 10 opens with RLS
+** TODO Build step 7: forward and reverse rungs (wires 1-12)
+   Forward:
+   - [ ] 1: TB7 → STOP1-1 (door channel)
+   - [ ] 3: REV-3 → FW 7L4 (door channel); FW 7L4 → RV 7L4
+   - [ ] 4: FLS-21 → OLF 14/22 (door channel)
+   - [ ] 5: FLS-22 → RV 31 (door channel)
    - [ ] 6: RV 32 → FW A1
-   - [ ] 7: FW A2 → OLF 95
    - [ ] 8: OLF 96 → TB5 (white)
-** TODO Rungs 7-8: REVERSE
-   - [ ] 9: REV-4 → RLS-21 (door) → RV 14/22
-   - [ ] 10: RLS-22 → FW 31
+   Reverse:
+   - [ ] 9: RLS-21 → OLR 14/22 (door channel)
+   - [ ] 10: RLS-22 → FW 31 (door channel)
    - [ ] 11: FW 32 → RV A1
-   - [ ] 12: RV A2 → OLR 95
-   - [ ] 8: OLR 96 → wire 8 / TB5 (white)
-** TODO Rungs 9-10: pilot lights
-   - [ ] 13: TB8 → FW 23;  14: FW 24 → FWDON X1
-   - [ ] 16: TB9 → RV 23;  17: RV 24 → REVON X1
-   - [ ] 15: FWDON X2 → REVON X2 (door) → TB6 (white)
-   - [ ] Count door-channel wires: exactly *9*
+   - [ ] 8: OLR 96 → OLF 96 (white)
+   Checks (CB2 OFF; TB7 = 24 V bus, TB4 = common):
+   - [ ] TB7 to FW A1: open; continuous holding FWD; open again with FLS or a STOP
+   - [ ] TB7 to FW A1, no buttons, FW armature pushed in: continuous (seal-in)
+   - [ ] RV 31 to RV 32: continuous; open with RV armature pushed in (interlock)
+   - [ ] FW A2 to TB4: continuous (wire 7, OLF 95-96, wire 8)
+   - [ ] TB7 to TB4: open; FW coil resistance holding FWD
+   - [ ] Same for reverse: TB7 to RV A1, FW 31-32 interlock, RV A2 to TB4, TB7 to TB4 holding REV
+** TODO Build step 8: pilot lights (wires 13-17)
+   - [ ] 13: TB8 → FW 23;  14: FW 24 → FWDON X1 (door channel)
+   - [ ] 16: TB9 → RV 23;  17: RV 24 → REVON X1 (door channel)
+   - [ ] 15: FWDON X2 → TB6 (white, door channel)
+   - [ ] Check: TB8 to FWDON X1 closes with FW pushed in; TB9 to REVON X1 with RV
+   - [ ] Check: FWDON X2 and REVON X2 to TB4 continuous
+   - [ ] Count door-channel wires: exactly *9* (1, 3, 4, 5, 9, 10, 14, 15, 17)
 ** TODO Check In 1 (10 pts)                                     :canvas:photo:
    DEADLINE: <2026-11-16 Mon 23:59>
    - [ ] Photos: front of controls / rear of control panel / top-down wiring area
@@ -165,11 +220,18 @@ Background, tables and reasoning are in [[file:lab3-plan.md][lab3-plan.md]].
 
 * M4 Power wiring + self-inspection [0/2]                 :milestone:hardware:
   DEADLINE: <2026-11-17 Tue>
-** TODO 3-phase (simulated) power circuit, all black
-   - [ ] 3PHIN L1 (24) → FW 1L1 and RV 5L3
-   - [ ] 3PHIN L2 (21) → FW 3L2 and RV 3L2
-   - [ ] 3PHIN L3 (14) → FW 5L3 and RV 1L1
-   - [ ] OLF/OLR 2T1 → TB-T1;  4T2 → TB-T2;  6T3 → TB-T3
+** TODO Build step 9: 3-phase (simulated) power circuit, all black
+   3PHIN feed unplugged. Watch for a phase swap.
+   - [ ] 3PHIN 24 (L1) → FW 1L1; FW 1L1 → RV 5L3
+   - [ ] 3PHIN 21 (L2) → FW 3L2; FW 3L2 → RV 3L2
+   - [ ] 3PHIN 14 (L3) → FW 5L3; FW 5L3 → RV 1L1
+   - [ ] OLF 2T1 → OLR 2T1 → TB-T1 bottom (one wire per TB-T terminal)
+   - [ ] OLF 4T2 → OLR 4T2 → TB-T2 bottom
+   - [ ] OLF 6T3 → OLR 6T3 → TB-T3 bottom
+   - [ ] Check: FW 1L1-RV 5L3, FW 5L3-RV 1L1, FW 3L2-RV 3L2 ≈0 Ω; FW 1L1-RV 1L1 open
+   - [ ] Check: socket 24 to TB-T1/T2/T3 all open; TB-T1 closes with FW pushed in,
+         TB-T3 closes with RV pushed in
+   - [ ] Check: any L to any other L, any L to ground: open
 ** TODO Selloff self-inspection (100 pts graded at drop-off) [0/11]
    - [ ] Neat, industry-standard wiring
    - [ ] No exposed copper (inspect every terminal)
@@ -193,8 +255,17 @@ Background, tables and reasoning are in [[file:lab3-plan.md][lab3-plan.md]].
 
 * M6 Powered, filmed, photographed [0/5]                 :milestone:video:photo:
   SCHEDULED: <2026-11-19 Thu> DEADLINE: <2026-11-20 Fri>
-** TODO First power-on (only after M5 is at 100%)
-** TODO Rehearse the 10 tests (expected results in lab3-plan.md §5)
+** TODO Build step 10: first power-up, control circuit only (only after M5 is at 100%)
+   Cord in, 3PHIN still unplugged, CB2 on.
+   - [ ] FWD: FW pulls in, stays in after release, FWDON lights
+   - [ ] REV while FW runs: nothing (interlock)
+   - [ ] STOP1, then STOP2 (restart between): FW drops out each time
+   - [ ] FLS while FW runs: FW drops out; REV still starts RV
+   - [ ] Same for REV, REVON and RLS
+   - [ ] If something fails: black lead on TB4, walk red lead down the rung
+         (TB7, 2, 3, hold FWD: 4, 5, A1). Fault is between the last 24 V point and the first 0 V.
+   - [ ] With the instructor: plug in 3PHIN, run the operation tests on the lab sheet
+** TODO Rehearse the 10 tests (expected results listed under "Film Operation video" below)
    - [ ] Print [[file:LAB 3 OPERATIONAL DEMONSTRATION.pdf][the demo sheet]]
    - [ ] Watch [[file:ELECT 435A LAB3 OPERATION DEMO [AAsnMvPTKYE].mkv][instructor's demo video]] (2:42)
 ** TODO Film Operation video (100 pts)                              :canvas:video:
@@ -250,7 +321,8 @@ Background, tables and reasoning are in [[file:lab3-plan.md][lab3-plan.md]].
   DEADLINE: <2026-12-07 Mon 23:59>
 ** TODO Prep (before opening the quiz)
    - [ ] Re-study the ladder until you can predict any meter reading
-   - [ ] Clean ladder copy, wire list, meter + fresh battery, lab3-plan.md §5 test table
+   - [ ] Clean ladder copy, wire list + "Things to check" from the wiring diagrams page,
+         meter + fresh battery, the 10 operation tests (M6)
    - [ ] Blank fault log in table format: Error # / Description / Problem caused / How found / Fix
    - [ ] Block 4 uninterrupted hours
 ** TODO Run the 4-hour session (honor system, no outside help)
