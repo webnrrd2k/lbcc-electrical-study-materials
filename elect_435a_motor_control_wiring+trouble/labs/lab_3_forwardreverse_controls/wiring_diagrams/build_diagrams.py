@@ -3,11 +3,10 @@
 
 Everything is generated from the SEGMENTS list below (one entry per physical
 conductor). Edit a segment, re-run `python3 build_diagrams.py`, and every
-output (diagram, wire list, labels, text-only page) updates together.
+output (diagram, wire list, labels) updates together.
 
 Outputs (same folder as this script):
   wiring-diagrams.html          Figure 1 physical layout, Figure 2 ladder, wire list, notes
-  wiring-diagrams-text-only.md  same notes and wire list without drawings
   wire-labels.html              printable sheet of wire-number labels (one per wire end)
   wire-labels.csv               same labels as CSV, for label-maker software
 """
@@ -884,20 +883,6 @@ def build_html():
     return '\n'.join(out)
 
 
-def build_md():
-    import re
-
-    def md(x):
-        return re.sub(r'</?b>', '**', x).replace('|', '\\|')
-    lines = ['## Build order, with quick checks along the way', '', md(BUILD_INTRO), '']
-    for i, (title, do, checks) in enumerate(BUILD, 1):
-        lines += [f'### {i}. {title}', '', md(do), '', '| Meter on | Condition | Should read |', '|---|---|---|']
-        lines += [f'| {md(a)} | {md(b)} | {md(c)} |' for a, b, c in checks]
-        lines.append('')
-    return lines
-
-
-
 def html_page(fig1, fig2):
     legend = (
         '<div class="legend">'
@@ -1046,43 +1031,11 @@ Print at 100% scale and cut on the dashed lines. With a label maker, import <cod
 '''
 
 
-def text_only():
-    lines = ['# Lab 3 Motor Control: Forward / Reverse Wiring Diagrams (PRELIMINARY, text only)', '',
-             'Text version of `wiring-diagrams.html`, without the drawings. **Preliminary:** drawn from the '
-             'lab sheet (LAB3-F20b) and the layout drawings, before the panel was built. Check the terminal '
-             'positions on your own parts.', '',
-             ] + build_md() + [
-             '## Wire list (one row per physical conductor)', '',
-             '| # | Wire | Color | From | To | Route | Note |', '|---|---|---|---|---|---|---|']
-    last = None
-    for k, s in enumerate(S, 1):
-        if s['group'] != last:
-            lines.append(f'| | **{s["group"]}** | | | | | |')
-            last = s['group']
-        a = '*cord*' if s['route'] == 'cord' else name(s['a'])
-        r = ROUTE_TXT[s['route']]
-        if s['route'] == 'cross':
-            r = f'**{r}**'
-        lines.append(f'| {k} | **{s["num"]}** | {s["color"]} | {a} | {name(s["b"])} | {r} | {s["note"]} |')
-    lines += ['', f'Door-channel wires (exactly 9): {", ".join(CROSS_NUMS)}.', '',
-              '## Things to check', '']
-    import re
-    for i, (title, body, _) in enumerate(NOTES, 1):
-        b = re.sub(r'</?b>', '**', body)
-        b = re.sub(r'</?i>', '*', b)
-        b = re.sub(r'(<br>)+', '\n\n   ', b)  # keep paragraph breaks inside the numbered item
-        lines.append(f'{i}. **{title}** {b}')
-        lines.append('')
-    return '\n'.join(lines)
-
-
 def main():
     with open(os.path.join(OUT, 'wiring-diagrams.html'), 'w') as f:
         f.write(html_page(figure1(), figure2()))
     with open(os.path.join(OUT, 'wire-labels.html'), 'w') as f:
         f.write(labels_page())
-    with open(os.path.join(OUT, 'wiring-diagrams-text-only.md'), 'w') as f:
-        f.write(text_only())
     with open(os.path.join(OUT, 'wire-labels.csv'), 'w', newline='') as f:
         w = csv.writer(f)
         w.writerow(['label', 'lands_on', 'color', 'door_channel'])
