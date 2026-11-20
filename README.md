@@ -19,7 +19,7 @@ Pick your class to see its materials.
 | Class | Topics | What's there |
 |-------|--------|--------------|
 | [ELECT 212 — Electrical Fundamentals (3rd semester)](elect_212_3rd_semester_electrical_fundamentals/) | AC theory: trig and vectors, AC waveforms, inductance, capacitance, R-L, R-C and R-L-C series and parallel circuits (Units 14–24) | 11 study guides, 637 flashcards, 2 practice-problem sets, formula cheat sheet |
-| [ELECT 435A — Motor Control Wiring and Troubleshooting](elect_435a_motor_control_wiring%2Btrouble/) | Motor control labs: Lab 2 Start/Stop/Jog, Lab 3 Forward/Reverse (coming soon) | Wiring diagrams: what to physically hook up, plus troubleshooting notes |
+| [ELECT 435A — Motor Control Wiring and Troubleshooting](elect_435a_motor_control_wiring%2Btrouble/) | Motor control labs: Lab 2 Start/Stop/Jog, Lab 3 Forward/Reverse | Wiring diagrams: what to physically hook up, plus troubleshooting notes |
 
 More classes will be added as they're covered.
 
@@ -29,20 +29,9 @@ More classes will be added as they're covered.
 
 - **[Lab 2 — Start/Stop/Jog - Wiring Diagrams](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring%2Btrouble/labs/lab_2_startstopjog/wiring-diagrams.html)**  — Clearly labeled and layed-out wiring diagram for Lab 2.
 
-- **[Lab 3 —  Lab #3 Forward/Reverse Controls - Wiring Diagrams](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls)**  — Plan of attack and clear wiring diagram for Lab 3.
-    + [Wiring Diagram - PRELIMINARY](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/wiring_diagrams/wiring-diagrams.html)
-    + [Wiring Diagram Text Only - PRELIMINARY](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/wiring_diagrams/wiring-diagrams-text-only.md)
-    + Wire Labels [HTML](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/wiring_diagrams/wire-labels.html) [CSV](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/wiring_diagrams/wire-labels.csv)
-
-
-
-
-
-
-
-    
-    + Plan of Attack [PDF](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/lab3-plan.pdf) or [Markdown](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/lab3-plan.md)
-    + [Tasks to complete](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring+trouble/labs/lab_3_forwardreverse_controls/lab3-tasks.org) is the task-by-task list in Emacs org-mode format, but It's a plain-text document, so should be usable as a checklist by anyone. Changing the extension to .txt and it should open correctly. It has 11 milestones (M0–M10), sub-milestones and checkboxes
+- **[Lab 3 — Forward/Reverse Controls - Wiring Diagrams](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring%2Btrouble/labs/lab_3_forwardreverse_controls/wiring_diagrams/wiring-diagrams.html)** — Clearly labeled wiring diagram, wire list, and a build order with quick meter checks after each stage for Lab 3.
+    + Wire Labels [HTML](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring%2Btrouble/labs/lab_3_forwardreverse_controls/wiring_diagrams/wire-labels.html) [CSV](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring%2Btrouble/labs/lab_3_forwardreverse_controls/wiring_diagrams/wire-labels.csv)
+    + Tasks to complete: [Emacs org-mode](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring%2Btrouble/labs/lab_3_forwardreverse_controls/lab3-tasks.org) or [plain text](https://webnrrd2k.github.io/lbcc-electrical-study-materials/elect_435a_motor_control_wiring%2Btrouble/labs/lab_3_forwardreverse_controls/lab3-tasks.txt). The task-by-task checklist for the whole lab: 11 milestones (M0–M10), sub-milestones and checkboxes, following the build order. Both files have the same content; the .txt opens in any text editor.
 
 ---
 
