@@ -19,6 +19,7 @@ Pick your class to see its materials.
 | Class | Topics | What's there |
 |-------|--------|--------------|
 | [ELECT 212 — Electrical Fundamentals (3rd semester)](elect_212_3rd_semester_electrical_fundamentals/) | AC theory: trig and vectors, AC waveforms, inductance, capacitance, R-L, R-C and R-L-C series and parallel circuits (Units 14–24) | 11 study guides, 637 flashcards, 2 practice-problem sets, formula cheat sheet |
+| [ELECT 275 — Electrical Pipe Bending](elect_275_electrical_pipe_bending/) | Hand bending EMT and rigid (RMC) conduit: 90° stub-ups, back-to-back 90s, offsets, 3- and 4-point saddles, box offsets | [Conduit bending cheat sheet](elect_275_electrical_pipe_bending/conduit_bending_cheat_sheet.pdf): formulas, bender shoe marks, constants, practice bends, NEC rules |
 | [ELECT 435A — Motor Control Wiring and Troubleshooting](elect_435a_motor_control_wiring%2Btrouble/) | Motor control labs: Lab 2 Start/Stop/Jog, Lab 3 Forward/Reverse | Wiring diagrams: what to physically hook up, plus troubleshooting notes |
 
 More classes will be added as they're covered.
