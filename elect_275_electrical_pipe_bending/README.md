@@ -17,6 +17,8 @@ Formulas, bender marks, and constants for bending EMT and rigid (RMC) conduit wi
 
 Print it and keep it in your toolbag, or pull it up on your phone at the bending table.
 
+- **[Conduit Bending Study Guide](lbcc_conduit_bending_guide.md)**: the same material as the cheat sheet, written out in more detail. It reads right here on GitHub, no download needed. It walks through each practice bend done in class (EMT and RMC 3-point and 4-point saddles, offsets, back-to-back 90s, stub 90s, and a stub 90° with a box offset) with its angles, constants, mark-by-mark formulas, and which bender mark to line up with.
+
 ---
 
 ## Tips
@@ -32,7 +34,8 @@ Print it and keep it in your toolbag, or pull it up on your phone at the bending
 ```
 elect_275_electrical_pipe_bending/
 ├── README.md                          (this page)
-└── conduit_bending_cheat_sheet.pdf    (formulas, shoe marks, constants, practice bends)
+├── conduit_bending_cheat_sheet.pdf    (formulas, shoe marks, constants, practice bends)
+└── lbcc_conduit_bending_guide.md      (study guide: same material in more detail)
 ```
 
 More material for this class (practice problems, worked bend layouts) will be added here.
