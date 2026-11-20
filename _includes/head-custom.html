@@ -1,0 +1,12 @@
+<!-- Loaded in the <head> of every Markdown page on the website (GitHub Pages theme hook).
+     MathJax formats LaTeX math ($...$ inline, $$...$$ display), the same syntax GitHub renders. -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    }
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
