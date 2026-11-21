@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "front": "<img src=\"soffit_luminaire_01_pendant_soffit.png\">",
+    "back": "Soffit and Wall-Mounted Luminaire<br>New - PENDANT SOFFIT LUMINAIRE, 70 W HPS UNLESS OTHERWISE SPECIFIED",
+    "extra_notes": "NOTE: Arrow indicates \"street side\" of luminaire.",
+    "media": [
+      "soffit_luminaire_01_pendant_soffit.png"
+    ],
+    "tags": [
+      "soffit_wall_luminaires",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 2,
+    "front": "<img src=\"soffit_luminaire_02_flush_mounted_soffit.png\">",
+    "back": "Soffit and Wall-Mounted Luminaire<br>New - FLUSH-MOUNTED SOFFIT LUMINAIRE, 70 W HPS UNLESS OTHERWISE SPECIFIED",
+    "extra_notes": "NOTE: Arrow indicates \"street side\" of luminaire.",
+    "media": [
+      "soffit_luminaire_02_flush_mounted_soffit.png"
+    ],
+    "tags": [
+      "soffit_wall_luminaires",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 3,
+    "front": "<img src=\"soffit_luminaire_03_wall_mounted.png\">",
+    "back": "Soffit and Wall-Mounted Luminaire<br>New - WALL-MOUNTED LUMINAIRE, 70 W HPS UNLESS OTHERWISE SPECIFIED",
+    "extra_notes": "NOTE: Arrow indicates \"street side\" of luminaire.",
+    "media": [
+      "soffit_luminaire_03_wall_mounted.png"
+    ],
+    "tags": [
+      "soffit_wall_luminaires",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 4,
+    "front": "<img src=\"soffit_luminaire_04_existing_remain_unmodified.png\">",
+    "back": "Soffit and Wall-Mounted Luminaire<br>Existing - EXISTING SOFFIT OR WALL-MOUNTED LUMINAIRE TO REMAIN UNMODIFIED",
+    "extra_notes": "NOTE: Arrow indicates \"street side\" of luminaire.",
+    "media": [
+      "soffit_luminaire_04_existing_remain_unmodified.png"
+    ],
+    "tags": [
+      "soffit_wall_luminaires",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 5,
+    "front": "<img src=\"soffit_luminaire_05_existing_to_be_modified.png\">",
+    "back": "Soffit and Wall-Mounted Luminaire<br>Existing - EXISTING SOFFIT OR WALL-MOUNTED LUMINAIRE TO BE MODIFIED AS SPECIFIED",
+    "extra_notes": "NOTE: Arrow indicates \"street side\" of luminaire.",
+    "media": [
+      "soffit_luminaire_05_existing_to_be_modified.png"
+    ],
+    "tags": [
+      "soffit_wall_luminaires",
+      "existing",
+      "caltrans_legend"
+    ]
+  }
+]
