@@ -8,13 +8,13 @@ Study guides and flashcards for ELECT 280. The class covers reading Caltrans tra
 
 ## Quick reference
 
-- **[Cheat Sheet (PDF)](elect_280_cheat_sheet.pdf)** ([read on GitHub](elect_280_cheat_sheet.md)): the most important ideas from the course on 6 pages:
+- **[Cheat Sheet (PDF)](elect_280_cheat_sheet.pdf)** ([read on GitHub](elect_280_cheat_sheet.md)): the most important ideas from the course on 7 pages:
     + **Course at a glance:** the 10 core skills, in the order the class builds them
     + **Key numbers and formulas:** ring diagram pairs, detector designations (2I2U), 332 cabinet layout, PDA breakers, diode card math, cable rules, loop inductance and yellow-interval formulas
     + **Every assignment:** what it asks, the skills it tests, and the common mistakes
     + **Safety and the biggest misunderstandings**
 
-- **[Syllabus Study Guide (PDF)](elect_280_study_guide.pdf)** ([read on GitHub](elect_280_study_guide.md)): 16 pages that follow the syllabus topic by topic (A–K). Each topic has the same seven parts:
+- **[Syllabus Study Guide (PDF)](elect_280_study_guide.pdf)** ([read on GitHub](elect_280_study_guide.md)): 17 pages that follow the syllabus topic by topic (A–K). Each topic has the same seven parts:
     1. Main ideas
     2. Examples
     3. Background: math up to trigonometry, with NEC, NFPA 70E, NETA, CA MUTCD and Caltrans references
@@ -39,7 +39,15 @@ Study guides and flashcards for ELECT 280. The class covers reading Caltrans tra
 
 ---
 
-## Flashcards: Caltrans plan symbols
+## Flashcards
+
+Study any deck on its page, on the [flashcard study page](https://webnrrd2k.github.io/lbcc-electrical-study-materials/flashcards/) (shuffle, flip, mark what you know), or download it for Anki, Quizlet or Emacs org-drill.
+
+### Course concepts
+
+[103 cards](flashcards/concepts/) covering the whole course in 10 topics: phase numbering, the ring diagram and timing intervals, plans, pedestrian timing, loop detectors, the 332 cabinet, load switches and flash, the 210 monitor, conduit and grounding, and safety. Code values are checked against the CA MUTCD 2026.
+
+### Caltrans plan symbols
 
 Picture-front flashcards made from the legend in the 2018 Caltrans Electrical Standard Plans. Each card shows a symbol, and the back says what it is. Most symbols come in pairs, **new** and **existing**, because telling them apart on a plan matters.
 
@@ -51,10 +59,7 @@ Picture-front flashcards made from the legend in the 2018 Caltrans Electrical St
 | [Miscellaneous electroliers](flashcards/misc_electroliers/) | 8 | Luminaire on wood pole, non-standard and city electroliers, future foundation |
 | [Soffit and wall-mounted luminaires](flashcards/soffit_luminaires/) | 5 | Pendant, flush-mounted and wall-mounted luminaires, existing to remain or be modified |
 
-Each deck folder has the symbol images plus the cards in two formats:
-
-- **`.json`**: front, back, notes and tags for each card, for importing into a flashcard app such as Anki.
-- **`.org`**: Emacs org-mode with `:drill:` tags, for use with org-drill.
+Each deck folder has a page of clickable cards (`README.md`), the card data (`.json`), and downloads for Anki (`.apkg`), Quizlet (`_quizlet.txt`; picture cards are left out because Quizlet's import has no images) and Emacs org-drill (`.org`).
 
 ---
 
@@ -73,11 +78,13 @@ Each deck folder has the symbol images plus the cards in two formats:
 ```
 elect_280_traffic_signal_systems_1/
 ├── README.md                      (this page)
-├── elect_280_cheat_sheet.pdf      (6-page overview)
+├── elect_280_cheat_sheet.pdf      (7-page overview)
 ├── elect_280_cheat_sheet.md       (same content, readable on GitHub)
-├── elect_280_study_guide.pdf      (16-page guide, topic by topic)
+├── elect_280_study_guide.pdf      (17-page guide, topic by topic)
 ├── elect_280_study_guide.md       (same content, readable on GitHub)
+├── images/                        (ring diagram and 332 cabinet drawings, with SVG sources)
 └── flashcards/
+    ├── concepts/                  (103 cards)
     ├── caltrans_legend_symbols/   (71 cards)
     ├── plan_abbreviations/        (20 cards)
     ├── standard_electroliers/     (22 cards)

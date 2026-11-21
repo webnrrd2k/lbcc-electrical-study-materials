@@ -1,0 +1,1613 @@
+{
+ "schema_version": "2.0",
+ "deck": "Chapter 12: Panelboard Selection and Installation",
+ "deck_id": "e245-ch12",
+ "class": "ELECT 245",
+ "title": "Panelboard Selection and Installation",
+ "format": "text",
+ "order": 12,
+ "book": "Electrical Wiring: Commercial, 18th ed. (Cengage, 2024), pp. 290-311",
+ "nec_edition": "2023",
+ "source": "Original study cards and diagrams based on the textbook chapter. NEC section numbers refer to NFPA 70; NEC text is not reproduced. Cards tagged 'beyond-text' use code knowledge outside the chapter, so check them in your code book.",
+ "generated": "2026-11-06",
+ "retired_ids": [],
+ "cards": [
+  {
+   "id": "e245-ch12-001",
+   "type": "basic",
+   "section": "1. Big picture",
+   "difficulty": 1,
+   "front": "What are the two big topics of Chapter 12?",
+   "back": "(1) Selecting and installing panelboards (NEC Art. 408, plus 110, 210, 215, 240, 312). (2) Working space and dedicated space around electrical equipment (NEC 110.26).",
+   "nec_ref": "Art. 408; 110.26",
+   "source_page": "290-291",
+   "tags": [
+    "overview"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-002",
+   "type": "basic",
+   "section": "1. Big picture",
+   "difficulty": 1,
+   "front": "Which NEC article governs panelboards, and which governs the cabinets they are installed in?",
+   "back": "Panelboards: Article 408. Cabinets, cutout boxes, and meter socket enclosures: Article 312.",
+   "nec_ref": "Art. 408; Art. 312",
+   "source_page": "290-291",
+   "tags": [
+    "overview",
+    "panelboard-basics"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-003",
+   "type": "basic",
+   "section": "1. Big picture",
+   "difficulty": 1,
+   "front": "Which NEC section is the core working-space rule?",
+   "back": "NEC 110.26: working space, access and egress, clear spaces, illumination, and dedicated equipment space for equipment at 1000 V or less.",
+   "nec_ref": "110.26",
+   "source_page": "290-291",
+   "tags": [
+    "overview",
+    "working-space"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-004",
+   "type": "basic",
+   "section": "1. Big picture",
+   "difficulty": 1,
+   "front": "What is the purpose of working-space rules, in one phrase?",
+   "back": "Safe ACCESS TO and ESCAPE FROM the space in front of equipment that may be examined, adjusted, serviced, or maintained while energized. They exist mostly because of arc-flash and shock hazards.",
+   "nec_ref": "110.26",
+   "source_page": "290-291",
+   "tags": [
+    "overview",
+    "working-space",
+    "safety"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-005",
+   "type": "basic",
+   "section": "2. Panelboard basics",
+   "difficulty": 1,
+   "front": "How does the NEC define a panelboard (key points)?",
+   "back": "A single panel or group of panel units with buses and automatic overcurrent devices (with or without switches), designed to be placed in a cabinet or cutout box in or against a wall, and ACCESSIBLE ONLY FROM THE FRONT.",
+   "nec_ref": "Art. 100",
+   "source_page": "291-292",
+   "tags": [
+    "panelboard-basics",
+    "definitions"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-006",
+   "type": "basic",
+   "section": "2. Panelboard basics",
+   "difficulty": 1,
+   "front": "Panelboard vs. switchboard: what distinguishes them?",
+   "back": "Panelboard: in a cabinet, usually wall-mounted, accessible only from the front. Switchboard: usually free-standing on the floor and may be accessible from the rear.",
+   "nec_ref": "Art. 100",
+   "source_page": "291-292",
+   "tags": [
+    "panelboard-basics",
+    "definitions"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-007",
+   "type": "basic",
+   "section": "2. Panelboard basics",
+   "difficulty": 2,
+   "front": "What is an MLO panelboard?",
+   "back": "Main-lug-only: branch breakers but no main overcurrent device. It's protected by the feeder OCPD upstream, which must not exceed the panel's rating.",
+   "nec_ref": "408.36",
+   "source_page": "291-292",
+   "tags": [
+    "panelboard-basics",
+    "overcurrent"
+   ],
+   "image": "images/panel-ocp.png",
+   "image_alt": "Three one-lines: a main-breaker panel, a main-lug-only panel protected by a feeder breaker no larger than its bus, and a snap-switch panel limited to 200 A.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-008",
+   "type": "basic",
+   "section": "2. Panelboard basics",
+   "difficulty": 2,
+   "front": "Which NEC section requires panelboards to be dead front, and what does that mean?",
+   "back": "408.38. The panel is mounted in a cabinet, cutout box, or identified enclosure, with no current-carrying parts exposed to the person operating the devices.",
+   "nec_ref": "408.38",
+   "source_page": "291-292",
+   "tags": [
+    "panelboard-basics",
+    "safety"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-009",
+   "type": "basic",
+   "section": "2. Panelboard basics",
+   "difficulty": 2,
+   "front": "Is a panelboard still limited to 42 overcurrent devices?",
+   "back": "No. The 2008 NEC dropped the 'lighting and appliance panelboard' 42-device limit. The design, rating, and listing of the panelboard now govern the maximum.",
+   "nec_ref": "408.36; 408.54",
+   "source_page": "291-292",
+   "tags": [
+    "panelboard-basics",
+    "pitfall"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-010",
+   "type": "basic",
+   "section": "2. Panelboard basics",
+   "difficulty": 2,
+   "front": "What are snap switches in a panelboard?",
+   "back": "Switches in old fusible panelboards, installed in addition to the fuses so a branch circuit could be turned off without pulling the fuse. Modern breakers do both jobs, so they're not used in new panels.",
+   "nec_ref": "408.36(A)",
+   "source_page": "291-292",
+   "tags": [
+    "panelboard-basics",
+    "history"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-011",
+   "type": "basic",
+   "section": "2. Panelboard basics",
+   "difficulty": 2,
+   "front": "Maximum OCP for a panelboard containing snap switches rated 30 A or less?",
+   "back": "200 A. The protection may be in the panel or upstream (for example, in the main switchboard).",
+   "nec_ref": "408.36(A)",
+   "source_page": "291-292",
+   "tags": [
+    "overcurrent",
+    "history"
+   ],
+   "image": "images/panel-ocp.png",
+   "image_alt": "Three one-lines: a main-breaker panel, a main-lug-only panel protected by a feeder breaker no larger than its bus, and a snap-switch panel limited to 200 A.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-012",
+   "type": "basic",
+   "section": "3. Construction, phase arrangement, numbering",
+   "difficulty": 2,
+   "front": "How are panelboard main bus bars typically arranged?",
+   "back": "Main bus bars run vertically for nearly the full height. Branch stabs connect to alternating main buses.",
+   "nec_ref": "408.3",
+   "source_page": "292-294",
+   "tags": [
+    "construction"
+   ],
+   "image": "images/panel-3ph.png",
+   "image_alt": "Three-phase panel bus: positions 1-2 on A, 3-4 on B, 5-6 on C repeating; any three adjacent positions on one side give A-B-C.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-013",
+   "type": "basic",
+   "section": "3. Construction, phase arrangement, numbering",
+   "difficulty": 2,
+   "front": "In a typical panel, are breaker positions directly across from each other on the same phase or different phases?",
+   "back": "Same phase (for example, circuits 1 and 2 on A). Adjacent positions on the same side are on different phases.",
+   "nec_ref": "408.3",
+   "source_page": "292-294",
+   "tags": [
+    "construction",
+    "numbering"
+   ],
+   "image": "images/panel-1ph.png",
+   "image_alt": "Single-phase panel bus: odd circuits on the left, even on the right; positions across from each other share a leg, adjacent positions alternate A and B.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-014",
+   "type": "basic",
+   "section": "3. Construction, phase arrangement, numbering",
+   "difficulty": 2,
+   "front": "3-phase panel: circuits 1, 3, 5 are on which phases?",
+   "back": "A, B, C respectively. Then 7, 9, 11 = A, B, C again. Even side 2, 4, 6 = A, B, C.",
+   "nec_ref": "408.3",
+   "source_page": "292-294",
+   "tags": [
+    "numbering"
+   ],
+   "image": "images/panel-3ph.png",
+   "image_alt": "Three-phase panel bus: positions 1-2 on A, 3-4 on B, 5-6 on C repeating; any three adjacent positions on one side give A-B-C.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-015",
+   "type": "basic",
+   "section": "3. Construction, phase arrangement, numbering",
+   "difficulty": 2,
+   "front": "1-phase, 3-wire panel: circuits 1-2 and 3-4 are on which legs?",
+   "back": "1 and 2 on A; 3 and 4 on B; 5 and 6 on A again, alternating down the panel.",
+   "nec_ref": "408.3",
+   "source_page": "292-294",
+   "tags": [
+    "numbering"
+   ],
+   "image": "images/panel-1ph.png",
+   "image_alt": "Single-phase panel bus: odd circuits on the left, even on the right; positions across from each other share a leg, adjacent positions alternate A and B.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-016",
+   "type": "basic",
+   "section": "3. Construction, phase arrangement, numbering",
+   "difficulty": 2,
+   "front": "Circuit numbering convention in panelboards?",
+   "back": "Odd numbers on the left, even numbers on the right, regardless of 1-, 2-, or 3-pole breakers or handle ties.",
+   "nec_ref": "",
+   "source_page": "292-294",
+   "tags": [
+    "numbering"
+   ],
+   "image": "images/panel-3ph.png",
+   "image_alt": "Three-phase panel bus: positions 1-2 on A, 3-4 on B, 5-6 on C repeating; any three adjacent positions on one side give A-B-C.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-017",
+   "type": "basic",
+   "section": "3. Construction, phase arrangement, numbering",
+   "difficulty": 2,
+   "front": "Why do 3-phase panels come in pole counts like 18, 24, 30, 36, 42?",
+   "back": "The incremental number is 6: one pole for each of the three phases on both sides of the panel.",
+   "nec_ref": "",
+   "source_page": "292-294",
+   "tags": [
+    "numbering"
+   ],
+   "image": "images/panel-3ph.png",
+   "image_alt": "Three-phase panel bus: positions 1-2 on A, 3-4 on B, 5-6 on C repeating; any three adjacent positions on one side give A-B-C.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-018",
+   "type": "basic",
+   "section": "3. Construction, phase arrangement, numbering",
+   "difficulty": 2,
+   "front": "What should you always check before assuming a panel's phase arrangement?",
+   "back": "The manufacturer's wiring diagram furnished with the panelboard. Not every panel follows the typical pattern.",
+   "nec_ref": "110.3(B)",
+   "source_page": "292-294",
+   "tags": [
+    "construction",
+    "pitfall"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-019",
+   "type": "basic",
+   "section": "3. Construction, phase arrangement, numbering",
+   "difficulty": 2,
+   "front": "NEC 408.3(E)(1): required AC phase arrangement?",
+   "back": "A, B, C from front to back, top to bottom, or left to right, as viewed from the front of the switchboard or panelboard.",
+   "nec_ref": "408.3(E)(1)",
+   "source_page": "292-294",
+   "tags": [
+    "construction"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-020",
+   "type": "basic",
+   "section": "3. Construction, phase arrangement, numbering",
+   "difficulty": 2,
+   "front": "NEC 408.3(E)(2): DC bus arrangement rules?",
+   "back": "DC ungrounded buses may be in any order, but the arrangement must be field marked for polarity, grounding system, and nominal voltage. This matters for PV (Art. 690) and battery systems.",
+   "nec_ref": "408.3(E)(2)",
+   "source_page": "292-294",
+   "tags": [
+    "construction",
+    "dc"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-021",
+   "type": "basic",
+   "section": "3. Construction, phase arrangement, numbering",
+   "difficulty": 2,
+   "front": "In a 4-wire delta panel, which bus must the high leg connect to?",
+   "back": "Phase B. Exception: equipment in the same section as the meter may match the meter's arrangement (utilities often use C).",
+   "nec_ref": "408.3(E)(1)",
+   "source_page": "292-294",
+   "tags": [
+    "high-leg",
+    "construction"
+   ],
+   "image": "images/high-leg-delta.png",
+   "image_alt": "Delta triangle with 240-V sides and a grounded center tap on A-C; the B-to-neutral height is 240 sin 60 deg = 208 V.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-022",
+   "type": "basic",
+   "section": "3. Construction, phase arrangement, numbering",
+   "difficulty": 3,
+   "front": "Owner's panel: nine 1-pole, two 2-pole, three 3-pole breakers. How many poles are used?",
+   "back": "9x1 + 2x2 + 3x3 = 22 poles. In the book's 36-pole panel that leaves 14 poles.",
+   "nec_ref": "",
+   "source_page": "292-294",
+   "tags": [
+    "numbering",
+    "calculation"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-023",
+   "type": "basic",
+   "section": "4. Ratings & overcurrent",
+   "difficulty": 2,
+   "front": "What determines a panelboard's ampere rating?",
+   "back": "The current-carrying capacity of its internal main bus. Common ratings: 60, 100, 200, 225, 400, 600 A and larger.",
+   "nec_ref": "408.30",
+   "source_page": "295-296",
+   "tags": [
+    "panel-rating"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-024",
+   "type": "basic",
+   "section": "4. Ratings & overcurrent",
+   "difficulty": 2,
+   "front": "NEC 408.30 requires a panelboard rating of at least what?",
+   "back": "Not less than the minimum feeder capacity calculated per Article 220.",
+   "nec_ref": "408.30",
+   "source_page": "295-296",
+   "tags": [
+    "panel-rating"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-025",
+   "type": "basic",
+   "section": "4. Ratings & overcurrent",
+   "difficulty": 2,
+   "front": "NEC 408.36: maximum rating of the overcurrent protection for a panelboard?",
+   "back": "Not greater than the rating of the panelboard.",
+   "nec_ref": "408.36",
+   "source_page": "295-296",
+   "tags": [
+    "overcurrent"
+   ],
+   "image": "images/panel-ocp.png",
+   "image_alt": "Three one-lines: a main-breaker panel, a main-lug-only panel protected by a feeder breaker no larger than its bus, and a snap-switch panel limited to 200 A.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-026",
+   "type": "basic",
+   "section": "4. Ratings & overcurrent",
+   "difficulty": 2,
+   "front": "Where may a panelboard's overcurrent protection be located?",
+   "back": "In the panelboard (a main) OR at any point on the supply side of the panelboard (for example, the feeder breaker).",
+   "nec_ref": "408.36",
+   "source_page": "295-296",
+   "tags": [
+    "overcurrent"
+   ],
+   "image": "images/panel-ocp.png",
+   "image_alt": "Three one-lines: a main-breaker panel, a main-lug-only panel protected by a feeder breaker no larger than its bus, and a snap-switch panel limited to 200 A.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-027",
+   "type": "basic",
+   "section": "4. Ratings & overcurrent",
+   "difficulty": 2,
+   "front": "State the three-way inequality for panelboard protection.",
+   "back": "Calculated load <= OCPD rating <= panelboard rating, and the OCPD must also protect the feeder conductors (240.4).",
+   "nec_ref": "408.30; 408.36; 240.4",
+   "source_page": "295-296",
+   "tags": [
+    "overcurrent",
+    "panel-rating"
+   ],
+   "image": "images/panel-ocp.png",
+   "image_alt": "Three one-lines: a main-breaker panel, a main-lug-only panel protected by a feeder breaker no larger than its bus, and a snap-switch panel limited to 200 A.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-028",
+   "type": "basic",
+   "section": "4. Ratings & overcurrent",
+   "difficulty": 3,
+   "front": "150-A panel, 78-A calculated load: which OCPD ratings are acceptable among 70, 80, 90, 100, 125, 150, 175, 200, 225 A?",
+   "back": "80, 90, 100, 125, and 150 A. 70 A is below the load; 175 A and up exceed the panel rating (408.36).",
+   "nec_ref": "408.36",
+   "source_page": "295-296",
+   "tags": [
+    "overcurrent",
+    "calculation",
+    "review"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-029",
+   "type": "basic",
+   "section": "4. Ratings & overcurrent",
+   "difficulty": 3,
+   "front": "Same 150-A panel, but the 78-A load is all continuous. Now which OCPDs work?",
+   "back": "Minimum = 1.25 x 78 = 97.5 A, so 100, 125, or 150 A.",
+   "nec_ref": "215.3; 408.36",
+   "source_page": "295-296",
+   "tags": [
+    "overcurrent",
+    "calculation",
+    "continuous"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-030",
+   "type": "basic",
+   "section": "4. Ratings & overcurrent",
+   "difficulty": 3,
+   "front": "When can several panels on one feeder skip individual mains?",
+   "back": "When the feeder OCPD doesn't exceed the rating of the lowest-rated panelboard supplied.",
+   "nec_ref": "408.36",
+   "source_page": "295-296",
+   "tags": [
+    "overcurrent",
+    "exception"
+   ],
+   "image": "images/feeder-taps.png",
+   "image_alt": "A 400-A feeder in a wireway with taps to two 225-A panels, each with a 200-A main.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-031",
+   "type": "basic",
+   "section": "4. Ratings & overcurrent",
+   "difficulty": 2,
+   "front": "A 400-A feeder supplies two 225-A panels through wireway taps. What protects each panel?",
+   "back": "Each tap terminates in a 200-A main (or OCPD) no larger than the 225-A panel rating. Taps must meet 240.21(B).",
+   "nec_ref": "240.21(B); 408.36",
+   "source_page": "295-296",
+   "tags": [
+    "overcurrent",
+    "taps"
+   ],
+   "image": "images/feeder-taps.png",
+   "image_alt": "A 400-A feeder in a wireway with taps to two 225-A panels, each with a 200-A main.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-032",
+   "type": "basic",
+   "section": "4. Ratings & overcurrent",
+   "difficulty": 2,
+   "front": "OCPD sizing rule for continuous loads (max current for 3 h or more) on a feeder?",
+   "back": "At least 125% of the continuous load plus 100% of the noncontinuous load. Equivalently, standard devices run at 80% max continuous. Exception: an assembly and OCPD listed for 100% operation.",
+   "nec_ref": "215.3; 215.2(A)(1)",
+   "source_page": "295-296",
+   "tags": [
+    "continuous",
+    "overcurrent"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-033",
+   "type": "basic",
+   "section": "4. Ratings & overcurrent",
+   "difficulty": 3,
+   "front": "Formula for 3-phase current from VA on a 208Y/120 V system?",
+   "back": "I = VA / (1.732 x 208) = VA / 360.3. Example: 52,000 VA -> 144.3 A.",
+   "nec_ref": "Art. 220",
+   "source_page": "295-296",
+   "tags": [
+    "calculation"
+   ],
+   "image": "images/wye-208y120.png",
+   "image_alt": "Wye phasor diagram: three 120-V phase voltages 120 deg apart; line-to-line A-B = 120 x sqrt(3) = 208 V.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-034",
+   "type": "basic",
+   "section": "4. Ratings & overcurrent",
+   "difficulty": 3,
+   "front": "Load: 30,000 VA continuous + 22,000 VA noncontinuous, 208Y/120 3-phase. Minimum feeder OCPD?",
+   "back": "(1.25 x 30,000 + 22,000) / 360.3 = 165.2 A, so 175 A, the next standard size (240.6(A)). Panel bus must be >= 175 A (a 200- or 225-A panel).",
+   "nec_ref": "215.3; 240.6(A); 408.36",
+   "source_page": "295-296",
+   "tags": [
+    "calculation",
+    "overcurrent"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-035",
+   "type": "basic",
+   "section": "4. Ratings & overcurrent",
+   "difficulty": 2,
+   "front": "Panel fed through a transformer: where must its overcurrent protection be?",
+   "back": "On the SECONDARY side of the transformer.",
+   "nec_ref": "408.36(B)",
+   "source_page": "295-296",
+   "tags": [
+    "overcurrent",
+    "transformer"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-036",
+   "type": "basic",
+   "section": "4. Ratings & overcurrent",
+   "difficulty": 3,
+   "front": "When may a transformer-fed panel rely on the transformer's PRIMARY protection?",
+   "back": "Only for a 2-wire primary to 2-wire secondary, or a 3-wire delta-delta transformer, per 240.21(C)(1). The turns ratio lets the primary OCPD protect the secondary.",
+   "nec_ref": "408.36(B) Ex.; 240.21(C)(1)",
+   "source_page": "295-296",
+   "tags": [
+    "overcurrent",
+    "transformer",
+    "exception"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-037",
+   "type": "basic",
+   "section": "4. Ratings & overcurrent",
+   "difficulty": 2,
+   "front": "Can a 480-V delta to 208Y/120-V wye dry-type rely on primary protection for its panel?",
+   "back": "No. Delta-wye (4-wire secondary) doesn't qualify for the 240.21(C)(1) exception. The panel needs secondary protection (a main or a secondary OCPD within tap limits).",
+   "nec_ref": "408.36(B); 240.21(C)",
+   "source_page": "295-296",
+   "tags": [
+    "overcurrent",
+    "transformer",
+    "pitfall"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-038",
+   "type": "basic",
+   "section": "5. Cabinets & wiring space",
+   "difficulty": 2,
+   "front": "Why must panel cabinets be sized beyond just the interior?",
+   "back": "Wiring gutters need enough width for bending conductors, plus space for splices, taps, and feed-through conductors.",
+   "nec_ref": "312.6-312.9; 408.3(G); 408.55",
+   "source_page": "296-297",
+   "tags": [
+    "cabinet"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-039",
+   "type": "basic",
+   "section": "5. Cabinets & wiring space",
+   "difficulty": 2,
+   "front": "Three ways to feed multiple panelboards from one feeder?",
+   "back": "(1) Junction box or wireway with taps; (2) feed-through lugs from the first panel to the next; (3) double lugs (only if listed for two conductors).",
+   "nec_ref": "240.21(B); 110.14(A)",
+   "source_page": "296-297",
+   "tags": [
+    "cabinet",
+    "taps"
+   ],
+   "image": "images/feeder-taps.png",
+   "image_alt": "A 400-A feeder in a wireway with taps to two 225-A panels, each with a 200-A main.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-040",
+   "type": "basic",
+   "section": "5. Cabinets & wiring space",
+   "difficulty": 3,
+   "front": "Cabinet used for splices/taps: maximum fill?",
+   "back": "Conductors <= 40% of the cross-sectional area at any point. Conductors plus splices and taps <= 75%.",
+   "nec_ref": "312.8",
+   "source_page": null,
+   "tags": [
+    "cabinet",
+    "beyond-text"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-041",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 2,
+   "front": "Which two NEC sections require a panelboard circuit directory?",
+   "back": "110.22(A) and 408.4(A).",
+   "nec_ref": "110.22(A); 408.4(A)",
+   "source_page": "297-300",
+   "tags": [
+    "directory"
+   ],
+   "image": "images/directory.png",
+   "image_alt": "Two panel directories side by side: specific permanent entries that comply with 408.4(A), and vague entries that violate it.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-042",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 2,
+   "front": "List the 408.4(A) requirements for circuit identification.",
+   "back": "Legible and permanent; in a directory on the face, inside, or next to the panel door; clear and specific to each circuit (including spares with a breaker); detailed enough to avoid confusion; not dependent on transient occupancy; abbreviations and symbols explained.",
+   "nec_ref": "408.4(A)",
+   "source_page": "297-300",
+   "tags": [
+    "directory"
+   ],
+   "image": "images/directory.png",
+   "image_alt": "Two panel directories side by side: specific permanent entries that comply with 408.4(A), and vague entries that violate it.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-043",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 2,
+   "front": "Is 'Tom Jones's office' an acceptable directory entry? Why?",
+   "back": "No. It depends on transient occupancy, which 408.4(A) prohibits. Use a permanent room number or area name.",
+   "nec_ref": "408.4(A)",
+   "source_page": "297-300",
+   "tags": [
+    "directory",
+    "pitfall"
+   ],
+   "image": "images/directory.png",
+   "image_alt": "Two panel directories side by side: specific permanent entries that comply with 408.4(A), and vague entries that violate it.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-044",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 2,
+   "front": "Best directory entry for a computer-room receptacle circuit?",
+   "back": "Specific and permanent, for example: 'Receptacles, Computer Room 3, north wall.' Avoid 'Computer room' alone or a person's name.",
+   "nec_ref": "408.4(A)",
+   "source_page": "297-300",
+   "tags": [
+    "directory",
+    "review"
+   ],
+   "image": "images/directory.png",
+   "image_alt": "Two panel directories side by side: specific permanent entries that comply with 408.4(A), and vague entries that violate it.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-045",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 2,
+   "front": "'Spare' vs. 'space' in a panel directory?",
+   "back": "Spare: a breaker is installed but unused (must still be identified). Space: an empty position with no breaker.",
+   "nec_ref": "408.4(A)",
+   "source_page": "297-300",
+   "tags": [
+    "directory",
+    "definitions"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-046",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 2,
+   "front": "Does a circuit change require a directory update?",
+   "back": "Yes. 408.4(A) applies to 'every circuit AND circuit modification.' Updating the directory is one of the final steps of any job.",
+   "nec_ref": "408.4(A)",
+   "source_page": "297-300",
+   "tags": [
+    "directory",
+    "pitfall"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-047",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 2,
+   "front": "NEC 408.4(B): what must a feeder-supplied panel be marked with (other than in one- and two-family dwellings)?",
+   "back": "The identification and physical location of where the power originates. The label must be permanently affixed, durable for the environment, and NOT handwritten.",
+   "nec_ref": "408.4(B); 110.22(A)",
+   "source_page": "297-300",
+   "tags": [
+    "identification",
+    "safety"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-048",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 2,
+   "front": "Why be careful drilling holes to attach a source label?",
+   "back": "Penetrating a listed enclosure, especially outdoors or in a wet location, can violate the listing, and you may hit live parts. See 312.10 for fasteners in cabinets.",
+   "nec_ref": "312.10",
+   "source_page": "297-300",
+   "tags": [
+    "identification",
+    "pitfall",
+    "safety"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-049",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 2,
+   "front": "When do 210.5(C) and 215.12(C) require voltage and color-code identification at panels?",
+   "back": "When the premises have more than one nominal voltage system (or both AC and DC). Panels must be permanently marked with how each ungrounded conductor is identified. The method may be posted or documented.",
+   "nec_ref": "210.5(C); 215.12(C)",
+   "source_page": "297-300",
+   "tags": [
+    "identification"
+   ],
+   "image": "images/color-code.png",
+   "image_alt": "Color swatches: 208Y/120 V black, red, blue, white; 480Y/277 V brown, orange, yellow, gray.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-050",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 2,
+   "front": "Typical conductor colors for 208Y/120 V?",
+   "back": "Black (A), Red (B), Blue (C), White (neutral).",
+   "nec_ref": "210.5(C)",
+   "source_page": "297-300",
+   "tags": [
+    "identification"
+   ],
+   "image": "images/color-code.png",
+   "image_alt": "Color swatches: 208Y/120 V black, red, blue, white; 480Y/277 V brown, orange, yellow, gray.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-051",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 2,
+   "front": "Typical conductor colors for 480Y/277 V?",
+   "back": "Brown (A), Orange (B), Yellow (C), Gray (neutral).",
+   "nec_ref": "210.5(C)",
+   "source_page": "297-300",
+   "tags": [
+    "identification"
+   ],
+   "image": "images/color-code.png",
+   "image_alt": "Color swatches: 208Y/120 V black, red, blue, white; 480Y/277 V brown, orange, yellow, gray.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-052",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 2,
+   "front": "Which conductor colors does the NEC actually MANDATE?",
+   "back": "White or gray for the grounded (neutral) conductor; green or bare for the equipment grounding conductor; orange (or other effective means) for the high leg. Phase colors are conventions you must post.",
+   "nec_ref": "200.6; 250.119; 110.15",
+   "source_page": "297-300",
+   "tags": [
+    "identification",
+    "pitfall"
+   ],
+   "image": "images/color-code.png",
+   "image_alt": "Color swatches: 208Y/120 V black, red, blue, white; 480Y/277 V brown, orange, yellow, gray.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-053",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 3,
+   "front": "Exception: adding a new voltage system to an existing building with unmarked systems?",
+   "back": "Mark only the new system, and add a label stating 'other unidentified systems exist on the premises.'",
+   "nec_ref": "210.5(C)(1) Ex.",
+   "source_page": "297-300",
+   "tags": [
+    "identification",
+    "exception"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-054",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 2,
+   "front": "NEC 408.7 / 110.12(A): rule on unused openings?",
+   "back": "Close unused openings (missing breaker knockouts, raceway knockouts) with protection substantially equivalent to the enclosure wall. Use listed filler plates and closures.",
+   "nec_ref": "408.7; 110.12(A)",
+   "source_page": "297-300",
+   "tags": [
+    "identification",
+    "safety"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-055",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 2,
+   "front": "High-leg delta: what label must be on the panelboard?",
+   "back": "A permanent field marking: 'CAUTION: ___ PHASE HAS ___ VOLTS TO GROUND.'",
+   "nec_ref": "408.3(F)(1)",
+   "source_page": "297-300",
+   "tags": [
+    "high-leg",
+    "identification"
+   ],
+   "image": "images/high-leg-delta.png",
+   "image_alt": "Delta triangle with 240-V sides and a grounded center tap on A-C; the B-to-neutral height is 240 sin 60 deg = 208 V.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-056",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 2,
+   "front": "Required identification of the high-leg conductor?",
+   "back": "An outer finish that is orange, or other effective means, wherever the neutral is also present.",
+   "nec_ref": "110.15; 230.56",
+   "source_page": "297-300",
+   "tags": [
+    "high-leg",
+    "identification"
+   ],
+   "image": "images/high-leg-delta.png",
+   "image_alt": "Delta triangle with 240-V sides and a grounded center tap on A-C; the B-to-neutral height is 240 sin 60 deg = 208 V.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-057",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 3,
+   "front": "Calculate the B-to-ground voltage of a 120/240-V 4-wire delta (use trig).",
+   "back": "B is the apex of an equilateral triangle with 240-V sides; N is the midpoint of A-C. Height = 240 sin 60 deg = 240 x 0.866 = 207.8 V (approx. 208 V) = 120 x sqrt(3).",
+   "nec_ref": "408.3(F)(1)",
+   "source_page": "297-300",
+   "tags": [
+    "high-leg",
+    "calculation"
+   ],
+   "image": "images/high-leg-delta.png",
+   "image_alt": "Delta triangle with 240-V sides and a grounded center tap on A-C; the B-to-neutral height is 240 sin 60 deg = 208 V.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-058",
+   "type": "basic",
+   "section": "6. Directory & identification",
+   "difficulty": 2,
+   "front": "Motors run backward after feeder conductors are re-terminated. Fix for all motors at once?",
+   "back": "Swap any two feeder phase conductors, then re-identify them with properly colored tape at both ends.",
+   "nec_ref": "210.5(C); 215.12(C)",
+   "source_page": "297-300",
+   "tags": [
+    "field",
+    "pitfall"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-059",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "Define working-space Condition 1.",
+   "back": "Exposed live parts on one side; no live or grounded parts on the other side. Or live parts on both sides effectively guarded by insulating material.",
+   "nec_ref": "Table 110.26(A)(1)",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "conditions"
+   ],
+   "image": "images/condition-1.png",
+   "image_alt": "Plan view: equipment with exposed live parts on one side of the working space, nothing live or grounded opposite; depths 3 ft at all voltage bands.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-060",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "Define working-space Condition 2.",
+   "back": "Exposed live parts on one side and GROUNDED parts on the other. Concrete, brick, and tile walls count as grounded.",
+   "nec_ref": "Table 110.26(A)(1)",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "conditions"
+   ],
+   "image": "images/condition-2.png",
+   "image_alt": "Plan view: exposed live parts facing a hatched grounded wall; depths 3 ft (0-150 V), 3.5 ft (151-600 V), 4 ft (601-1000 V).",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-061",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "Define working-space Condition 3.",
+   "back": "Exposed live parts on BOTH sides of the working space (for example, panels facing each other across an aisle).",
+   "nec_ref": "Table 110.26(A)(1)",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "conditions"
+   ],
+   "image": "images/condition-3.png",
+   "image_alt": "Plan view: exposed live parts on both sides of the working space; depths 3 ft, 4 ft and 5 ft by voltage band.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-062",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "Working-space depth for 0-150 V to ground?",
+   "back": "3 ft (900 mm) for ALL three conditions.",
+   "nec_ref": "Table 110.26(A)(1)",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "dimensions"
+   ],
+   "image": "images/condition-3.png",
+   "image_alt": "Plan view: exposed live parts on both sides of the working space; depths 3 ft, 4 ft and 5 ft by voltage band.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-063",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "Working-space depth for 151-600 V to ground, Conditions 1 / 2 / 3?",
+   "back": "3 ft / 3.5 ft / 4 ft (900 mm / 1.0 m / 1.2 m).",
+   "nec_ref": "Table 110.26(A)(1)",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "dimensions"
+   ],
+   "image": "images/condition-2.png",
+   "image_alt": "Plan view: exposed live parts facing a hatched grounded wall; depths 3 ft (0-150 V), 3.5 ft (151-600 V), 4 ft (601-1000 V).",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-064",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "Working-space depth for 601-1000 V to ground, Conditions 1 / 2 / 3 (new in 2023)?",
+   "back": "3 ft / 4 ft / 5 ft (900 mm / 1.2 m / 1.5 m).",
+   "nec_ref": "Table 110.26(A)(1)",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "dimensions"
+   ],
+   "image": "images/condition-3.png",
+   "image_alt": "Plan view: exposed live parts on both sides of the working space; depths 3 ft, 4 ft and 5 ft by voltage band.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-065",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "480Y/277-V dead-front switchboard facing a concrete-block wall: required depth?",
+   "back": "3.5 ft (1.0 m). 277 V to ground = 151-600 V row; block wall = grounded = Condition 2.",
+   "nec_ref": "Table 110.26(A)(1)",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "review"
+   ],
+   "image": "images/condition-2.png",
+   "image_alt": "Plan view: exposed live parts facing a hatched grounded wall; depths 3 ft (0-150 V), 3.5 ft (151-600 V), 4 ft (601-1000 V).",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-066",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "Is the Table 110.26(A)(1) voltage line-to-line or to ground?",
+   "back": "Nominal voltage TO GROUND. 208Y/120 = 120 V (0-150 row); 480Y/277 = 277 V (151-600 row).",
+   "nec_ref": "Table 110.26(A)(1)",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "pitfall"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-067",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "Where is working-space depth measured from?",
+   "back": "From exposed live parts, or from the enclosure front (dead front) if the equipment is enclosed.",
+   "nec_ref": "110.26(A)(1)",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "dimensions"
+   ],
+   "image": "images/working-space-box.png",
+   "image_alt": "Front and side views of the working space: width at least 30 in. or equipment width, height 6.5 ft, depth per Table 110.26(A)(1) measured from the enclosure front.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-068",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "Minimum working-space width?",
+   "back": "30 in. (762 mm) or the width of the equipment, whichever is greater. The space need not be centered, and working spaces may overlap.",
+   "nec_ref": "110.26(A)(2)",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "dimensions"
+   ],
+   "image": "images/working-space-width.png",
+   "image_alt": "Plan view: a 14-in. panel with a 30-in. working space not centered, an overlapping second space, and a wide switchboard whose space equals its width.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-069",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "Minimum working-space height (headroom)?",
+   "back": "6.5 ft (2.0 m), or the height of the equipment if taller.",
+   "nec_ref": "110.26(A)(3)",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "dimensions"
+   ],
+   "image": "images/working-space-box.png",
+   "image_alt": "Front and side views of the working space: width at least 30 in. or equipment width, height 6.5 ft, depth per Table 110.26(A)(1) measured from the enclosure front.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-070",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "How far must equipment doors and hinged panels be able to open within the working space?",
+   "back": "At least 90 degrees.",
+   "nec_ref": "110.26(A)(2)",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "dimensions"
+   ],
+   "image": "images/door-swing.png",
+   "image_alt": "Plan view: an enclosure door swinging a full 90 degrees into the working space.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-071",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "Open equipment doors may not reduce the access path below what dimensions?",
+   "back": "24 in. wide by 6.5 ft high (110.26 introductory text, relocated there in 2023).",
+   "nec_ref": "110.26",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "egress"
+   ],
+   "image": "images/door-swing.png",
+   "image_alt": "Plan view: an enclosure door swinging a full 90 degrees into the working space.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-072",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 3,
+   "front": "How far may associated equipment or a housekeeping pad intrude into the working space?",
+   "back": "No more than 6 in. (150 mm). Meters in meter sockets are exempt, because the utility controls them.",
+   "nec_ref": "110.26(A)(3)",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "exception"
+   ],
+   "image": "images/intrusion-6in.png",
+   "image_alt": "Side view of a switchboard: housekeeping pad and associated equipment may extend no more than 6 in. into the working space.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-073",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "What did the 2023 NEC add in 110.26(A)(6)?",
+   "back": "The grade, floor, or platform in the working space must be kept clear and be as level and flat as practical for its full depth and width.",
+   "nec_ref": "110.26(A)(6)",
+   "source_page": "300-305",
+   "tags": [
+    "working-space"
+   ],
+   "image": "images/intrusion-6in.png",
+   "image_alt": "Side view of a switchboard: housekeeping pad and associated equipment may extend no more than 6 in. into the working space.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-074",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "NEC 110.26(B): can working space be used for storage?",
+   "back": "No. Working space must be kept clear and never used for storage.",
+   "nec_ref": "110.26(B)",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "safety"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-075",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "Is 'working space' the same as the room?",
+   "back": "No. It's the space at the equipment (front, plus sides or rear where access is needed). A large room can still violate the rule; a small room may be entirely working space.",
+   "nec_ref": "110.26",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "pitfall"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-076",
+   "type": "basic",
+   "section": "7. Working space: conditions, dimensions",
+   "difficulty": 2,
+   "front": "Minimum access opening for equipment above a lay-in ceiling? In a crawl space?",
+   "back": "Ceiling: 22 x 22 in. (559 x 559 mm). Crawl space: 22 x 30 in. (559 x 762 mm).",
+   "nec_ref": "110.26(A)(4)",
+   "source_page": "300-305",
+   "tags": [
+    "working-space",
+    "limited-access"
+   ],
+   "image": "images/limited-access.png",
+   "image_alt": "Equipment above a lay-in ceiling with a 22 x 22 in. access opening and a working space in front of the enclosure.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-077",
+   "type": "basic",
+   "section": "8. Egress, doors, light, dedicated space",
+   "difficulty": 2,
+   "front": "Entrance requirement for ordinary (not large) equipment?",
+   "back": "At least one entrance of sufficient area to the working space. A door is permitted but NOT required, and the NEC gives no dimensions.",
+   "nec_ref": "110.26(C)(1)",
+   "source_page": "305-308",
+   "tags": [
+    "egress"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-078",
+   "type": "basic",
+   "section": "8. Egress, doors, light, dedicated space",
+   "difficulty": 2,
+   "front": "Define 'large equipment' for access and egress (2023 NEC).",
+   "back": "Equipment rated 1200 A or more AND over 6 ft (1.8 m) wide, with OCPDs, switching, or control devices. Also grouped 230.71(B) service disconnects with a combined 1200 A or more and combined width over 6 ft. BOTH conditions must apply.",
+   "nec_ref": "110.26(C)(2)",
+   "source_page": "305-308",
+   "tags": [
+    "egress",
+    "large-equipment"
+   ],
+   "image": "images/large-equipment-egress.png",
+   "image_alt": "Three room plans: large equipment with an exit at each end, one exit with continuous egress, and one exit with doubled working space.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-079",
+   "type": "basic",
+   "section": "8. Egress, doors, light, dedicated space",
+   "difficulty": 2,
+   "front": "Access requirement for large equipment?",
+   "back": "An entrance at EACH end of the working space, each at least 24 in. wide by 6.5 ft high.",
+   "nec_ref": "110.26(C)(2)",
+   "source_page": "305-308",
+   "tags": [
+    "egress",
+    "large-equipment"
+   ],
+   "image": "images/large-equipment-egress.png",
+   "image_alt": "Three room plans: large equipment with an exit at each end, one exit with continuous egress, and one exit with doubled working space.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-080",
+   "type": "basic",
+   "section": "8. Egress, doors, light, dedicated space",
+   "difficulty": 3,
+   "front": "Two ways large equipment may have only ONE entrance?",
+   "back": "(a) A continuous, unobstructed way of egress travel; or (b) the working-space depth is doubled, with the entrance's nearest edge at least one working-space depth from the equipment.",
+   "nec_ref": "110.26(C)(2)(a), (b)",
+   "source_page": "305-308",
+   "tags": [
+    "egress",
+    "large-equipment",
+    "exception"
+   ],
+   "image": "images/large-equipment-egress.png",
+   "image_alt": "Three room plans: large equipment with an exit at each end, one exit with continuous egress, and one exit with doubled working space.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-081",
+   "type": "basic",
+   "section": "8. Egress, doors, light, dedicated space",
+   "difficulty": 2,
+   "front": "Personnel-door rule for equipment rated 800 A or more?",
+   "back": "Doors less than 25 ft (7.6 m) from the nearest edge of the working space must open at least 90 deg in the direction of egress, with LISTED panic or fire-exit hardware, regardless of equipment width.",
+   "nec_ref": "110.26(C)(3)",
+   "source_page": "305-308",
+   "tags": [
+    "egress",
+    "doors",
+    "safety"
+   ],
+   "image": "images/panic-door.png",
+   "image_alt": "Room plan: equipment rated 800 A or more with a door less than 25 ft from the working space that opens outward with panic hardware.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-082",
+   "type": "basic",
+   "section": "8. Egress, doors, light, dedicated space",
+   "difficulty": 2,
+   "front": "Why does the code require push-to-open panic hardware near large equipment?",
+   "back": "Arc-flash victims may be burned, blinded, deafened, and breathing smoke and vaporized metal. They must be able to push their way out without working a door handle.",
+   "nec_ref": "110.26(C)(3)",
+   "source_page": "305-308",
+   "tags": [
+    "doors",
+    "safety"
+   ],
+   "image": "images/panic-door.png",
+   "image_alt": "Room plan: equipment rated 800 A or more with a door less than 25 ft from the working space that opens outward with panic hardware.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-083",
+   "type": "basic",
+   "section": "8. Egress, doors, light, dedicated space",
+   "difficulty": 2,
+   "front": "NEC 110.26(D): illumination rule?",
+   "back": "Illumination is required for working spaces around service equipment, switchboards, panelboards, and MCCs indoors. It may not be controlled by automatic means only; some manual control is required.",
+   "nec_ref": "110.26(D)",
+   "source_page": "305-308",
+   "tags": [
+    "illumination"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-084",
+   "type": "basic",
+   "section": "8. Egress, doors, light, dedicated space",
+   "difficulty": 2,
+   "front": "Define the indoor dedicated electrical space.",
+   "back": "A zone equal to the width and depth of the equipment, from the floor to 6 ft above the equipment or to the structural ceiling, whichever is LOWER. No piping, ducts, leak protection, or other foreign equipment.",
+   "nec_ref": "110.26(E)(1)(a)",
+   "source_page": "305-308",
+   "tags": [
+    "dedicated-space"
+   ],
+   "image": "images/dedicated-space.png",
+   "image_alt": "Side view: dedicated space above a panel extends 6 ft above the equipment or to the structural ceiling, whichever is lower; a duct crossing it is a violation.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-085",
+   "type": "basic",
+   "section": "8. Egress, doors, light, dedicated space",
+   "difficulty": 2,
+   "front": "Can foreign systems (pipes, ducts) be installed above the dedicated space?",
+   "back": "Yes, above the zone, but only with protection so leaks, condensation, or breaks won't damage the electrical equipment.",
+   "nec_ref": "110.26(E)(1)(b)",
+   "source_page": "305-308",
+   "tags": [
+    "dedicated-space"
+   ],
+   "image": "images/dedicated-space.png",
+   "image_alt": "Side view: dedicated space above a panel extends 6 ft above the equipment or to the structural ceiling, whichever is lower; a duct crossing it is a violation.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-086",
+   "type": "basic",
+   "section": "8. Egress, doors, light, dedicated space",
+   "difficulty": 3,
+   "front": "Panel top at 6 ft 7 in., deck at 14 ft. Where does the dedicated zone end?",
+   "back": "At 12 ft 7 in. (6 ft 7 in. + 6 ft), because that's lower than the 14-ft deck. A duct below 12 ft 7 in. over the panel footprint violates the rule.",
+   "nec_ref": "110.26(E)(1)",
+   "source_page": "305-308",
+   "tags": [
+    "dedicated-space",
+    "calculation"
+   ],
+   "image": "images/dedicated-space.png",
+   "image_alt": "Side view: dedicated space above a panel extends 6 ft above the equipment or to the structural ceiling, whichever is lower; a duct crossing it is a violation.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-087",
+   "type": "basic",
+   "section": "8. Egress, doors, light, dedicated space",
+   "difficulty": 2,
+   "front": "Is a suspended ceiling the 'structural ceiling' for the dedicated space?",
+   "back": "No. A suspended (lay-in) ceiling isn't the structural ceiling. The zone is measured to the structure (or 6 ft above the equipment, if lower).",
+   "nec_ref": "110.26(E)(1)",
+   "source_page": "305-308",
+   "tags": [
+    "dedicated-space",
+    "pitfall"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-088",
+   "type": "basic",
+   "section": "8. Egress, doors, light, dedicated space",
+   "difficulty": 2,
+   "front": "Outdoor dedicated-space requirements?",
+   "back": "Identified enclosures; protected from accidental contact, vehicles, and piping leaks; the same working clearance as indoors; no architectural appurtenances in the working space; footprint dedicated from grade to 6 ft above the equipment.",
+   "nec_ref": "110.26(E)(2)",
+   "source_page": "305-308",
+   "tags": [
+    "dedicated-space",
+    "outdoor"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-089",
+   "type": "basic",
+   "section": "9. Safety, exceptions, pitfalls",
+   "difficulty": 3,
+   "front": "Which standard governs safe work practices on panelboards, and what does it require first?",
+   "back": "NFPA 70E. Establish an electrically safe work condition (the textbook cites the eight steps in 120.5) before work: shut off, test, lock out. Energized work needs justification and a permit.",
+   "nec_ref": "NFPA 70E",
+   "source_page": null,
+   "tags": [
+    "safety",
+    "beyond-text"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-090",
+   "type": "basic",
+   "section": "9. Safety, exceptions, pitfalls",
+   "difficulty": 3,
+   "front": "What is 'live-dead-live' testing?",
+   "back": "Verify the tester on a known live source, test the circuit for absence of voltage (phase-phase and phase-ground), then re-verify the tester on the known source.",
+   "nec_ref": "NFPA 70E",
+   "source_page": null,
+   "tags": [
+    "safety",
+    "beyond-text"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-091",
+   "type": "basic",
+   "section": "9. Safety, exceptions, pitfalls",
+   "difficulty": 2,
+   "front": "Main breaker OFF: is the panelboard dead?",
+   "back": "No. The line side of the main, the feeder lugs, and any feed-through lugs remain energized. Open and lock out the SOURCE named on the 408.4(B) label, then test.",
+   "nec_ref": "408.4(B)",
+   "source_page": null,
+   "tags": [
+    "safety",
+    "dangerous-condition"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-092",
+   "type": "basic",
+   "section": "9. Safety, exceptions, pitfalls",
+   "difficulty": 2,
+   "front": "Why must each neutral have its own terminal (408.41)?",
+   "back": "Loosening a shared terminal to remove one de-energized neutral also loosens a live circuit's neutral. That causes shock hazard and load damage.",
+   "nec_ref": "408.41",
+   "source_page": "294",
+   "tags": [
+    "safety",
+    "neutral"
+   ],
+   "image": "images/lost-neutral.png",
+   "image_alt": "Multiwire branch circuit with an open neutral: a 144-ohm lamp and 9.6-ohm heater in series across 208 V; the lamp sees 195 V.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-093",
+   "type": "basic",
+   "section": "9. Safety, exceptions, pitfalls",
+   "difficulty": 3,
+   "front": "Open neutral on a 208Y/120 MWBC: 100-W lamp (144 ohm) and 1500-W heater (9.6 ohm). What does the lamp see?",
+   "back": "Series across 208 V: I = 208 / 153.6 = 1.35 A. Lamp: 1.35 x 144 = 195 V (63% over its rating). Heater: 13 V.",
+   "nec_ref": "408.41; 210.4",
+   "source_page": "295",
+   "tags": [
+    "neutral",
+    "calculation",
+    "dangerous-condition"
+   ],
+   "image": "images/lost-neutral.png",
+   "image_alt": "Multiwire branch circuit with an open neutral: a 144-ohm lamp and 9.6-ohm heater in series across 208 V; the lamp sees 195 V.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-094",
+   "type": "basic",
+   "section": "9. Safety, exceptions, pitfalls",
+   "difficulty": 2,
+   "front": "Symptom of a lost shared neutral on a multiwire branch circuit?",
+   "back": "Loads on one leg dim while the other leg's loads brighten, or a load works only when an unrelated load on the other leg is on (the textbook's refrigerator and disposal example).",
+   "nec_ref": "210.4",
+   "source_page": "295",
+   "tags": [
+    "neutral",
+    "field"
+   ],
+   "image": "images/lost-neutral.png",
+   "image_alt": "Multiwire branch circuit with an open neutral: a 144-ohm lamp and 9.6-ohm heater in series across 208 V; the lamp sees 195 V.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-095",
+   "type": "basic",
+   "section": "9. Safety, exceptions, pitfalls",
+   "difficulty": 2,
+   "front": "What can happen if a 120-V branch circuit is landed on the high leg?",
+   "back": "The load gets 208 V to ground, which can cause equipment failure or fire. Only 3-phase or 240-V loads belong on phase B of a high-leg delta.",
+   "nec_ref": "408.3(F)(1); 110.15",
+   "source_page": "294",
+   "tags": [
+    "high-leg",
+    "dangerous-condition"
+   ],
+   "image": "images/high-leg-delta.png",
+   "image_alt": "Delta triangle with 240-V sides and a grounded center tap on A-C; the B-to-neutral height is 240 sin 60 deg = 208 V.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-096",
+   "type": "basic",
+   "section": "9. Safety, exceptions, pitfalls",
+   "difficulty": 3,
+   "front": "Name two 110.26(A)(1) depth exceptions.",
+   "back": "Ex. 1: no rear or side working space for dead-front equipment with no renewable or adjustable parts there. Ex. 3: existing buildings may use Condition 2 between facing dead-front equipment under written procedures (not both open at once, qualified persons only).",
+   "nec_ref": "110.26(A)(1) Ex.",
+   "source_page": null,
+   "tags": [
+    "exception",
+    "working-space"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-097",
+   "type": "basic",
+   "section": "9. Safety, exceptions, pitfalls",
+   "difficulty": 2,
+   "front": "Common error: 'large equipment' is 800 A. Correct it.",
+   "back": "Large equipment (two exits) = 1200 A or more AND over 6 ft wide. 800 A is the threshold for panic-hardware personnel doors, with any width. (Slide 25 mixes these up.)",
+   "nec_ref": "110.26(C)(2); 110.26(C)(3)",
+   "source_page": "305-307",
+   "tags": [
+    "pitfall",
+    "egress"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-098",
+   "type": "basic",
+   "section": "9. Safety, exceptions, pitfalls",
+   "difficulty": 3,
+   "front": "Breaker interrupting rating vs. available fault current: why check before adding a panel?",
+   "back": "A breaker with an interrupting rating below the available fault current can fail violently. Check the 110.24 marking against breaker AIC and panel SCCR; use only tested series ratings (240.86).",
+   "nec_ref": "110.9; 110.10; 110.24; 240.86",
+   "source_page": null,
+   "tags": [
+    "safety",
+    "beyond-text",
+    "pitfall"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-099",
+   "type": "basic",
+   "section": "9. Safety, exceptions, pitfalls",
+   "difficulty": 3,
+   "front": "Feeder-supplied subpanel: what happens to the bonding screw or strap?",
+   "back": "Remove it. Neutrals stay isolated from the enclosure; EGCs go on a separate, bonded bar. Otherwise neutral current flows on raceways and the EGC.",
+   "nec_ref": "250.24(A)(5); 250.142(B); 408.40",
+   "source_page": null,
+   "tags": [
+    "pitfall",
+    "beyond-text",
+    "grounding"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch12-100",
+   "type": "basic",
+   "section": "9. Safety, exceptions, pitfalls",
+   "difficulty": 3,
+   "front": "Can you install any brand of breaker that physically fits a panel?",
+   "back": "No. Install only breakers the panel is listed for (the manufacturer's own or UL-classified breakers named on the label). Terminations must be torqued to spec with an approved means.",
+   "nec_ref": "110.3(B); 110.14(D)",
+   "source_page": null,
+   "tags": [
+    "pitfall",
+    "beyond-text"
+   ],
+   "verified": false
+  }
+ ],
+ "study_guide": "../study-guide.md"
+}

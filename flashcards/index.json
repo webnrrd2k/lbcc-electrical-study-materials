@@ -1,0 +1,307 @@
+{
+ "decks": [
+  {
+   "class": "ELECT 212",
+   "deck": "Unit 14: Basic Trigonometry and Vectors",
+   "deck_id": "u14",
+   "order": 14,
+   "format": "html",
+   "path": "elect_212_3rd_semester_electrical_fundamentals/units/unit-14-trig-and-vectors/flashcards/unit14_flashcards.json",
+   "cards": 63,
+   "sections": []
+  },
+  {
+   "class": "ELECT 212",
+   "deck": "Unit 15: Alternating Current",
+   "deck_id": "u15",
+   "order": 15,
+   "format": "html",
+   "path": "elect_212_3rd_semester_electrical_fundamentals/units/unit-15-alternating-current/flashcards/unit15_flashcards.json",
+   "cards": 75,
+   "sections": []
+  },
+  {
+   "class": "ELECT 212",
+   "deck": "Unit 16: Inductance in AC Circuits",
+   "deck_id": "u16",
+   "order": 16,
+   "format": "html",
+   "path": "elect_212_3rd_semester_electrical_fundamentals/units/unit-16-inductance-in-ac/flashcards/unit16_flashcards.json",
+   "cards": 62,
+   "sections": []
+  },
+  {
+   "class": "ELECT 212",
+   "deck": "Unit 17: Resistive-Inductive (RL) Series Circuits",
+   "deck_id": "u17",
+   "order": 17,
+   "format": "html",
+   "path": "elect_212_3rd_semester_electrical_fundamentals/units/unit-17-rl-series/flashcards/unit17_flashcards.json",
+   "cards": 59,
+   "sections": []
+  },
+  {
+   "class": "ELECT 212",
+   "deck": "Unit 18: Resistive-Inductive (RL) Parallel Circuits",
+   "deck_id": "u18",
+   "order": 18,
+   "format": "html",
+   "path": "elect_212_3rd_semester_electrical_fundamentals/units/unit-18-rl-parallel/flashcards/unit18_flashcards.json",
+   "cards": 54,
+   "sections": []
+  },
+  {
+   "class": "ELECT 212",
+   "deck": "Unit 19: Capacitors",
+   "deck_id": "u19",
+   "order": 19,
+   "format": "html",
+   "path": "elect_212_3rd_semester_electrical_fundamentals/units/unit-19-capacitors/flashcards/unit19_flashcards.json",
+   "cards": 87,
+   "sections": []
+  },
+  {
+   "class": "ELECT 212",
+   "deck": "Unit 20: Capacitance in AC Circuits",
+   "deck_id": "u20",
+   "order": 20,
+   "format": "html",
+   "path": "elect_212_3rd_semester_electrical_fundamentals/units/unit-20-capacitance-in-ac/flashcards/unit20_flashcards.json",
+   "cards": 56,
+   "sections": []
+  },
+  {
+   "class": "ELECT 212",
+   "deck": "Unit 21: Resistive-Capacitive (RC) Series Circuits",
+   "deck_id": "u21",
+   "order": 21,
+   "format": "html",
+   "path": "elect_212_3rd_semester_electrical_fundamentals/units/unit-21-rc-series/flashcards/unit21_flashcards.json",
+   "cards": 42,
+   "sections": []
+  },
+  {
+   "class": "ELECT 212",
+   "deck": "Unit 22: Resistive-Capacitive (RC) Parallel Circuits",
+   "deck_id": "u22",
+   "order": 22,
+   "format": "html",
+   "path": "elect_212_3rd_semester_electrical_fundamentals/units/unit-22-rc-parallel/flashcards/unit22_flashcards.json",
+   "cards": 44,
+   "sections": []
+  },
+  {
+   "class": "ELECT 212",
+   "deck": "Unit 23: RLC Series Circuits",
+   "deck_id": "u23",
+   "order": 23,
+   "format": "html",
+   "path": "elect_212_3rd_semester_electrical_fundamentals/units/unit-23-rlc-series/flashcards/unit23_flashcards.json",
+   "cards": 46,
+   "sections": []
+  },
+  {
+   "class": "ELECT 212",
+   "deck": "Unit 24: RLC Parallel Circuits",
+   "deck_id": "u24",
+   "order": 24,
+   "format": "html",
+   "path": "elect_212_3rd_semester_electrical_fundamentals/units/unit-24-rlc-parallel/flashcards/unit24_flashcards.json",
+   "cards": 49,
+   "sections": []
+  },
+  {
+   "class": "ELECT 212",
+   "deck": "Unit 27: Single-Phase Transformers",
+   "deck_id": "u27",
+   "order": 27,
+   "format": "html",
+   "path": "elect_212_3rd_semester_electrical_fundamentals/units/unit-27-single-phase-transformers/flashcards/unit27_flashcards.json",
+   "cards": 211,
+   "sections": [
+    "1. Basics and theory",
+    "2. Ratings, impedance and cooling",
+    "3. Polarity, connections and 3-wire systems",
+    "4. Special transformers",
+    "5. Instrument transformers and CTs",
+    "6. Testing",
+    "7. Safety, grounding and protection",
+    "8. Worked problems"
+   ]
+  },
+  {
+   "class": "ELECT 212",
+   "deck": "Labs 4–6: Power Systems",
+   "deck_id": "e212-power-systems",
+   "order": 30,
+   "format": "text",
+   "path": "elect_212_3rd_semester_electrical_fundamentals/labs-4-6-power-systems/flashcards/power_systems.json",
+   "cards": 43,
+   "sections": [
+    "1. Split-phase 120/240 V",
+    "2. Three-phase basics",
+    "3. Wye systems",
+    "4. Delta systems",
+    "5. Three-phase power",
+    "6. Safety"
+   ]
+  },
+  {
+   "class": "ELECT 245",
+   "deck": "Chapter 12: Panelboard Selection and Installation",
+   "deck_id": "e245-ch12",
+   "order": 12,
+   "format": "text",
+   "path": "elect_245_electrical_code_commercial/chapter_12/flashcards/chapter12.json",
+   "cards": 100,
+   "sections": [
+    "1. Big picture",
+    "2. Panelboard basics",
+    "3. Construction, phase arrangement, numbering",
+    "4. Ratings & overcurrent",
+    "5. Cabinets & wiring space",
+    "6. Directory & identification",
+    "7. Working space: conditions, dimensions",
+    "8. Egress, doors, light, dedicated space",
+    "9. Safety, exceptions, pitfalls"
+   ]
+  },
+  {
+   "class": "ELECT 245",
+   "deck": "Chapter 13: The Electric Service and Grounding",
+   "deck_id": "e245-ch13",
+   "order": 13,
+   "format": "text",
+   "path": "elect_245_electrical_code_commercial/chapter_13/flashcards/chapter13.json",
+   "cards": 100,
+   "sections": [
+    "1. Big picture",
+    "2. Service types, service point, vocabulary",
+    "3. Transformers",
+    "4. Connections",
+    "5. Utility supply & metering",
+    "6. Service-entrance equipment",
+    "7. Grounding / bonding concepts",
+    "8. Electrodes & GEC",
+    "9. Bonding jumpers & EGC sizing",
+    "10. Bonding at service & piping",
+    "11. GFPE, safety, pitfalls"
+   ]
+  },
+  {
+   "class": "ELECT 275",
+   "deck": "Conduit Bending",
+   "deck_id": "e275-bending",
+   "order": 1,
+   "format": "text",
+   "path": "elect_275_electrical_pipe_bending/flashcards/pipe_bending.json",
+   "cards": 44,
+   "sections": [
+    "1. Bender marks",
+    "2. 90° stubs, deductions and gain",
+    "3. Offsets and shrinkage",
+    "4. Saddles and box offsets",
+    "5. NEC rules"
+   ]
+  },
+  {
+   "class": "ELECT 280",
+   "deck": "Course Concepts",
+   "deck_id": "e280-concepts",
+   "order": 0,
+   "format": "text",
+   "path": "elect_280_traffic_signal_systems_1/flashcards/concepts/concepts.json",
+   "cards": 103,
+   "sections": [
+    "1. Phases and phase numbering",
+    "2. Ring diagram and timing intervals",
+    "3. Plans and Standard Plans",
+    "4. Pedestrian heads and push buttons",
+    "5. Loop detectors and detector designations",
+    "6. The 332 cabinet",
+    "7. Load switches, PDA and flash",
+    "8. The 210 monitor and diode card",
+    "9. Conduit, cable, power and grounding",
+    "10. Safety"
+   ]
+  },
+  {
+   "class": "ELECT 280",
+   "deck": "Caltrans Legend Symbols",
+   "deck_id": "e280-legend",
+   "order": 1,
+   "format": "text",
+   "path": "elect_280_traffic_signal_systems_1/flashcards/caltrans_legend_symbols/caltrans_legend_symbols.json",
+   "cards": 71,
+   "sections": [
+    "Signal Equipment",
+    "Conduit",
+    "Service Equipment",
+    "Pole-Mounted Service Designation",
+    "Flashing Beacon"
+   ]
+  },
+  {
+   "class": "ELECT 280",
+   "deck": "Plan Abbreviations",
+   "deck_id": "e280-abbrev",
+   "order": 2,
+   "format": "text",
+   "path": "elect_280_traffic_signal_systems_1/flashcards/plan_abbreviations/plan_abbreviations.json",
+   "cards": 20,
+   "sections": []
+  },
+  {
+   "class": "ELECT 280",
+   "deck": "Standard Electroliers",
+   "deck_id": "e280-electrolier",
+   "order": 3,
+   "format": "text",
+   "path": "elect_280_traffic_signal_systems_1/flashcards/standard_electroliers/standard_electroliers.json",
+   "cards": 22,
+   "sections": [
+    "Standard Electrolier"
+   ]
+  },
+  {
+   "class": "ELECT 280",
+   "deck": "Miscellaneous Electroliers",
+   "deck_id": "e280-misc-electrolier",
+   "order": 4,
+   "format": "text",
+   "path": "elect_280_traffic_signal_systems_1/flashcards/misc_electroliers/misc_electroliers.json",
+   "cards": 8,
+   "sections": [
+    "Miscellaneous Electrolier"
+   ]
+  },
+  {
+   "class": "ELECT 280",
+   "deck": "Soffit and Wall-Mounted Luminaires",
+   "deck_id": "e280-soffit",
+   "order": 5,
+   "format": "text",
+   "path": "elect_280_traffic_signal_systems_1/flashcards/soffit_luminaires/soffit_luminaires.json",
+   "cards": 5,
+   "sections": [
+    "Soffit and Wall-Mounted Luminaire"
+   ]
+  },
+  {
+   "class": "ELECT 435A",
+   "deck": "Motor Control Basics",
+   "deck_id": "e435a-motor-control",
+   "order": 1,
+   "format": "text",
+   "path": "elect_435a_motor_control_wiring+trouble/flashcards/motor_control.json",
+   "cards": 53,
+   "sections": [
+    "1. Components",
+    "2. Terminal numbers",
+    "3. Ladder diagrams and circuits",
+    "4. Wiring practice",
+    "5. Testing and troubleshooting"
+   ]
+  }
+ ]
+}

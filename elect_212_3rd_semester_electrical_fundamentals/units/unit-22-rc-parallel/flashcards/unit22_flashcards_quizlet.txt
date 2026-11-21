@@ -1,0 +1,44 @@
+What is the same across every branch of a parallel R-C circuit?	The voltage (magnitude and phase). (Summary)
+Phase of the resistive branch current?	In phase with the voltage.
+Phase of the capacitive branch current?	Leads the voltage by 90°.
+How many degrees apart are Iᵣ and Ic in parallel?	90° (Review Q1)
+Does total current lead or lag in parallel R-C?	Leads, by an angle between 0° and 90°.
+What sets the phase angle in parallel R-C?	How current splits between branches: tan θ = Ic/Iᵣ = R/Xc. (Book says "resistance to capacitance")
+In parallel R-C, does a bigger capacitor make the circuit more or less capacitive?	MORE capacitive — lower Xc draws more Ic (opposite of series R-C). (Bigger R also makes it more capacitive)
+In a parallel phasor diagram, what is the reference and which way does Ic point?	Voltage is the reference (0°). Ic points UP (leading). Iᵣ lies along E. (Il pointed down in Unit 18)
+30 Ω ∥ Xc 20 Ω on 240 V: branch currents?	Iᵣ = 240/30 = 8 A; Ic = 240/20 = 12 A. (Example 22–1)
+Branch current formulas?	Iᵣ = E/R; Ic = E/Xc
+Capacitance for Xc = 20 Ω at 60 Hz?	C = 1/(377 × 20) = 132.6 µF
+Total current formula in parallel R-C?	Iₜ = √(Iᵣ² + Ic²) (Iᵣ = √(Iₜ² − Ic²), Ic = √(Iₜ² − Iᵣ²))
+Iᵣ = 8 A, Ic = 12 A. Iₜ?	√(64 + 144) = 14.42 A (not 20 A)
+Feeder clamp reads 14.4 A while branches read 8 A and 12 A. Fault?	No — the branch currents are 90° apart and add as vectors.
+Several capacitor branches plus a resistor: how do you get Iₜ?	Add the capacitor currents straight (same phase), then Iₜ = √(Iᵣ² + Ic total²).
+Simplest way to find Z when E and Iₜ are known?	Z = E/Iₜ = 240/14.422 = 16.64 Ω
+Product-over-vector-sum formula for parallel R-C?	Z = R·Xc / √(R² + Xc²) (600/36.06 = 16.64 Ω)
+Reciprocal formula for parallel R-C impedance?	Z = 1 / √((1/R)² + (1/Xc)²)
+Is parallel Z larger or smaller than R and Xc?	Smaller than both. (16.64 < 20 < 30)
+Which formula gives Z for 30 Ω ∥ Xc 20 Ω?	Only R·Xc/√(R² + Xc²) = 16.64 Ω. √(R² + Xc²) = 36.06 is the series answer; R·Xc/(R + Xc) = 12 ignores the 90°.
+Can you draw an impedance triangle with R and Xc as legs for a parallel circuit?	No — draw the current triangle instead.
+Power values for the 30 Ω ∥ 20 Ω, 240 V example?	P = 240 × 8 = 1920 W; VARsc = 240 × 12 = 2880; VA = 240 × 14.42 = 3461.
+Formula linking P, VARs and VA (any circuit)?	VA = √(P² + VARs²)
+How is the parallel power triangle related to the current triangle?	It's the current triangle × E.
+You know VARs and Xc but not E. Find E.	E = √(VARs × Xc) (also √(P × R), √(VA × Z)) (From VARs = E²/Xc)
+PF formulas for parallel R-C?	PF = P/VA = Iᵣ/Iₜ = Z/R (55.47% in the main example)
+Why is parallel PF Z/R, not R/Z?	Parallel Z < R, so R/Z would exceed 1 — impossible for PF.
+Why can't voltage ratios give PF in a parallel circuit?	Voltage is the same on every branch, so Eᵣ/Eₜ is always 1.
+Main example θ?	cos⁻¹(0.5547) = 56.31°, current leading.
+Other trig ratios for θ in parallel R-C?	tan θ = Ic/Iᵣ = VARs/P; sin θ = Ic/Iₜ = VARs/VA
+Given PF and VA, how do you get P and VARs?	P = VA × PF; VARs = √(VA² − P²) (or VA × sin θ). (Example 22–2)
+Example 22–2: PF 47.1%, VA 4086.13, 33.15 µF at 400 Hz. First three steps?	θ = cos⁻¹(0.471) ≈ 61.9°; P = 4086.13 × 0.471 = 1924.5 W; VARs = √(VA² − P²) = 3604.6.
+Example 22–2: Xc and voltage?	Xc = 1/(2π × 400 × 0.00003315) = 12 Ω (377 doesn't apply at 400 Hz); E = √(3604.6 × 12) = 208 V.
+Example 22–2: currents, R and Z?	Ic = 17.33 A, Iᵣ = 9.25 A, Iₜ = 19.64 A; R = 22.49 Ω; Z = 10.59 Ω.
+Key first move in a parallel circuit when E isn't given?	Find E (it's the bridge into every branch) — e.g., √(VARs × Xc), √(P × R) or √(VA × Z). (Mirror of finding I first in series)
+Book typos in Example 22–2?	"1 Hz" on top of the Xc fraction (should be 1); θ shown as 61.9° then 61.93° (rounding).
+Wrong-file check: what is this chapter's real title?	Unit 22: Resistive-Capacitive Parallel Circuits. (The PDF filename said R-L-C series)
+How are power-factor correction capacitors connected?	In PARALLEL with the load (across the line) — never in series.
+How does a parallel capacitor reduce feeder current on a motor circuit?	Its leading current cancels part of the motor's lagging current; the feeder carries the smaller vector sum.
+A capacitor uses no watts. Does it draw real line current?	Yes — e.g., 132.6 µF on 240 V draws 12 A. Feeders/disconnects are sized at 135% of capacitor rated current (NEC 460.8).
+Motors shut off but PF capacitors stay on. Result?	The plant goes leading; voltage can rise. Banks are often switched with the load or automatically.
+Series vs parallel R-C: what changes?	Series: current shared, Z = √(R² + Xc²), PF = R/Z, bigger C → more resistive. Parallel: voltage shared, Z = R·Xc/√(R² + Xc²), PF = Z/R, bigger C → more capacitive.
+40 Ω ∥ 132.6 µF on 120 V, 60 Hz: first step?	Convert C to Xc: 1/(377 × 0.0001326) = 20 Ω. Then Iᵣ = 3 A, Ic = 6 A, Iₜ = √45 ≈ 6.71 A. (Review Q2)
+208 V, 46 A, 4975 W (parallel R-C). Route to R and C?	Iᵣ = 4975/208; R = 208/Iᵣ; Ic = √(46² − Iᵣ²); Xc = 208/Ic; C = 1/(377 Xc). (Review Q6–7)

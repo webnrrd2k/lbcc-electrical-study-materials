@@ -1,0 +1,49 @@
+What is shared by all branches of an RLC parallel circuit?	The voltage. (Summary)
+Phase of each branch current vs voltage?	Resistor: in phase. Inductor: lags 90°. Capacitor: leads 90°. (Summary)
+How are Iₗ and Ic related in parallel?	180° apart — they subtract (cancel).
+When is a parallel RLC circuit lagging vs leading?	More inductive VARs/current → lagging. More capacitive → leading.
+In parallel, does the bigger or smaller reactance win?	The SMALLER reactance draws more current and dominates (reverse of series). (Xl 8 Ω vs Xc 16 Ω → inductive)
+Branch currents for 12 Ω ∥ Xl 8 Ω ∥ Xc 16 Ω on 240 V?	Iᵣ 20 A, Iₗ 30 A, Ic 15 A. (Example 24–1)
+Total current formula for RLC parallel?	Iₜ = √(Iᵣ² + (Iₗ − Ic)²)
+Iᵣ 20, Iₗ 30, Ic 15 A. Iₜ?	√(20² + 15²) = 25 A
+Can a branch carry more current than the line?	Yes — the 30 A coil branch exceeds the 25 A line current, because Ic cancels part of Iₗ.
+Iᵣ 38, Iₗ 22, Ic 7 A. Iₜ?	√(38² + 15²) ≈ 40.9 A (Review Q3)
+Simplest way to find Z in RLC parallel?	Z = E / Iₜ = 240 / 25 = 9.6 Ω
+Reciprocal formula for RLC parallel impedance?	Z = 1 / √((1/R)² + (1/Xl − 1/Xc)²) (Subtract the RECIPROCALS of Xl and Xc)
+Second impedance method (combine reactances first)?	X = Xl·Xc / (Xl + Xc) with Xc NEGATIVE; then Z = R·X/√(R² + X²). 8×(−16)/(8−16) = 16 Ω → Z = 9.6 Ω. (Positive X = inductive)
+Example 24–2: R 18 Ω, 9.76 mH, 5.5 µF at 1200 Hz. First step and Z?	Xl = 73.59 Ω, Xc = 24.11 Ω (377 doesn't apply); Z ≈ 16.1 Ω. (Book's substitution shows a 74.589 typo)
+Power values in Example 24–1?	P 4800 W; VARsL 7200; VARsC 3600; VA 6000.
+Apparent power formula for RLC parallel?	VA = √(P² + (VARsL − VARsC)²)
+Example 24–1 PF and θ?	PF = 4800/6000 = 80% LAGGING; θ = 36.87°.
+PF formulas in parallel RLC?	P/VA, Iᵣ/Iₜ, Z/R (Not R/Z, not voltage ratios)
+L and C in Example 24–1?	L = 8/377 = 0.0212 H; C = 1/(377 × 16) = 165.8 µF.
+What is a tank circuit?	An L-C parallel (resonant) circuit, in which energy swings back and forth between the coil and capacitor.
+At parallel resonance, what happens to impedance and line current?	Impedance is MAXIMUM; line current is MINIMUM. (Opposite of series resonance)
+Compare series and parallel resonance.	Series: Z min, current max, voltage magnified. Parallel: Z max, line current min, circulating current magnified.
+What limits the line current of a real tank circuit?	The resistance (Q) of the coil — capacitors have very high Q. (Ideal: zero line current, infinite Z)
+Q of a tank circuit — two formulas?	Q = Xl/R = I(tank)/I(line)
+0.0398 H (10 Ω), 0.442 µF on 480 V at 1200 Hz: tank current, Q and line current?	Xl = Xc = 300 Ω → 1.6 A each; Q = 30; line = 1.6/30 = 0.0533 A.
+Check the tank line current using power.	P = 1.6² × 10 = 25.6 W; I = 25.6/480 = 0.0533 A.
+Impedance of that tank at resonance?	480/0.0533 ≈ 9000 Ω (book's 9006 comes from rounding).
+Tank Xl = Xc = 30 Ω, coil Q = 15, 277 V. Line current?	Tank = 277/30 ≈ 9.23 A; line = 9.23/15 ≈ 0.62 A. (Review Q4)
+Bandwidth of a parallel resonant circuit?	Frequency range where impedance is ≥ 0.707 × maximum; high Q = narrow, low Q = wide.
+Pitfall: "tiny line current, so L and C are lightly loaded"?	Wrong — each carries the full circulating tank current (Q × line current).
+How does an induction heater use a tank circuit?	The work coil (with the pipe as core) and a capacitor resonate; I(tank) = Q × I(line) — Q 10: 100 A line → 1000 A heating current.
+Induction heating: low vs high frequency?	≤ 400 Hz heats evenly through; ≥ 1000 Hz skin effect heats the surface (case hardening).
+Why is an induction heater only resonant with the part in the coil?	The part acts as the coil's core, so it changes L.
+How does an inductive proximity sensor use a tank circuit?	Metal near the face adds eddy-current losses, Q collapses, the oscillation stops, and the sensor switches.
+C to resonate with 0.796 mH (Xl 50 Ω) at 10 kHz?	Xc must = 50 Ω: C = 1/(2π × 10,000 × 50) ≈ 0.318 µF. (Review Q5)
+Why can a capacitor correct a motor's power factor?	In parallel, its leading current cancels much of the motor's lagging magnetizing current, so the line carries less.
+How does a motor look electrically at no load vs full load?	R in series with L; L (magnetizing) stays ~constant, R grows with load → low PF at no load, higher at full load.
+PF correction step 1–2 (240 V, 10 A, 1630 W)?	VA = 2400; PF = 67.9%; VARsL = √(2400² − 1630²) = 1761.6.
+PF correction step 3–4 (target 95%)?	New VA = 1630/0.95 = 1715.8; allowed VARs = √(1715.8² − 1630²) = 535.8. (Watts don't change)
+PF correction step 5–7?	VARsC = 1761.6 − 535.8 = 1225.8; Xc = 240²/1225.8 = 46.99 Ω; C = 1/(377 × 46.99) = 56.45 µF in parallel.
+After correcting that motor to 95%, what's the line current?	≈ 1715.8/240 = 7.15 A (down from 10 A). The motor's own current is unchanged.
+Formula for Xc from required capacitive VARs?	Xc = E² / VARsC
+To correct to unity (100%), how many VARsC?	Equal to all the existing inductive VARs. (Review Q6)
+Why correct to ~95% rather than 100%?	Diminishing returns — each extra point needs more kVAR; overshooting makes PF leading and raises voltage.
+Does corrected PF stay constant at all motor loads?	No (despite the book). Watts drop at light load, so PF falls; an oversized capacitor can overcorrect.
+Book error in PF correction step 5?	It says reduce VARs "from 1715.789" — that's VA. The existing VARs are 1761.562. Also "PF = 0679" should be 0.679.
+NEC limits for a capacitor on the load side of a motor overload?	kVAR ≤ the amount to raise no-load PF to unity (460.7, avoids self-excitation); set overloads on the reduced current (460.9).
+Why can PF banks cause harmonic problems in plants with drives?	Bank + system inductance form a tank circuit; near a harmonic its high impedance magnifies harmonic voltage/current. Use detuned banks.
+Practical: 240 V, 15 A, 2.2 kW motor to 95%. Method?	VA = 3600 → PF ≈ 61%; VARs now = √(3600² − 2200²); target VA = 2200/0.95; VARs target; difference = VARsC; Xc = 240²/VARsC; C = 1/(377·Xc).

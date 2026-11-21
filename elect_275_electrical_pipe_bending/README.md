@@ -19,6 +19,8 @@ Print it and keep it in your toolbag, or pull it up on your phone at the bending
 
 - **[Conduit Bending Study Guide](lbcc_conduit_bending_guide.md)**: the same material as the cheat sheet, written out in more detail. It reads right here on GitHub, no download needed. It walks through each practice bend done in class (EMT and RMC 3-point and 4-point saddles, offsets, back-to-back 90s, stub 90s, and a stub 90° with a box offset) with its angles, constants, mark-by-mark formulas, and which bender mark to line up with.
 
+- **[Flashcards](flashcards/)** (44 cards): bender marks, deductions, multipliers, shrinkage, saddles and the NEC rules, plus worked bends. Study them on the page, on the [flashcard study page](https://webnrrd2k.github.io/lbcc-electrical-study-materials/flashcards/?deck=e275-bending), or download them for Anki, Quizlet or Emacs.
+
 ---
 
 ## Tips
@@ -35,7 +37,8 @@ Print it and keep it in your toolbag, or pull it up on your phone at the bending
 elect_275_electrical_pipe_bending/
 ├── README.md                          (this page)
 ├── conduit_bending_cheat_sheet.pdf    (formulas, shoe marks, constants, practice bends)
-└── lbcc_conduit_bending_guide.md      (study guide: same material in more detail)
+├── lbcc_conduit_bending_guide.md      (study guide: same material in more detail)
+└── flashcards/                        (44 cards: README, .json, .apkg, Quizlet .txt, .org)
 ```
 
 More material for this class (practice problems, worked bend layouts) will be added here.

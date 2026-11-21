@@ -1,0 +1,529 @@
+{
+ "schema_version": "2.0",
+ "deck": "Labs 4–6: Power Systems",
+ "deck_id": "e212-power-systems",
+ "class": "ELECT 212",
+ "title": "Split-phase, wye and delta systems",
+ "order": 30,
+ "study_guide": "../study-guide.md",
+ "source": "Written for ELECT 212 Labs 4-6 (120/240 V single-phase three-wire, three-phase wye and delta).",
+ "format": "text",
+ "cards": [
+  {
+   "id": "e212-power-systems-001",
+   "type": "basic",
+   "section": "1. Split-phase 120/240 V",
+   "difficulty": 1,
+   "front": "How is a 120/240 V single-phase three-wire system made?",
+   "back": "A transformer secondary with a grounded center tap. The center tap is the neutral; each end is a hot line.",
+   "tags": [
+    "elect-212",
+    "split-phase-120-240-v"
+   ]
+  },
+  {
+   "id": "e212-power-systems-002",
+   "type": "basic",
+   "section": "1. Split-phase 120/240 V",
+   "difficulty": 1,
+   "front": "Why is it 240 V between the two lines of a split-phase system?",
+   "back": "Each line is 120 V to neutral and the two are 180° apart, so they add to 240 V.",
+   "tags": [
+    "elect-212",
+    "split-phase-120-240-v"
+   ]
+  },
+  {
+   "id": "e212-power-systems-003",
+   "type": "basic",
+   "section": "1. Split-phase 120/240 V",
+   "difficulty": 1,
+   "front": "Which loads connect line to neutral, and which line to line?",
+   "back": "120 V loads (receptacles, lighting) line to neutral. 240 V loads (ranges, dryers, water heaters, A/C) line to line.",
+   "tags": [
+    "elect-212",
+    "split-phase-120-240-v"
+   ]
+  },
+  {
+   "id": "e212-power-systems-004",
+   "type": "basic",
+   "section": "1. Split-phase 120/240 V",
+   "difficulty": 1,
+   "front": "What current does the neutral of a split-phase system carry?",
+   "back": "The difference of the line currents: I_N = |I_L1 − I_L2|. Balanced loads give 0 A.",
+   "tags": [
+    "elect-212",
+    "split-phase-120-240-v"
+   ]
+  },
+  {
+   "id": "e212-power-systems-005",
+   "type": "basic",
+   "section": "1. Split-phase 120/240 V",
+   "difficulty": 2,
+   "front": "Worked: 15 A on L1 and 9 A on L2. Neutral current?",
+   "back": "15 − 9 = 6 A.",
+   "tags": [
+    "elect-212",
+    "split-phase-120-240-v"
+   ]
+  },
+  {
+   "id": "e212-power-systems-006",
+   "type": "basic",
+   "section": "1. Split-phase 120/240 V",
+   "difficulty": 2,
+   "front": "What is a multiwire branch circuit?",
+   "back": "Two or more hots with a voltage between them sharing one neutral (NEC Article 100).",
+   "tags": [
+    "elect-212",
+    "split-phase-120-240-v"
+   ]
+  },
+  {
+   "id": "e212-power-systems-007",
+   "type": "basic",
+   "section": "1. Split-phase 120/240 V",
+   "difficulty": 2,
+   "front": "What disconnect rule applies to a multiwire branch circuit?",
+   "back": "All the hots must open together: a 2-pole breaker or handle tie (NEC 210.4(B)).",
+   "tags": [
+    "elect-212",
+    "split-phase-120-240-v"
+   ]
+  },
+  {
+   "id": "e212-power-systems-008",
+   "type": "basic",
+   "section": "1. Split-phase 120/240 V",
+   "difficulty": 2,
+   "front": "What happens when the neutral of a split-phase circuit opens?",
+   "back": "The 120 V loads on opposite lines end up in series across 240 V. The smaller load (higher resistance) gets most of the voltage.",
+   "tags": [
+    "elect-212",
+    "split-phase-120-240-v"
+   ]
+  },
+  {
+   "id": "e212-power-systems-009",
+   "type": "basic",
+   "section": "1. Split-phase 120/240 V",
+   "difficulty": 3,
+   "front": "Worked: open neutral, 1000 W and 100 W 120 V lamps on opposite lines. Voltage on each?",
+   "back": "R = 14.4 Ω and 144 Ω; I = 240 ÷ 158.4 = 1.52 A. 1000 W lamp: about 22 V. 100 W lamp: about 218 V (burns out).",
+   "tags": [
+    "elect-212",
+    "split-phase-120-240-v"
+   ]
+  },
+  {
+   "id": "e212-power-systems-010",
+   "type": "basic",
+   "section": "1. Split-phase 120/240 V",
+   "difficulty": 3,
+   "front": "Why must a shared neutral not depend on a receptacle for continuity?",
+   "back": "Removing the device would open the neutral for the other circuit and cause open-neutral voltages (NEC 300.13(B)).",
+   "tags": [
+    "elect-212",
+    "split-phase-120-240-v"
+   ]
+  },
+  {
+   "id": "e212-power-systems-011",
+   "type": "basic",
+   "section": "2. Three-phase basics",
+   "difficulty": 1,
+   "front": "How far apart are the three voltages of a three-phase system?",
+   "back": "120°.",
+   "tags": [
+    "elect-212",
+    "three-phase-basics"
+   ]
+  },
+  {
+   "id": "e212-power-systems-012",
+   "type": "basic",
+   "section": "2. Three-phase basics",
+   "difficulty": 1,
+   "front": "What is phase sequence (rotation)?",
+   "back": "The order in which the phases peak, for example A-B-C.",
+   "tags": [
+    "elect-212",
+    "three-phase-basics"
+   ]
+  },
+  {
+   "id": "e212-power-systems-013",
+   "type": "basic",
+   "section": "2. Three-phase basics",
+   "difficulty": 1,
+   "front": "How do you reverse a three-phase motor?",
+   "back": "Swap any two of the three lines.",
+   "tags": [
+    "elect-212",
+    "three-phase-basics"
+   ]
+  },
+  {
+   "id": "e212-power-systems-014",
+   "type": "basic",
+   "section": "2. Three-phase basics",
+   "difficulty": 2,
+   "front": "Give three reasons three-phase power is used.",
+   "back": "Smooth, constant power delivery; more power per pound of copper; three-phase motors are simpler and self-starting.",
+   "tags": [
+    "elect-212",
+    "three-phase-basics"
+   ]
+  },
+  {
+   "id": "e212-power-systems-015",
+   "type": "basic",
+   "section": "2. Three-phase basics",
+   "difficulty": 1,
+   "front": "What is the difference between line values and phase values?",
+   "back": "Line values are measured between lines or in the line wires. Phase values are across (or through) one winding or one load.",
+   "tags": [
+    "elect-212",
+    "three-phase-basics"
+   ]
+  },
+  {
+   "id": "e212-power-systems-016",
+   "type": "basic",
+   "section": "2. Three-phase basics",
+   "difficulty": 1,
+   "front": "What is the square root of 3, and when does it appear?",
+   "back": "About 1.732. It appears when converting between line and phase values, and in the three-phase power formula using line values.",
+   "tags": [
+    "elect-212",
+    "three-phase-basics"
+   ]
+  },
+  {
+   "id": "e212-power-systems-017",
+   "type": "basic",
+   "section": "3. Wye systems",
+   "difficulty": 1,
+   "front": "In a wye, how do line and phase voltage compare?",
+   "back": "V_line = 1.732 × V_phase.",
+   "tags": [
+    "elect-212",
+    "wye-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-018",
+   "type": "basic",
+   "section": "3. Wye systems",
+   "difficulty": 1,
+   "front": "In a wye, how do line and phase current compare?",
+   "back": "They are equal.",
+   "tags": [
+    "elect-212",
+    "wye-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-019",
+   "type": "basic",
+   "section": "3. Wye systems",
+   "difficulty": 1,
+   "front": "Line-to-line voltage of a 120 V-per-phase wye?",
+   "back": "120 × 1.732 = 208 V.",
+   "tags": [
+    "elect-212",
+    "wye-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-020",
+   "type": "basic",
+   "section": "3. Wye systems",
+   "difficulty": 1,
+   "front": "Line-to-neutral voltage of a 480 V wye?",
+   "back": "480 ÷ 1.732 = 277 V.",
+   "tags": [
+    "elect-212",
+    "wye-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-021",
+   "type": "basic",
+   "section": "3. Wye systems",
+   "difficulty": 2,
+   "front": "Why is a 120 V wye 208 V line to line instead of 240 V?",
+   "back": "The two phase voltages are 120° apart, not 180°, so their phasor difference is 1.732 × 120.",
+   "tags": [
+    "elect-212",
+    "wye-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-022",
+   "type": "basic",
+   "section": "3. Wye systems",
+   "difficulty": 1,
+   "front": "What does the neutral carry on a balanced wye?",
+   "back": "0 A. The three phase currents cancel.",
+   "tags": [
+    "elect-212",
+    "wye-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-023",
+   "type": "basic",
+   "section": "3. Wye systems",
+   "difficulty": 3,
+   "front": "How do you find neutral current on an unbalanced resistive wye?",
+   "back": "I_N = √(Ia² + Ib² + Ic² − IaIb − IbIc − IcIa).",
+   "tags": [
+    "elect-212",
+    "wye-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-024",
+   "type": "basic",
+   "section": "3. Wye systems",
+   "difficulty": 3,
+   "front": "Worked: unbalanced wye, 10 A, 8 A and 6 A. Neutral current?",
+   "back": "√(100 + 64 + 36 − 80 − 48 − 60) = √12 ≈ 3.5 A.",
+   "tags": [
+    "elect-212",
+    "wye-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-025",
+   "type": "basic",
+   "section": "3. Wye systems",
+   "difficulty": 3,
+   "front": "Why can a wye neutral carry more current than the phases?",
+   "back": "Non-linear loads make triplen harmonics (3rd, 9th...) that add in the neutral instead of cancelling.",
+   "tags": [
+    "elect-212",
+    "wye-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-026",
+   "type": "basic",
+   "section": "4. Delta systems",
+   "difficulty": 1,
+   "front": "In a delta, how do line and phase voltage compare?",
+   "back": "They are equal.",
+   "tags": [
+    "elect-212",
+    "delta-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-027",
+   "type": "basic",
+   "section": "4. Delta systems",
+   "difficulty": 1,
+   "front": "In a delta, how do line and phase current compare?",
+   "back": "I_line = 1.732 × I_phase.",
+   "tags": [
+    "elect-212",
+    "delta-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-028",
+   "type": "basic",
+   "section": "4. Delta systems",
+   "difficulty": 2,
+   "front": "Worked: 240 V delta, each load draws 10 A. Line current?",
+   "back": "10 × 1.732 = 17.3 A.",
+   "tags": [
+    "elect-212",
+    "delta-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-029",
+   "type": "basic",
+   "section": "4. Delta systems",
+   "difficulty": 1,
+   "front": "Does a plain 3-wire delta have a neutral?",
+   "back": "No.",
+   "tags": [
+    "elect-212",
+    "delta-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-030",
+   "type": "basic",
+   "section": "4. Delta systems",
+   "difficulty": 2,
+   "front": "In a delta lab, where do you clamp to read phase amps versus line amps?",
+   "back": "Phase amps: around a load leg inside the delta. Line amps: around a feeder wire. Line amps are larger.",
+   "tags": [
+    "elect-212",
+    "delta-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-031",
+   "type": "basic",
+   "section": "4. Delta systems",
+   "difficulty": 2,
+   "front": "What is a high-leg (wild-leg) delta?",
+   "back": "A 240 V delta with one winding center-tapped for a neutral, giving 120/240 V four-wire service.",
+   "tags": [
+    "elect-212",
+    "delta-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-032",
+   "type": "basic",
+   "section": "4. Delta systems",
+   "difficulty": 2,
+   "front": "What voltage does the high leg read to neutral?",
+   "back": "About 208 V.",
+   "tags": [
+    "elect-212",
+    "delta-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-033",
+   "type": "basic",
+   "section": "4. Delta systems",
+   "difficulty": 3,
+   "front": "How must the high leg be identified, and where does it go in a panel?",
+   "back": "Marked orange (NEC 110.15), and on the B phase in panelboards (NEC 408.3(E)).",
+   "tags": [
+    "elect-212",
+    "delta-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-034",
+   "type": "basic",
+   "section": "4. Delta systems",
+   "difficulty": 3,
+   "front": "How much of three-transformer capacity can an open-delta bank carry?",
+   "back": "57.7%.",
+   "tags": [
+    "elect-212",
+    "delta-systems"
+   ]
+  },
+  {
+   "id": "e212-power-systems-035",
+   "type": "basic",
+   "section": "5. Three-phase power",
+   "difficulty": 1,
+   "front": "Three-phase power formula using line values?",
+   "back": "P = 1.732 × V_line × I_line × PF.",
+   "tags": [
+    "elect-212",
+    "three-phase-power"
+   ]
+  },
+  {
+   "id": "e212-power-systems-036",
+   "type": "basic",
+   "section": "5. Three-phase power",
+   "difficulty": 2,
+   "front": "Three-phase power formula using phase values?",
+   "back": "P = 3 × V_phase × I_phase × PF.",
+   "tags": [
+    "elect-212",
+    "three-phase-power"
+   ]
+  },
+  {
+   "id": "e212-power-systems-037",
+   "type": "basic",
+   "section": "5. Three-phase power",
+   "difficulty": 2,
+   "front": "Worked: balanced 240 V delta heaters, 17.3 A per line, PF 1. Power?",
+   "back": "1.732 × 240 × 17.3 ≈ 7,200 W.",
+   "tags": [
+    "elect-212",
+    "three-phase-power"
+   ]
+  },
+  {
+   "id": "e212-power-systems-038",
+   "type": "basic",
+   "section": "5. Three-phase power",
+   "difficulty": 3,
+   "front": "A 240 V heater runs on 208 V. About how much heat does it give?",
+   "back": "About 75%: power varies with voltage squared, (208/240)² ≈ 0.75.",
+   "tags": [
+    "elect-212",
+    "three-phase-power"
+   ]
+  },
+  {
+   "id": "e212-power-systems-039",
+   "type": "basic",
+   "section": "5. Three-phase power",
+   "difficulty": 2,
+   "front": "What is apparent power in a three-phase circuit?",
+   "back": "S = 1.732 × V_line × I_line, in VA.",
+   "tags": [
+    "elect-212",
+    "three-phase-power"
+   ]
+  },
+  {
+   "id": "e212-power-systems-040",
+   "type": "basic",
+   "section": "6. Safety",
+   "difficulty": 2,
+   "front": "Why can't you de-energize a multiwire circuit by turning off one breaker?",
+   "back": "The shared neutral still carries the other circuit's current.",
+   "tags": [
+    "elect-212",
+    "safety"
+   ]
+  },
+  {
+   "id": "e212-power-systems-041",
+   "type": "basic",
+   "section": "6. Safety",
+   "difficulty": 2,
+   "front": "What is the danger of connecting a 120 V load on a high-leg delta?",
+   "back": "If it lands on the high leg it gets about 208 V.",
+   "tags": [
+    "elect-212",
+    "safety"
+   ]
+  },
+  {
+   "id": "e212-power-systems-042",
+   "type": "basic",
+   "section": "6. Safety",
+   "difficulty": 2,
+   "front": "Why measure every voltage combination on an unfamiliar system?",
+   "back": "Delta systems (ungrounded, corner-grounded or high-leg) can give unexpected line-to-ground readings.",
+   "tags": [
+    "elect-212",
+    "safety"
+   ]
+  },
+  {
+   "id": "e212-power-systems-043",
+   "type": "basic",
+   "section": "6. Safety",
+   "difficulty": 2,
+   "front": "What does an open neutral on a wye or split-phase service do to 120 V equipment?",
+   "back": "Applies unequal voltages, some near line-to-line, which destroys electronics and can start fires.",
+   "tags": [
+    "elect-212",
+    "safety"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+Why are capacitors called the opposite of inductors?	Almost every behaviour is reversed: Xc falls with frequency (Xl rises), current leads (Xl lags), Xc → ∞ at DC (Xl → 0). (Intro)
+Can current flow THROUGH a capacitor?	No electrons cross the dielectric. But on AC, current flows continuously in the circuit as the capacitor charges, discharges and recharges — it "appears" to flow through. (Review Q1)
+Explain the two-tank analogy.	A reversing pump moves water back and forth between two tanks: flow never stops, but no water passes directly from tank to tank. Same as electrons charging each plate in turn. (Figure 20–2)
+Why does current "appear to flow" through a capacitor?	Because the AC voltage continuously rises, falls and reverses, keeping the capacitor charging and discharging. (Summary)
+Does a capacitor block AC or DC?	It blocks steady DC (after charging) and passes AC — more easily at higher frequency.
+What is the impressed voltage?	The voltage built up across the plates by the stored charge. It opposes the applied voltage and limits current. (20–2)
+Phase relationship of impressed and applied voltage?	180° apart.
+What is capacitive reactance?	The current-limiting effect of a capacitor (its countervoltage), symbol Xc, measured in ohms.
+Formula for Xc?	Xc = 1 / (2πfC) (f in Hz, C in farads) (At 60 Hz: Xc = 1/(377C))
+Rearranged Xc formulas?	C = 1 / (2πf·Xc) and f = 1 / (2πC·Xc)
+Two factors that determine capacitive reactance?	Capacitance and frequency — Xc is INVERSELY proportional to both. (Review Q2)
+35 µF on 120 V, 60 Hz: Xc and current?	Xc = 1/(377 × 0.000035) = 75.79 Ω; I = 120/75.79 = 1.58 A. (Example 20–1)
+480 V, 60 Hz, 2.6 A: capacitance?	Xc = 480/2.6 = 184.6 Ω; C = 1/(377 × 184.6) = 14.37 µF. (Example 20–2)
+Most common Xc calculation error?	Leaving C in µF instead of converting to farads (35 µF = 0.000035 F). Also forgetting the reciprocal (1/x).
+Xc of a capacitor at DC?	Infinite — it blocks steady DC (opposite of an inductor, whose Xl = 0 at DC).
+Frequency doubles. What happens to Xc and current?	Xc halves; current doubles. (20–8)
+Why does Xc drop as frequency rises?	Current is charge per second (I = Q/t). At higher frequency the same charge moves in less time, so more current flows for the same voltage. (30 Hz → 1 C/s; 60 Hz → 2 C/s)
+300 Ω at 60 Hz. Xc at 100 Hz?	300 × 60/100 = 180 Ω (Practice 6)
+Book table error check: 470 nF at 400 Hz?	846.6 Ω (the book's Table 20–1 says kΩ). Also 470 nF @ 1 kHz = 338.6 Ω and 750 nF @ 400 Hz = 530.5 Ω.
+Phase of current vs voltage in a pure capacitive circuit?	Current LEADS the applied voltage by 90°. (Review Q3/Q4)
+What does "ELI the ICE man" say about capacitors?	ICE: in a capacitor (C), current (I) comes before voltage (E).
+Why is capacitor current maximum when voltage is zero?	Current depends on how fast the charge changes. At 0° the voltage (and charge) is changing fastest; at 90° it's at peak and momentarily not changing, so current = 0. (Q = C × V)
+Compare phase in R, L and C circuits.	R: in phase. L: current lags 90°. C: current leads 90°.
+Charge on a capacitor vs applied voltage?	In phase: Q = C × V, so charge is zero when voltage is zero and peaks when voltage peaks.
+True power in a pure capacitive circuit?	Zero watts — energy stored while charging is returned while discharging. (20–5)
+What do the gold and red areas represent?	Gold: V and I same sign — charging, storing energy in the electrostatic field. Red: opposite signs — discharging, returning energy.
+Why does P = E × I × cos θ give zero for a pure capacitor?	θ = 90° and cos 90° = 0.
+What unit is capacitor power measured in?	VARs (volt-amperes-reactive), written VARsC.
+Formulas for VARsC?	VARsC = Ec × Ic = Ic² × Xc = Ec² / Xc
+How are capacitive and inductive VARs related?	180° out of phase — they cancel each other. (Basis of power-factor correction)
+Why do plants install capacitor banks rated in kVAR?	Their leading (capacitive) VARs cancel the motors' lagging (inductive) VARs, so the utility supplies less current and PF improves.
+Q of a capacitor: formula?	Q = R / Xc, where R is the dielectric's (leakage) resistance. (Flipped from an inductor's Q = Xl/R)
+Other Q formulas for a capacitor?	Q = VARsC / P, and approximately Q ≈ 1/PF (accurate when Q is high).
+Is a capacitor's Q usually high or low? What lowers it?	Very high. A leaky dielectric (lower R) lowers Q.
+What is a capacitor's voltage rating really the rating of?	The dielectric. (20–7)
+A nonpolarized capacitor is marked in VAC. What value is that?	RMS — compare directly with the circuit's RMS voltage.
+Marked VDC, WVDC or PEAK. How do you use it on AC?	It's a PEAK value: compare it with the circuit's RMS × 1.414.
+How are electrolytic (polarized) capacitors rated?	Always in DC volts.
+300 WVDC capacitor on a 240 V line. OK?	No: 240 × 1.414 = 339 V peak, which exceeds 300 V. (Example 20–3)
+600 VDC capacitor on 480 VAC. OK?	No: 480 × 1.414 ≈ 679 V peak > 600 V. (Review Q7 / Practical App 1)
+A 350 VAC capacitor is equivalent to what DC rating?	About 350 × 1.414 ≈ 495 V peak (DC). (Review Q10)
+Life gain at half the rated voltage?	About 8×. (Review Q8)
+Is there a standard for how capacitor voltage ratings are marked?	No — you'll see VOLTS AC, VOLTS DC, PEAK VOLTS and WVDC. Read the label carefully.
+In series, how do capacitive REACTANCES combine?	They add: Xct = Xc1 + Xc2 + Xc3 (same angle). (Capacitance uses reciprocals)
+In parallel, how do capacitive REACTANCES combine?	Reciprocal formula: 1/Xct = 1/Xc1 + 1/Xc2 + 1/Xc3. (Capacitance adds)
+10, 30, 15 µF in series on 480 V, 60 Hz. Xct, Ct and I?	Xct = 265 + 88 + 177 = 530.5 Ω; Ct = 5 µF; I = 0.905 A. (Example 20–4)
+In that series circuit, which capacitor has the largest voltage drop?	The smallest one (10 µF): 240 V. Drops are 240, 80, 160 V. (Check each cap's rating)
+Do the series capacitor voltage drops add straight?	Yes — all capacitor drops are in phase with each other (240 + 80 + 160 = 480 V). (Unlike R + L drops)
+50, 75, 20 µF in parallel, 787 VARs at 60 Hz. Find E.	Xct = 18.29 Ω; E = √(VARs × Xct) = √(787 × 18.29) ≈ 120 V. (Example 20–5)
+Formula for E from VARs and reactance?	E = √(VARs × X)
+Do VARs from several capacitors add?	Yes — same-type VARs add straight in series or parallel.
+Capacitor drawn onto a higher voltage than rated: two effects?	VARs rise with V² (480 → 600 V ≈ +56% kVAR) and the dielectric is overstressed.
+Why can PF capacitors overheat on VFD/electronic systems?	Their Xc drops at harmonic frequencies, so they draw extra harmonic current and can resonate with system inductance. (Detuned PF banks)
+Field formula to check a run capacitor at 60 Hz?	C (µF) ≈ 2652 × I ÷ E (current through it, voltage across it).
+Add a series capacitor to reduce current from 24 A to 16 A on 480 V. Method?	Existing Xc = 480/24; needed total = 480/16; series Xc's add, so the new cap supplies the difference in Xc. Convert that Xc to µF. (Practice 7)
+Four equal capacitors in series must total 20 µF. Value of each?	C/N = 20 µF → each = 80 µF; each sees ¼ of the line voltage. (Review Q11–12)

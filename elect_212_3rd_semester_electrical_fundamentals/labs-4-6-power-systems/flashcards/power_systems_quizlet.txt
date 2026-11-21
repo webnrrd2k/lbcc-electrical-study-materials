@@ -1,0 +1,43 @@
+How is a 120/240 V single-phase three-wire system made?	A transformer secondary with a grounded center tap. The center tap is the neutral; each end is a hot line.
+Why is it 240 V between the two lines of a split-phase system?	Each line is 120 V to neutral and the two are 180° apart, so they add to 240 V.
+Which loads connect line to neutral, and which line to line?	120 V loads (receptacles, lighting) line to neutral. 240 V loads (ranges, dryers, water heaters, A/C) line to line.
+What current does the neutral of a split-phase system carry?	The difference of the line currents: I_N = |I_L1 − I_L2|. Balanced loads give 0 A.
+Worked: 15 A on L1 and 9 A on L2. Neutral current?	15 − 9 = 6 A.
+What is a multiwire branch circuit?	Two or more hots with a voltage between them sharing one neutral (NEC Article 100).
+What disconnect rule applies to a multiwire branch circuit?	All the hots must open together: a 2-pole breaker or handle tie (NEC 210.4(B)).
+What happens when the neutral of a split-phase circuit opens?	The 120 V loads on opposite lines end up in series across 240 V. The smaller load (higher resistance) gets most of the voltage.
+Worked: open neutral, 1000 W and 100 W 120 V lamps on opposite lines. Voltage on each?	R = 14.4 Ω and 144 Ω; I = 240 ÷ 158.4 = 1.52 A. 1000 W lamp: about 22 V. 100 W lamp: about 218 V (burns out).
+Why must a shared neutral not depend on a receptacle for continuity?	Removing the device would open the neutral for the other circuit and cause open-neutral voltages (NEC 300.13(B)).
+How far apart are the three voltages of a three-phase system?	120°.
+What is phase sequence (rotation)?	The order in which the phases peak, for example A-B-C.
+How do you reverse a three-phase motor?	Swap any two of the three lines.
+Give three reasons three-phase power is used.	Smooth, constant power delivery; more power per pound of copper; three-phase motors are simpler and self-starting.
+What is the difference between line values and phase values?	Line values are measured between lines or in the line wires. Phase values are across (or through) one winding or one load.
+What is the square root of 3, and when does it appear?	About 1.732. It appears when converting between line and phase values, and in the three-phase power formula using line values.
+In a wye, how do line and phase voltage compare?	V_line = 1.732 × V_phase.
+In a wye, how do line and phase current compare?	They are equal.
+Line-to-line voltage of a 120 V-per-phase wye?	120 × 1.732 = 208 V.
+Line-to-neutral voltage of a 480 V wye?	480 ÷ 1.732 = 277 V.
+Why is a 120 V wye 208 V line to line instead of 240 V?	The two phase voltages are 120° apart, not 180°, so their phasor difference is 1.732 × 120.
+What does the neutral carry on a balanced wye?	0 A. The three phase currents cancel.
+How do you find neutral current on an unbalanced resistive wye?	I_N = √(Ia² + Ib² + Ic² − IaIb − IbIc − IcIa).
+Worked: unbalanced wye, 10 A, 8 A and 6 A. Neutral current?	√(100 + 64 + 36 − 80 − 48 − 60) = √12 ≈ 3.5 A.
+Why can a wye neutral carry more current than the phases?	Non-linear loads make triplen harmonics (3rd, 9th...) that add in the neutral instead of cancelling.
+In a delta, how do line and phase voltage compare?	They are equal.
+In a delta, how do line and phase current compare?	I_line = 1.732 × I_phase.
+Worked: 240 V delta, each load draws 10 A. Line current?	10 × 1.732 = 17.3 A.
+Does a plain 3-wire delta have a neutral?	No.
+In a delta lab, where do you clamp to read phase amps versus line amps?	Phase amps: around a load leg inside the delta. Line amps: around a feeder wire. Line amps are larger.
+What is a high-leg (wild-leg) delta?	A 240 V delta with one winding center-tapped for a neutral, giving 120/240 V four-wire service.
+What voltage does the high leg read to neutral?	About 208 V.
+How must the high leg be identified, and where does it go in a panel?	Marked orange (NEC 110.15), and on the B phase in panelboards (NEC 408.3(E)).
+How much of three-transformer capacity can an open-delta bank carry?	57.7%.
+Three-phase power formula using line values?	P = 1.732 × V_line × I_line × PF.
+Three-phase power formula using phase values?	P = 3 × V_phase × I_phase × PF.
+Worked: balanced 240 V delta heaters, 17.3 A per line, PF 1. Power?	1.732 × 240 × 17.3 ≈ 7,200 W.
+A 240 V heater runs on 208 V. About how much heat does it give?	About 75%: power varies with voltage squared, (208/240)² ≈ 0.75.
+What is apparent power in a three-phase circuit?	S = 1.732 × V_line × I_line, in VA.
+Why can't you de-energize a multiwire circuit by turning off one breaker?	The shared neutral still carries the other circuit's current.
+What is the danger of connecting a 120 V load on a high-leg delta?	If it lands on the high leg it gets about 208 V.
+Why measure every voltage combination on an unfamiliar system?	Delta systems (ungrounded, corner-grounded or high-leg) can give unexpected line-to-ground readings.
+What does an open neutral on a wye or split-phase service do to 120 V equipment?	Applies unequal voltages, some near line-to-line, which destroys electronics and can start fires.

@@ -1,0 +1,44 @@
+Which bender mark do you line up for a standard 90° stub-up?	The arrow (front of the hook).
+Which bender mark is used for the back of a 90° (back-to-back 90s)?	The star, at the back heel of the shoe.
+Which bender mark is used for the center bend of a 3-point saddle?	The notch, rim or teardrop at the center of the bend.
+Which mark do you use for the two bends of an offset?	The arrow, for both marks.
+Which marks do you use for the outer bends of a 3-point saddle?	The arrow.
+How do you check bend angle with a hand bender?	Read the degree scale cast on the side of the shoe, or check with a torpedo level or protractor.
+Which EMT shoe bends 1/2 in. rigid (RMC/IMC)?	The 3/4 in. EMT shoe. The 1 in. EMT shoe bends 3/4 in. rigid.
+How do you find the mark for a 90° stub-up?	Mark = desired stub height − bender deduction (take-up). Line the mark up with the arrow.
+90° deduction for 1/2 in. EMT?	5 in.
+90° deduction for 3/4 in. EMT?	6 in.
+90° deduction for 1 in. EMT?	8 in.
+90° deduction for 1-1/4 in. EMT?	11 in.
+90° deductions for 1/2, 3/4 and 1 in. rigid (RMC)?	6 in., 8 in. and 11 in. Rigid uses the next-size-up EMT shoe, so it takes that shoe's deduction.
+What is gain?	The length saved because a bend takes a curved shortcut. Total pipe needed = leg 1 + leg 2 − gain.
+Worked: 12 in. stub with 1/2 in. EMT. Where is the mark?	12 − 5 = 7 in. from the end, lined up with the arrow.
+Worked: 18 in. stub with 3/4 in. rigid. Where is the mark?	18 − 8 = 10 in. from the end, on the arrow.
+How do you make the second bend of a back-to-back 90?	Measure the outside-to-outside distance from the back of the first 90, line that mark up with the star, hook facing away. No deduction.
+Why over-bend rigid conduit slightly?	Steel RMC springs back. Over-bend about 2° to 3°.
+How far apart are the two marks of an offset?	Offset height × the multiplier for the bend angle.
+Offset multiplier for 10° bends?	6.0
+Offset multiplier for 22.5° bends?	2.6
+Offset multiplier for 30° bends?	2.0
+Offset multiplier for 45° bends?	1.4 (exactly 1.414)
+Offset multiplier for 60° bends?	1.2 (exactly 1.155)
+What is the multiplier mathematically?	The cosecant of the bend angle: 1 ÷ sin(angle). For 30°, 1 ÷ 0.5 = 2.
+Shrinkage per inch of offset height for 10°, 22.5°, 30°, 45° and 60° bends?	1/16, 3/16, 1/4, 3/8 and 1/2 in. per inch.
+When bending toward an obstacle, what do you do with shrinkage?	Add it to the distance to the obstacle when placing the first mark.
+Worked: 6 in. offset with 30° bends. Mark spacing and shrinkage?	6 × 2 = 12 in. between marks. Shrinkage 6 × 1/4 = 1-1/2 in.
+Worked: 4 in. offset with 45° bends. Mark spacing?	4 × 1.414 ≈ 5-5/8 in.
+Why choose a smaller offset angle like 22.5° over 45°?	Less shrinkage and easier wire pulling, but the offset takes more length.
+What are the bend angles of a 3-point saddle?	22.5° – 45° – 22.5°.
+3-point saddle: where is the center mark?	Distance to the center of the obstacle + 3/16 in. per inch of obstacle height. Line it up with the notch or rim.
+3-point saddle: where are the outer marks?	2-1/2 in. per inch of obstacle height on each side of the center mark, lined up with the arrow.
+Worked: 3-point saddle over a 4 in. pipe, center 30 in. from the end. Marks?	Center at 30 + 4 × 3/16 = 30-3/4 in. Outer marks 4 × 2-1/2 = 10 in. each side: 20-3/4 in. and 40-3/4 in.
+What is a 4-point saddle?	Two offsets back to back, usually 30° or 22.5°, to go over a wide obstacle.
+4-point saddle: list the four marks.	1: distance to obstacle + shrinkage. 2: mark 1 + height × multiplier. 3: mark 2 + obstacle width. 4: mark 3 + height × multiplier.
+What bends make a box offset?	Two 10° bends, usually for a 3/8 or 1/2 in. offset into a box.
+Worked: 1/2 in. box offset. How far apart are the marks?	0.5 × 6.0 = 3 in. The first mark is 2 to 3 in. from the end.
+Box offset and a stub-up on the same piece: which bend first?	The box offset first, then measure the stub from that end.
+Maximum total degrees of bends between pull points?	360°, counting offsets and saddles (NEC 358.26 EMT, 344.26 RMC).
+How many degrees does a 3-point saddle (22.5-45-22.5) add toward the 360° limit?	90°.
+EMT securing and support distances?	Within 3 ft of every box, cabinet or fitting, and at least every 10 ft (NEC 358.30(A)).
+RMC securing and support distances?	Within 3 ft of every box or fitting and every 10 ft; longer spacing is allowed for straight runs with threaded couplings (NEC 344.30).
+Why does the NEC limit bends between pull points?	Every bend adds pulling tension. Too many bends damage the conductor insulation during the pull.

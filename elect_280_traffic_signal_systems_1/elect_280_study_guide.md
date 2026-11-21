@@ -63,6 +63,8 @@ A wrong phase label at a head means the wrong wires get landed in the cabinet. T
 
 ## B. Ring diagram and concurrency (Assignments 2, 7)
 
+![NEMA 8-phase dual-ring diagram: Ring 1 runs phases 1, 2, 3, 4 and Ring 2 runs 5, 6, 7, 8, with a barrier between the main-street and side-street groups](images/ring-diagram.png)
+
 **1. Main ideas**
 
 - The ring diagram shows the order phases time in. Ring 1 runs Ø1 → Ø2 ‖ Ø3 → Ø4. Ring 2 runs Ø5 → Ø6 ‖ Ø7 → Ø8.
@@ -83,8 +85,8 @@ A common sequence is: 1+5 → 1+6 or 2+5 (whichever left finishes first) → 2+6
 
 **3. Background**
 
-- **The yellow line is the yellow change interval.** It warns drivers that the green is ending. The CA MUTCD minimum yellow depends on posted speed, about 3.0 s at 25 mph up to about 5.0 s at 55 mph. Kinematic formula: Y = t + v/(2a + 2gG). With t = 1 s, a = 10 ft/s² and a 45 mph (66 ft/s) flat approach, Y = 1 + 66/20 = 4.3 s.
-- **The red line is the red clearance, or all-red.** Every approach shows red so a car that entered on yellow can clear. A common estimate is R = (W + L)/v. For a 70 ft wide intersection, a 20 ft car and 66 ft/s, R = 90/66 ≈ 1.4 s.
+- **The yellow line is the yellow change interval.** It warns drivers that the green is ending. CA MUTCD Table 4D-101(CA) sets the minimum yellow from the 85th-percentile approach speed: 3.0 s at 25 mph or less, up to 5.0 s at 55 mph. If only the posted speed is known, add 7 mph first (10 mph at 25 mph or less), so 35 mph posted gets 4.1 s. Yellow should stay between 3 and 6 s (CA MUTCD 4F.17). Kinematic formula: Y = t + v/(2a + 2gG). With t = 1 s, a = 10 ft/s² and a 45 mph (66 ft/s) flat approach, Y = 1 + 66/20 = 4.3 s.
+- **The red line is the red clearance, or all-red.** Every approach shows red so a car that entered on yellow can clear. A common estimate is R = (W + L)/v. For a 70 ft wide intersection, a 20 ft car and 66 ft/s, R = 90/66 ≈ 1.4 s. The CA MUTCD notes red clearances normally run 0.1 to 2.0 s, and should not exceed 6 s.
 - The barrier exists because every main-street movement conflicts with every side-street movement.
 - NEMA TS-2 and the FHWA Signal Timing Manual (Chapter 4) describe the dual-ring structure.
 
@@ -172,10 +174,11 @@ Programming two conflicting phases to run together, such as Ø2 with Ø3, causes
 
 **3. Background**
 
-- **Ped clearance (CA MUTCD 4E.06):** FDW time = crossing distance ÷ 3.5 ft/s. The walk + FDW together must also cover the full distance from the push button at 3.0 ft/s. The minimum walk is normally 7 s.
+- **Ped clearance (CA MUTCD 4I.06):** ped clearance time = crossing distance ÷ 3.5 ft/s (2.8 ft/s where older or disabled pedestrians routinely cross). The walk + clearance together must also cover the distance from the push button (or 6 ft behind the curb) at 3 ft/s. The walk should be at least 7 s; 4 s is allowed where ped volumes are low.
+- **Buffer interval (new in the 2023 MUTCD):** after the flashing Don't Walk, a steady Don't Walk shows for at least 2 s before conflicting traffic is released. Flashing Don't Walk + buffer must be at least the calculated clearance time.
 - Example: a 60 ft crosswalk gives 60 ÷ 3.5 = 17.1 s FDW. With a 6 ft walk from the button, (60 + 6) ÷ 3.0 = 22 s. Walk 7 + FDW 17.1 = 24.1 s, which is more than 22 s, so it meets the rule.
-- Countdown displays are required on new ped heads where the ped clearance is more than 7 s (CA MUTCD 4E.07).
-- **APS placement (CA MUTCD 4E.08 and 4E.09):** within 5 ft of the crosswalk line extended, 1.5 to 6 ft from the curb edge, and at least 10 ft between two APS units on one corner. The button about 3.5 ft high, next to a level 48 in. landing (plans often call this out in a note).
+- Countdown displays are required on new ped heads where the ped clearance is more than 7 s (CA MUTCD 4I.04). Ped heads mount 7 to 10 ft above the sidewalk (4I.03).
+- **Push button and APS placement (CA MUTCD 4I.05 and Chapter 4K):** no more than 5 ft from the outside edge of the crosswalk, 1.5 to 6 ft from the curb face, and at least 10 ft between two push buttons on one corner. The button is about 3.5 ft high (4 ft maximum), needs no more than 5 lb to press, and sits next to a level 48 in. landing (plans often call this out in a note).
 - The 3CSC carries the push-button circuit, one cable for each push-button location.
 
 **4. Dangerous conditions**
@@ -254,6 +257,8 @@ Programming two conflicting phases to run together, such as Ø2 with Ø3, causes
 
 ## F. The Model 332 controller cabinet (Assignment 4)
 
+![Model 332L cabinet cage from top to bottom: 2070 controller, drawer shelf, Input File I, Input File J, PDA #2L, Output File #1L](images/332-cabinet.png)
+
 **1. Main ideas**
 
 - The 332L cabinet (Caltrans TEES 2009) holds everything that runs the intersection. Its cage, from top to bottom: 2070 controller, drawer shelf, Input File I, Input File J, PDA #2L with the 206L power supply, and Output File #1L.
@@ -323,7 +328,7 @@ Programming two conflicting phases to run together, such as Ø2 with Ø3, causes
 **3. Background**
 
 - **Flash program blocks** choose red or yellow flash for each phase. Typically the main street flashes yellow and the side street red, or everything flashes red. The agency decides.
-- A 204 flasher has two alternating outputs. Flash rate is 50 to 60 flashes per minute (CA MUTCD 4L), with the light on for about half of each cycle.
+- A 204 flasher has two alternating outputs. Flash rate is 50 to 60 flashes per minute, with the light on for ½ to ⅔ of each flash cycle (CA MUTCD 4G.01).
 - The flash pairs (such as 1 with 6, and 2 with 5) are compatible movements on the same approach. Splitting them across two flasher circuits balances the load.
 - When FLASH is selected or the 210 trips, the FTR coils and SSR are de-energized. The HI and K24 relays remove 24 VDC from the switch pack inputs as a backup in case the SSR fails to open.
 - A triac is a bidirectional thyristor. Once triggered, it conducts until the AC current crosses zero, which makes it suitable for switching AC lamps without contacts.
@@ -435,7 +440,7 @@ Conductor check for one 12CSC: 3 per vehicle phase (R, Y, G) + 2 per ped phase (
 **3. Background**
 
 - **Conduit fill (NEC Chapter 9, Table 1):** 53% for one conductor, 31% for two, and 40% for three or more. Cable area = πd² ÷ 4. Many agencies use a lower limit, so check the special provisions.
-- **Fill example** (cable sizes assumed; check the data sheet): a 12CSC with 0.60 in. OD has an area of about 0.28 in², and a 3CSC with 0.35 in. OD about 0.10 in². Eight of each is 8 × 0.28 + 8 × 0.10 = 3.04 in². A 3 in. Schedule 40 PVC has 7.07 in² total, so 40% is 2.83 in². One conduit is not enough, so a run like this needs two 3 in. conduits (shown as 2-3" on a schedule).
+- **Fill example** (cable sizes assumed; check the data sheet): a 12CSC with 0.60 in. OD has an area of about 0.28 in², and a 3CSC with 0.35 in. OD about 0.10 in². Eight of each is 8 × 0.28 + 8 × 0.10 = 3.04 in². A 3 in. Schedule 40 PVC has roughly 7 in² of inside area (NEC Chapter 9, Table 4 gives the exact figure), so 40% is about 2.8 in². One conduit is not enough, so a run like this needs two 3 in. conduits (shown as 2-3" on a schedule).
 - Pulling tension and the number of bends also limit a run. NEC 352.26 allows no more than 360° of bends between pull points.
 - The common in a 12CSC is the white (grounded) conductor. NEC 200.6 and 200.7 reserve white for the grounded conductor.
 - DLC is spliced to the loop wire in the pull box nearest the loop. That is the only splice in the detector circuit. Solder and seal or use the agency's approved splice kit.

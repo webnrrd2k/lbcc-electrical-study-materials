@@ -1,0 +1,124 @@
+{
+ "schema_version": "2.0",
+ "deck": "Miscellaneous Electroliers",
+ "deck_id": "e280-misc-electrolier",
+ "class": "ELECT 280",
+ "title": "Miscellaneous Electroliers",
+ "format": "text",
+ "order": 4,
+ "source": "Legend sheets of the 2018 Caltrans Electrical Standard Plans",
+ "cards": [
+  {
+   "id": "e280-misc-electrolier-001",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Luminaire on wood pole",
+   "section": "Miscellaneous Electrolier",
+   "image": "misc_electrolier_01_luminaire_wood_pole_new.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "misc-electroliers"
+   ]
+  },
+  {
+   "id": "e280-misc-electrolier-002",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: Luminaire on wood pole",
+   "section": "Miscellaneous Electrolier",
+   "image": "misc_electrolier_01_luminaire_wood_pole_existing.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "misc-electroliers"
+   ]
+  },
+  {
+   "id": "e280-misc-electrolier-003",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Non-standard electrolier (see project legend)",
+   "section": "Miscellaneous Electrolier",
+   "image": "misc_electrolier_02_non_standard_electrolier_new.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "misc-electroliers"
+   ]
+  },
+  {
+   "id": "e280-misc-electrolier-004",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: Non-standard electrolier (see project legend)",
+   "section": "Miscellaneous Electrolier",
+   "image": "misc_electrolier_02_non_standard_electrolier_existing.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "misc-electroliers"
+   ]
+  },
+  {
+   "id": "e280-misc-electrolier-005",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: City electrolier",
+   "section": "Miscellaneous Electrolier",
+   "image": "misc_electrolier_03_city_electrolier_new.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "misc-electroliers"
+   ]
+  },
+  {
+   "id": "e280-misc-electrolier-006",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: City electrolier",
+   "section": "Miscellaneous Electrolier",
+   "image": "misc_electrolier_03_city_electrolier_existing.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "misc-electroliers"
+   ]
+  },
+  {
+   "id": "e280-misc-electrolier-007",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Electrolier foundation (future installation)",
+   "section": "Miscellaneous Electrolier",
+   "image": "misc_electrolier_04_electrolier_foundation_future_new.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "misc-electroliers"
+   ]
+  },
+  {
+   "id": "e280-misc-electrolier-008",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: Electrolier foundation (future installation)",
+   "section": "Miscellaneous Electrolier",
+   "image": "misc_electrolier_04_electrolier_foundation_future_existing.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "misc-electroliers"
+   ]
+  }
+ ]
+}

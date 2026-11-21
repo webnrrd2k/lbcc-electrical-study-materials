@@ -1,0 +1,53 @@
+What is a contactor?	A heavy-duty electrically operated switch. Its coil pulls in main power contacts that carry motor current.
+What is the difference between a contactor and a motor starter?	A motor starter is a contactor plus an overload relay.
+What does an overload relay protect against?	Motor overheating from sustained overcurrent. It opens the control circuit; it does not protect against short circuits.
+What protects the motor circuit against short circuits?	The branch-circuit short-circuit and ground-fault device: fuses or a circuit breaker ahead of the starter.
+What is a control relay used for?	Switching low-current control signals and adding contacts. It does not carry motor current.
+What does a control transformer do?	Steps line voltage down to a safer control voltage (24 V in the lab panels) for the push buttons, coils and lights.
+What is a limit switch used for in a forward/reverse circuit?	It opens when the machine reaches the end of travel and drops out that direction only.
+What is a pilot light for?	Showing the operator a state, such as motor running forward.
+What does the FLA dial on an overload relay set?	The trip current. Set it to the motor nameplate full-load amps.
+What is the difference between HAND and AUTO reset on an overload?	HAND: someone must press reset after a trip. AUTO: it resets itself when it cools. Use HAND where an automatic restart could hurt someone.
+What are terminals A1 and A2?	The two ends of a contactor or relay coil.
+What do 1L1, 3L2, 5L3 and 2T1, 4T2, 6T3 mean on a contactor?	Line-side and load-side terminals of the three main power poles: 1L1 to 2T1, 3L2 to 4T2, 5L3 to 6T3.
+What do the units digits 1-2 and 3-4 tell you about an auxiliary contact?	1-2 is normally closed (NC); 3-4 is normally open (NO). The tens digit is the position number.
+Is aux contact 23-24 NO or NC?	Normally open (ends in 3-4).
+Is aux contact 31-32 NO or NC?	Normally closed (ends in 1-2).
+What are overload terminals 95-96 and 97-98?	95-96 is the normally closed trip contact wired in series with the coils. 97-98 is a normally open alarm contact.
+A push button's NC contact is usually numbered...?	1-2 (for example a STOP button).
+A push button's NO contact is usually numbered...?	3-4 (for example a START button).
+On an 8-pin octal relay, which pins are usually the coil?	Pins 2 and 7.
+What do H1-H4 and X1-X4 mean on a control transformer?	H terminals are the primary (high-voltage) side; X terminals are the secondary (low-voltage) side.
+How is a ladder diagram read?	Left to right across each rung, top to bottom. Power rails on the sides; one load (coil or light) per rung, at the right end.
+Where do the overload contacts go in a control rung?	In series with the coil, between the coil and the common side.
+What is a seal-in (holding) contact?	A normally open contact of the contactor wired across the START button, so the coil stays energized after START is released.
+What is 3-wire control?	Momentary START/STOP buttons with a seal-in contact. It gives low-voltage protection: after a power loss the motor does not restart by itself.
+What is 2-wire control?	A maintained contact (switch, float, thermostat) runs the coil directly. It gives low-voltage release: the motor restarts when power returns.
+How are multiple STOP buttons wired?	In series (any one opens the circuit).
+How are multiple START buttons wired?	In parallel (any one can start).
+What does jog (inch) mean?	The motor runs only while the button is held; the seal-in is bypassed.
+Why should a JOG circuit still be fed through STOP?	So pressing STOP always stops the motor, even while someone is holding JOG.
+What is electrical interlocking in a forward/reverse starter?	Each contactor's NC aux contact (for example 31-32) is wired in series with the other contactor's coil, so both can't pull in at once.
+What is mechanical interlocking?	A mechanical bar between the two contactors that physically prevents both from closing.
+What is push-button interlocking?	Each direction button's NC contact is in the other direction's rung, so pressing one drops out the other.
+How does a 3-phase motor reverse?	Swap any two of the three line leads (the reversing contactor swaps L1 and L3).
+Why must forward and reverse never pull in together?	Two lines would be shorted together phase to phase.
+What is a common forgotten wire on a starter?	The coil return: coil A2 to the overload 95 terminal. Without it the coil has no path and nothing pulls in.
+NFPA 79 wire color for AC control circuits?	Red.
+NFPA 79 wire color for DC control circuits?	Blue.
+NFPA 79 wire color for the grounded (common) control conductor?	White (or white with a stripe for DC).
+NFPA 79 wire color for equipment grounding?	Green, or green with yellow stripe.
+What color does NFPA 79 use for interlock circuits fed from an outside source?	Orange (or yellow), because they stay live when the panel disconnect is off.
+Why should a white wire be used only for the grounded conductor?	Workers assume white is near ground potential. A white wire upstream of the overload contact can read full control voltage when the overload trips.
+Why is one side of the control transformer secondary grounded?	So a ground fault in the control circuit blows the fuse or trips the breaker instead of starting the motor by itself.
+Which side of the control circuit goes to the push buttons and contacts?	The fused, ungrounded (hot) side. The grounded side goes to the coils' A2 ends through the overload contacts.
+Why give every wire a number at both ends?	So the panel matches the ladder diagram and anyone can trace a fault.
+What must be off before doing ohm or continuity checks on a control panel?	All power: cord unplugged, motor supply unplugged, control breaker off.
+Why are continuity checks useless with the control transformer still connected and switched on?	The transformer secondary joins the hot and common buses through a few ohms, so almost everything reads continuous.
+What should a contactor coil read on an ohmmeter?	A definite resistance: not zero (shorted) and not open.
+How do you bench-test a contactor's main contacts without power?	Push the armature in by hand and check each pole (1L1-2T1 and so on) goes from open to continuous.
+A motor starts but stops as soon as START is released. Most likely cause?	The seal-in (holding) contact is missing, miswired or not closing.
+Pressing START does nothing at all. What do you check first?	Control power, the STOP button and overload contact (both NC), and the coil return wire.
+An overload keeps tripping. What are common causes?	FLA set too low, a mechanically overloaded or binding motor, a lost phase (single-phasing), or a bad connection heating the overload.
+What is single-phasing?	Losing one line of a 3-phase supply. The motor draws high current on the other two lines and overheats.
+What is the safe way to check for voltage?	Test your meter on a known live source, test the circuit, then test the meter again (live-dead-live).
