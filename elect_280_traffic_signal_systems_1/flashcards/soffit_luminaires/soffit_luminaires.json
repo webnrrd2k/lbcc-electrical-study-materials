@@ -1,0 +1,87 @@
+{
+ "schema_version": "2.0",
+ "deck": "Soffit and Wall-Mounted Luminaires",
+ "deck_id": "e280-soffit",
+ "class": "ELECT 280",
+ "title": "Soffit and Wall-Mounted Luminaires",
+ "format": "text",
+ "order": 5,
+ "source": "Legend sheets of the 2018 Caltrans Electrical Standard Plans",
+ "cards": [
+  {
+   "id": "e280-soffit-001",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Pendant soffit luminaire, 70 W HPS unless otherwise specified",
+   "section": "Soffit and Wall-Mounted Luminaire",
+   "note": "Arrow indicates \"street side\" of luminaire.",
+   "image": "soffit_luminaire_01_pendant_soffit.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "soffit-luminaires"
+   ]
+  },
+  {
+   "id": "e280-soffit-002",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Flush-mounted soffit luminaire, 70 W HPS unless otherwise specified",
+   "section": "Soffit and Wall-Mounted Luminaire",
+   "note": "Arrow indicates \"street side\" of luminaire.",
+   "image": "soffit_luminaire_02_flush_mounted_soffit.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "soffit-luminaires"
+   ]
+  },
+  {
+   "id": "e280-soffit-003",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Wall-mounted luminaire, 70 W HPS unless otherwise specified",
+   "section": "Soffit and Wall-Mounted Luminaire",
+   "note": "Arrow indicates \"street side\" of luminaire.",
+   "image": "soffit_luminaire_03_wall_mounted.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "soffit-luminaires"
+   ]
+  },
+  {
+   "id": "e280-soffit-004",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: Soffit or wall-mounted luminaire to remain unmodified",
+   "section": "Soffit and Wall-Mounted Luminaire",
+   "note": "Arrow indicates \"street side\" of luminaire.",
+   "image": "soffit_luminaire_04_existing_remain_unmodified.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "soffit-luminaires"
+   ]
+  },
+  {
+   "id": "e280-soffit-005",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: Soffit or wall-mounted luminaire to be modified as specified",
+   "section": "Soffit and Wall-Mounted Luminaire",
+   "note": "Arrow indicates \"street side\" of luminaire.",
+   "image": "soffit_luminaire_05_existing_to_be_modified.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "soffit-luminaires"
+   ]
+  }
+ ]
+}

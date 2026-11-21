@@ -1,0 +1,292 @@
+{
+ "schema_version": "2.0",
+ "deck": "Plan Abbreviations",
+ "deck_id": "e280-abbrev",
+ "class": "ELECT 280",
+ "title": "Plan Abbreviations",
+ "format": "text",
+ "order": 2,
+ "source": "Legend sheets of the 2018 Caltrans Electrical Standard Plans",
+ "cards": [
+  {
+   "id": "e280-abbrev-001",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Abandon. If applied to conduit, remove conductors.",
+   "note": "Abbreviation: AB",
+   "image": "legend_symbol_01_ab.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-002",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Install pull box in existing conduit run.",
+   "note": "Abbreviation: BC",
+   "image": "legend_symbol_02_bc.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-003",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Pedestrian barricade, type as indicated on plan.",
+   "note": "Abbreviation: BP",
+   "image": "legend_symbol_03_bp.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-004",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Install conduit into existing pull box.",
+   "note": "Abbreviation: CB",
+   "image": "legend_symbol_04_cb.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-005",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Connect new and existing conduit. Remove existing conductors and install conductors as indicated.",
+   "note": "Abbreviation: CC",
+   "image": "legend_symbol_05_cc.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-006",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Conduit to remain for future use. Remove conductors. Install pull tape.",
+   "note": "Abbreviation: CF",
+   "image": "legend_symbol_06_cf.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-007",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Detector handhole.",
+   "note": "Abbreviation: DH",
+   "image": "legend_symbol_07_dh.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-008",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Foundation to be abandoned.",
+   "note": "Abbreviation: FA",
+   "image": "legend_symbol_08_fa.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-009",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Install sign on signal mast arm.",
+   "note": "Abbreviation: IS",
+   "image": "legend_symbol_09_is.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-010",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "No slip base on standard.",
+   "note": "Abbreviation: NS",
+   "image": "legend_symbol_10_ns.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-011",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Photoelectric control.",
+   "note": "Abbreviation: PEC",
+   "image": "legend_symbol_11_pec.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-012",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Photoelectric unit.",
+   "note": "Abbreviation: PEU",
+   "image": "legend_symbol_12_peu.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-013",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Equipment or material to be removed and become the property of the contractor.",
+   "note": "Abbreviation: RC",
+   "image": "legend_symbol_13_rc.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-014",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Remove electrolier, fuses and ballast. Tape ends of conductors.",
+   "note": "Abbreviation: RE",
+   "image": "legend_symbol_14_re.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-015",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Relocate equipment.",
+   "note": "Abbreviation: RL",
+   "image": "legend_symbol_15_rl.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-016",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Remove and reuse equipment.",
+   "note": "Abbreviation: RR",
+   "image": "legend_symbol_16_rr.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-017",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Remove and salvage equipment.",
+   "note": "Abbreviation: RS",
+   "image": "legend_symbol_17_rs.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-018",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Splice new to existing conductors.",
+   "note": "Abbreviation: SC",
+   "image": "legend_symbol_18_sc.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-019",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Service disconnect.",
+   "note": "Abbreviation: SD",
+   "image": "legend_symbol_19_sd.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  },
+  {
+   "id": "e280-abbrev-020",
+   "type": "basic",
+   "front": "What does this plan abbreviation mean?",
+   "back": "Telephone service point.",
+   "note": "Abbreviation: TSP",
+   "image": "legend_symbol_20_tsp.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "plan-abbreviations"
+   ]
+  }
+ ]
+}

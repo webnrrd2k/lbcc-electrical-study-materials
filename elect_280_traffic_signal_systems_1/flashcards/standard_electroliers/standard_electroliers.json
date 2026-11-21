@@ -1,0 +1,320 @@
+{
+ "schema_version": "2.0",
+ "deck": "Standard Electroliers",
+ "deck_id": "e280-electrolier",
+ "class": "ELECT 280",
+ "title": "Standard Electroliers",
+ "format": "text",
+ "order": 3,
+ "source": "Legend sheets of the 2018 Caltrans Electrical Standard Plans",
+ "cards": [
+  {
+   "id": "e280-electrolier-001",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Type 15",
+   "section": "Standard Electrolier",
+   "image": "electrolier_01_15_new.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-002",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: Type 15",
+   "section": "Standard Electrolier",
+   "image": "electrolier_01_15_existing.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-003",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Type 15D",
+   "section": "Standard Electrolier",
+   "image": "electrolier_02_15d_new.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-004",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: Type 15D",
+   "section": "Standard Electrolier",
+   "image": "electrolier_02_15d_existing.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-005",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Type 15 structure",
+   "section": "Standard Electrolier",
+   "image": "electrolier_03_15_structure_new.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-006",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: Type 15 structure",
+   "section": "Standard Electrolier",
+   "image": "electrolier_03_15_structure_existing.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-007",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Type 15D structure",
+   "section": "Standard Electrolier",
+   "image": "electrolier_04_15d_structure_new.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-008",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: Type 15D structure",
+   "section": "Standard Electrolier",
+   "image": "electrolier_04_15d_structure_existing.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-009",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Type 21",
+   "section": "Standard Electrolier",
+   "image": "electrolier_05_21_new.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-010",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: Type 21",
+   "section": "Standard Electrolier",
+   "image": "electrolier_05_21_existing.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-011",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Type 21D",
+   "section": "Standard Electrolier",
+   "image": "electrolier_06_21d_new.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-012",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: Type 21D",
+   "section": "Standard Electrolier",
+   "image": "electrolier_06_21d_existing.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-013",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Type 21 structure",
+   "section": "Standard Electrolier",
+   "image": "electrolier_07_21_structure_new.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-014",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: Type 21 structure",
+   "section": "Standard Electrolier",
+   "image": "electrolier_07_21_structure_existing.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-015",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Type 21D structure",
+   "section": "Standard Electrolier",
+   "image": "electrolier_08_21d_structure_new.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-016",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: Type 21D structure",
+   "section": "Standard Electrolier",
+   "image": "electrolier_08_21d_structure_existing.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-017",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Type 30",
+   "section": "Standard Electrolier",
+   "image": "electrolier_09_30_new.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-018",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: Type 30",
+   "section": "Standard Electrolier",
+   "image": "electrolier_09_30_existing.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-019",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Type 31",
+   "section": "Standard Electrolier",
+   "image": "electrolier_10_31_new.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-020",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: Type 31",
+   "section": "Standard Electrolier",
+   "image": "electrolier_10_31_existing.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-021",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "New: Type 32",
+   "section": "Standard Electrolier",
+   "image": "electrolier_11_32_new.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  },
+  {
+   "id": "e280-electrolier-022",
+   "type": "basic",
+   "front": "What does this plan symbol show?",
+   "back": "Existing: Type 32",
+   "section": "Standard Electrolier",
+   "image": "electrolier_11_32_existing.png",
+   "image_alt": "Caltrans plan symbol",
+   "image_on_front": true,
+   "tags": [
+    "caltrans-legend",
+    "standard-electroliers"
+   ]
+  }
+ ]
+}
