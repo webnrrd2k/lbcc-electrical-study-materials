@@ -8,13 +8,13 @@ Study guides and flashcards for ELECT 280. The class covers reading Caltrans tra
 
 ## Quick reference
 
-- **[Cheat Sheet (PDF)](elect_280_cheat_sheet.pdf)** ([read on GitHub](elect_280_cheat_sheet.md)): the most important ideas from the course on 8 pages:
+- **[Cheat Sheet (PDF)](elect_280_cheat_sheet.pdf)** ([read on GitHub](elect_280_cheat_sheet.md)): the most important ideas from the course on 6 pages:
     + **Course at a glance:** the 10 core skills, in the order the class builds them
     + **Key numbers and formulas:** ring diagram pairs, detector designations (2I2U), 332 cabinet layout, PDA breakers, diode card math, cable rules, loop inductance and yellow-interval formulas
     + **Every assignment:** what it asks, the skills it tests, and the common mistakes
     + **Safety and the biggest misunderstandings**
 
-- **[Syllabus Study Guide (PDF)](elect_280_study_guide.pdf)** ([read on GitHub](elect_280_study_guide.md)): 23 pages that follow the syllabus topic by topic (A–K). Each topic has the same seven parts:
+- **[Syllabus Study Guide (PDF)](elect_280_study_guide.pdf)** ([read on GitHub](elect_280_study_guide.md)): 16 pages that follow the syllabus topic by topic (A–K). Each topic has the same seven parts:
     1. Main ideas
     2. Examples
     3. Background: math up to trigonometry, with NEC, NFPA 70E, NETA, CA MUTCD and Caltrans references
@@ -73,9 +73,9 @@ Each deck folder has the symbol images plus the cards in two formats:
 ```
 elect_280_traffic_signal_systems_1/
 ├── README.md                      (this page)
-├── elect_280_cheat_sheet.pdf      (8-page overview)
+├── elect_280_cheat_sheet.pdf      (6-page overview)
 ├── elect_280_cheat_sheet.md       (same content, readable on GitHub)
-├── elect_280_study_guide.pdf      (23-page guide, topic by topic)
+├── elect_280_study_guide.pdf      (16-page guide, topic by topic)
 ├── elect_280_study_guide.md       (same content, readable on GitHub)
 └── flashcards/
     ├── caltrans_legend_symbols/   (71 cards)

@@ -33,13 +33,13 @@ The course has three learning outcomes. You should be able to read an intersecti
 | Slot I14 | 242 DC isolator that gives the controller Flash Sense (FS) and Stop Time (ST). |
 | 332 cage, top to bottom | 2070 controller, drawer shelf, Input File I, Input File J, PDA #2L with 206L power supply, Output File #1L. |
 | Output File #1L | 12 × Model 200 switch packs, 4 FTRs, 1 × 210 monitor, flash program blocks on the back. |
-| PDA breakers | SCB1 feeds SP 1, 2, 2P. SCB2 feeds 3, 4, 4P. SCB3 feeds 5, 6, 6P. SCB4 feeds 7, 8, 8P. They come out at T2-7 to T2-10 and land on 01-1 to 01-4. |
-| Flasher readings | T2-2 to T2-5 = Flash 1-6, 2-5, 3-8 and 4-7. |
+| PDA breakers | Each signal circuit breaker (SCB) feeds a group of three switch packs: a left turn, a through and its ped. Look up the PDA terminal numbers in the 332L cabinet manual. |
+| Flashers | Two 204 flashers in the PDA. Each flasher circuit carries a pair of compatible phases. The PDA has test terminals for reading flasher voltage. |
 | Diode card | 16 channels give 16×15÷2 = 120 diodes. A diode in place means the pair conflicts. Remove a diode only for a pair that may run together. |
 | Cables | 12CSC = signal heads, one per signal standard. 3CSC = push button, one per push-button location. DLC = loop lead-in, one per detector designation. SIC = signal interconnect. |
 | Conduit count rule | A run carries one cable for every pole beyond it. The run that leaves the cabinet carries all of them. |
-| Power, lighting, ground (Assignment 15 plan) | #6 for the 332 power feed, #10 for lighting circuits, and a #8 bonding or ground conductor in every run. |
-| Service (Type III-BF) | 120/240 V. 100 A 2P main, 15 A 1P PEC (photocell), and an unmetered 30 A 2P lighting breaker. |
+| Power, lighting, ground | Signal power runs from the service to the cabinet, lighting conductors follow the poles with luminaires, and a bonding or ground conductor goes in every run. Sizes come from the plan and the NEC. |
+| Service | Typically a 120/240 V metered service with a main breaker, a PEC (photocell) breaker and a separate, often unmetered, lighting breaker. |
 
 **Loop detector math (from the inductance unit):**
 
@@ -72,14 +72,14 @@ Mark the correct Ø on every vehicle head and ped head of an intersection, and n
 
 ### 2 — Concurrency and Standard Plans (due Sep 26)
 
-Draw the concurrency arrows on the A/B ring diagram and explain the yellow and red lines. Then find 32 plan items in the 2018 Caltrans Electrical Standard Plans (the answer sheet starts with the ES-1C conduit run example).
+Draw the concurrency arrows on the A/B ring diagram and explain the yellow and red lines. Then find 32 plan items in the 2018 Caltrans Electrical Standard Plans.
 
 - **Skills:** One phase from each ring runs at a time. Barriers are where both rings must finish together. Find a symbol in ES-1A to ES-1C, then check it against the plan's Standard and Equipment Schedule.
 - **Common mistakes:** Calling the red line "just red". It is the **all-red clearance**, when every approach shows red. Drawing arrows across the barrier, for example Ø2 with Ø3. Forgetting the ped phases (13–16) and existing (E) versus new symbols. Standard Plans give the general case; the project plan's notes and schedules come first.
 
 ### 3 — Phases with Ped Heads and Vehicle Detector Designations (due Oct 3)
 
-Mark the phases on the Beach & Chapman test print, now with ped heads and loops added.
+Mark the phases on a test print, now with ped heads and loops added.
 
 - **Skills:** A ped head's phase matches the through phase parallel to the crosswalk. A loop's phase is the movement in the lane it sits in.
 - **Common mistakes:** Giving a ped head the phase of the street being crossed (it is the parallel street's phase). Giving left-turn pocket loops the through phase.
@@ -91,15 +91,15 @@ Label the parts of the 332 cabinet and put the correct phase next to each slot s
 - **Skills:** Know what each part does. The 2070 makes decisions. Input files carry 222 loop detectors and 242 isolators. The PDA holds the breakers, two 204 flashers and the 206L 24 VDC supply. Model 200 load switches use a triac to send 120 VAC to the heads. FTRs move the heads to the flasher. The 210 watches for conflicts.
 - **Common mistakes:** Calling the I file "loops" and the J file "detectors". Both hold detector cards: I = Ø1–Ø4, J = Ø5–Ø8. Thinking the controller powers the lamps directly. It only sends 24 VDC logic signals to the load switches.
 
-### 5 — Quiz: Beach & Utica phases (Oct 10)
+### 5 — Quiz: phases (Oct 10)
 
 A timed version of Assignments 1 and 3 on a new print. Read the north arrow first, then work one approach at a time.
 
 ### 6 — Vehicle Detector Designations (due Oct 17)
 
-On Beach & Atlanta, trace each VDD to its input panel terminal block and file pins. Example: I2U = TB2-5 and 6, pins I2-D and E. I2L = TB2-7 and 8, pins I2-J and K.
+On an intersection print, trace each VDD to its input panel terminal block (TB) and input file pins, using the 332L cabinet manual.
 
-- **Skills:** Upper channel uses pins D and E. Lower channel uses pins J and K. Each slot has its own pair of TB positions.
+- **Skills:** Each detector channel has its own pair of TB positions and its own pair of file pins. Upper and lower channels of one slot use different pins. Read the input panel and input file drawings in the cabinet manual.
 - **Common mistakes:** Marking loops that are drawn but carry no designation. The instructor marks those wrong. Copy errors, such as writing J5 pins for a J6 detector. Check every line twice.
 
 ### 7 — Quiz 2: Concurrency (Oct 17)
@@ -108,18 +108,18 @@ The ring diagram again, from memory. Know the four compatible pairs on each side
 
 ### 8 — The PDA and Output File (due Oct 24)
 
-Answer which switch packs each SCB feeds and where its output lands. Fill in what lands on each FT1, FT2 and FT3 terminal, such as 101 = Ø4R up to 136 = Ø6G.
+Use the cabinet manual to find which switch packs each SCB feeds and where its output lands, then fill in what lands on each field terminal (FT) block terminal.
 
 - **Skills:** Each breaker feeds a group of three switch packs (phase, phase, ped). Each switch pack has three outputs, R/Y/G or DW/(Y)/Walk.
 - **Common mistakes:** Mixing up the output order. Ped switch pack outputs are Don't Walk, Yellow (unused), Walk. Reading the PDA from the front when the drawing shows the rear view.
 
 ### 9 — Quiz 3: I and J File callout (Oct 24)
 
-Place every Beach & Utica VDD and ped isolator in the correct I or J slot (332L manual, p. 47). Mark only what is on the print.
+Place every VDD and ped isolator from a print in the correct I or J slot, using the input file layout in the 332L manual. Mark only what is on the print.
 
 ### 10 — 210 Diode Card (due Oct 31)
 
-Start with all 120 diodes in place, which makes every channel conflict. Cut out the diodes for compatible pairs. The Beach & Utica answer removed 18: 1-5, 1-6, 2-5, 2-6, 2-13, 2-15, 3-7, 3-8, 4-7, 4-8, 4-14, 4-16, 6-13, 6-15, 8-14, 8-16, 13-15 and 14-16.
+Start with all 120 diodes in place, which makes every channel conflict. Cut out the diodes for compatible pairs. Work from the ring diagram: check every vehicle, ped and overlap pair, and ask whether those movements can safely show green or walk at the same time.
 
 - **Common mistakes:** Removing a diode for a pair that conflicts. That lets two conflicting greens show and the monitor will not catch it, which is the worst error in the course. Forgetting the ped and overlap channels. Forgetting to write the intersection name on the card.
 
@@ -129,24 +129,24 @@ A timed version of Assignment 8.
 
 ### 12 — Cable and Conductor Schedule (due Nov 7)
 
-Fill in the 12CSC and 3CSC rows for Long Beach Blvd & Indianapolis.
+Fill in the 12CSC and 3CSC rows of a conduit and conductor schedule.
 
-- **Skills:** One 12CSC for every pole with heads (8). One 3CSC for every push-button location (8). Signal cable runs unspliced from the cabinet to the pole. Check the conductor count: 3 per vehicle phase + 2 per ped phase + 1 common = 9 of 12.
-- **Common mistakes:** Counting a pole only in the last run to reach it instead of every run it passes through. Putting signal cable in SIC-only or service runs. Forgetting that a push-button-only post (H) gets no 12CSC.
+- **Skills:** One 12CSC for every pole with heads. One 3CSC for every push-button location. Signal cable runs unspliced from the cabinet to the pole. Check the conductor count for each pole: 3 per vehicle phase + 2 per ped phase + 1 common, which must fit in 12.
+- **Common mistakes:** Counting a pole only in the last run to reach it instead of every run it passes through. Putting signal cable in SIC-only or service runs. Forgetting that a push-button-only post gets no 12CSC.
 
 ### 13 — DLCs and Conduit and Conductor Schedule (due Nov 14)
 
-Add the DLC rows. There is one DLC per detector designation (17 at this intersection), and they build up toward the cabinet.
+Add the DLC rows. There is one DLC per detector designation, and they build up toward the cabinet.
 
-- **Common mistakes:** Treating the plan callout "INSTALL 4 DLC" as the total for the run. It is only what that leg adds. Missing a conduit that is not clearly labeled. Note your assumption in writing, as you did for conduit 6.
+- **Common mistakes:** Treating a plan callout such as "INSTALL 4 DLC" as the total for the run. It is only what that leg adds. Missing a conduit that is not clearly labeled. Write down any assumption you make.
 
 ### 14 — Quiz 5: I and J File (Nov 14)
 
-Define each part of a VDD (2 = phase, I = file, 2 = slot, U = upper). Fill in a full I and J file: loops, ped push buttons (I12 and I13), FS and ST in I14, and preemption in the J file.
+Define each part of a VDD and fill in a full I and J file: loops, ped push-button isolators, FS and ST, and preemption inputs.
 
 ### 15 — Power, Street Lighting and Grounding (due Nov 21)
 
-Add #6 signal power, #10 lighting and #8 ground rows to the schedule.
+Add the signal power, lighting and ground rows to the schedule.
 
 - **Skills:** Power runs only from service to CB to cabinet. Lighting follows the poles that have luminaires. Ground goes in **every** conduit.
 - **Common mistakes:** Leaving out the ground in runs that carry only DLC or SIC. Putting lighting conductors in the cabinet feed. Not sizing the ground to the breaker (NEC 250.122).

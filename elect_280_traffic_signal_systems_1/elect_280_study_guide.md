@@ -2,7 +2,7 @@
 
 This guide follows the ELECT 280 syllabus and modules in order. Each section uses the same seven parts: **1 Main ideas, 2 Examples, 3 Background, 4 Dangerous conditions, 5 Exceptions, 6 Common misunderstandings, 7 Easily overlooked.**
 
-Sources are the course prints (Beach & Chapman, Beach & Utica, Beach & Atlanta, Long Beach Blvd & Indianapolis), the 2018 Caltrans Electrical Standard Plans, the 332L Cabinet Manual v3.0, the CA MUTCD, the FHWA Signal Timing Manual and Detector Handbook, and your graded work. NEC article numbers refer to NFPA 70. Code values and Caltrans specification limits change between editions, so check the edition your agency uses before relying on a number.
+Sources are the course intersection prints, the 2018 Caltrans Electrical Standard Plans, the 332L Cabinet Manual v3.0, the CA MUTCD, the FHWA Signal Timing Manual and Detector Handbook. NEC article numbers refer to NFPA 70. Code values and Caltrans specification limits change between editions, so check the edition your agency uses before relying on a number.
 
 | Section | Covers assignments |
 | --- | --- |
@@ -30,7 +30,7 @@ Sources are the course prints (Beach & Chapman, Beach & Utica, Beach & Atlanta, 
 **2. Examples**
 
 - Main street runs east and west and Ø2 is eastbound through. Then Ø6 is westbound through, Ø1 is the westbound left (it shares the approach with Ø6 and crosses eastbound Ø2), and Ø5 is the eastbound left.
-- Beach & Utica (Assignment 5): mark the main-street throughs with 2 and 6 and their lefts with 1 and 5, then the side street with 4 and 8 and its lefts with 3 and 7.
+- On a quiz print: mark the main-street throughs with 2 and 6 and their lefts with 1 and 5, then the side street with 4 and 8 and its lefts with 3 and 7.
 
 **3. Background**
 
@@ -46,7 +46,7 @@ A wrong phase label at a head means the wrong wires get landed in the cabinet. T
 
 - Split phasing: when the two directions of a street run one after the other, for example Ø3 and Ø4 timing in sequence instead of together.
 - Permissive or protected-permissive lefts (flashing yellow arrow, FYA) have their own head arrangement and may use an overlap channel.
-- Some agencies, or a "T" intersection, leave phases unused. The Long Beach & Indianapolis phase diagram shows two blocks marked "NOT USED".
+- Some agencies, or a "T" intersection, leave phases unused. The plan's phase diagram marks those blocks "NOT USED".
 - Overlaps (A, B, C, D) are outputs tied to two or more phases, such as a right-turn arrow that runs with a compatible left turn.
 
 **6. Common misunderstandings**
@@ -121,16 +121,16 @@ Programming two conflicting phases to run together, such as Ø2 with Ø3, causes
 
 **2. Examples**
 
-- ES-1C shows how conduit run numbers work (question 1 on the answer sheet).
+- ES-1C shows how conduit run numbers work.
 - Abbreviations from the legend: AB = abandon (remove conductors from the conduit). BC = install a pull box in an existing conduit run. CB = install conduit into an existing pull box. CF = conduit stays for future use, conductors removed, pull tape installed. RR = remove and reuse. RS = remove and salvage. RC = removed and becomes the contractor's property. SC = splice new to existing conductors. SD = service disconnect. PEC = photoelectric control. DH = detector handhole.
-- Long Beach & Indianapolis legend: item 1 = existing 2070 controller in a 332 cabinet with BBS to remain; item 2 = existing 120/240 V metered Type III-BF service; item 3 = repull existing SIC through new conduit.
+- A typical plan legend: "existing 2070 controller in a 332 cabinet with BBS to remain", "existing 120/240 V metered Type III-BF service", "repull existing SIC through new conduit".
 - Pole types in the schedule: 15TS, 19-4-100 and 29-5-100. Look up each type in the ES standard and lighting plans for its mast arm, luminaire and foundation.
 
 **3. Background**
 
 - **Order of precedence:** project special provisions, then the plans, then the Standard Plans, then the Standard Specifications (Caltrans Std Specs Section 5-1.02). When the plan and the Standard Plan differ, follow the project documents.
 - Existing equipment is drawn with outlined or lighter symbols and new equipment with solid symbols. Many Standard Plan symbols come in both versions.
-- Plan notes set clearances. The Long Beach plan requires 36 in. from the curb face to any fixed object inside curb returns, 18 in. along sidewalks, a 48 in. flat area at each APS, and a 48 in. pedestrian walkway. These come from ADA and Caltrans design rules.
+- Plan notes set clearances. A typical plan requires 36 in. from the curb face to any fixed object inside curb returns, 18 in. along sidewalks, a 48 in. flat area at each APS, and a 48 in. pedestrian walkway. These come from ADA and Caltrans design rules.
 - Wiring and materials must also meet the NEC. Caltrans electrical work is covered by Std Specs Sections 86 (general electrical) and 87 (systems), along with NEC Articles 300 (wiring methods), 310 (conductors) and 352/344 (PVC and rigid conduit).
 
 **4. Dangerous conditions**
@@ -140,7 +140,7 @@ Programming two conflicting phases to run together, such as Ø2 with Ø3, causes
 
 **5. Exceptions**
 
-- City and county agencies may use their own standard plans and symbols. Long Beach and Los Angeles have their own details.
+- City and county agencies may use their own standard plans and symbols. Many large cities have their own details.
 - Some plan notes override the Standard Plans. Example: "SIC repull only" in a run means that run gets no new signal cable.
 - Bonus question idea: a substitute pole, such as a 29A-5-100 for a 29-5-100, works only if the anchor bolt pattern, foundation and mast arm all match the Standard Plan tables. Check before you say yes.
 
@@ -152,7 +152,7 @@ Programming two conflicting phases to run together, such as Ø2 with Ø3, causes
 
 **7. Easily overlooked**
 
-- Check the revision date in the title block. The Long Beach plan was last revised 7/2/2010.
+- Check the revision date in the title block. Course prints can be many years old.
 - Scale (1 in. = 20 ft on that plan) lets you check conduit lengths and the 345 ft distance to the limit line.
 - Read the notes on every sheet. Many say "this sheet only".
 
@@ -163,19 +163,19 @@ Programming two conflicting phases to run together, such as Ø2 with Ø3, causes
 - A ped phase runs with the parallel vehicle through phase: Ø2P with Ø2, Ø4P with Ø4, Ø6P with Ø6, Ø8P with Ø8.
 - The ped head is on the far end of the crosswalk, facing people about to cross. The push button (PPB, or APS when accessible) is at the near end, where people wait.
 - Ped intervals: **Walk**, then **Flashing Don't Walk** (ped clearance), then steady Don't Walk.
-- In the cabinet, push buttons enter the controller through 242 DC isolators in the input file. In your quiz answers, I12 holds Ø2 and Ø4 PPB and I13 holds Ø6 and Ø8 PPB. Ped outputs leave through the 2P, 4P, 6P and 8P switch packs.
+- In the cabinet, push buttons enter the controller through 242 DC isolators in the input file. The 332L manual shows which input file slots hold the ped isolators. Ped outputs leave through the 2P, 4P, 6P and 8P switch packs.
 
 **2. Examples**
 
 - A crosswalk across the east leg of an east-west main street runs north-south, parallel to the side street. Its ped head runs with the side-street through phase (Ø4 or Ø8), not with Ø2 or Ø6.
-- On Long Beach & Indianapolis, pole A has a Ø6 ped head but an Ø4 APS. The button on a pole often serves a different crosswalk from the head on that same pole.
+- A corner pole can hold a Ø6 ped head and a Ø4 push button. The button on a pole often serves a different crosswalk from the head on that same pole.
 
 **3. Background**
 
 - **Ped clearance (CA MUTCD 4E.06):** FDW time = crossing distance ÷ 3.5 ft/s. The walk + FDW together must also cover the full distance from the push button at 3.0 ft/s. The minimum walk is normally 7 s.
 - Example: a 60 ft crosswalk gives 60 ÷ 3.5 = 17.1 s FDW. With a 6 ft walk from the button, (60 + 6) ÷ 3.0 = 22 s. Walk 7 + FDW 17.1 = 24.1 s, which is more than 22 s, so it meets the rule.
 - Countdown displays are required on new ped heads where the ped clearance is more than 7 s (CA MUTCD 4E.07).
-- **APS placement (CA MUTCD 4E.08 and 4E.09):** within 5 ft of the crosswalk line extended, 1.5 to 6 ft from the curb edge, and at least 10 ft between two APS units on one corner. The button about 3.5 ft high, next to a level 48 in. landing (note 3 on the Long Beach plan).
+- **APS placement (CA MUTCD 4E.08 and 4E.09):** within 5 ft of the crosswalk line extended, 1.5 to 6 ft from the curb edge, and at least 10 ft between two APS units on one corner. The button about 3.5 ft high, next to a level 48 in. landing (plans often call this out in a note).
 - The 3CSC carries the push-button circuit, one cable for each push-button location.
 
 **4. Dangerous conditions**
@@ -198,8 +198,8 @@ Programming two conflicting phases to run together, such as Ø2 with Ø3, causes
 
 **7. Easily overlooked**
 
-- A post with only a push button (post H on Long Beach) needs a 3CSC but no 12CSC.
-- A pole without an APS (pole G on Long Beach) needs a 12CSC but no 3CSC.
+- A post with only a push button needs a 3CSC but no 12CSC.
+- A pole without an APS needs a 12CSC but no 3CSC.
 - Ped timing often sets the minimum green of the parallel through phase.
 
 ## E. Loop detectors and vehicle detector designations (Assignments 3, 6, 9, 14)
@@ -213,9 +213,9 @@ Programming two conflicting phases to run together, such as Ø2 with Ø3, causes
 
 **2. Examples**
 
-- From Beach & Atlanta (Assignment 6): I2U lands on TB2-5 and 6 and file pins I2-D and E. I2L lands on TB2-7 and 8 and pins I2-J and K. **Upper channel uses pins D and E, lower channel uses pins J and K.**
-- Long Beach & Indianapolis has 17 designations and 17 DLCs. Example: Ø3 has 3J8L, 3J8U, 3J6U and 3J6L.
-- Quiz 5 slot layout (your answer): I1 = Ø1, I2–I4 = Ø2, I5 = Ø3, I6–I8 = Ø4, I9 = extra Ø1/Ø3. The J file mirrors this for Ø5–Ø8. I12 and I13 hold ped isolators. I14 = FS and ST. J-file upper slots hold preemption (railroad and emergency vehicle).
+- Each detector channel lands on its own pair of input panel TB positions and its own pair of input file pins. The upper and lower channels of one slot use different pins. Find them in the input panel and input file drawings of the 332L manual.
+- A print with four loops on the Ø3 approach, wired to two cards in J8 and J6, could show 3J8U, 3J8L, 3J6U and 3J6L. Each designation gets its own DLC.
+- The I file holds Ø1–Ø4 detectors and the J file Ø5–Ø8. Slot I14 holds the 242 for Flash Sense and Stop Time. Other slots hold ped isolators and preemption inputs; the 332L manual shows the standard layout.
 
 **3. Background**
 
@@ -270,7 +270,7 @@ Programming two conflicting phases to run together, such as Ø2 with Ø3, causes
 
 **2. Examples**
 
-- Your Assignment 4 labels: the I file holds loops on Ø1–Ø4; the J file holds Ø5–Ø8; the PDA has breakers, clean 120 V GFCI and the auto-flash switch; the power supply turns 120 VAC into 24 VDC; the load switch uses a triac to send 120 VAC to the heads; the FTRs switch between normal operation and fail-safe flash.
+- Labeling the cabinet: the I file holds loops on Ø1–Ø4; the J file holds Ø5–Ø8; the PDA has breakers, clean 120 V GFCI and the auto-flash switch; the power supply turns 120 VAC into 24 VDC; the load switch uses a triac to send 120 VAC to the heads; the FTRs switch between normal operation and fail-safe flash.
 - The 242 in slot I14 gives the controller Flash Sense and Stop Time. Turning the police panel to FLASH also triggers Stop Time.
 
 **3. Background**
@@ -314,25 +314,17 @@ Programming two conflicting phases to run together, such as Ø2 with Ø3, causes
 - A Model 200 switch pack (load switch) has three outputs. Each output is a triac that switches 120 VAC to a field wire when the controller pulls its 24 VDC input low.
 - In normal operation the FTRs connect the switch pack outputs to the field. In flash they drop out and connect the field to the 204 flashers through the flash program blocks.
 
-| Breaker | Switch packs | PDA output | Lands on |
-| --- | --- | --- | --- |
-| SCB1 | SP1–SP3 (Ø1, Ø2, Ø2P) | T2-7 | 01-1 |
-| SCB2 | SP4–SP6 (Ø3, Ø4, Ø4P) | T2-8 | 01-2 |
-| SCB3 | SP7–SP9 (Ø5, Ø6, Ø6P) | T2-9 | 01-3 |
-| SCB4 | SP10–SP12 (Ø7, Ø8, Ø8P) | T2-10 | 01-4 |
-| Flash 1-6, 2-5, 3-8, 4-7 | Flasher outputs | T2-2 to T2-5 | 01-5 to 01-8 |
-
 **2. Examples**
 
-- Tracing Ø2 green: SCB1 → T2-7 → 01-1 → SP2 → FT2 terminal 130 (Ø2G) → 12CSC conductor → Ø2 heads.
-- FT1 terminals 101–112 carry Ø4 and Ø8 vehicle and ped outputs (101 = Ø4R, 102 = Ø4Y, 103 = Ø4G, 104 = Ø4P DW, 105 = Ø4P Y, 106 = Ø4P Walk; then the same for Ø8). FT2 carries 113–136 for Ø2P, Ø3, Ø6P, Ø7, Ø1, Ø2, Ø5 and Ø6.
-- Read flasher voltage at T2-2 to T2-5. The meter should swing on and off about once a second.
+- Tracing Ø2 green: the breaker for the Ø1/Ø2/Ø2P group → the PDA output terminal → the output file → the Ø2 switch pack → its green output on a field terminal (FT) block → a 12CSC conductor → the Ø2 heads.
+- The field terminal blocks list each output by phase and color, such as Ø4R, Ø4Y, Ø4G, Ø4P DW, Ø4P Y and Ø4P Walk. The cabinet manual's output file drawing gives the terminal numbers.
+- Read flasher voltage at the PDA's flasher test terminals. The meter should swing on and off about once a second.
 
 **3. Background**
 
 - **Flash program blocks** choose red or yellow flash for each phase. Typically the main street flashes yellow and the side street red, or everything flashes red. The agency decides.
 - A 204 flasher has two alternating outputs. Flash rate is 50 to 60 flashes per minute (CA MUTCD 4L), with the light on for about half of each cycle.
-- The flash pairs (1-6, 2-5, 3-8, 4-7) are compatible movements on the same approach. Splitting them across two flasher circuits balances the load.
+- The flash pairs (such as 1 with 6, and 2 with 5) are compatible movements on the same approach. Splitting them across two flasher circuits balances the load.
 - When FLASH is selected or the 210 trips, the FTR coils and SSR are de-energized. The HI and K24 relays remove 24 VDC from the switch pack inputs as a backup in case the SSR fails to open.
 - A triac is a bidirectional thyristor. Once triggered, it conducts until the AC current crosses zero, which makes it suitable for switching AC lamps without contacts.
 
@@ -377,13 +369,14 @@ Programming two conflicting phases to run together, such as Ø2 with Ø3, causes
 
 **2. Examples**
 
-Beach & Utica: 18 diodes removed.
+How to decide on any pair:
 
-- Vehicle pairs: 1-5, 1-6, 2-5, 2-6, 3-7, 3-8, 4-7, 4-8
-- Ped with vehicle: 2-13, 2-15, 6-13, 6-15, 4-14, 4-16, 8-14, 8-16
-- Ped with ped: 13-15, 14-16
+1. **Vehicle with vehicle:** use the ring diagram. Pairs on the same side of the barrier, one from each ring, can be compatible. Example: 1-6 (westbound left with westbound through) is compatible, so its diode comes out.
+2. **Ped with vehicle:** a ped phase is compatible with a vehicle phase only if no vehicle on that phase turns or drives through the crosswalk. Example: 1-13 stays in, because Ø1 is the westbound left and it turns through the crosswalk that Ø2P peds are using.
+3. **Ped with ped:** two ped phases are compatible when their through phases are compatible.
+4. **Overlaps:** compatible only with the phases the overlap runs with.
 
-1-13 stays in. Ø1 is the westbound left, and it turns through the crosswalk that Ø2P peds are using.
+Check your list against the intersection's phase diagram before you cut anything.
 
 **3. Background**
 
@@ -424,25 +417,25 @@ Beach & Utica: 18 diodes removed.
 - **12CSC** (12-conductor signal cable): one for each standard with signal heads. **3CSC**: one for each push-button location. **DLC**: one for each detector designation. **SIC**: interconnect to other signals.
 - Signal cable runs continuously, without splices, from the cabinet to the pole's terminal compartment. So **a run carries one cable for every pole beyond it**, and the run leaving the cabinet carries all of them.
 
-**2. Examples (Long Beach Blvd & Indianapolis)**
+**2. Examples (a made-up four-corner intersection)**
 
-| Run | Serves | 12CSC | 3CSC | DLC | Size |
-| --- | --- | --- | --- | --- | --- |
-| 2 | C | 1 | 1 | 1 | 3" |
-| 5 | C, D, E | 3 | 3 | 6 | 4" |
-| 6 | C, D, E, F | 4 | 4 | 8 | 4" |
-| 7 | everything east, plus G and H | 5 | 5 | 10 | 2-3" |
-| 11 | A, B | 2 | 2 | 7 | 3" |
-| 16 (or 13 for DLC) | everything | 8 | 8 | 17 | 2-3" (E) |
+The cabinet is on the SW corner. Run 1 goes from the cabinet to the SW pull box. Run 2 goes from the SW pull box to the SE corner, run 3 from the SE corner to the NE corner, and run 4 from the SW pull box to the NW corner. Every corner has one pole with heads and a push button.
 
-Runs 8 and 12 carry only the repulled SIC (note 3). Run 1 carries only the north-leg DLC.
+| Run | Poles beyond it | 12CSC | 3CSC |
+| --- | --- | --- | --- |
+| 1 | SW, SE, NE, NW | 4 | 4 |
+| 2 | SE, NE | 2 | 2 |
+| 3 | NE | 1 | 1 |
+| 4 | NW | 1 | 1 |
 
-Conductor check for one 12CSC: 3 per vehicle phase (R, Y, G) + 2 per ped phase (Walk, DW) + 1 common. Pole A has Ø1 + Ø6 + Ø6P + common = 3 + 3 + 2 + 1 = 9, which fits in 12.
+The SW pole is fed by a short stub from the SW pull box. Run 1 leaves the cabinet, so it carries every cable.
+
+Conductor check for one 12CSC: 3 per vehicle phase (R, Y, G) + 2 per ped phase (Walk, DW) + 1 common. A pole with Ø1, Ø6 and Ø6P heads needs 3 + 3 + 2 + 1 = 9, which fits in 12.
 
 **3. Background**
 
 - **Conduit fill (NEC Chapter 9, Table 1):** 53% for one conductor, 31% for two, and 40% for three or more. Cable area = πd² ÷ 4. Many agencies use a lower limit, so check the special provisions.
-- **Fill example** (cable sizes assumed; check the data sheet): a 12CSC with 0.60 in. OD has an area of about 0.28 in², and a 3CSC with 0.35 in. OD about 0.10 in². Eight of each is 8 × 0.28 + 8 × 0.10 = 3.04 in². A 3 in. Schedule 40 PVC has 7.07 in² total, so 40% is 2.83 in². One conduit is not enough, which is why run 16 is two 3 in. conduits ("2-3"").
+- **Fill example** (cable sizes assumed; check the data sheet): a 12CSC with 0.60 in. OD has an area of about 0.28 in², and a 3CSC with 0.35 in. OD about 0.10 in². Eight of each is 8 × 0.28 + 8 × 0.10 = 3.04 in². A 3 in. Schedule 40 PVC has 7.07 in² total, so 40% is 2.83 in². One conduit is not enough, so a run like this needs two 3 in. conduits (shown as 2-3" on a schedule).
 - Pulling tension and the number of bends also limit a run. NEC 352.26 allows no more than 360° of bends between pull points.
 - The common in a 12CSC is the white (grounded) conductor. NEC 200.6 and 200.7 reserve white for the grounded conductor.
 - DLC is spliced to the loop wire in the pull box nearest the loop. That is the only splice in the detector circuit. Solder and seal or use the agency's approved splice kit.
@@ -456,7 +449,7 @@ Conductor check for one 12CSC: 3 per vehicle phase (R, Y, G) + 2 per ped phase (
 **5. Exceptions**
 
 - Plan notes override the counting rule. "Repull existing SIC only" means no new signal cable in that run.
-- A shorter route through a median may exist, but the plan's design route is what counts. Your Assignment 12 routed the NE corner around through the SE corner, not across the middle.
+- A shorter route through a median may exist, but the plan's design route is what counts.
 - A pole with more than 12 needed conductors gets a second 12CSC or a larger cable such as a 28CSC.
 
 **6. Common misunderstandings**
@@ -469,26 +462,23 @@ Conductor check for one 12CSC: 3 per vehicle phase (R, Y, G) + 2 per ped phase (
 
 - Check your totals. The cabinet run must equal the number of poles (12CSC), push-button locations (3CSC) and designations (DLC).
 - Larger conduit on a run usually means more cable. Use it to confirm your routing.
-- Write down any assumption on the sheet, as you did for conduit 6 and for runs 13 and 16. The instructor can then follow your reasoning.
+- Write down any assumption on the sheet, such as a conduit that isn't labeled. The instructor can then follow your reasoning.
 
 ## J. Power, street lighting and grounding (Assignment 15)
 
 **1. Main ideas**
 
-- The service (Type III-BF, 120/240 V, metered) feeds the signal cabinet and the street lighting. Long Beach & Indianapolis has a 100 A 2P main, a 15 A 1P PEC breaker, and an unmetered 30 A 2P lighting breaker.
-- **Signal power (#6):** service → CB → cabinet only (runs 14, 15, 16 in your answer).
-- **Lighting (#10, 2 conductors):** follows the poles that have luminaires. The 240 V circuit uses two hot conductors.
-- **Ground (#8):** an equipment grounding / bonding conductor in **every** conduit run, including DLC-only and SIC-only runs.
+- The service (Type III-BF, 120/240 V, metered) feeds the signal cabinet and the street lighting. A typical one has a 100 A 2P main, a 15 A 1P PEC breaker, and an unmetered 30 A 2P lighting breaker.
+- **Signal power (#6 on many plans):** service → CB → cabinet only.
+- **Lighting (#10 on many plans, 2 conductors):** follows the poles that have luminaires. The 240 V circuit uses two hot conductors.
+- **Ground (#8 on many plans):** an equipment grounding / bonding conductor in **every** conduit run, including DLC-only and SIC-only runs.
 
-**2. Examples (your Assignment 15 rows)**
+**2. Examples**
 
-| Run | 1 | 2–7 | 8 | 9–11 | 12 | 13 | 14 | 15 | 16 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| #6 signal power |  |  |  |  |  |  | 2 | 2 | 2 |
-| #10 lighting |  | 2 |  | 2 |  |  | 2 | 2 |  |
-| #8 ground | 1 | 1 (2 in run 7) | 1 | 1 | 1 | 1 | 1 | 1 | 2 |
-
-The runs made of two conduits (7 and 16) get one ground in each conduit, so 2.
+- A run from the service to the cabinet carries the 2 signal power conductors and 1 ground.
+- A run between two corners that both have electroliers carries the 2 lighting conductors and 1 ground.
+- A run that carries only DLCs or SIC still gets 1 ground.
+- A run made of two conduits (2-3" on a schedule) gets a ground in each conduit, so 2.
 
 **3. Background**
 
