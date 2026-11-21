@@ -1,0 +1,1621 @@
+{
+ "schema_version": "2.0",
+ "deck": "Chapter 13: The Electric Service and Grounding",
+ "deck_id": "e245-ch13",
+ "class": "ELECT 245",
+ "title": "The Electric Service and Grounding",
+ "format": "text",
+ "order": 13,
+ "book": "Electrical Wiring: Commercial, 18th ed. (Cengage, 2024), pp. 312-364",
+ "nec_edition": "2023",
+ "source": "Original study cards and diagrams based on the textbook chapter. NEC section numbers refer to NFPA 70; NEC text is not reproduced. Cards tagged 'beyond-text' use code knowledge outside the chapter, so check them in your code book.",
+ "generated": "2026-11-06",
+ "retired_ids": [],
+ "cards": [
+  {
+   "id": "e245-ch13-001",
+   "type": "basic",
+   "section": "1. Big picture",
+   "difficulty": 1,
+   "front": "What are the main topics of Chapter 13?",
+   "back": "Transformers and their protection and connections; utility supply arrangements; metering; service definitions; service-entrance equipment; grounding and bonding; ground-fault protection of equipment (GFPE); workplace safety.",
+   "nec_ref": "Art. 230; 250; 450",
+   "source_page": "312-313",
+   "tags": [
+    "overview"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-002",
+   "type": "basic",
+   "section": "1. Big picture",
+   "difficulty": 1,
+   "front": "Which NEC articles govern services, transformers, and grounding?",
+   "back": "Services: Article 230. Transformers: Article 450. Grounding and bonding: Article 250. Definitions: Article 100.",
+   "nec_ref": "Art. 230; 450; 250; 100",
+   "source_page": "312-313",
+   "tags": [
+    "overview"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-003",
+   "type": "basic",
+   "section": "2. Service types, service point, vocabulary",
+   "difficulty": 2,
+   "front": "What are the two broad types of service supply?",
+   "back": "(1) The utility provides high voltage and the transformer, and the owner is responsible from the service point on. (2) The owner buys power at primary (distribution) voltage and owns the substation, lines, and transformers.",
+   "nec_ref": "Art. 100",
+   "source_page": "313; 324-325",
+   "tags": [
+    "service",
+    "review"
+   ],
+   "image": "images/service-types.png",
+   "image_alt": "Two one-lines: utility-owned transformer with the service point at its secondary, versus owner buying at primary voltage where everything after the HV disconnect is a feeder.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-004",
+   "type": "basic",
+   "section": "2. Service types, service point, vocabulary",
+   "difficulty": 2,
+   "front": "When the owner buys power at primary voltage, what are the conductors on the load side of the HV disconnect?",
+   "back": "FEEDERS, not service conductors. Articles 215 and 225 apply. The high-voltage switch is the service disconnect, and metering is usually at primary voltage.",
+   "nec_ref": "Art. 215; Art. 225",
+   "source_page": "313; 324-325",
+   "tags": [
+    "service"
+   ],
+   "image": "images/service-types.png",
+   "image_alt": "Two one-lines: utility-owned transformer with the service point at its secondary, versus owner buying at primary voltage where everything after the HV disconnect is a feeder.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-005",
+   "type": "basic",
+   "section": "2. Service types, service point, vocabulary",
+   "difficulty": 1,
+   "front": "Define 'service point.'",
+   "back": "The point of connection between the facilities of the serving utility and the premises wiring. It's the demarcation point, and the utility generally specifies its location.",
+   "nec_ref": "Art. 100",
+   "source_page": "313; 324-325",
+   "tags": [
+    "service",
+    "definitions"
+   ],
+   "image": "images/service-terms.png",
+   "image_alt": "One-line from utility to branch circuit: service drop and service lateral on the utility (NESC) side of the service point; service-entrance conductors, feeder and branch circuit on the NEC side.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-006",
+   "type": "basic",
+   "section": "2. Service types, service point, vocabulary",
+   "difficulty": 1,
+   "front": "Define 'service drop.'",
+   "back": "The OVERHEAD service conductors between the serving utility and the service point. Installed by the utility under the NESC.",
+   "nec_ref": "Art. 100",
+   "source_page": "313; 324-325",
+   "tags": [
+    "definitions"
+   ],
+   "image": "images/service-terms.png",
+   "image_alt": "One-line from utility to branch circuit: service drop and service lateral on the utility (NESC) side of the service point; service-entrance conductors, feeder and branch circuit on the NEC side.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-007",
+   "type": "basic",
+   "section": "2. Service types, service point, vocabulary",
+   "difficulty": 1,
+   "front": "Define 'service lateral.'",
+   "back": "The UNDERGROUND conductors between the utility electric supply system and the service point. Installed by the utility under the NESC.",
+   "nec_ref": "Art. 100",
+   "source_page": "313; 324-325",
+   "tags": [
+    "definitions"
+   ],
+   "image": "images/service-terms.png",
+   "image_alt": "One-line from utility to branch circuit: service drop and service lateral on the utility (NESC) side of the service point; service-entrance conductors, feeder and branch circuit on the NEC side.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-008",
+   "type": "basic",
+   "section": "2. Service types, service point, vocabulary",
+   "difficulty": 1,
+   "front": "Define 'service-entrance conductors.'",
+   "back": "The service conductors between the terminals of the service equipment and the service drop, overhead service conductors, service lateral, or underground service conductors. With outdoor service equipment there may be none.",
+   "nec_ref": "Art. 100",
+   "source_page": "313; 324-325",
+   "tags": [
+    "definitions"
+   ],
+   "image": "images/service-terms.png",
+   "image_alt": "One-line from utility to branch circuit: service drop and service lateral on the utility (NESC) side of the service point; service-entrance conductors, feeder and branch circuit on the NEC side.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-009",
+   "type": "basic",
+   "section": "2. Service types, service point, vocabulary",
+   "difficulty": 1,
+   "front": "Service lateral vs. underground service conductors: same thing?",
+   "back": "No (since the 2011 NEC). The service lateral is on the utility side of the service point (NESC). Underground service conductors are on the premises side (NEC). Slide 26's 'previously called service lateral' blurs this.",
+   "nec_ref": "Art. 100",
+   "source_page": "313; 324-325",
+   "tags": [
+    "definitions",
+    "pitfall"
+   ],
+   "image": "images/service-terms.png",
+   "image_alt": "One-line from utility to branch circuit: service drop and service lateral on the utility (NESC) side of the service point; service-entrance conductors, feeder and branch circuit on the NEC side.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-010",
+   "type": "basic",
+   "section": "2. Service types, service point, vocabulary",
+   "difficulty": 3,
+   "front": "What does NEC 90.2(D)(5) exempt from the NEC?",
+   "back": "Installations under the exclusive control of an electric utility: service drops or laterals and their metering; utility-owned or leased property; legally established easements or rights-of-way; and certain installations under written agreements recognized by regulators.",
+   "nec_ref": "90.2(D)(5)",
+   "source_page": "313; 324-325",
+   "tags": [
+    "service",
+    "exception"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-011",
+   "type": "basic",
+   "section": "2. Service types, service point, vocabulary",
+   "difficulty": 2,
+   "front": "What should you confirm with the utility before bidding a service?",
+   "back": "Who furnishes and installs the secondary or underground service conductors, their size and insulation type, raceways, the CT cabinet, and the transformer pad. Missing this can be a very costly mistake.",
+   "nec_ref": "",
+   "source_page": "313; 324-325",
+   "tags": [
+    "service",
+    "field",
+    "pitfall"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-012",
+   "type": "basic",
+   "section": "3. Transformers",
+   "difficulty": 2,
+   "front": "What two jobs does the liquid in a liquid-filled transformer do?",
+   "back": "(1) It insulates the high-voltage windings from the low-voltage windings. (2) It acts as a coolant, carrying heat from the core and windings to the tank, radiators, or fans.",
+   "nec_ref": "Art. 450",
+   "source_page": "313-316",
+   "tags": [
+    "transformer"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-013",
+   "type": "basic",
+   "section": "3. Transformers",
+   "difficulty": 2,
+   "front": "What was askarel, and why is it gone?",
+   "back": "A transformer fluid of PCBs (polychlorinated biphenyls) and trichlorobenzene. It was nonflammable but highly toxic, and was banned under the Toxic Substances Control Act of 1976 and EPA rules.",
+   "nec_ref": "",
+   "source_page": "313-316",
+   "tags": [
+    "transformer",
+    "safety",
+    "history"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-014",
+   "type": "basic",
+   "section": "3. Transformers",
+   "difficulty": 2,
+   "front": "Why are dry-type transformers widely used in buildings?",
+   "back": "They're lighter than comparable liquid-filled units and need no leak precautions, containment, or coolant replacement. The open core and coil are air-cooled, and fans can raise capacity.",
+   "nec_ref": "Art. 450",
+   "source_page": "313-316",
+   "tags": [
+    "transformer"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-015",
+   "type": "basic",
+   "section": "3. Transformers",
+   "difficulty": 2,
+   "front": "What are the three sections of a unit substation?",
+   "back": "(1) High-voltage switch (may be the service disconnect); (2) dry-type transformer; (3) secondary distribution section. All are in one overall enclosure.",
+   "nec_ref": "",
+   "source_page": "313-316",
+   "tags": [
+    "transformer",
+    "utility-supply"
+   ],
+   "image": "images/unit-substation.png",
+   "image_alt": "Block diagram of a unit substation: high-voltage switch, dry-type transformer and secondary distribution section in one enclosure.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-016",
+   "type": "basic",
+   "section": "3. Transformers",
+   "difficulty": 2,
+   "front": "Which tables give transformer overcurrent protection, and how are they divided?",
+   "back": "Table 450.3(A) for transformers over 1000 V; Table 450.3(B) for 1000 V or less.",
+   "nec_ref": "450.3",
+   "source_page": "313-316",
+   "tags": [
+    "transformer",
+    "overcurrent"
+   ],
+   "image": "images/ocp-450-3b.png",
+   "image_alt": "Table of transformer overcurrent limits for 1000 V or less: primary-only 125/167/300 percent; primary and secondary 250 percent primary, 125 percent secondary.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-017",
+   "type": "basic",
+   "section": "3. Transformers",
+   "difficulty": 2,
+   "front": "What do transformer overcurrent devices under 450.3 protect?",
+   "back": "The TRANSFORMER only. The conductors supplying or leaving it may need separate protection under Articles 240 and 310.",
+   "nec_ref": "450.3",
+   "source_page": "313-316",
+   "tags": [
+    "transformer",
+    "overcurrent",
+    "pitfall"
+   ],
+   "image": "images/ocp-450-3b.png",
+   "image_alt": "Table of transformer overcurrent limits for 1000 V or less: primary-only 125/167/300 percent; primary and secondary 250 percent primary, 125 percent secondary.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-018",
+   "type": "basic",
+   "section": "3. Transformers",
+   "difficulty": 2,
+   "front": "Table 450.3(B), primary-only protection: maximum primary OCPD?",
+   "back": "125% of rated primary current (9 A or more; the next higher standard size is allowed); 167% under 9 A; 300% under 2 A. No secondary protection is required by 450.3.",
+   "nec_ref": "Table 450.3(B)",
+   "source_page": "313-316",
+   "tags": [
+    "transformer",
+    "overcurrent"
+   ],
+   "image": "images/ocp-450-3b.png",
+   "image_alt": "Table of transformer overcurrent limits for 1000 V or less: primary-only 125/167/300 percent; primary and secondary 250 percent primary, 125 percent secondary.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-019",
+   "type": "basic",
+   "section": "3. Transformers",
+   "difficulty": 2,
+   "front": "Table 450.3(B), primary AND secondary protection: maximums?",
+   "back": "Primary: 250% of rated primary current. Secondary: 125% (9 A or more; next size up allowed), or 167% under 9 A.",
+   "nec_ref": "Table 450.3(B)",
+   "source_page": "313-316",
+   "tags": [
+    "transformer",
+    "overcurrent"
+   ],
+   "image": "images/ocp-450-3b.png",
+   "image_alt": "Table of transformer overcurrent limits for 1000 V or less: primary-only 125/167/300 percent; primary and secondary 250 percent primary, 125 percent secondary.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-020",
+   "type": "basic",
+   "section": "3. Transformers",
+   "difficulty": 3,
+   "front": "50-kVA, 480-V to 208Y/120-V transformer: primary current and suggested primary fuse?",
+   "back": "50,000 / (480 x 1.732) = 60 A. 60 x 1.25 = 75 A, so 80-A dual-element fuses (in a 100-A switch). The maximum with secondary protection is 60 x 2.5 = 150 A.",
+   "nec_ref": "Table 450.3(B)",
+   "source_page": "313-316",
+   "tags": [
+    "transformer",
+    "calculation"
+   ],
+   "image": "images/sds-transformer.png",
+   "image_alt": "Dry-type 480-to-208Y/120 transformer as a separately derived system with system bonding jumper, supply-side bonding jumper and grounding electrode conductor.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-021",
+   "type": "basic",
+   "section": "3. Transformers",
+   "difficulty": 3,
+   "front": "Same 50-kVA transformer: secondary current and OCPD?",
+   "back": "50,000 / (208 x 1.732) = 139 A. 139 x 1.25 = 174 A, so 175 A. It also protects the secondary conductors (240.21(C)) and the panelboard (408.36(B)).",
+   "nec_ref": "450.3; 240.21(C)",
+   "source_page": "313-316",
+   "tags": [
+    "transformer",
+    "calculation"
+   ],
+   "image": "images/sds-transformer.png",
+   "image_alt": "Dry-type 480-to-208Y/120 transformer as a separately derived system with system bonding jumper, supply-side bonding jumper and grounding electrode conductor.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-022",
+   "type": "basic",
+   "section": "3. Transformers",
+   "difficulty": 2,
+   "front": "Is a building dry-type transformer a separately derived system? Which section governs its grounding?",
+   "back": "Yes. Grounding and bonding follow 250.30: system bonding jumper (A)(1), supply-side bonding jumper (A)(2), electrode (A)(4), and GEC (A)(5).",
+   "nec_ref": "250.30",
+   "source_page": "313-316",
+   "tags": [
+    "transformer",
+    "grounding"
+   ],
+   "image": "images/sds-transformer.png",
+   "image_alt": "Dry-type 480-to-208Y/120 transformer as a separately derived system with system bonding jumper, supply-side bonding jumper and grounding electrode conductor.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-023",
+   "type": "basic",
+   "section": "4. Connections",
+   "difficulty": 2,
+   "front": "Single-phase transformer connection: voltages, and what must be grounded?",
+   "back": "120 or 120/240 V, 2- or 3-wire. The center tap of the secondary must be grounded (Art. 250, Part II).",
+   "nec_ref": "250.20(B)",
+   "source_page": "316-319",
+   "tags": [
+    "connections"
+   ],
+   "image": "images/single-phase.png",
+   "image_alt": "Single-phase transformer with a center-tapped 120/240-V secondary; the center tap is grounded.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-024",
+   "type": "basic",
+   "section": "4. Connections",
+   "difficulty": 2,
+   "front": "What is the advantage of an open-delta bank?",
+   "back": "It provides 3-phase, or 3-phase plus single-phase, power using only TWO transformers. Useful where the utility has only two primary phases nearby, or where load growth is expected (add the third unit later).",
+   "nec_ref": "",
+   "source_page": "316-319",
+   "tags": [
+    "connections"
+   ],
+   "image": "images/open-delta.png",
+   "image_alt": "Open-delta bank of two 100-kVA transformers with the third side missing; capacity 200 x 0.866 = 173 kVA.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-025",
+   "type": "basic",
+   "section": "4. Connections",
+   "difficulty": 3,
+   "front": "What percentage of capacity is available in an open-delta bank?",
+   "back": "86.6% of the two transformers' combined rating, or 57.7% of a full three-transformer delta bank.",
+   "nec_ref": "",
+   "source_page": "316-319",
+   "tags": [
+    "connections",
+    "calculation"
+   ],
+   "image": "images/open-delta.png",
+   "image_alt": "Open-delta bank of two 100-kVA transformers with the third side missing; capacity 200 x 0.866 = 173 kVA.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-026",
+   "type": "basic",
+   "section": "4. Connections",
+   "difficulty": 3,
+   "front": "Two 100-kVA transformers in open delta: capacity?",
+   "back": "200 kVA x 0.866 = 173 kVA (= 300 kVA x 0.577).",
+   "nec_ref": "",
+   "source_page": "316-319",
+   "tags": [
+    "connections",
+    "calculation",
+    "review"
+   ],
+   "image": "images/open-delta.png",
+   "image_alt": "Open-delta bank of two 100-kVA transformers with the third side missing; capacity 200 x 0.866 = 173 kVA.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-027",
+   "type": "basic",
+   "section": "4. Connections",
+   "difficulty": 2,
+   "front": "What does a 3-wire delta secondary provide, and what is 'corner-grounded delta'?",
+   "back": "3-phase power only. One phase may be grounded (corner-grounded delta). Line-to-line voltages are unchanged, and no overcurrent device may be placed in the grounded phase.",
+   "nec_ref": "240.22",
+   "source_page": "316-319",
+   "tags": [
+    "connections"
+   ],
+   "image": "images/corner-grounded-delta.png",
+   "image_alt": "Three-wire delta with phase C grounded at one corner; no overcurrent device in the grounded phase.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-028",
+   "type": "basic",
+   "section": "4. Connections",
+   "difficulty": 2,
+   "front": "4-wire delta: what are the voltages A-N, C-N, B-N, and line-to-line?",
+   "back": "A-N and C-N = 120 V; B-N = 208 V (the high leg); A-B, B-C, C-A = 240 V. B is never used for line-to-neutral loads.",
+   "nec_ref": "110.15",
+   "source_page": "316-319",
+   "tags": [
+    "connections",
+    "high-leg"
+   ],
+   "image": "images/high-leg-delta.png",
+   "image_alt": "Four-wire delta: center tap on A-C grounded; B-to-ground = 208 V; orange marking and center panel position noted.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-029",
+   "type": "basic",
+   "section": "4. Connections",
+   "difficulty": 2,
+   "front": "High leg: required identification and position?",
+   "back": "Orange or other effective identification wherever the neutral is present (110.15, 230.56). B phase in the CENTER position of panels and switchboards (408.3(E)(1)). Caution label 'Phase __ has __ volts to ground' (408.3(F)).",
+   "nec_ref": "110.15; 230.56; 408.3(E)(1); 408.3(F)",
+   "source_page": "316-319",
+   "tags": [
+    "high-leg",
+    "identification"
+   ],
+   "image": "images/high-leg-delta.png",
+   "image_alt": "Four-wire delta: center tap on A-C grounded; B-to-ground = 208 V; orange marking and center panel position noted.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-030",
+   "type": "basic",
+   "section": "4. Connections",
+   "difficulty": 2,
+   "front": "Where do many utilities want the high leg in a self-contained (200 A or less) meter socket?",
+   "back": "In the RIGHT-hand position. It then must move to the center position in the service disconnect. CT-metered services (over 200 A) avoid the issue.",
+   "nec_ref": "408.3(E)(1)",
+   "source_page": "316-319",
+   "tags": [
+    "high-leg",
+    "metering",
+    "pitfall"
+   ],
+   "image": "images/high-leg-delta.png",
+   "image_alt": "Four-wire delta: center tap on A-C grounded; B-to-ground = 208 V; orange marking and center panel position noted.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-031",
+   "type": "basic",
+   "section": "4. Connections",
+   "difficulty": 2,
+   "front": "Most common system for modern commercial buildings? Typical voltages?",
+   "back": "3-phase, 4-wire wye. Line-to-neutral loads can go on any phase. Typical: 208Y/120, 480Y/277, 600Y/347 V (slide 11's '460Y/265' is not a standard system voltage).",
+   "nec_ref": "250.20(B)(2)",
+   "source_page": "316-319",
+   "tags": [
+    "connections"
+   ],
+   "image": "images/wye.png",
+   "image_alt": "Wye phasors with grounded neutral; line-to-line = sqrt(3) x line-to-neutral; 208Y/120, 480Y/277, 600Y/347.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-032",
+   "type": "basic",
+   "section": "5. Utility supply & metering",
+   "difficulty": 2,
+   "front": "What is a pad-mounted enclosure ('transclosure')?",
+   "back": "A weatherproof cabinet with the transformer and metering equipment (usually CTs), suited to smaller services. It must be kept locked if accessible to the public.",
+   "nec_ref": "110.31(C); 450.22",
+   "source_page": "319-323",
+   "tags": [
+    "utility-supply",
+    "safety"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-033",
+   "type": "basic",
+   "section": "5. Utility supply & metering",
+   "difficulty": 2,
+   "front": "Which sections require sealing service raceways entering a building?",
+   "back": "230.8, 300.5(G), and 300.7(A) (300.50(E) for over 1000 V). Seals keep moisture, condensation, and gas from entering the service equipment.",
+   "nec_ref": "230.8; 300.5(G); 300.7(A)",
+   "source_page": "319-323",
+   "tags": [
+    "utility-supply",
+    "pitfall"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-034",
+   "type": "basic",
+   "section": "5. Utility supply & metering",
+   "difficulty": 2,
+   "front": "What is primary (high-voltage) metering, and when is it used?",
+   "back": "The utility meters the primary side with potential transformers (PTs) and current transformers (CTs). It's typically used for single-tenant buildings.",
+   "nec_ref": "",
+   "source_page": "319-323",
+   "tags": [
+    "metering"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-035",
+   "type": "basic",
+   "section": "5. Utility supply & metering",
+   "difficulty": 2,
+   "front": "Low-voltage metering for loads of 200 A or less?",
+   "back": "Self-contained meter socket. Service conductors from the transformer go to the socket's line terminals, and the load terminals feed the service disconnect.",
+   "nec_ref": "",
+   "source_page": "319-323",
+   "tags": [
+    "metering"
+   ],
+   "image": "images/meter-sockets.png",
+   "image_alt": "Three meter sockets: 4-terminal single-phase 200 A, 7-terminal three-phase 200 A, 13-terminal instrument-rated for CTs.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-036",
+   "type": "basic",
+   "section": "5. Utility supply & metering",
+   "difficulty": 2,
+   "front": "Low-voltage metering for loads over 200 A: two common methods?",
+   "back": "(1) 320-A meter sockets (typically single-phase, 400-600-A services, if within equipment rating); (2) current-transformer (CT) metering.",
+   "nec_ref": "",
+   "source_page": "319-323",
+   "tags": [
+    "metering"
+   ],
+   "image": "images/meter-sockets.png",
+   "image_alt": "Three meter sockets: 4-terminal single-phase 200 A, 7-terminal three-phase 200 A, 13-terminal instrument-rated for CTs.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-037",
+   "type": "basic",
+   "section": "5. Utility supply & metering",
+   "difficulty": 2,
+   "front": "Match meter socket to service: 4-, 7-, and 13-terminal.",
+   "back": "4-terminal: 120/240 V 1-phase 200 A. 7-terminal: 208Y/120 V 3-phase 200 A. 13-terminal instrument-rated: 208Y/120 V 3-phase 200-800 A with CTs.",
+   "nec_ref": "",
+   "source_page": "319-323",
+   "tags": [
+    "metering"
+   ],
+   "image": "images/meter-sockets.png",
+   "image_alt": "Three meter sockets: 4-terminal single-phase 200 A, 7-terminal three-phase 200 A, 13-terminal instrument-rated for CTs.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-038",
+   "type": "basic",
+   "section": "5. Utility supply & metering",
+   "difficulty": 2,
+   "front": "Who typically wires CT secondaries to the meter?",
+   "back": "The utility. The electrician usually mounts the CT cabinet and CTs, bolts lugs, and connects the line-voltage conductors.",
+   "nec_ref": "",
+   "source_page": "319-323",
+   "tags": [
+    "metering",
+    "review"
+   ],
+   "image": "images/ct-pt-danger.png",
+   "image_alt": "A current transformer on a service conductor with its secondary open (danger: high voltage) and a potential transformer that must never be shorted.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-039",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 2,
+   "front": "What does service-entrance equipment consist of (transformer away from the building)?",
+   "back": "Service-entrance conductors, the main switch or switches, metering equipment, and secondary distribution switches.",
+   "nec_ref": "Art. 230",
+   "source_page": "326-337",
+   "tags": [
+    "service-equipment"
+   ],
+   "image": "images/six-disconnects.png",
+   "image_alt": "One-line of the Commercial Building service: pad-mount transformer, termination box, then six meters each feeding its own fused switch.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-040",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 3,
+   "front": "Underground service conductors must be sized by what?",
+   "back": "The calculated load per Article 220, Parts II-V (230.31(A)). For the Commercial Building: 719 A, with a 187-A neutral.",
+   "nec_ref": "230.31(A)",
+   "source_page": "326-337",
+   "tags": [
+    "service-equipment",
+    "calculation"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-041",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 2,
+   "front": "230.42(A): minimum ampacity of service-entrance conductors?",
+   "back": "The larger of (a) the calculated load after correction and adjustment factors, or (b) 125% of continuous load plus 100% of noncontinuous load.",
+   "nec_ref": "230.42(A)",
+   "source_page": "326-337",
+   "tags": [
+    "service-equipment"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-042",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 2,
+   "front": "What is a termination box, and what must it be listed and marked for?",
+   "back": "A short busway-like tap box (busbars and terminals, no switching or OCPDs) connecting underground service conductors to the service-entrance conductors. It must be marked 'Suitable for use on the line side of service equipment,' with a short-circuit current rating, and be rated for the wet location.",
+   "nec_ref": "UL Product iQ",
+   "source_page": "326-337",
+   "tags": [
+    "service-equipment"
+   ],
+   "image": "images/six-disconnects.png",
+   "image_alt": "One-line of the Commercial Building service: pad-mount transformer, termination box, then six meters each feeding its own fused switch.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-043",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 2,
+   "front": "Wireway used at the service: fill limits and derating rule?",
+   "back": "Conductors no more than 20% of the cross-section; splices and taps no more than 75%. No ampacity adjustment unless more than 30 current-carrying conductors are at one cross-section.",
+   "nec_ref": "376.22; 376.56",
+   "source_page": "326-337",
+   "tags": [
+    "service-equipment"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-044",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 2,
+   "front": "Rules for power distribution blocks in a wireway on the line side of the service?",
+   "back": "Listed and marked 'suitable for use on the line side of service equipment' (with an adequate SCCR), and no uninsulated live parts exposed, even with the cover off.",
+   "nec_ref": "376.56(B)(1)",
+   "source_page": "326-337",
+   "tags": [
+    "service-equipment"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-045",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 2,
+   "front": "Taps from paralleled service conductors: what does 300.3(B)(1) require?",
+   "back": "The tap must connect to ALL conductors of the parallel set (grounded and ungrounded). Split bolts (two conductors max) don't work; use multi-port connectors or busbars listed for the line side.",
+   "nec_ref": "300.3(B)(1)",
+   "source_page": "326-337",
+   "tags": [
+    "service-equipment",
+    "pitfall"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-046",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 2,
+   "front": "Where must the service disconnecting means be located?",
+   "back": "At a readily accessible location either outside the building or inside nearest the point of entrance of the service conductors.",
+   "nec_ref": "230.70(A)(1)",
+   "source_page": "326-337",
+   "tags": [
+    "service-equipment"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-047",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 2,
+   "front": "Why must service conductors inside a building be kept short?",
+   "back": "They have no short-circuit or ground-fault protection. The only OCPD is the utility's transformer primary fuse, sized to protect the transformer. Conductors under 2 in. of concrete count as outside (230.6).",
+   "nec_ref": "230.70(A)(1); 230.6",
+   "source_page": "326-337",
+   "tags": [
+    "service-equipment",
+    "safety"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-048",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 2,
+   "front": "Minimum rating of the service disconnecting means?",
+   "back": "Not less than the calculated load, determined per Article 220, Parts III, IV, or V.",
+   "nec_ref": "230.79",
+   "source_page": "326-337",
+   "tags": [
+    "service-equipment"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-049",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 2,
+   "front": "How many service disconnects are permitted, and how must they be enclosed (2023 NEC)?",
+   "back": "Two to six per service, each in a SEPARATE enclosure (or separate vertical section or compartment). Their combined rating must be at least the single-disconnect rating.",
+   "nec_ref": "230.71(B)",
+   "source_page": "326-337",
+   "tags": [
+    "service-equipment"
+   ],
+   "image": "images/six-disconnects.png",
+   "image_alt": "One-line of the Commercial Building service: pad-mount transformer, termination box, then six meters each feeding its own fused switch.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-050",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 3,
+   "front": "Commercial Building: the six service fuses total 1050 A, but the load is 719 A. Is that OK?",
+   "back": "Yes. Each feeder is sized for its own load (often oversized for spare capacity), so the sum may exceed what a single main would be (800 A for 719 A).",
+   "nec_ref": "230.71(B); 230.79",
+   "source_page": "326-337",
+   "tags": [
+    "service-equipment",
+    "calculation"
+   ],
+   "image": "images/six-disconnects.png",
+   "image_alt": "One-line of the Commercial Building service: pad-mount transformer, termination box, then six meters each feeding its own fused switch.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-051",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 2,
+   "front": "Service neutral (grounded conductor) minimum size?",
+   "back": "The larger of the 220.61 calculated neutral load or Table 250.102(C)(1), based on the ungrounded conductor size.",
+   "nec_ref": "250.24(D); 220.61",
+   "source_page": "326-337",
+   "tags": [
+    "service-equipment",
+    "neutral"
+   ],
+   "image": "images/table-250-66.png",
+   "image_alt": "Table of copper grounding electrode conductor and supply-side bonding jumper sizes by service conductor size, from 8 AWG up to 3/0 or 12.5 percent.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-052",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 2,
+   "front": "Parallel service conductors in separate raceways: minimum neutral per raceway?",
+   "back": "1/0 AWG, and at least Table 250.102(C)(1) based on the phase conductors in that raceway (250.24(D)(2), 310.10(G)).",
+   "nec_ref": "250.24(D)(2); 310.10(G)",
+   "source_page": "326-337",
+   "tags": [
+    "service-equipment",
+    "neutral"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-053",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 3,
+   "front": "800-A service, 2 x 500 kcmil per phase in two conduits, calculated neutral 3 AWG, riser shows 1/0. Mistake?",
+   "back": "No. 500 kcmil per raceway requires a 1/0 neutral from Table 250.102(C)(1), and parallel conductors must be at least 1/0. The neutral must carry fault current back to the utility.",
+   "nec_ref": "250.24(D); 310.10(G)",
+   "source_page": "326-337",
+   "tags": [
+    "neutral",
+    "review",
+    "calculation"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-054",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 3,
+   "front": "Service-entrance conductors must be insulated. Which conductor may be bare?",
+   "back": "The grounded conductor: bare copper in a raceway or service cable; bare copper direct-buried where approved for the soil (or in a cable identified for underground use); aluminum or copper-clad aluminum in identified cable assemblies; bare in an auxiliary gutter.",
+   "nec_ref": "230.41",
+   "source_page": "326-337",
+   "tags": [
+    "service-equipment",
+    "exception"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-055",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 3,
+   "front": "Optional 200-kW, 208-V 3-phase boiler: load current and minimum conductor and OCPD ampacity?",
+   "back": "200,000 / (208 x 1.732) = 555 A. x 1.25 (424.82) = 694 A. Use 2 x 500 kcmil per phase: 2 x 430 A x 0.91 = 783 A. Disconnect: an 800-A bolted-pressure switch with 700-A Class L fuses.",
+   "nec_ref": "424.82; 310.16",
+   "source_page": "326-337",
+   "tags": [
+    "calculation",
+    "service-equipment"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-056",
+   "type": "basic",
+   "section": "6. Service-entrance equipment",
+   "difficulty": 2,
+   "front": "Rule for paralleled conductors?",
+   "back": "All conductors in a parallel set must be the same length, material, size, insulation type, and termination method. Lay them out together and cut them to match.",
+   "nec_ref": "310.10(G)",
+   "source_page": "326-337",
+   "tags": [
+    "service-equipment",
+    "pitfall"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-057",
+   "type": "basic",
+   "section": "7. Grounding / bonding concepts",
+   "difficulty": 2,
+   "front": "Define 'grounded (grounding).'",
+   "back": "Connected (connecting) to ground or to a conductive body that extends the ground connection.",
+   "nec_ref": "Art. 100",
+   "source_page": "338-343",
+   "tags": [
+    "grounding",
+    "definitions"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-058",
+   "type": "basic",
+   "section": "7. Grounding / bonding concepts",
+   "difficulty": 2,
+   "front": "Define 'bonded (bonding).'",
+   "back": "Connected to establish electrical continuity and conductivity.",
+   "nec_ref": "Art. 100",
+   "source_page": "338-343",
+   "tags": [
+    "bonding",
+    "definitions"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-059",
+   "type": "basic",
+   "section": "7. Grounding / bonding concepts",
+   "difficulty": 2,
+   "front": "Grounded conductor vs. equipment grounding conductor?",
+   "back": "Grounded conductor: a system or circuit conductor intentionally grounded (the neutral; white or gray). EGC: connects non-current-carrying metal parts together and to the grounded conductor and/or GEC. An EGC is grounded but is NOT a 'grounded conductor.'",
+   "nec_ref": "Art. 100",
+   "source_page": "338-343",
+   "tags": [
+    "grounding",
+    "definitions"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-060",
+   "type": "basic",
+   "section": "7. Grounding / bonding concepts",
+   "difficulty": 2,
+   "front": "Define 'effective ground-fault current path.'",
+   "back": "An intentionally constructed, low-impedance conductive path designed to carry ground-fault current from the fault point back to the source so the OCPD or ground-fault detector operates.",
+   "nec_ref": "Art. 100; 250.4(A)(5)",
+   "source_page": "338-343",
+   "tags": [
+    "grounding",
+    "definitions"
+   ],
+   "image": "images/fault-path.png",
+   "image_alt": "Ground-fault loop: hot conductor faults to a motor frame, current returns on the EGC to the service ground bar, across the main bonding jumper, and back on the neutral to the transformer.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-061",
+   "type": "basic",
+   "section": "7. Grounding / bonding concepts",
+   "difficulty": 2,
+   "front": "'Electricity takes the path of least resistance.' True?",
+   "back": "Not exactly. It follows ALL available paths, in inverse proportion to their impedance. Fault current can flow on ducts, water pipe, and gas pipe, which is why the code demands a low-impedance electrical path.",
+   "nec_ref": "250.4",
+   "source_page": "338-343",
+   "tags": [
+    "grounding",
+    "pitfall"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-062",
+   "type": "basic",
+   "section": "7. Grounding / bonding concepts",
+   "difficulty": 3,
+   "front": "Relationship of impedance, fault current, and clearing time?",
+   "back": "Lower impedance gives higher fault current, and higher fault current makes the OCPD clear faster. Damage scales with I-squared-t (current squared x time).",
+   "nec_ref": "250.4(A)(5)",
+   "source_page": "338-343",
+   "tags": [
+    "grounding",
+    "calculation"
+   ],
+   "image": "images/fault-path.png",
+   "image_alt": "Ground-fault loop: hot conductor faults to a motor frame, current returns on the EGC to the service ground bar, across the main bonding jumper, and back on the neutral to the transformer.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-063",
+   "type": "basic",
+   "section": "7. Grounding / bonding concepts",
+   "difficulty": 2,
+   "front": "Why ground electrical SYSTEMS (250.4(A)(1))?",
+   "back": "To limit voltage imposed by lightning, line surges, or unintentional contact with higher-voltage lines, and to stabilize the voltage to earth during normal operation.",
+   "nec_ref": "250.4(A)(1)",
+   "source_page": "338-343",
+   "tags": [
+    "grounding"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-064",
+   "type": "basic",
+   "section": "7. Grounding / bonding concepts",
+   "difficulty": 2,
+   "front": "Is the earth an effective ground-fault current path?",
+   "back": "No (250.4(A)(5)). A ground rod alone can't pass enough current to trip a breaker: 120 V / 25 ohm is about 4.8 A, so a 20-A breaker never trips. Fault clearing needs the EGC back to the source.",
+   "nec_ref": "250.4(A)(5)",
+   "source_page": "338-343",
+   "tags": [
+    "grounding",
+    "pitfall"
+   ],
+   "image": "images/earth-not-path.png",
+   "image_alt": "A light pole grounded only by a 25-ohm rod: a 120-V fault draws under 5 A through earth, so the 20-A breaker never trips.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-065",
+   "type": "basic",
+   "section": "7. Grounding / bonding concepts",
+   "difficulty": 2,
+   "front": "Main bonding jumper vs. system bonding jumper?",
+   "back": "Both connect the grounded conductor to the EGC and enclosure. The MBJ does it at the SERVICE. The SBJ does it at a SEPARATELY DERIVED SYSTEM (transformer or generator).",
+   "nec_ref": "250.28; 250.30(A)(1)",
+   "source_page": "338-343",
+   "tags": [
+    "bonding"
+   ],
+   "image": "images/neutral-ground-separation.png",
+   "image_alt": "Service equipment with neutral bonded to the ground bar by the main bonding jumper, and a feeder subpanel with separate, unbonded neutral and ground bars.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-066",
+   "type": "basic",
+   "section": "7. Grounding / bonding concepts",
+   "difficulty": 2,
+   "front": "Where may the neutral be connected to the EGC and enclosures?",
+   "back": "Only at the service (or at a separately derived system's source or first disconnect). Beyond that the neutral is isolated: feeder panels get separate neutral and ground bars, with no bonding screw.",
+   "nec_ref": "250.24(A)(5); 250.24(B); 250.30; 250.142(B)",
+   "source_page": "338-343",
+   "tags": [
+    "grounding",
+    "safety"
+   ],
+   "image": "images/neutral-ground-separation.png",
+   "image_alt": "Service equipment with neutral bonded to the ground bar by the main bonding jumper, and a feeder subpanel with separate, unbonded neutral and ground bars.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-067",
+   "type": "basic",
+   "section": "7. Grounding / bonding concepts",
+   "difficulty": 2,
+   "front": "What happens if neutral and EGC are bonded downstream of the service?",
+   "back": "Neutral current takes parallel paths over EGCs, raceways, and metal gas and water pipes and ducts. That creates fire and shock hazards, electromagnetic fields, and GFPE misoperation. It's also 'objectionable current' (250.6).",
+   "nec_ref": "250.24(A)(5); 250.6",
+   "source_page": "338-343",
+   "tags": [
+    "grounding",
+    "dangerous-condition"
+   ],
+   "image": "images/neutral-ground-separation.png",
+   "image_alt": "Service equipment with neutral bonded to the ground bar by the main bonding jumper, and a feeder subpanel with separate, unbonded neutral and ground bars.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-068",
+   "type": "basic",
+   "section": "7. Grounding / bonding concepts",
+   "difficulty": 2,
+   "front": "When must an AC system (50-1000 V) be grounded (250.20(B))?",
+   "back": "(1) It can be grounded so the maximum voltage to ground is 150 V or less; (2) a 3-phase 4-wire wye uses the neutral as a circuit conductor; (3) a 3-phase 4-wire delta uses the midpoint of one phase.",
+   "nec_ref": "250.20(B)",
+   "source_page": "338-343",
+   "tags": [
+    "grounding"
+   ],
+   "image": "images/wye.png",
+   "image_alt": "Wye phasors with grounded neutral; line-to-line = sqrt(3) x line-to-neutral; 208Y/120, 480Y/277, 600Y/347.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-069",
+   "type": "basic",
+   "section": "8. Electrodes & GEC",
+   "difficulty": 2,
+   "front": "250.50: what must be bonded together to form the grounding electrode system?",
+   "back": "ALL of these, if present: metal underground water pipe; metal in-ground support structure; concrete-encased electrode; ground ring; rod and pipe electrodes; plate electrodes; other listed electrodes; other local metal underground systems.",
+   "nec_ref": "250.50; 250.52(A)",
+   "source_page": "345-352",
+   "tags": [
+    "electrodes",
+    "review"
+   ],
+   "image": "images/electrode-system.png",
+   "image_alt": "Building section showing water pipe, concrete-encased electrode, building steel, ground ring and two ground rods all bonded to the service.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-070",
+   "type": "basic",
+   "section": "8. Electrodes & GEC",
+   "difficulty": 2,
+   "front": "Requirements for a metal water pipe to be a grounding electrode?",
+   "back": "At least 10 ft (3 m) in direct contact with earth (including a bonded metal well casing). It must always be supplemented by another electrode.",
+   "nec_ref": "250.52(A)(1); 250.53(D)(2)",
+   "source_page": "345-352",
+   "tags": [
+    "electrodes"
+   ],
+   "image": "images/electrode-system.png",
+   "image_alt": "Building section showing water pipe, concrete-encased electrode, building steel, ground ring and two ground rods all bonded to the service.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-071",
+   "type": "basic",
+   "section": "8. Electrodes & GEC",
+   "difficulty": 2,
+   "front": "Concrete-encased ('Ufer') electrode specs?",
+   "back": "At least 20 ft of bare 1/2-in. or larger rebar, or bare 4 AWG or larger copper, encased in at least 2 in. of concrete in direct contact with earth, near the bottom of the foundation or footing.",
+   "nec_ref": "250.52(A)(3)",
+   "source_page": "345-352",
+   "tags": [
+    "electrodes"
+   ],
+   "image": "images/electrode-system.png",
+   "image_alt": "Building section showing water pipe, concrete-encased electrode, building steel, ground ring and two ground rods all bonded to the service.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-072",
+   "type": "basic",
+   "section": "8. Electrodes & GEC",
+   "difficulty": 2,
+   "front": "Why is 'if present' critical for rebar electrodes?",
+   "back": "Rebar is present in the footings during construction. The electrician must coordinate with the concrete contractor to bring out an accessible rebar stub, or attach the GEC with a listed rebar clamp before the pour.",
+   "nec_ref": "250.50",
+   "source_page": "345-352",
+   "tags": [
+    "electrodes",
+    "pitfall"
+   ],
+   "image": "images/electrode-system.png",
+   "image_alt": "Building section showing water pipe, concrete-encased electrode, building steel, ground ring and two ground rods all bonded to the service.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-073",
+   "type": "basic",
+   "section": "8. Electrodes & GEC",
+   "difficulty": 2,
+   "front": "Ground ring electrode specs?",
+   "back": "At least 20 ft of bare copper, 2 AWG or larger, encircling the building, buried at least 30 in. (750 mm) deep.",
+   "nec_ref": "250.52(A)(4); 250.53(F)",
+   "source_page": "345-352",
+   "tags": [
+    "electrodes"
+   ],
+   "image": "images/electrode-system.png",
+   "image_alt": "Building section showing water pipe, concrete-encased electrode, building steel, ground ring and two ground rods all bonded to the service.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-074",
+   "type": "basic",
+   "section": "8. Electrodes & GEC",
+   "difficulty": 2,
+   "front": "Ground rod rules: resistance and spacing?",
+   "back": "A single rod must be supplemented by a second electrode unless it tests at 25 ohm or less (use an earth-resistance tester, not an ohmmeter). Space multiple rods at least 6 ft apart.",
+   "nec_ref": "250.53(A)(2), (A)(3)",
+   "source_page": "345-352",
+   "tags": [
+    "electrodes"
+   ],
+   "image": "images/electrode-system.png",
+   "image_alt": "Building section showing water pipe, concrete-encased electrode, building steel, ground ring and two ground rods all bonded to the service.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-075",
+   "type": "basic",
+   "section": "8. Electrodes & GEC",
+   "difficulty": 2,
+   "front": "What may NOT be used as a grounding electrode?",
+   "back": "Metal underground gas piping, aluminum, and swimming-pool structures and structural rebar (680.26(B)).",
+   "nec_ref": "250.52(B)",
+   "source_page": "345-352",
+   "tags": [
+    "electrodes"
+   ],
+   "image": "images/electrode-system.png",
+   "image_alt": "Building section showing water pipe, concrete-encased electrode, building steel, ground ring and two ground rods all bonded to the service.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-076",
+   "type": "basic",
+   "section": "8. Electrodes & GEC",
+   "difficulty": 3,
+   "front": "Where must the GEC (or bonding conductor) connect to interior metal water piping?",
+   "back": "Within the first 5 ft (1.52 m) of where the pipe enters the building. Exception: commercial, industrial, or institutional buildings with exposed piping and qualified maintenance.",
+   "nec_ref": "250.68(C)(1)",
+   "source_page": "345-352",
+   "tags": [
+    "electrodes",
+    "exception"
+   ],
+   "image": "images/water-meter.png",
+   "image_alt": "Water pipe entering a building: grounding electrode conductor clamp within the first 5 ft and a bonding jumper around the water meter.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-077",
+   "type": "basic",
+   "section": "8. Electrodes & GEC",
+   "difficulty": 2,
+   "front": "Why bond around a water meter, and how long should the jumper be?",
+   "back": "Insulating joints and removable meters must be bonded around (250.68(B)). Leave the jumper long enough that the bond stays in place if the meter is removed.",
+   "nec_ref": "250.68(B)",
+   "source_page": "345-352",
+   "tags": [
+    "bonding",
+    "electrodes"
+   ],
+   "image": "images/water-meter.png",
+   "image_alt": "Water pipe entering a building: grounding electrode conductor clamp within the first 5 ft and a bonding jumper around the water meter.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-078",
+   "type": "basic",
+   "section": "8. Electrodes & GEC",
+   "difficulty": 2,
+   "front": "How is the GEC sized?",
+   "back": "Table 250.66, based on the SIZE (not ampacity) of the largest ungrounded service conductor, or the sum of parallel sets. Maximum 3/0 Cu.",
+   "nec_ref": "250.66",
+   "source_page": "345-352",
+   "tags": [
+    "gec",
+    "sizing"
+   ],
+   "image": "images/table-250-66.png",
+   "image_alt": "Table of copper grounding electrode conductor and supply-side bonding jumper sizes by service conductor size, from 8 AWG up to 3/0 or 12.5 percent.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-079",
+   "type": "basic",
+   "section": "8. Electrodes & GEC",
+   "difficulty": 2,
+   "front": "GEC for 3/0 Cu service conductors (100-A service)?",
+   "back": "4 AWG copper (the 2/0-3/0 row of Table 250.66).",
+   "nec_ref": "Table 250.66",
+   "source_page": "345-352",
+   "tags": [
+    "gec",
+    "sizing",
+    "review"
+   ],
+   "image": "images/table-250-66.png",
+   "image_alt": "Table of copper grounding electrode conductor and supply-side bonding jumper sizes by service conductor size, from 8 AWG up to 3/0 or 12.5 percent.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-080",
+   "type": "basic",
+   "section": "8. Electrodes & GEC",
+   "difficulty": 2,
+   "front": "GEC for three parallel sets of 350 kcmil Cu?",
+   "back": "3 x 350 = 1050 kcmil equivalent, in the 'over 600-1100' row: 2/0 AWG copper.",
+   "nec_ref": "Table 250.66",
+   "source_page": "345-352",
+   "tags": [
+    "gec",
+    "sizing",
+    "review"
+   ],
+   "image": "images/table-250-66.png",
+   "image_alt": "Table of copper grounding electrode conductor and supply-side bonding jumper sizes by service conductor size, from 8 AWG up to 3/0 or 12.5 percent.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-081",
+   "type": "basic",
+   "section": "8. Electrodes & GEC",
+   "difficulty": 3,
+   "front": "GEC size limits for rods, concrete-encased electrodes, and ground rings?",
+   "back": "The portion to rod, pipe, or plate electrodes only: need not exceed 6 AWG Cu. To a concrete-encased electrode only: 4 AWG Cu. To a ground ring: not larger than the ring conductor.",
+   "nec_ref": "250.66(A)-(C)",
+   "source_page": "345-352",
+   "tags": [
+    "gec",
+    "sizing",
+    "exception"
+   ],
+   "image": "images/table-250-66.png",
+   "image_alt": "Table of copper grounding electrode conductor and supply-side bonding jumper sizes by service conductor size, from 8 AWG up to 3/0 or 12.5 percent.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-082",
+   "type": "basic",
+   "section": "8. Electrodes & GEC",
+   "difficulty": 2,
+   "front": "GEC installation rules (splices, enclosures, aluminum)?",
+   "back": "Unspliced, except by irreversible compression or exothermic welding (250.64(C)). Ferrous raceways bonded at both ends (250.64(E)). Aluminum or copper-clad aluminum not within 18 in. of earth outdoors (250.64(A)). No solder connections.",
+   "nec_ref": "250.64; 250.70",
+   "source_page": "345-352",
+   "tags": [
+    "gec"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-083",
+   "type": "basic",
+   "section": "9. Bonding jumpers & EGC sizing",
+   "difficulty": 2,
+   "front": "How is the main bonding jumper sized?",
+   "back": "Per 250.28(D), using Table 250.102(C)(1). For a single main on 3 x 250 kcmil (750 kcmil): 2/0 Cu. Listed service equipment comes with the MBJ (green screw, strap, or bus).",
+   "nec_ref": "250.28(D)",
+   "source_page": "352-355",
+   "tags": [
+    "bonding",
+    "sizing"
+   ],
+   "image": "images/table-250-66.png",
+   "image_alt": "Table of copper grounding electrode conductor and supply-side bonding jumper sizes by service conductor size, from 8 AWG up to 3/0 or 12.5 percent.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-084",
+   "type": "basic",
+   "section": "9. Bonding jumpers & EGC sizing",
+   "difficulty": 2,
+   "front": "Why are supply-side bonding jumpers sized from Table 250.102(C)(1) instead of Table 250.122?",
+   "back": "They're ahead of (on the supply side of) any overcurrent device, so there's no OCPD rating to size from. They're sized by the service conductor size.",
+   "nec_ref": "250.102(C)",
+   "source_page": "352-355",
+   "tags": [
+    "bonding",
+    "sizing"
+   ],
+   "image": "images/supply-side-bonding.png",
+   "image_alt": "Three service raceways with 500 kcmil conductors: individual 1/0 bonding jumpers per raceway, or one 4/0 jumper looped through all bushings.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-085",
+   "type": "basic",
+   "section": "9. Bonding jumpers & EGC sizing",
+   "difficulty": 3,
+   "front": "Three service conduits, each with 500 kcmil phases: individual supply-side bonding jumper size?",
+   "back": "1/0 AWG Cu for each raceway (500 kcmil is in the 'over 350-600' row of Table 250.102(C)(1)).",
+   "nec_ref": "250.102(C)(2)(1)",
+   "source_page": "352-355",
+   "tags": [
+    "bonding",
+    "sizing",
+    "calculation"
+   ],
+   "image": "images/supply-side-bonding.png",
+   "image_alt": "Three service raceways with 500 kcmil conductors: individual 1/0 bonding jumpers per raceway, or one 4/0 jumper looped through all bushings.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-086",
+   "type": "basic",
+   "section": "9. Bonding jumpers & EGC sizing",
+   "difficulty": 3,
+   "front": "Same three conduits, one jumper looped through all three bonding bushings?",
+   "back": "Sum = 1500 kcmil, which is over 1100, so use 12.5%: 187.5 kcmil, between 3/0 (167,800 cmil) and 4/0 (211,600 cmil). Use 4/0 AWG Cu.",
+   "nec_ref": "250.102(C)(2)(2)",
+   "source_page": "352-355",
+   "tags": [
+    "bonding",
+    "sizing",
+    "calculation"
+   ],
+   "image": "images/supply-side-bonding.png",
+   "image_alt": "Three service raceways with 500 kcmil conductors: individual 1/0 bonding jumpers per raceway, or one 4/0 jumper looped through all bushings.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-087",
+   "type": "basic",
+   "section": "9. Bonding jumpers & EGC sizing",
+   "difficulty": 2,
+   "front": "How are equipment grounding conductors sized?",
+   "back": "Table 250.122, by the rating of the OCPD ahead of the circuit. A 700-A OCPD uses the 800-A row: 1/0 Cu. With parallel runs, a full-size EGC goes in each raceway (250.122(F)).",
+   "nec_ref": "250.122",
+   "source_page": "352-355",
+   "tags": [
+    "bonding",
+    "sizing"
+   ],
+   "image": "images/table-250-122.png",
+   "image_alt": "Table of copper equipment grounding conductor sizes by overcurrent device rating, from 14 AWG at 15 A to 3/0 at 1200 A.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-088",
+   "type": "basic",
+   "section": "10. Bonding at service & piping",
+   "difficulty": 2,
+   "front": "Service raceways: how must they be bonded, and what about concentric knockouts?",
+   "back": "With bonding bushings, bonding locknuts, threaded hubs, or bonding jumpers. Bond around concentric and eccentric knockouts; standard locknuts aren't enough at the service (250.92(B)).",
+   "nec_ref": "250.92(B)",
+   "source_page": "342-347",
+   "tags": [
+    "bonding"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-089",
+   "type": "basic",
+   "section": "10. Bonding at service & piping",
+   "difficulty": 2,
+   "front": "Painted wireway or gutter joints: what is required?",
+   "back": "Remove nonconductive paint at contact points, or use bonding locknuts or bushings, to ensure continuity.",
+   "nec_ref": "250.12; 250.96(A)",
+   "source_page": "355",
+   "tags": [
+    "bonding",
+    "pitfall"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-090",
+   "type": "basic",
+   "section": "10. Bonding at service & piping",
+   "difficulty": 2,
+   "front": "Bonding of metal gas piping 'likely to become energized': where to, and how sized?",
+   "back": "To the EGC of the circuit likely to energize it, the service enclosure, the grounded conductor at the service, the GEC, or an electrode. Size with Table 250.122 using that circuit's OCPD.",
+   "nec_ref": "250.104(B)",
+   "source_page": "342-347",
+   "tags": [
+    "bonding"
+   ],
+   "image": "images/gas-bond.png",
+   "image_alt": "Person touching an energized unbonded gas pipe and a grounded water pipe: 120 V / 1100 ohm = 109 mA; a bonding jumper would prevent it.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-091",
+   "type": "basic",
+   "section": "10. Bonding at service & piping",
+   "difficulty": 3,
+   "front": "Unbonded gas pipe energized at 120 V; person touches it and a water pipe (1100 ohm). Current?",
+   "back": "120 / 1100 = 0.109 A (109 mA). That can cause ventricular fibrillation and death. The breaker doesn't trip because the dielectric union leaves no return path.",
+   "nec_ref": "250.104(B)",
+   "source_page": "342-347",
+   "tags": [
+    "bonding",
+    "calculation",
+    "safety"
+   ],
+   "image": "images/gas-bond.png",
+   "image_alt": "Person touching an energized unbonded gas pipe and a grounded water pipe: 120 V / 1100 ohm = 109 mA; a bonding jumper would prevent it.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-092",
+   "type": "basic",
+   "section": "11. GFPE, safety, pitfalls",
+   "difficulty": 2,
+   "front": "When does 230.95 require ground-fault protection of equipment (GFPE)?",
+   "back": "Solidly grounded wye services over 150 V to ground but not over 600 V phase-to-phase, for each service disconnect rated 1000 A or more (for example, 480Y/277 V at 1000 A or more).",
+   "nec_ref": "230.95",
+   "source_page": "355-361",
+   "tags": [
+    "gfpe"
+   ],
+   "image": "images/gfpe.png",
+   "image_alt": "GFPE zero-sequence sensor around phase and neutral conductors: balanced under normal load; ground-fault current returning on the EGC outside the sensor causes a trip.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-093",
+   "type": "basic",
+   "section": "11. GFPE, safety, pitfalls",
+   "difficulty": 2,
+   "front": "GFPE maximum setting and maximum opening time?",
+   "back": "Maximum setting 1200 A. Maximum time delay 1 second for ground-fault currents of 3000 A or more.",
+   "nec_ref": "230.95(A)",
+   "source_page": "355-361",
+   "tags": [
+    "gfpe"
+   ],
+   "image": "images/gfpe.png",
+   "image_alt": "GFPE zero-sequence sensor around phase and neutral conductors: balanced under normal load; ground-fault current returning on the EGC outside the sensor causes a trip.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-094",
+   "type": "basic",
+   "section": "11. GFPE, safety, pitfalls",
+   "difficulty": 2,
+   "front": "Is GFPE required on the Commercial Building's 208Y/120-V service? Why?",
+   "back": "No. 120 V to ground isn't over 150 V, and it usually won't sustain an arcing fault.",
+   "nec_ref": "230.95",
+   "source_page": "355-361",
+   "tags": [
+    "gfpe"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-095",
+   "type": "basic",
+   "section": "11. GFPE, safety, pitfalls",
+   "difficulty": 2,
+   "front": "How does a GFPE sensor work, and what faults can it NOT see?",
+   "back": "A zero-sequence (toroid) sensor surrounds all circuit conductors, which normally sum to zero. Ground-fault current returning on the EGC causes an imbalance and a trip. It can't see phase-to-phase, 3-phase, or phase-to-neutral faults.",
+   "nec_ref": "230.95",
+   "source_page": "355-361",
+   "tags": [
+    "gfpe"
+   ],
+   "image": "images/gfpe.png",
+   "image_alt": "GFPE zero-sequence sensor around phase and neutral conductors: balanced under normal load; ground-fault current returning on the EGC outside the sensor causes a trip.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-096",
+   "type": "basic",
+   "section": "11. GFPE, safety, pitfalls",
+   "difficulty": 2,
+   "front": "Does GFPE protect people?",
+   "back": "NO. It protects equipment against low-level arcing ground faults (hundreds of amps). Personnel protection is GFCI (about 5 mA trip). Lawsuits have arisen from this misunderstanding.",
+   "nec_ref": "230.95; 210.8(B)",
+   "source_page": "355-361",
+   "tags": [
+    "gfpe",
+    "safety",
+    "pitfall"
+   ],
+   "image": "images/gfpe.png",
+   "image_alt": "GFPE zero-sequence sensor around phase and neutral conductors: balanced under normal load; ground-fault current returning on the EGC outside the sensor causes a trip.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-097",
+   "type": "basic",
+   "section": "11. GFPE, safety, pitfalls",
+   "difficulty": 3,
+   "front": "What must be done with a GFPE system when it is first installed?",
+   "back": "Performance test it on site per the manufacturer's instructions, and keep a written record for the AHJ.",
+   "nec_ref": "230.95(C)",
+   "source_page": null,
+   "tags": [
+    "gfpe",
+    "beyond-text"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-098",
+   "type": "basic",
+   "section": "11. GFPE, safety, pitfalls",
+   "difficulty": 3,
+   "front": "Why must you never open a current-transformer (CT) secondary under load?",
+   "back": "A CT acts as a current source. With the secondary open it can develop very high voltage, causing arcing, shock, and CT damage. Short the secondary first. (Never short a PT secondary.)",
+   "nec_ref": "",
+   "source_page": null,
+   "tags": [
+    "metering",
+    "dangerous-condition",
+    "safety",
+    "beyond-text"
+   ],
+   "image": "images/ct-pt-danger.png",
+   "image_alt": "A current transformer on a service conductor with its secondary open (danger: high voltage) and a potential transformer that must never be shorted.",
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-099",
+   "type": "basic",
+   "section": "11. GFPE, safety, pitfalls",
+   "difficulty": 2,
+   "front": "OSHA sections for electrical safety-related work practices? Fundamental rule?",
+   "back": "OSHA 1910.331-1910.360 (general industry; 1926 for construction). The rule: NEVER work on equipment with the power on. Turn it off, lock it off, test it, and assume it's live until proven otherwise.",
+   "nec_ref": "OSHA 1910.331-.360",
+   "source_page": "355-361",
+   "tags": [
+    "safety"
+   ],
+   "verified": false
+  },
+  {
+   "id": "e245-ch13-100",
+   "type": "basic",
+   "section": "11. GFPE, safety, pitfalls",
+   "difficulty": 2,
+   "front": "Arc-flash labeling: which NEC section, and what is required at 1000 A or more?",
+   "back": "110.16. (A): a warning on switchboards, switchgear, enclosed panelboards, industrial control panels, meter socket enclosures, and MCCs likely to be worked on energized (other than dwellings). (B): service and feeder-supplied equipment rated 1000 A or more gets a permanent label per industry practice (NFPA 70E), including the date applied.",
+   "nec_ref": "110.16",
+   "source_page": "355-361",
+   "tags": [
+    "safety",
+    "review"
+   ],
+   "verified": false
+  }
+ ]
+}
