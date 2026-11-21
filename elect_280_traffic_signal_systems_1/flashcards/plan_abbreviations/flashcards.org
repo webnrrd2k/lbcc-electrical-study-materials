@@ -1,0 +1,122 @@
+#+TITLE: Traffic Signal & Electrical Legend Flashcards
+#+FILETAGS: :legend:electrical:
+* Symbol: AB :drill:
+[[file:legend_symbol_01_ab.png]]
+
+** Answer
+ABANDON. IF APPLIED TO CONDUIT, REMOVE CONDUCTORS
+
+* Symbol: BC :drill:
+[[file:legend_symbol_02_bc.png]]
+
+** Answer
+INSTALL PULL BOX IN EXISTING CONDUIT RUN
+
+* Symbol: BP :drill:
+[[file:legend_symbol_03_bp.png]]
+
+** Answer
+PEDESTRIAN BARRICADE, TYPE AS INDICATED ON PLAN
+
+* Symbol: CB :drill:
+[[file:legend_symbol_04_cb.png]]
+
+** Answer
+INSTALL CONDUIT INTO EXISTING PULL BOX
+
+* Symbol: CC :drill:
+[[file:legend_symbol_05_cc.png]]
+
+** Answer
+CONNECT NEW AND EXISTING CONDUIT. REMOVE EXISTING CONDUCTORS AND INSTALL CONDUCTORS AS INDICATED
+
+* Symbol: CF :drill:
+[[file:legend_symbol_06_cf.png]]
+
+** Answer
+CONDUIT TO REMAIN FOR FUTURE USE. REMOVE CONDUCTORS. INSTALL PULL TAPE
+
+* Symbol: DH :drill:
+[[file:legend_symbol_07_dh.png]]
+
+** Answer
+DETECTOR HANDHOLE
+
+* Symbol: FA :drill:
+[[file:legend_symbol_08_fa.png]]
+
+** Answer
+FOUNDATION TO BE ABANDONED
+
+* Symbol: IS :drill:
+[[file:legend_symbol_09_is.png]]
+
+** Answer
+INSTALL SIGN ON SIGNAL MAST ARM
+
+* Symbol: NS :drill:
+[[file:legend_symbol_10_ns.png]]
+
+** Answer
+NO SLIP BASE ON STANDARD
+
+* Symbol: PEC :drill:
+[[file:legend_symbol_11_pec.png]]
+
+** Answer
+PHOTOELECTRIC CONTROL
+
+* Symbol: PEU :drill:
+[[file:legend_symbol_12_peu.png]]
+
+** Answer
+PHOTOELECTRIC UNIT
+
+* Symbol: RC :drill:
+[[file:legend_symbol_13_rc.png]]
+
+** Answer
+EQUIPMENT OR MATERIAL TO BE REMOVED AND BECOME THE PROPERTY OF THE CONTRACTOR
+
+* Symbol: RE :drill:
+[[file:legend_symbol_14_re.png]]
+
+** Answer
+REMOVE ELECTROLIER, FUSES AND BALLAST. TAPE ENDS OF CONDUCTORS
+
+* Symbol: RL :drill:
+[[file:legend_symbol_15_rl.png]]
+
+** Answer
+RELOCATE EQUIPMENT
+
+* Symbol: RR :drill:
+[[file:legend_symbol_16_rr.png]]
+
+** Answer
+REMOVE AND REUSE EQUIPMENT
+
+* Symbol: RS :drill:
+[[file:legend_symbol_17_rs.png]]
+
+** Answer
+REMOVE AND SALVAGE EQUIPMENT
+
+* Symbol: SC :drill:
+[[file:legend_symbol_18_sc.png]]
+
+** Answer
+SPLICE NEW TO EXISTING CONDUCTORS
+
+* Symbol: SD :drill:
+[[file:legend_symbol_19_sd.png]]
+
+** Answer
+SERVICE DISCONNECT
+
+* Symbol: TSP :drill:
+[[file:legend_symbol_20_tsp.png]]
+
+** Answer
+TELEPHONE SERVICE POINT
+

@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "front": "<img src=\"misc_electrolier_01_luminaire_wood_pole_new.png\">",
+    "back": "Miscellaneous Electrolier<br>New - LUMINAIRE ON WOOD POLE",
+    "extra_notes": "Condition: New | Type: LUMINAIRE ON WOOD POLE",
+    "media": [
+      "misc_electrolier_01_luminaire_wood_pole_new.png"
+    ],
+    "tags": [
+      "miscellaneous_electroliers",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 2,
+    "front": "<img src=\"misc_electrolier_01_luminaire_wood_pole_existing.png\">",
+    "back": "Miscellaneous Electrolier<br>Existing - LUMINAIRE ON WOOD POLE",
+    "extra_notes": "Condition: Existing | Type: LUMINAIRE ON WOOD POLE",
+    "media": [
+      "misc_electrolier_01_luminaire_wood_pole_existing.png"
+    ],
+    "tags": [
+      "miscellaneous_electroliers",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 3,
+    "front": "<img src=\"misc_electrolier_02_non_standard_electrolier_new.png\">",
+    "back": "Miscellaneous Electrolier<br>New - NON-STANDARD ELECTROLIER (SEE PROJECT LEGEND)",
+    "extra_notes": "Condition: New | Type: NON-STANDARD ELECTROLIER (SEE PROJECT LEGEND)",
+    "media": [
+      "misc_electrolier_02_non_standard_electrolier_new.png"
+    ],
+    "tags": [
+      "miscellaneous_electroliers",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 4,
+    "front": "<img src=\"misc_electrolier_02_non_standard_electrolier_existing.png\">",
+    "back": "Miscellaneous Electrolier<br>Existing - NON-STANDARD ELECTROLIER (SEE PROJECT LEGEND)",
+    "extra_notes": "Condition: Existing | Type: NON-STANDARD ELECTROLIER (SEE PROJECT LEGEND)",
+    "media": [
+      "misc_electrolier_02_non_standard_electrolier_existing.png"
+    ],
+    "tags": [
+      "miscellaneous_electroliers",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 5,
+    "front": "<img src=\"misc_electrolier_03_city_electrolier_new.png\">",
+    "back": "Miscellaneous Electrolier<br>New - CITY ELECTROLIER",
+    "extra_notes": "Condition: New | Type: CITY ELECTROLIER",
+    "media": [
+      "misc_electrolier_03_city_electrolier_new.png"
+    ],
+    "tags": [
+      "miscellaneous_electroliers",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 6,
+    "front": "<img src=\"misc_electrolier_03_city_electrolier_existing.png\">",
+    "back": "Miscellaneous Electrolier<br>Existing - CITY ELECTROLIER",
+    "extra_notes": "Condition: Existing | Type: CITY ELECTROLIER",
+    "media": [
+      "misc_electrolier_03_city_electrolier_existing.png"
+    ],
+    "tags": [
+      "miscellaneous_electroliers",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 7,
+    "front": "<img src=\"misc_electrolier_04_electrolier_foundation_future_new.png\">",
+    "back": "Miscellaneous Electrolier<br>New - ELECTROLIER FOUNDATION (FUTURE INSTALLATION)",
+    "extra_notes": "Condition: New | Type: ELECTROLIER FOUNDATION (FUTURE INSTALLATION)",
+    "media": [
+      "misc_electrolier_04_electrolier_foundation_future_new.png"
+    ],
+    "tags": [
+      "miscellaneous_electroliers",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 8,
+    "front": "<img src=\"misc_electrolier_04_electrolier_foundation_future_existing.png\">",
+    "back": "Miscellaneous Electrolier<br>Existing - ELECTROLIER FOUNDATION (FUTURE INSTALLATION)",
+    "extra_notes": "Condition: Existing | Type: ELECTROLIER FOUNDATION (FUTURE INSTALLATION)",
+    "media": [
+      "misc_electrolier_04_electrolier_foundation_future_existing.png"
+    ],
+    "tags": [
+      "miscellaneous_electroliers",
+      "existing",
+      "caltrans_legend"
+    ]
+  }
+]

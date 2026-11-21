@@ -1,0 +1,310 @@
+[
+  {
+    "id": 1,
+    "front": "<img src=\"electrolier_01_15_new.png\">",
+    "back": "Standard Electrolier<br>New - Standard Type: 15",
+    "extra_notes": "Condition: New | Type: 15",
+    "media": [
+      "electrolier_01_15_new.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "new_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 2,
+    "front": "<img src=\"electrolier_01_15_existing.png\">",
+    "back": "Standard Electrolier<br>Existing - Standard Type: 15",
+    "extra_notes": "Condition: Existing | Type: 15",
+    "media": [
+      "electrolier_01_15_existing.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "existing_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 3,
+    "front": "<img src=\"electrolier_02_15d_new.png\">",
+    "back": "Standard Electrolier<br>New - Standard Type: 15D",
+    "extra_notes": "Condition: New | Type: 15D",
+    "media": [
+      "electrolier_02_15d_new.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "new_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 4,
+    "front": "<img src=\"electrolier_02_15d_existing.png\">",
+    "back": "Standard Electrolier<br>Existing - Standard Type: 15D",
+    "extra_notes": "Condition: Existing | Type: 15D",
+    "media": [
+      "electrolier_02_15d_existing.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "existing_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 5,
+    "front": "<img src=\"electrolier_03_15_structure_new.png\">",
+    "back": "Standard Electrolier<br>New - Standard Type: 15 STRUCTURE",
+    "extra_notes": "Condition: New | Type: 15 STRUCTURE",
+    "media": [
+      "electrolier_03_15_structure_new.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "new_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 6,
+    "front": "<img src=\"electrolier_03_15_structure_existing.png\">",
+    "back": "Standard Electrolier<br>Existing - Standard Type: 15 STRUCTURE",
+    "extra_notes": "Condition: Existing | Type: 15 STRUCTURE",
+    "media": [
+      "electrolier_03_15_structure_existing.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "existing_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 7,
+    "front": "<img src=\"electrolier_04_15d_structure_new.png\">",
+    "back": "Standard Electrolier<br>New - Standard Type: 15D STRUCTURE",
+    "extra_notes": "Condition: New | Type: 15D STRUCTURE",
+    "media": [
+      "electrolier_04_15d_structure_new.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "new_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 8,
+    "front": "<img src=\"electrolier_04_15d_structure_existing.png\">",
+    "back": "Standard Electrolier<br>Existing - Standard Type: 15D STRUCTURE",
+    "extra_notes": "Condition: Existing | Type: 15D STRUCTURE",
+    "media": [
+      "electrolier_04_15d_structure_existing.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "existing_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 9,
+    "front": "<img src=\"electrolier_05_21_new.png\">",
+    "back": "Standard Electrolier<br>New - Standard Type: 21",
+    "extra_notes": "Condition: New | Type: 21",
+    "media": [
+      "electrolier_05_21_new.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "new_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 10,
+    "front": "<img src=\"electrolier_05_21_existing.png\">",
+    "back": "Standard Electrolier<br>Existing - Standard Type: 21",
+    "extra_notes": "Condition: Existing | Type: 21",
+    "media": [
+      "electrolier_05_21_existing.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "existing_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 11,
+    "front": "<img src=\"electrolier_06_21d_new.png\">",
+    "back": "Standard Electrolier<br>New - Standard Type: 21D",
+    "extra_notes": "Condition: New | Type: 21D",
+    "media": [
+      "electrolier_06_21d_new.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "new_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 12,
+    "front": "<img src=\"electrolier_06_21d_existing.png\">",
+    "back": "Standard Electrolier<br>Existing - Standard Type: 21D",
+    "extra_notes": "Condition: Existing | Type: 21D",
+    "media": [
+      "electrolier_06_21d_existing.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "existing_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 13,
+    "front": "<img src=\"electrolier_07_21_structure_new.png\">",
+    "back": "Standard Electrolier<br>New - Standard Type: 21 STRUCTURE",
+    "extra_notes": "Condition: New | Type: 21 STRUCTURE",
+    "media": [
+      "electrolier_07_21_structure_new.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "new_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 14,
+    "front": "<img src=\"electrolier_07_21_structure_existing.png\">",
+    "back": "Standard Electrolier<br>Existing - Standard Type: 21 STRUCTURE",
+    "extra_notes": "Condition: Existing | Type: 21 STRUCTURE",
+    "media": [
+      "electrolier_07_21_structure_existing.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "existing_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 15,
+    "front": "<img src=\"electrolier_08_21d_structure_new.png\">",
+    "back": "Standard Electrolier<br>New - Standard Type: 21D STRUCTURE",
+    "extra_notes": "Condition: New | Type: 21D STRUCTURE",
+    "media": [
+      "electrolier_08_21d_structure_new.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "new_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 16,
+    "front": "<img src=\"electrolier_08_21d_structure_existing.png\">",
+    "back": "Standard Electrolier<br>Existing - Standard Type: 21D STRUCTURE",
+    "extra_notes": "Condition: Existing | Type: 21D STRUCTURE",
+    "media": [
+      "electrolier_08_21d_structure_existing.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "existing_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 17,
+    "front": "<img src=\"electrolier_09_30_new.png\">",
+    "back": "Standard Electrolier<br>New - Standard Type: 30",
+    "extra_notes": "Condition: New | Type: 30",
+    "media": [
+      "electrolier_09_30_new.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "new_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 18,
+    "front": "<img src=\"electrolier_09_30_existing.png\">",
+    "back": "Standard Electrolier<br>Existing - Standard Type: 30",
+    "extra_notes": "Condition: Existing | Type: 30",
+    "media": [
+      "electrolier_09_30_existing.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "existing_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 19,
+    "front": "<img src=\"electrolier_10_31_new.png\">",
+    "back": "Standard Electrolier<br>New - Standard Type: 31",
+    "extra_notes": "Condition: New | Type: 31",
+    "media": [
+      "electrolier_10_31_new.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "new_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 20,
+    "front": "<img src=\"electrolier_10_31_existing.png\">",
+    "back": "Standard Electrolier<br>Existing - Standard Type: 31",
+    "extra_notes": "Condition: Existing | Type: 31",
+    "media": [
+      "electrolier_10_31_existing.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "existing_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 21,
+    "front": "<img src=\"electrolier_11_32_new.png\">",
+    "back": "Standard Electrolier<br>New - Standard Type: 32",
+    "extra_notes": "Condition: New | Type: 32",
+    "media": [
+      "electrolier_11_32_new.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "new_conduit",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 22,
+    "front": "<img src=\"electrolier_11_32_existing.png\">",
+    "back": "Standard Electrolier<br>Existing - Standard Type: 32",
+    "extra_notes": "Condition: Existing | Type: 32",
+    "media": [
+      "electrolier_11_32_existing.png"
+    ],
+    "tags": [
+      "standard_electrolier",
+      "existing_conduit",
+      "caltrans_legend"
+    ]
+  }
+]

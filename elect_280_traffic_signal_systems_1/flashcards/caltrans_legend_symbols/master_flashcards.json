@@ -1,0 +1,996 @@
+[
+  {
+    "id": 1,
+    "front": "<img src=\"signal_equipment_01_pedestrian_signal_head_new.png\">",
+    "back": "Signal Equipment<br>New - PEDESTRIAN SIGNAL HEAD",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_01_pedestrian_signal_head_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 2,
+    "front": "<img src=\"signal_equipment_01_pedestrian_signal_head_existing.png\">",
+    "back": "Signal Equipment<br>Existing - PEDESTRIAN SIGNAL HEAD",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_01_pedestrian_signal_head_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 3,
+    "front": "<img src=\"signal_equipment_02_push_button_assembly_post_new.png\">",
+    "back": "Signal Equipment<br>New - PUSH BUTTON ASSEMBLY POST",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_02_push_button_assembly_post_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 4,
+    "front": "<img src=\"signal_equipment_02_push_button_assembly_post_existing.png\">",
+    "back": "Signal Equipment<br>Existing - PUSH BUTTON ASSEMBLY POST",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_02_push_button_assembly_post_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 5,
+    "front": "<img src=\"signal_equipment_03_pedestrian_barricade_new.png\">",
+    "back": "Signal Equipment<br>New - PEDESTRIAN BARRICADE",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_03_pedestrian_barricade_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 6,
+    "front": "<img src=\"signal_equipment_03_pedestrian_barricade_existing.png\">",
+    "back": "Signal Equipment<br>Existing - PEDESTRIAN BARRICADE",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_03_pedestrian_barricade_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 7,
+    "front": "<img src=\"signal_equipment_04_vehicle_signal_head_backplate_new.png\">",
+    "back": "Signal Equipment<br>New - VEHICLE SIGNAL HEAD (WITH BACKPLATE)",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_04_vehicle_signal_head_backplate_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 8,
+    "front": "<img src=\"signal_equipment_04_vehicle_signal_head_backplate_existing.png\">",
+    "back": "Signal Equipment<br>Existing - VEHICLE SIGNAL HEAD (WITH BACKPLATE)",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_04_vehicle_signal_head_backplate_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 9,
+    "front": "<img src=\"signal_equipment_05_vehicle_signal_head_angle_visor_new.png\">",
+    "back": "Signal Equipment<br>New - VEHICLE SIGNAL HEAD WITH ANGLE VISOR",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_05_vehicle_signal_head_angle_visor_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 10,
+    "front": "<img src=\"signal_equipment_05_vehicle_signal_head_angle_visor_existing.png\">",
+    "back": "Signal Equipment<br>Existing - VEHICLE SIGNAL HEAD WITH ANGLE VISOR",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_05_vehicle_signal_head_angle_visor_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 11,
+    "front": "<img src=\"signal_equipment_06_vehicle_signal_head_pv_mod_new.png\">",
+    "back": "Signal Equipment<br>New - VEHICLE SIGNAL HEAD (MODIFICATIONS)",
+    "extra_notes": "MODIFICATIONS OF BASIC SYMBOL:\n\"L\" INDICATES ALL NON-ARROW SECTIONS LOUVERED\n\"LG\" INDICATES LOUVERED GREEN SECTION ONLY\n\"PV\" INDICATES ALL 12\" SECTIONS PROGRAMMED VISIBILITY\n\"8\" INDICATES ALL 8\" SECTIONS (ONLY WHEN SPECIFIED)",
+    "media": [
+      "signal_equipment_06_vehicle_signal_head_pv_mod_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 12,
+    "front": "<img src=\"signal_equipment_06_vehicle_signal_head_pv_mod_existing.png\">",
+    "back": "Signal Equipment<br>Existing - VEHICLE SIGNAL HEAD (MODIFICATIONS)",
+    "extra_notes": "MODIFICATIONS OF BASIC SYMBOL:\n\"L\" INDICATES ALL NON-ARROW SECTIONS LOUVERED\n\"LG\" INDICATES LOUVERED GREEN SECTION ONLY\n\"PV\" INDICATES ALL 12\" SECTIONS PROGRAMMED VISIBILITY\n\"8\" INDICATES ALL 8\" SECTIONS (ONLY WHEN SPECIFIED)",
+    "media": [
+      "signal_equipment_06_vehicle_signal_head_pv_mod_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 13,
+    "front": "<img src=\"signal_equipment_07_vehicle_signal_head_left_arrows_new.png\">",
+    "back": "Signal Equipment<br>New - VEHICLE SIGNAL HEAD CONSISTING OF RED, YELLOW AND GREEN LEFT ARROW SECTIONS",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_07_vehicle_signal_head_left_arrows_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 14,
+    "front": "<img src=\"signal_equipment_07_vehicle_signal_head_left_arrows_existing.png\">",
+    "back": "Signal Equipment<br>Existing - VEHICLE SIGNAL HEAD CONSISTING OF RED, YELLOW AND GREEN LEFT ARROW SECTIONS",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_07_vehicle_signal_head_left_arrows_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 15,
+    "front": "<img src=\"signal_equipment_08_vehicle_signal_head_up_green_arrow_new.png\">",
+    "back": "Signal Equipment<br>New - VEHICLE SIGNAL HEAD CONSISTING OF RED AND YELLOW SECTIONS WITH AN UP GREEN ARROW SECTION",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_08_vehicle_signal_head_up_green_arrow_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 16,
+    "front": "<img src=\"signal_equipment_08_vehicle_signal_head_up_green_arrow_existing.png\">",
+    "back": "Signal Equipment<br>Existing - VEHICLE SIGNAL HEAD CONSISTING OF RED AND YELLOW SECTIONS WITH AN UP GREEN ARROW SECTION",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_08_vehicle_signal_head_up_green_arrow_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 17,
+    "front": "<img src=\"signal_equipment_09_vehicle_signal_head_5_section_right_arrows_new.png\">",
+    "back": "Signal Equipment<br>New - VEHICLE SIGNAL HEAD (5 SECTION) CONSISTING OF RED, YELLOW AND GREEN SECTIONS WITH YELLOW AND GREEN RIGHT ARROW SECTIONS",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_09_vehicle_signal_head_5_section_right_arrows_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 18,
+    "front": "<img src=\"signal_equipment_09_vehicle_signal_head_5_section_right_arrows_existing.png\">",
+    "back": "Signal Equipment<br>Existing - VEHICLE SIGNAL HEAD (5 SECTION) CONSISTING OF RED, YELLOW AND GREEN SECTIONS WITH YELLOW AND GREEN RIGHT ARROW SECTIONS",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_09_vehicle_signal_head_5_section_right_arrows_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 19,
+    "front": "<img src=\"signal_equipment_10_type_15ts_standard_new.png\">",
+    "back": "Signal Equipment<br>New - TYPE 15TS STANDARD WITH VEHICLE SIGNAL HEAD AND LUMINAIRE",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_10_type_15ts_standard_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 20,
+    "front": "<img src=\"signal_equipment_10_type_15ts_standard_existing.png\">",
+    "back": "Signal Equipment<br>Existing - TYPE 15TS STANDARD WITH VEHICLE SIGNAL HEAD AND LUMINAIRE",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_10_type_15ts_standard_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 21,
+    "front": "<img src=\"signal_equipment_11_type_21ts_standard_new.png\">",
+    "back": "Signal Equipment<br>New - TYPE 21TS STANDARD WITH VEHICLE SIGNAL HEAD AND LUMINAIRE",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_11_type_21ts_standard_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 22,
+    "front": "<img src=\"signal_equipment_11_type_21ts_standard_existing.png\">",
+    "back": "Signal Equipment<br>Existing - TYPE 21TS STANDARD WITH VEHICLE SIGNAL HEAD AND LUMINAIRE",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_11_type_21ts_standard_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 23,
+    "front": "<img src=\"signal_equipment_12_standard_mast_arms_signals_new.png\">",
+    "back": "Signal Equipment<br>New - STANDARD WITH LUMINAIRE AND SIGNAL MAST ARMS AND ATTACHED VEHICLE SIGNAL HEADS",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_12_standard_mast_arms_signals_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 24,
+    "front": "<img src=\"signal_equipment_12_standard_mast_arms_signals_existing.png\">",
+    "back": "Signal Equipment<br>Existing - STANDARD WITH LUMINAIRE AND SIGNAL MAST ARMS AND ATTACHED VEHICLE SIGNAL HEADS",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_12_standard_mast_arms_signals_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 25,
+    "front": "<img src=\"signal_equipment_13_type_1_standard_new.png\">",
+    "back": "Signal Equipment<br>New - TYPE 1 STANDARD WITH ATTACHED VEHICLE SIGNAL HEADS",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_13_type_1_standard_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 26,
+    "front": "<img src=\"signal_equipment_13_type_1_standard_existing.png\">",
+    "back": "Signal Equipment<br>Existing - TYPE 1 STANDARD WITH ATTACHED VEHICLE SIGNAL HEADS",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_13_type_1_standard_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 27,
+    "front": "<img src=\"signal_equipment_14_standard_mast_arm_sign_new.png\">",
+    "back": "Signal Equipment<br>New - STANDARD WITH A SIGNAL MAST ARM, ATTACHED VEHICLE SIGNAL HEADS AND INTERNALLY ILLUMINATED STREET NAME SIGN",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_14_standard_mast_arm_sign_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 28,
+    "front": "<img src=\"signal_equipment_14_standard_mast_arm_sign_existing.png\">",
+    "back": "Signal Equipment<br>Existing - STANDARD WITH A SIGNAL MAST ARM, ATTACHED VEHICLE SIGNAL HEADS AND INTERNALLY ILLUMINATED STREET NAME SIGN",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_14_standard_mast_arm_sign_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 29,
+    "front": "<img src=\"signal_equipment_15_controller_assembly_new.png\">",
+    "back": "Signal Equipment<br>New - CONTROLLER ASSEMBLY. DOOR INDICATES FRONT OF CABINET",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_15_controller_assembly_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 30,
+    "front": "<img src=\"signal_equipment_15_controller_assembly_existing.png\">",
+    "back": "Signal Equipment<br>Existing - CONTROLLER ASSEMBLY. DOOR INDICATES FRONT OF CABINET",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_15_controller_assembly_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 31,
+    "front": "<img src=\"conduit_01_lighting_conduit_new.png\">",
+    "back": "Conduit<br>New - LIGHTING CONDUIT, UNLESS OTHERWISE INDICATED OR NOTED",
+    "extra_notes": "",
+    "media": [
+      "conduit_01_lighting_conduit_new.png"
+    ],
+    "tags": [
+      "conduit",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 32,
+    "front": "<img src=\"conduit_01_lighting_conduit_existing.png\">",
+    "back": "Conduit<br>Existing - LIGHTING CONDUIT, UNLESS OTHERWISE INDICATED OR NOTED",
+    "extra_notes": "",
+    "media": [
+      "conduit_01_lighting_conduit_existing.png"
+    ],
+    "tags": [
+      "conduit",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 33,
+    "front": "<img src=\"conduit_02_traffic_signal_conduit_new.png\">",
+    "back": "Conduit<br>New - TRAFFIC SIGNAL CONDUIT",
+    "extra_notes": "",
+    "media": [
+      "conduit_02_traffic_signal_conduit_new.png"
+    ],
+    "tags": [
+      "conduit",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 34,
+    "front": "<img src=\"conduit_02_traffic_signal_conduit_existing.png\">",
+    "back": "Conduit<br>Existing - TRAFFIC SIGNAL CONDUIT",
+    "extra_notes": "",
+    "media": [
+      "conduit_02_traffic_signal_conduit_existing.png"
+    ],
+    "tags": [
+      "conduit",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 35,
+    "front": "<img src=\"conduit_03_communication_conduit_new.png\">",
+    "back": "Conduit<br>New - COMMUNICATION CONDUIT",
+    "extra_notes": "",
+    "media": [
+      "conduit_03_communication_conduit_new.png"
+    ],
+    "tags": [
+      "conduit",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 36,
+    "front": "<img src=\"conduit_03_communication_conduit_existing.png\">",
+    "back": "Conduit<br>Existing - COMMUNICATION CONDUIT",
+    "extra_notes": "",
+    "media": [
+      "conduit_03_communication_conduit_existing.png"
+    ],
+    "tags": [
+      "conduit",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 37,
+    "front": "<img src=\"conduit_04_telephone_conduit_new.png\">",
+    "back": "Conduit<br>New - TELEPHONE CONDUIT",
+    "extra_notes": "",
+    "media": [
+      "conduit_04_telephone_conduit_new.png"
+    ],
+    "tags": [
+      "conduit",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 38,
+    "front": "<img src=\"conduit_04_telephone_conduit_existing.png\">",
+    "back": "Conduit<br>Existing - TELEPHONE CONDUIT",
+    "extra_notes": "",
+    "media": [
+      "conduit_04_telephone_conduit_existing.png"
+    ],
+    "tags": [
+      "conduit",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 39,
+    "front": "<img src=\"conduit_05_fire_alarm_conduit_new.png\">",
+    "back": "Conduit<br>New - FIRE ALARM CONDUIT",
+    "extra_notes": "",
+    "media": [
+      "conduit_05_fire_alarm_conduit_new.png"
+    ],
+    "tags": [
+      "conduit",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 40,
+    "front": "<img src=\"conduit_05_fire_alarm_conduit_existing.png\">",
+    "back": "Conduit<br>Existing - FIRE ALARM CONDUIT",
+    "extra_notes": "",
+    "media": [
+      "conduit_05_fire_alarm_conduit_existing.png"
+    ],
+    "tags": [
+      "conduit",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 41,
+    "front": "<img src=\"conduit_06_fiber_optic_conduit_new.png\">",
+    "back": "Conduit<br>New - FIBER OPTIC CONDUIT",
+    "extra_notes": "",
+    "media": [
+      "conduit_06_fiber_optic_conduit_new.png"
+    ],
+    "tags": [
+      "conduit",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 42,
+    "front": "<img src=\"conduit_06_fiber_optic_conduit_existing.png\">",
+    "back": "Conduit<br>Existing - FIBER OPTIC CONDUIT",
+    "extra_notes": "",
+    "media": [
+      "conduit_06_fiber_optic_conduit_existing.png"
+    ],
+    "tags": [
+      "conduit",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 43,
+    "front": "<img src=\"conduit_07_conduit_termination_new.png\">",
+    "back": "Conduit<br>New - CONDUIT TERMINATION",
+    "extra_notes": "",
+    "media": [
+      "conduit_07_conduit_termination_new.png"
+    ],
+    "tags": [
+      "conduit",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 44,
+    "front": "<img src=\"conduit_07_conduit_termination_existing.png\">",
+    "back": "Conduit<br>Existing - CONDUIT TERMINATION",
+    "extra_notes": "",
+    "media": [
+      "conduit_07_conduit_termination_existing.png"
+    ],
+    "tags": [
+      "conduit",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 45,
+    "front": "<img src=\"conduit_08_conduit_riser_new.png\">",
+    "back": "Conduit<br>New - CONDUIT RISER ATTACHED TO THE STRUCTURE OR SERVICE POLE",
+    "extra_notes": "",
+    "media": [
+      "conduit_08_conduit_riser_new.png"
+    ],
+    "tags": [
+      "conduit",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 46,
+    "front": "<img src=\"conduit_08_conduit_riser_existing.png\">",
+    "back": "Conduit<br>Existing - CONDUIT RISER ATTACHED TO THE STRUCTURE OR SERVICE POLE",
+    "extra_notes": "",
+    "media": [
+      "conduit_08_conduit_riser_existing.png"
+    ],
+    "tags": [
+      "conduit",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 47,
+    "front": "<img src=\"service_equipment_01_overhead_lines_new.png\">",
+    "back": "Service Equipment<br>New - OVERHEAD LINES",
+    "extra_notes": "",
+    "media": [
+      "service_equipment_01_overhead_lines_new.png"
+    ],
+    "tags": [
+      "service_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 48,
+    "front": "<img src=\"service_equipment_01_overhead_lines_existing.png\">",
+    "back": "Service Equipment<br>Existing - OVERHEAD LINES",
+    "extra_notes": "",
+    "media": [
+      "service_equipment_01_overhead_lines_existing.png"
+    ],
+    "tags": [
+      "service_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 49,
+    "front": "<img src=\"service_equipment_02_wood_pole_new.png\">",
+    "back": "Service Equipment<br>New - WOOD POLE, \"U\" INDICATES UTILITY OWNED",
+    "extra_notes": "",
+    "media": [
+      "service_equipment_02_wood_pole_new.png"
+    ],
+    "tags": [
+      "service_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 50,
+    "front": "<img src=\"service_equipment_02_wood_pole_existing.png\">",
+    "back": "Service Equipment<br>Existing - WOOD POLE, \"U\" INDICATES UTILITY OWNED",
+    "extra_notes": "",
+    "media": [
+      "service_equipment_02_wood_pole_existing.png"
+    ],
+    "tags": [
+      "service_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 51,
+    "front": "<img src=\"service_equipment_03_pole_guy_anchor_new.png\">",
+    "back": "Service Equipment<br>New - POLE GUY WITH ANCHOR",
+    "extra_notes": "",
+    "media": [
+      "service_equipment_03_pole_guy_anchor_new.png"
+    ],
+    "tags": [
+      "service_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 52,
+    "front": "<img src=\"service_equipment_03_pole_guy_anchor_existing.png\">",
+    "back": "Service Equipment<br>Existing - POLE GUY WITH ANCHOR",
+    "extra_notes": "",
+    "media": [
+      "service_equipment_03_pole_guy_anchor_existing.png"
+    ],
+    "tags": [
+      "service_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 53,
+    "front": "<img src=\"service_equipment_04_utility_transformer_ground_new.png\">",
+    "back": "Service Equipment<br>New - UTILITY TRANSFORMER - GROUND MOUNTED",
+    "extra_notes": "",
+    "media": [
+      "service_equipment_04_utility_transformer_ground_new.png"
+    ],
+    "tags": [
+      "service_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 54,
+    "front": "<img src=\"service_equipment_04_utility_transformer_ground_existing.png\">",
+    "back": "Service Equipment<br>Existing - UTILITY TRANSFORMER - GROUND MOUNTED",
+    "extra_notes": "",
+    "media": [
+      "service_equipment_04_utility_transformer_ground_existing.png"
+    ],
+    "tags": [
+      "service_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 55,
+    "front": "<img src=\"service_equipment_05_service_equipment_enclosure_new.png\">",
+    "back": "Service Equipment<br>New - SERVICE EQUIPMENT ENCLOSURE TYPE. DOOR INDICATES FRONT OF ENCLOSURE",
+    "extra_notes": "",
+    "media": [
+      "service_equipment_05_service_equipment_enclosure_new.png"
+    ],
+    "tags": [
+      "service_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 56,
+    "front": "<img src=\"service_equipment_05_service_equipment_enclosure_existing.png\">",
+    "back": "Service Equipment<br>Existing - SERVICE EQUIPMENT ENCLOSURE TYPE. DOOR INDICATES FRONT OF ENCLOSURE",
+    "extra_notes": "",
+    "media": [
+      "service_equipment_05_service_equipment_enclosure_existing.png"
+    ],
+    "tags": [
+      "service_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 57,
+    "front": "<img src=\"service_equipment_06_telephone_demarcation_cabinet_new.png\">",
+    "back": "Service Equipment<br>New - TELEPHONE DEMARCATION CABINET",
+    "extra_notes": "",
+    "media": [
+      "service_equipment_06_telephone_demarcation_cabinet_new.png"
+    ],
+    "tags": [
+      "service_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 58,
+    "front": "<img src=\"service_equipment_06_telephone_demarcation_cabinet_existing.png\">",
+    "back": "Service Equipment<br>Existing - TELEPHONE DEMARCATION CABINET",
+    "extra_notes": "",
+    "media": [
+      "service_equipment_06_telephone_demarcation_cabinet_existing.png"
+    ],
+    "tags": [
+      "service_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 59,
+    "front": "<img src=\"pole_service_designation_01_pole_mounted_service_designation_sym.png\">",
+    "back": "Pole-Mounted Service Designation<br>TYPE OF INSTALLATION AND POLE HEIGHT ABOVE GRADE",
+    "extra_notes": "Example: TYPE H SERVICE, 28'-10\"",
+    "media": [
+      "pole_service_designation_01_pole_mounted_service_designation_sym.png"
+    ],
+    "tags": [
+      "pole_service_designation",
+      "standard",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 60,
+    "front": "<img src=\"flashing_beacon_01_flashing_beacon_one_head_new.png\">",
+    "back": "Flashing Beacon<br>New - FLASHING BEACON (ONE VEHICLE SIGNAL HEAD WITH BACKPLATE AND VISOR)",
+    "extra_notes": "\"R\" INDICATES RED INDICATION, \"Y\" INDICATES YELLOW INDICATION",
+    "media": [
+      "flashing_beacon_01_flashing_beacon_one_head_new.png"
+    ],
+    "tags": [
+      "flashing_beacon",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 61,
+    "front": "<img src=\"flashing_beacon_01_flashing_beacon_one_head_existing.png\">",
+    "back": "Flashing Beacon<br>Existing - FLASHING BEACON (ONE VEHICLE SIGNAL HEAD WITH BACKPLATE AND VISOR)",
+    "extra_notes": "\"R\" INDICATES RED INDICATION, \"Y\" INDICATES YELLOW INDICATION",
+    "media": [
+      "flashing_beacon_01_flashing_beacon_one_head_existing.png"
+    ],
+    "tags": [
+      "flashing_beacon",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 62,
+    "front": "<img src=\"flashing_beacon_02_flashing_beacon_type_15fbs_new.png\">",
+    "back": "Flashing Beacon<br>New - FLASHING BEACON WITH TYPE 15-FBS STANDARD AND A SIGN",
+    "extra_notes": "",
+    "media": [
+      "flashing_beacon_02_flashing_beacon_type_15fbs_new.png"
+    ],
+    "tags": [
+      "flashing_beacon",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 63,
+    "front": "<img src=\"flashing_beacon_02_flashing_beacon_type_15fbs_existing.png\">",
+    "back": "Flashing Beacon<br>Existing - FLASHING BEACON WITH TYPE 15-FBS STANDARD AND A SIGN",
+    "extra_notes": "",
+    "media": [
+      "flashing_beacon_02_flashing_beacon_type_15fbs_existing.png"
+    ],
+    "tags": [
+      "flashing_beacon",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 64,
+    "front": "<img src=\"flashing_beacon_03_flashing_beacon_types_9_9a_9b_new.png\">",
+    "back": "Flashing Beacon<br>New - FLASHING BEACON WITH TYPES 9, 9A OR 9B SIGN UNLESS OTHERWISE SPECIFIED OR INDICATED",
+    "extra_notes": "",
+    "media": [
+      "flashing_beacon_03_flashing_beacon_types_9_9a_9b_new.png"
+    ],
+    "tags": [
+      "flashing_beacon",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 65,
+    "front": "<img src=\"flashing_beacon_03_flashing_beacon_types_9_9a_9b_existing.png\">",
+    "back": "Flashing Beacon<br>Existing - FLASHING BEACON WITH TYPES 9, 9A OR 9B SIGN UNLESS OTHERWISE SPECIFIED OR INDICATED",
+    "extra_notes": "",
+    "media": [
+      "flashing_beacon_03_flashing_beacon_types_9_9a_9b_existing.png"
+    ],
+    "tags": [
+      "flashing_beacon",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 66,
+    "front": "<img src=\"signal_equipment_01_guard_post_new.png\">",
+    "back": "Signal Equipment Cont<br>New - GUARD POST",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_01_guard_post_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 67,
+    "front": "<img src=\"signal_equipment_01_guard_post_existing.png\">",
+    "back": "Signal Equipment Cont<br>Existing - GUARD POST",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_01_guard_post_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 68,
+    "front": "<img src=\"signal_equipment_02_type_1_standard_ramp_metering_sign_new.png\">",
+    "back": "Signal Equipment Cont<br>New - TYPE 1 STANDARD WITH RAMP METERING SIGN",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_02_type_1_standard_ramp_metering_sign_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 69,
+    "front": "<img src=\"signal_equipment_02_type_1_standard_ramp_metering_sign_existing.png\">",
+    "back": "Signal Equipment Cont<br>Existing - TYPE 1 STANDARD WITH RAMP METERING SIGN",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_02_type_1_standard_ramp_metering_sign_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 70,
+    "front": "<img src=\"signal_equipment_03_optical_detector_evd_new.png\">",
+    "back": "Signal Equipment Cont<br>New - OPTICAL DETECTOR FOR THE EMERGENCY VEHICLE DETECTION",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_03_optical_detector_evd_new.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "new",
+      "caltrans_legend"
+    ]
+  },
+  {
+    "id": 71,
+    "front": "<img src=\"signal_equipment_03_optical_detector_evd_existing.png\">",
+    "back": "Signal Equipment Cont<br>Existing - OPTICAL DETECTOR FOR THE EMERGENCY VEHICLE DETECTION",
+    "extra_notes": "",
+    "media": [
+      "signal_equipment_03_optical_detector_evd_existing.png"
+    ],
+    "tags": [
+      "signal_equipment",
+      "existing",
+      "caltrans_legend"
+    ]
+  }
+]
