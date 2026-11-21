@@ -1,0 +1,541 @@
+{
+ "schema_version": "2.0",
+ "deck": "Conduit Bending",
+ "deck_id": "e275-bending",
+ "class": "ELECT 275",
+ "title": "Conduit bending constants, marks and NEC rules",
+ "order": 1,
+ "study_guide": "../lbcc_conduit_bending_guide.md",
+ "source": "Written from the ELECT 275 conduit bending study guide.",
+ "format": "text",
+ "cards": [
+  {
+   "id": "e275-bending-001",
+   "type": "basic",
+   "section": "1. Bender marks",
+   "difficulty": 1,
+   "front": "Which bender mark do you line up for a standard 90° stub-up?",
+   "back": "The arrow (front of the hook).",
+   "tags": [
+    "elect-275",
+    "bender-marks"
+   ]
+  },
+  {
+   "id": "e275-bending-002",
+   "type": "basic",
+   "section": "1. Bender marks",
+   "difficulty": 1,
+   "front": "Which bender mark is used for the back of a 90° (back-to-back 90s)?",
+   "back": "The star, at the back heel of the shoe.",
+   "tags": [
+    "elect-275",
+    "bender-marks"
+   ]
+  },
+  {
+   "id": "e275-bending-003",
+   "type": "basic",
+   "section": "1. Bender marks",
+   "difficulty": 1,
+   "front": "Which bender mark is used for the center bend of a 3-point saddle?",
+   "back": "The notch, rim or teardrop at the center of the bend.",
+   "tags": [
+    "elect-275",
+    "bender-marks"
+   ]
+  },
+  {
+   "id": "e275-bending-004",
+   "type": "basic",
+   "section": "1. Bender marks",
+   "difficulty": 1,
+   "front": "Which mark do you use for the two bends of an offset?",
+   "back": "The arrow, for both marks.",
+   "tags": [
+    "elect-275",
+    "bender-marks"
+   ]
+  },
+  {
+   "id": "e275-bending-005",
+   "type": "basic",
+   "section": "1. Bender marks",
+   "difficulty": 2,
+   "front": "Which marks do you use for the outer bends of a 3-point saddle?",
+   "back": "The arrow.",
+   "tags": [
+    "elect-275",
+    "bender-marks"
+   ]
+  },
+  {
+   "id": "e275-bending-006",
+   "type": "basic",
+   "section": "1. Bender marks",
+   "difficulty": 1,
+   "front": "How do you check bend angle with a hand bender?",
+   "back": "Read the degree scale cast on the side of the shoe, or check with a torpedo level or protractor.",
+   "tags": [
+    "elect-275",
+    "bender-marks"
+   ]
+  },
+  {
+   "id": "e275-bending-007",
+   "type": "basic",
+   "section": "1. Bender marks",
+   "difficulty": 2,
+   "front": "Which EMT shoe bends 1/2 in. rigid (RMC/IMC)?",
+   "back": "The 3/4 in. EMT shoe. The 1 in. EMT shoe bends 3/4 in. rigid.",
+   "tags": [
+    "elect-275",
+    "bender-marks"
+   ]
+  },
+  {
+   "id": "e275-bending-008",
+   "type": "basic",
+   "section": "2. 90° stubs, deductions and gain",
+   "difficulty": 1,
+   "front": "How do you find the mark for a 90° stub-up?",
+   "back": "Mark = desired stub height − bender deduction (take-up). Line the mark up with the arrow.",
+   "tags": [
+    "elect-275",
+    "90-stubs-deductions-and-gain"
+   ]
+  },
+  {
+   "id": "e275-bending-009",
+   "type": "basic",
+   "section": "2. 90° stubs, deductions and gain",
+   "difficulty": 1,
+   "front": "90° deduction for 1/2 in. EMT?",
+   "back": "5 in.",
+   "tags": [
+    "elect-275",
+    "90-stubs-deductions-and-gain"
+   ]
+  },
+  {
+   "id": "e275-bending-010",
+   "type": "basic",
+   "section": "2. 90° stubs, deductions and gain",
+   "difficulty": 1,
+   "front": "90° deduction for 3/4 in. EMT?",
+   "back": "6 in.",
+   "tags": [
+    "elect-275",
+    "90-stubs-deductions-and-gain"
+   ]
+  },
+  {
+   "id": "e275-bending-011",
+   "type": "basic",
+   "section": "2. 90° stubs, deductions and gain",
+   "difficulty": 1,
+   "front": "90° deduction for 1 in. EMT?",
+   "back": "8 in.",
+   "tags": [
+    "elect-275",
+    "90-stubs-deductions-and-gain"
+   ]
+  },
+  {
+   "id": "e275-bending-012",
+   "type": "basic",
+   "section": "2. 90° stubs, deductions and gain",
+   "difficulty": 2,
+   "front": "90° deduction for 1-1/4 in. EMT?",
+   "back": "11 in.",
+   "tags": [
+    "elect-275",
+    "90-stubs-deductions-and-gain"
+   ]
+  },
+  {
+   "id": "e275-bending-013",
+   "type": "basic",
+   "section": "2. 90° stubs, deductions and gain",
+   "difficulty": 2,
+   "front": "90° deductions for 1/2, 3/4 and 1 in. rigid (RMC)?",
+   "back": "6 in., 8 in. and 11 in. Rigid uses the next-size-up EMT shoe, so it takes that shoe's deduction.",
+   "tags": [
+    "elect-275",
+    "90-stubs-deductions-and-gain"
+   ]
+  },
+  {
+   "id": "e275-bending-014",
+   "type": "basic",
+   "section": "2. 90° stubs, deductions and gain",
+   "difficulty": 2,
+   "front": "What is gain?",
+   "back": "The length saved because a bend takes a curved shortcut. Total pipe needed = leg 1 + leg 2 − gain.",
+   "tags": [
+    "elect-275",
+    "90-stubs-deductions-and-gain"
+   ]
+  },
+  {
+   "id": "e275-bending-015",
+   "type": "basic",
+   "section": "2. 90° stubs, deductions and gain",
+   "difficulty": 2,
+   "front": "Worked: 12 in. stub with 1/2 in. EMT. Where is the mark?",
+   "back": "12 − 5 = 7 in. from the end, lined up with the arrow.",
+   "tags": [
+    "elect-275",
+    "90-stubs-deductions-and-gain"
+   ]
+  },
+  {
+   "id": "e275-bending-016",
+   "type": "basic",
+   "section": "2. 90° stubs, deductions and gain",
+   "difficulty": 2,
+   "front": "Worked: 18 in. stub with 3/4 in. rigid. Where is the mark?",
+   "back": "18 − 8 = 10 in. from the end, on the arrow.",
+   "tags": [
+    "elect-275",
+    "90-stubs-deductions-and-gain"
+   ]
+  },
+  {
+   "id": "e275-bending-017",
+   "type": "basic",
+   "section": "2. 90° stubs, deductions and gain",
+   "difficulty": 2,
+   "front": "How do you make the second bend of a back-to-back 90?",
+   "back": "Measure the outside-to-outside distance from the back of the first 90, line that mark up with the star, hook facing away. No deduction.",
+   "tags": [
+    "elect-275",
+    "90-stubs-deductions-and-gain"
+   ]
+  },
+  {
+   "id": "e275-bending-018",
+   "type": "basic",
+   "section": "2. 90° stubs, deductions and gain",
+   "difficulty": 2,
+   "front": "Why over-bend rigid conduit slightly?",
+   "back": "Steel RMC springs back. Over-bend about 2° to 3°.",
+   "tags": [
+    "elect-275",
+    "90-stubs-deductions-and-gain"
+   ]
+  },
+  {
+   "id": "e275-bending-019",
+   "type": "basic",
+   "section": "3. Offsets and shrinkage",
+   "difficulty": 1,
+   "front": "How far apart are the two marks of an offset?",
+   "back": "Offset height × the multiplier for the bend angle.",
+   "tags": [
+    "elect-275",
+    "offsets-and-shrinkage"
+   ]
+  },
+  {
+   "id": "e275-bending-020",
+   "type": "basic",
+   "section": "3. Offsets and shrinkage",
+   "difficulty": 1,
+   "front": "Offset multiplier for 10° bends?",
+   "back": "6.0",
+   "tags": [
+    "elect-275",
+    "offsets-and-shrinkage"
+   ]
+  },
+  {
+   "id": "e275-bending-021",
+   "type": "basic",
+   "section": "3. Offsets and shrinkage",
+   "difficulty": 1,
+   "front": "Offset multiplier for 22.5° bends?",
+   "back": "2.6",
+   "tags": [
+    "elect-275",
+    "offsets-and-shrinkage"
+   ]
+  },
+  {
+   "id": "e275-bending-022",
+   "type": "basic",
+   "section": "3. Offsets and shrinkage",
+   "difficulty": 1,
+   "front": "Offset multiplier for 30° bends?",
+   "back": "2.0",
+   "tags": [
+    "elect-275",
+    "offsets-and-shrinkage"
+   ]
+  },
+  {
+   "id": "e275-bending-023",
+   "type": "basic",
+   "section": "3. Offsets and shrinkage",
+   "difficulty": 1,
+   "front": "Offset multiplier for 45° bends?",
+   "back": "1.4 (exactly 1.414)",
+   "tags": [
+    "elect-275",
+    "offsets-and-shrinkage"
+   ]
+  },
+  {
+   "id": "e275-bending-024",
+   "type": "basic",
+   "section": "3. Offsets and shrinkage",
+   "difficulty": 2,
+   "front": "Offset multiplier for 60° bends?",
+   "back": "1.2 (exactly 1.155)",
+   "tags": [
+    "elect-275",
+    "offsets-and-shrinkage"
+   ]
+  },
+  {
+   "id": "e275-bending-025",
+   "type": "basic",
+   "section": "3. Offsets and shrinkage",
+   "difficulty": 3,
+   "front": "What is the multiplier mathematically?",
+   "back": "The cosecant of the bend angle: 1 ÷ sin(angle). For 30°, 1 ÷ 0.5 = 2.",
+   "tags": [
+    "elect-275",
+    "offsets-and-shrinkage"
+   ]
+  },
+  {
+   "id": "e275-bending-026",
+   "type": "basic",
+   "section": "3. Offsets and shrinkage",
+   "difficulty": 2,
+   "front": "Shrinkage per inch of offset height for 10°, 22.5°, 30°, 45° and 60° bends?",
+   "back": "1/16, 3/16, 1/4, 3/8 and 1/2 in. per inch.",
+   "tags": [
+    "elect-275",
+    "offsets-and-shrinkage"
+   ]
+  },
+  {
+   "id": "e275-bending-027",
+   "type": "basic",
+   "section": "3. Offsets and shrinkage",
+   "difficulty": 2,
+   "front": "When bending toward an obstacle, what do you do with shrinkage?",
+   "back": "Add it to the distance to the obstacle when placing the first mark.",
+   "tags": [
+    "elect-275",
+    "offsets-and-shrinkage"
+   ]
+  },
+  {
+   "id": "e275-bending-028",
+   "type": "basic",
+   "section": "3. Offsets and shrinkage",
+   "difficulty": 2,
+   "front": "Worked: 6 in. offset with 30° bends. Mark spacing and shrinkage?",
+   "back": "6 × 2 = 12 in. between marks. Shrinkage 6 × 1/4 = 1-1/2 in.",
+   "tags": [
+    "elect-275",
+    "offsets-and-shrinkage"
+   ]
+  },
+  {
+   "id": "e275-bending-029",
+   "type": "basic",
+   "section": "3. Offsets and shrinkage",
+   "difficulty": 3,
+   "front": "Worked: 4 in. offset with 45° bends. Mark spacing?",
+   "back": "4 × 1.414 ≈ 5-5/8 in.",
+   "tags": [
+    "elect-275",
+    "offsets-and-shrinkage"
+   ]
+  },
+  {
+   "id": "e275-bending-030",
+   "type": "basic",
+   "section": "3. Offsets and shrinkage",
+   "difficulty": 2,
+   "front": "Why choose a smaller offset angle like 22.5° over 45°?",
+   "back": "Less shrinkage and easier wire pulling, but the offset takes more length.",
+   "tags": [
+    "elect-275",
+    "offsets-and-shrinkage"
+   ]
+  },
+  {
+   "id": "e275-bending-031",
+   "type": "basic",
+   "section": "4. Saddles and box offsets",
+   "difficulty": 1,
+   "front": "What are the bend angles of a 3-point saddle?",
+   "back": "22.5° – 45° – 22.5°.",
+   "tags": [
+    "elect-275",
+    "saddles-and-box-offsets"
+   ]
+  },
+  {
+   "id": "e275-bending-032",
+   "type": "basic",
+   "section": "4. Saddles and box offsets",
+   "difficulty": 2,
+   "front": "3-point saddle: where is the center mark?",
+   "back": "Distance to the center of the obstacle + 3/16 in. per inch of obstacle height. Line it up with the notch or rim.",
+   "tags": [
+    "elect-275",
+    "saddles-and-box-offsets"
+   ]
+  },
+  {
+   "id": "e275-bending-033",
+   "type": "basic",
+   "section": "4. Saddles and box offsets",
+   "difficulty": 2,
+   "front": "3-point saddle: where are the outer marks?",
+   "back": "2-1/2 in. per inch of obstacle height on each side of the center mark, lined up with the arrow.",
+   "tags": [
+    "elect-275",
+    "saddles-and-box-offsets"
+   ]
+  },
+  {
+   "id": "e275-bending-034",
+   "type": "basic",
+   "section": "4. Saddles and box offsets",
+   "difficulty": 3,
+   "front": "Worked: 3-point saddle over a 4 in. pipe, center 30 in. from the end. Marks?",
+   "back": "Center at 30 + 4 × 3/16 = 30-3/4 in. Outer marks 4 × 2-1/2 = 10 in. each side: 20-3/4 in. and 40-3/4 in.",
+   "tags": [
+    "elect-275",
+    "saddles-and-box-offsets"
+   ]
+  },
+  {
+   "id": "e275-bending-035",
+   "type": "basic",
+   "section": "4. Saddles and box offsets",
+   "difficulty": 1,
+   "front": "What is a 4-point saddle?",
+   "back": "Two offsets back to back, usually 30° or 22.5°, to go over a wide obstacle.",
+   "tags": [
+    "elect-275",
+    "saddles-and-box-offsets"
+   ]
+  },
+  {
+   "id": "e275-bending-036",
+   "type": "basic",
+   "section": "4. Saddles and box offsets",
+   "difficulty": 3,
+   "front": "4-point saddle: list the four marks.",
+   "back": "1: distance to obstacle + shrinkage. 2: mark 1 + height × multiplier. 3: mark 2 + obstacle width. 4: mark 3 + height × multiplier.",
+   "tags": [
+    "elect-275",
+    "saddles-and-box-offsets"
+   ]
+  },
+  {
+   "id": "e275-bending-037",
+   "type": "basic",
+   "section": "4. Saddles and box offsets",
+   "difficulty": 1,
+   "front": "What bends make a box offset?",
+   "back": "Two 10° bends, usually for a 3/8 or 1/2 in. offset into a box.",
+   "tags": [
+    "elect-275",
+    "saddles-and-box-offsets"
+   ]
+  },
+  {
+   "id": "e275-bending-038",
+   "type": "basic",
+   "section": "4. Saddles and box offsets",
+   "difficulty": 2,
+   "front": "Worked: 1/2 in. box offset. How far apart are the marks?",
+   "back": "0.5 × 6.0 = 3 in. The first mark is 2 to 3 in. from the end.",
+   "tags": [
+    "elect-275",
+    "saddles-and-box-offsets"
+   ]
+  },
+  {
+   "id": "e275-bending-039",
+   "type": "basic",
+   "section": "4. Saddles and box offsets",
+   "difficulty": 2,
+   "front": "Box offset and a stub-up on the same piece: which bend first?",
+   "back": "The box offset first, then measure the stub from that end.",
+   "tags": [
+    "elect-275",
+    "saddles-and-box-offsets"
+   ]
+  },
+  {
+   "id": "e275-bending-040",
+   "type": "basic",
+   "section": "5. NEC rules",
+   "difficulty": 1,
+   "front": "Maximum total degrees of bends between pull points?",
+   "back": "360°, counting offsets and saddles (NEC 358.26 EMT, 344.26 RMC).",
+   "tags": [
+    "elect-275",
+    "nec-rules"
+   ]
+  },
+  {
+   "id": "e275-bending-041",
+   "type": "basic",
+   "section": "5. NEC rules",
+   "difficulty": 2,
+   "front": "How many degrees does a 3-point saddle (22.5-45-22.5) add toward the 360° limit?",
+   "back": "90°.",
+   "tags": [
+    "elect-275",
+    "nec-rules"
+   ]
+  },
+  {
+   "id": "e275-bending-042",
+   "type": "basic",
+   "section": "5. NEC rules",
+   "difficulty": 1,
+   "front": "EMT securing and support distances?",
+   "back": "Within 3 ft of every box, cabinet or fitting, and at least every 10 ft (NEC 358.30(A)).",
+   "tags": [
+    "elect-275",
+    "nec-rules"
+   ]
+  },
+  {
+   "id": "e275-bending-043",
+   "type": "basic",
+   "section": "5. NEC rules",
+   "difficulty": 2,
+   "front": "RMC securing and support distances?",
+   "back": "Within 3 ft of every box or fitting and every 10 ft; longer spacing is allowed for straight runs with threaded couplings (NEC 344.30).",
+   "tags": [
+    "elect-275",
+    "nec-rules"
+   ]
+  },
+  {
+   "id": "e275-bending-044",
+   "type": "basic",
+   "section": "5. NEC rules",
+   "difficulty": 2,
+   "front": "Why does the NEC limit bends between pull points?",
+   "back": "Every bend adds pulling tension. Too many bends damage the conductor insulation during the pull.",
+   "tags": [
+    "elect-275",
+    "nec-rules"
+   ]
+  }
+ ]
+}

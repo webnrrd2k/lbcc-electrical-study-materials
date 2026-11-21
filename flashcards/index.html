@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flashcards — LBCC Electrical Study Materials</title>
+<style>
+  :root { --bg:#f6f7f9; --card:#ffffff; --ink:#1b1d21; --muted:#5d6470; --line:#d9dde3; --accent:#1f5fa8; --good:#2e7d32; --again:#b3261e; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16181c; --card:#22252b; --ink:#eceef1; --muted:#a3a9b3; --line:#3a3f47; --accent:#7fb0ef; --good:#7cc47f; --again:#f28b82; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:-apple-system, "Segoe UI", Roboto, sans-serif; background:var(--bg); color:var(--ink); line-height:1.45; }
+  header { padding:14px 18px; border-bottom:1px solid var(--line); background:var(--card); }
+  header a { color:var(--accent); text-decoration:none; font-size:14px; }
+  h1 { font-size:20px; margin:4px 0 0; }
+  main { max-width:820px; margin:0 auto; padding:16px; }
+  .controls { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:10px; margin-bottom:12px; }
+  label { font-size:13px; color:var(--muted); display:block; }
+  select { width:100%; padding:8px; font-size:15px; border:1px solid var(--line); border-radius:6px; background:var(--card); color:var(--ink); }
+  .toggles { display:flex; flex-wrap:wrap; gap:16px; font-size:14px; margin:4px 0 12px; }
+  .toggles label { color:var(--ink); font-size:14px; display:flex; gap:6px; align-items:center; }
+  .bar { display:flex; justify-content:space-between; font-size:13px; color:var(--muted); margin-bottom:6px; }
+  .progress { height:6px; background:var(--line); border-radius:3px; overflow:hidden; margin-bottom:12px; }
+  .progress div { height:100%; background:var(--good); width:0; }
+  #card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:22px; min-height:260px; cursor:pointer; font-size:19px; }
+  #card .tag { font-size:12px; color:var(--muted); margin-bottom:10px; }
+  #card .answer { border-top:1px dashed var(--line); margin-top:16px; padding-top:14px; }
+  #card img { max-width:100%; height:auto; margin-top:10px; background:#fff; border-radius:4px; }
+  #card sub { font-size:14px; color:var(--muted); vertical-align:baseline; }
+  #card .hint { font-size:13px; color:var(--muted); margin-top:16px; }
+  .buttons { display:flex; gap:10px; margin-top:12px; }
+  button { flex:1; padding:12px; font-size:16px; border-radius:8px; border:1px solid var(--line); background:var(--card); color:var(--ink); cursor:pointer; }
+  button.again { border-color:var(--again); color:var(--again); }
+  button.good { border-color:var(--good); color:var(--good); }
+  button:disabled { opacity:.4; cursor:default; }
+  .small { flex:0 0 auto; font-size:13px; padding:8px 12px; }
+  .links { font-size:13px; color:var(--muted); margin-top:18px; }
+  .links a { color:var(--accent); }
+  .done { text-align:center; padding:40px 10px; }
+</style>
+</head>
+<body>
+<header>
+  <a href="../">← LBCC Electrical Study Materials</a>
+  <h1>Flashcards</h1>
+</header>
+<main>
+  <div class="controls">
+    <div><label for="cls">Class</label><select id="cls"></select></div>
+    <div><label for="deck">Deck</label><select id="deck"></select></div>
+    <div><label for="section">Topic</label><select id="section"></select></div>
+  </div>
+  <div class="toggles">
+    <label><input type="checkbox" id="shuffle" checked> Shuffle</label>
+    <label><input type="checkbox" id="hideKnown" checked> Skip cards I know</label>
+  </div>
+  <div class="bar"><span id="count"></span><span id="known"></span></div>
+  <div class="progress"><div id="pbar"></div></div>
+  <div id="card" tabindex="0" aria-live="polite"></div>
+  <div class="buttons">
+    <button class="again" id="again" disabled>Again <small>(1)</small></button>
+    <button class="good" id="good" disabled>Got it <small>(2)</small></button>
+  </div>
+  <div class="buttons">
+    <button class="small" id="prev">← Back</button>
+    <button class="small" id="reset">Forget what I know in this deck</button>
+  </div>
+  <p class="links" id="links"></p>
+  <p class="links">Click the card or press Space to flip. Your "got it" marks are saved in this browser only.
+     Each deck can also be downloaded for Anki, Quizlet or Emacs org-drill from its page.</p>
+</main>
+<script>
+"use strict";
+const $ = id => document.getElementById(id);
+const CLOZE = /\{\{c\d+::(.+?)(?:::(.*?))?\}\}/g;
+const store = { get(k) { try { return JSON.parse(localStorage.getItem(k) || "[]"); } catch (e) { return []; } },
+                set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
+let index = [], deckInfo = null, deck = null, queue = [], pos = 0, flipped = false, history = [];
+
+function esc(s) { return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+function txt(s) { return deck.format === "html" ? (s || "") : esc(s).replace(/\n/g, "<br>"); }
+function base() { return deckInfo.path.replace(/[^/]+$/, ""); }
+function fixSrc(h) { return h.replace(/src="(?!https?:|\/)([^"]+)"/g, (m, p) => `src="../${base()}${p}"`); }
+function img(c) { return c.image ? `<img src="${esc(c.image)}" alt="${esc(c.image_alt || "")}">` : ""; }
+
+function question(c) {
+  let q = c.type === "cloze" ? txt(c.front.replace(CLOZE, (m, a, h) => "[" + (h || "...") + "]")) : txt(c.front);
+  if (c.type === "mcq") q += "<br>" + c.choices.map((ch, i) => `<b>${"ABCDE"[i]}.</b> ${txt(ch)}`).join("<br>");
+  if (c.image_on_front) q += "<br>" + img(c);
+  return fixSrc(q);
+}
+function answer(c) {
+  let a;
+  if (c.type === "cloze") a = txt(c.front.replace(CLOZE, (m, x) => "\u0001" + x + "\u0002")).replace(/\u0001/g, "<b>").replace(/\u0002/g, "</b>") + (c.back ? "<br>" + txt(c.back) : "");
+  else if (c.type === "mcq") a = `<b>${"ABCDE"[c.answer]}. ${txt(c.choices[c.answer])}</b>` + (c.back ? "<br>" + txt(c.back) : "");
+  else a = txt(c.back);
+  if (c.image && !c.image_on_front) a += "<br>" + img(c);
+  const extras = [];
+  if (c.note) extras.push(txt(c.note));
+  if (c.nec_ref) extras.push("NEC " + esc(c.nec_ref));
+  if (extras.length) a += "<br><br><sub>" + extras.join(" · ") + "</sub>";
+  return fixSrc(a);
+}
+
+function knownKey() { return "lbcc-known-" + deckInfo.deck_id; }
+function render() {
+  const known = new Set(store.get(knownKey()));
+  const inSection = deck.cards.filter(c => !$("section").value || c.section === $("section").value);
+  const nKnown = inSection.filter(c => known.has(c.id)).length;
+  $("known").textContent = `${nKnown} of ${inSection.length} known`;
+  $("pbar").style.width = (inSection.length ? 100 * nKnown / inSection.length : 0) + "%";
+  if (pos >= queue.length) {
+    $("count").textContent = `${queue.length} cards this round`;
+    $("card").innerHTML = `<div class="done"><b>Round finished.</b><br><br>` +
+      (nKnown < inSection.length ? "Click to go again with the cards you don't know yet." : "You know every card in this topic. Pick another deck, or reset.") + "</div>";
+    $("again").disabled = $("good").disabled = true;
+    return;
+  }
+  const c = queue[pos];
+  $("count").textContent = `Card ${pos + 1} of ${queue.length}`;
+  $("card").innerHTML = `<div class="tag">${esc(c.section || deck.deck)}${known.has(c.id) ? " · known" : ""}</div>` + question(c) +
+    (flipped ? `<div class="answer">${answer(c)}</div>` : `<div class="hint">Click or press Space to see the answer</div>`);
+  $("again").disabled = $("good").disabled = !flipped;
+}
+function buildQueue() {
+  const known = new Set(store.get(knownKey()));
+  queue = deck.cards.filter(c => (!$("section").value || c.section === $("section").value) && !($("hideKnown").checked && known.has(c.id)));
+  if ($("shuffle").checked) for (let i = queue.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [queue[i], queue[j]] = [queue[j], queue[i]]; }
+  pos = 0; flipped = false; history = []; render();
+}
+function mark(good) {
+  if (!flipped || pos >= queue.length) return;
+  const known = new Set(store.get(knownKey())), c = queue[pos];
+  if (good) known.add(c.id); else known.delete(c.id);
+  store.set(knownKey(), [...known]);
+  history.push(pos); pos++; flipped = false; render();
+}
+function flip() { if (pos >= queue.length) { buildQueue(); return; } flipped = !flipped; render(); }
+
+async function loadDeck(id) {
+  deckInfo = index.find(d => d.deck_id === id) || index[0];
+  $("cls").value = deckInfo.class; fillDecks(); $("deck").value = deckInfo.deck_id;
+  const r = await fetch("../" + deckInfo.path); deck = await r.json();
+  const secs = [...new Set(deck.cards.map(c => c.section).filter(Boolean))];
+  $("section").innerHTML = `<option value="">All topics (${deck.cards.length})</option>` +
+    secs.map(s => `<option value="${esc(s)}">${esc(s)} (${deck.cards.filter(c => c.section === s).length})</option>`).join("");
+  $("section").disabled = !secs.length;
+  const page = "../" + base();
+  $("links").innerHTML = `Deck page: <a href="${page}">${esc(deck.deck)}</a>` +
+    (deck.study_guide ? ` · <a href="${page}${esc(deck.study_guide).replace(/\.md$/, ".html")}">study guide</a>` : "");
+  history_replace(id);
+  buildQueue();
+}
+function history_replace(id) { const u = new URL(location); u.searchParams.set("deck", id); window.history.replaceState(null, "", u); }
+function fillDecks() {
+  $("deck").innerHTML = index.filter(d => d.class === $("cls").value)
+    .map(d => `<option value="${d.deck_id}">${esc(d.deck)} (${d.cards})</option>`).join("");
+}
+
+$("card").addEventListener("click", flip);
+$("again").addEventListener("click", () => mark(false));
+$("good").addEventListener("click", () => mark(true));
+$("prev").addEventListener("click", () => { if (history.length) { pos = history.pop(); flipped = false; render(); } });
+$("reset").addEventListener("click", () => { if (confirm("Forget all 'got it' marks for this deck?")) { store.set(knownKey(), []); buildQueue(); } });
+$("cls").addEventListener("change", () => { fillDecks(); loadDeck($("deck").value); });
+$("deck").addEventListener("change", () => loadDeck($("deck").value));
+["section", "shuffle", "hideKnown"].forEach(id => $(id).addEventListener("change", buildQueue));
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "SELECT") return;
+  if (e.key === " " || e.key === "Enter") { e.preventDefault(); flip(); }
+  else if (e.key === "1") mark(false);
+  else if (e.key === "2") mark(true);
+  else if (e.key === "ArrowLeft") $("prev").click();
+});
+
+fetch("index.json").then(r => r.json()).then(data => {
+  index = data.decks;
+  const classes = [...new Set(index.map(d => d.class))];
+  $("cls").innerHTML = classes.map(c => `<option>${esc(c)}</option>`).join("");
+  loadDeck(new URLSearchParams(location.search).get("deck") || index[0].deck_id);
+}).catch(() => { $("card").textContent = "Could not load the deck list. Open this page on the website, not as a local file."; });
+</script>
+</body>
+</html>

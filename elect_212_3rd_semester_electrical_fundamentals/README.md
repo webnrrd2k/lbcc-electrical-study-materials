@@ -1,6 +1,6 @@
 # ELECT 212 — Electrical Fundamentals (3rd Semester)
 
-Study guides, flashcards, and practice problems for the AC theory units of ELECT 212: trigonometry and vectors, alternating current, inductance, capacitance, R-L, R-C and R-L-C circuits, and single-phase transformers.
+Study guides, flashcards, and practice problems for the AC theory units of ELECT 212: trigonometry and vectors, alternating current, inductance, capacitance, R-L, R-C and R-L-C circuits, single-phase transformers, and the split-phase, wye and delta systems from Labs 4–6.
 
 [← Back to all classes](../README.md)
 
@@ -37,7 +37,9 @@ Unit numbers follow the course textbook.
 | 24 | RLC Parallel Circuits | [Guide](units/unit-24-rlc-parallel/study-guide.md) | [49 cards](units/unit-24-rlc-parallel/flashcards/) |
 | 27 | Single-Phase Transformers | [Guide](units/unit-27-single-phase-transformers/study-guide.md) ([PDF](units/unit-27-single-phase-transformers/study-guide.pdf)) | [211 cards](units/unit-27-single-phase-transformers/flashcards/) |
 
-Each flashcard folder also holds the raw card data (`unitNN_flashcards.json`) and the diagrams, if you'd rather import the cards into a flashcard app.
+| Labs 4–6 | Power Systems: split-phase 120/240 V, three-phase wye and delta | [Guide](labs-4-6-power-systems/study-guide.md) | [43 cards](labs-4-6-power-systems/flashcards/) |
+
+Every deck can also be studied on the [flashcard study page](https://webnrrd2k.github.io/lbcc-electrical-study-materials/flashcards/) (shuffle, flip, mark what you know), or downloaded for Anki, Quizlet or Emacs org-drill from its page. Unit 27's 211 cards are grouped into 8 topics so you can study one at a time.
 
 ### Formula cheat sheet
 
@@ -65,9 +67,11 @@ elect_212_3rd_semester_electrical_fundamentals/
 │   │   ├── study-guide.md
 │   │   └── flashcards/
 │   │       ├── README.md              (the clickable cards)
-│   │       ├── unit14_flashcards.json (raw card data)
+│   │       ├── unit14_flashcards.json (card data; the README and downloads are built from it)
+│   │       ├── .apkg / _quizlet.txt / .org (Anki, Quizlet and Emacs downloads)
 │   │       └── *.png                  (card diagrams)
 │   └── ... (one folder per unit, same pattern)
+├── labs-4-6-power-systems/           (split-phase, wye and delta: study guide + flashcards)
 └── practice-problems/
     ├── polar-and-rectangular-form.md
     └── series-rl-rc-rlc.md

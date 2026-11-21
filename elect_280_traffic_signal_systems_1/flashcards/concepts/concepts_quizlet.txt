@@ -1,0 +1,103 @@
+In NEMA 8-phase numbering, what do odd and even phase numbers mean?	Even phases (2, 4, 6, 8) are through movements. Odd phases (1, 3, 5, 7) are protected left turns.
+Which phases are usually the main street, and which the side street?	Ø2 and Ø6 are the main-street throughs (opposite directions). Ø4 and Ø8 are the side-street throughs.
+Which through phase shares an approach with each left-turn phase?	Ø1 with Ø6, Ø5 with Ø2, Ø3 with Ø8, Ø7 with Ø4. A left turn and the through on the same approach can run together.
+Which through phase does each left turn cross?	Ø1 crosses Ø2, Ø5 crosses Ø6, Ø3 crosses Ø4, Ø7 crosses Ø8 (the opposing through).
+How do you decide which phase a signal head belongs to?	By the traffic it faces, not the corner it stands on. Heads sit on the far side and face approaching drivers. (A far-side head on the NE corner faces south and serves northbound traffic.)
+Where do signal heads normally go, and how many does a through movement need?	On the far side of the intersection. The CA MUTCD requires at least two primary signal faces for the through movement on an approach.
+What is the first thing to check on a signal plan before marking phases?	The north arrow. Prints are often rotated so north is not up.
+Where is the final word on which direction is Ø2?	The plan's phase diagram. Ø2 is often the main-street direction going north or east, but agencies differ.
+What is split phasing?	The two directions of a street time one after the other (for example Ø3 then Ø4) instead of together, usually because of shared or heavy left turns.
+What is an overlap?	An output tied to two or more phases, such as a right-turn arrow that is green during its parallel through and a compatible left turn. Overlaps A and B use 210 channels 9 and 10.
+What does a flashing yellow arrow (FYA) left-turn display mean?	Permissive left turn: drivers may turn after yielding to oncoming traffic and pedestrians.
+Write out the standard dual-ring diagram.	Ring 1: Ø1 Ø2 | Ø3 Ø4. Ring 2: Ø5 Ø6 | Ø7 Ø8. The barrier (|) separates the main-street group from the side-street group.
+What is concurrency?	Two phases timing at the same time: one from Ring 1 and one from Ring 2, on the same side of the barrier.
+List the compatible phase pairs on each side of the barrier.	Left side: 1+5, 1+6, 2+5, 2+6. Right side: 3+7, 3+8, 4+7, 4+8.
+Can two phases in the same ring time together?	No. Phases in one ring always conflict and time one after another.
+What is the barrier, and what rule applies to it?	The line between main-street and side-street phases. Both rings must reach it and cross it together, because every main-street movement conflicts with every side-street movement.
+What three intervals make up a vehicle phase?	Green, yellow change, and red clearance.
+What is the red clearance (all-red) interval?	A time when every approach shows red, so a vehicle that entered on yellow can clear the intersection.
+Within what range should a yellow change interval fall?	3 to 6 seconds (CA MUTCD 4F.17). Longer yellows go with higher approach speeds.
+What is the kinematic formula for the yellow change interval?	Y = t + v / (2a + 2gG), with t = 1 s, v in ft/s, a = 10 ft/s², g = 32.2 ft/s², G = grade as a decimal. (35 mph = 51.5 ft/s on a flat road gives about 3.6 s.)
+CA MUTCD Table 4D-101(CA): which speed sets the minimum yellow?	The 85th-percentile speed rounded up to the next 5 mph. If only the posted speed is known, add 7 mph (posted 30 mph or more) or 10 mph (25 mph or less). (Example: 35 mph posted gets 4.1 s.)
+How long are red clearance intervals normally?	0.1 to 2.0 seconds, and they should not exceed 6 seconds except for unusual cases (CA MUTCD 4F.17).
+What is a lagging left turn?	A left-turn phase that times after the opposing through, for example Ø5 after Ø2.
+What do the Caltrans Standard Plans sheets ES-1A to ES-1C cover?	Electrical symbols, abbreviations, and how conduit runs are numbered.
+What comes first when the project plan and the Standard Plans disagree?	The project documents: special provisions, then the project plans, then the Standard Plans, then the Standard Specifications.
+How do existing and new equipment look different on a plan?	Existing equipment is drawn outlined or lighter; new equipment is drawn solid.
+Which two schedules on a signal plan list the equipment and wiring?	The Standard and Equipment Schedule (poles, heads, push buttons, luminaires) and the Conduit and Conductor Schedule.
+What must you do before digging foundations or trenching conduit in California?	Call 811 (USA North or DigAlert) at least two working days ahead so underground utilities are marked.
+Why read every note on a signal plan sheet?	Notes can override the general rules, for example 'repull existing SIC only' in a run, and many say 'this sheet only'.
+Which vehicle phase does a ped phase run with?	The parallel through phase: Ø2P with Ø2, Ø4P with Ø4, Ø6P with Ø6, Ø8P with Ø8.
+What are the pedestrian intervals, in order?	Walk, flashing Don't Walk (pedestrian change interval), then steady Don't Walk.
+What walking speed sets the pedestrian clearance time?	3.5 ft/s (CA MUTCD 4I.06). Consider 2.8 ft/s where older or disabled pedestrians routinely cross.
+What second check must walk plus clearance pass?	Walk + clearance must let someone leaving the push button (or 6 ft behind the curb) at the start of Walk cross at 3 ft/s.
+How long should the Walk interval be?	At least 7 seconds; as short as 4 seconds is allowed where pedestrian volumes and needs don't require 7.
+What is the buffer interval added in the 2023 MUTCD?	At least 2 seconds of steady Don't Walk after the flashing Don't Walk, before conflicting traffic is released.
+When is a countdown display required on a ped head?	When the pedestrian change interval is more than 7 seconds (CA MUTCD 4I.04).
+How high are ped signal heads mounted?	Bottom of the housing 7 to 10 feet above the sidewalk (CA MUTCD 4I.03).
+Where should a pedestrian push button be placed?	No more than 5 ft from the outside edge of the crosswalk, 1.5 to 6 ft from the curb face, about 3.5 ft high (4 ft max), with its face parallel to the crosswalk.
+How far apart should two push buttons on one corner be?	At least 10 feet. Closer than that, accessible signals must use speech walk messages.
+Does the push button on a pole always serve the ped head on that same pole?	No. The button usually serves a different crosswalk from the head mounted on the same pole.
+What is a Leading Pedestrian Interval (LPI)?	Walk starts a few seconds before the parallel green, so pedestrians get into the crosswalk before turning cars move.
+What is ped recall?	The controller serves the ped phase every cycle without anyone pressing the button.
+How does an inductive loop detect a vehicle?	The vehicle's metal carries eddy currents that lower the loop's inductance. The detector card sees its oscillator frequency rise and places a call.
+Does a vehicle over a loop raise or lower the loop's inductance?	Lower.
+What does a vehicle detector designation like 2I2U mean?	Phase 2, Input File I, slot 2, Upper channel.
+In a designation, what do U and L stand for?	The upper and lower channel of the two-channel detector card. They do not mean upstream or limit line.
+Which input file holds which phases?	Input File I holds Ø1–Ø4 detectors; Input File J holds Ø5–Ø8.
+Trace a loop's path from the street to the controller.	Loop wire → splice in the pull box → DLC (detector lead-in cable) → input panel terminal block → input file slot → 222 detector card → controller.
+How many DLCs does each detector designation need?	One DLC per designation, even when loops share a pull box.
+What inductance range do loop detector cards typically work with?	About 50 to 700 µH (FHWA Traffic Detector Handbook).
+Why can't you measure a loop's impedance with an ohmmeter?	An ohmmeter uses DC and reads only resistance. Impedance needs an AC measurement or an LCR meter.
+What must you do before meggering a loop?	Unplug the 222 card and lift the lead-in. The megger's 500 or 1000 V test voltage will damage the card.
+How is the DLC shield grounded?	At the cabinet end only, to reject noise without creating a ground loop.
+What does a long lead-in do to loop sensitivity?	It adds inductance and resistance, so the vehicle's change is a smaller fraction of the total and sensitivity drops.
+List the 332L cage from top to bottom.	2070 controller, drawer shelf, Input File I, Input File J, PDA #2L (with the 206L power supply), Output File #1L.
+What does the 2070 controller do?	Runs the timing program, reads detector and push-button calls, and drives the load switches with 24 VDC logic.
+What plugs into the input files?	222 two-channel loop detectors, 242 DC isolators (push buttons, flash sense), and other detector or isolator cards.
+What does the 242 in slot I14 provide?	Flash Sense and Stop Time inputs to the controller.
+What is in the PDA #2L?	Signal circuit breakers, two 204 flashers, the SSR, HI and K24 relays, and the 206L 24 VDC power supply.
+What is in Output File #1L?	12 Model 200 switch packs, 4 flash transfer relays (FTRs), the 210 monitor, and the flash program blocks on the back.
+What switches are on the police panel?	Signals ON/OFF and AUTO/FLASH.
+Does Signals OFF make the cabinet safe to work in?	No. It only removes power from the heads. The PDA, service panel and the controller's clean AC stay live.
+What happens if the 210 monitor is removed and the door is closed?	The cabinet goes into flash. This is by design.
+How are the DC logic ground and AC wiring kept apart in a 332?	The DC ground (white with a red stripe) runs separately from the AC wiring; AC neutral and equipment ground bond only at the service.
+What changes in the service panel when a battery backup system (BBS) is installed?	The #8 jumper on the TBS terminal block is removed, and the BBS can keep the cabinet live during a utility outage.
+What does a Model 200 switch pack do?	Three triac outputs switch 120 VAC to the field wires (R/Y/G or Don't Walk/Yellow/Walk) when the controller pulls the 24 VDC inputs low.
+How many switch packs does each PDA signal breaker feed?	Three: a left turn, a through, and its ped phase.
+What is the output order of a ped switch pack?	Don't Walk, Yellow (normally unused), Walk.
+What do the flash transfer relays (FTRs) do?	In normal operation they connect the switch packs to the field. In flash they drop out and connect the field to the 204 flashers.
+What do the flash program blocks set?	Whether each phase flashes red or yellow when the cabinet is in flash.
+What flash rate does the CA MUTCD require?	50 to 60 flashes per minute, with the light on for 1/2 to 2/3 of each cycle (4G.01).
+Does flash come from the controller?	No. It comes from the 204 flashers through the FTRs, so the cabinet can flash with the controller removed.
+How do monitor-caused flash and police-panel flash differ when clearing?	Monitor flash latches until someone resets the 210. Police-panel flash clears when the switch goes back to AUTO.
+What failure is the main reason the 210 monitor exists?	A shorted (failed-on) triac that lights a head when the controller says off.
+How must drivers treat a dark (unpowered) signal in California?	As an all-way stop (CVC 21800(d)).
+What does the 210 conflict monitor do?	Watches the field outputs on 16 channels and puts the intersection into flash if two conflicting channels are on together.
+On the 210 program card, what does a diode in place mean?	That pair of channels conflicts. You remove a diode only for a pair allowed to run together.
+How many diodes are on a 16-channel card, and why?	120: one per pair of channels, 16 × 15 ÷ 2.
+What are 210 channels 9 to 16 used for?	9 and 10: Overlaps A and B. 11 and 12: special. 13 to 16: Ø2, Ø4, Ø6 and Ø8 peds.
+When is a ped channel compatible with a vehicle channel?	Only if no vehicle on that phase drives or turns through the crosswalk. (Ø1 (westbound left) stays in conflict with Ø2P, because it turns through that crosswalk.)
+Besides conflicts, what else trips a 210?	Low +24 VDC and a missing controller watchdog signal (CVM).
+What is the worst mistake you can make on a diode card?	Removing a diode for a pair that conflicts. The monitor will then not catch two conflicting greens.
+What does a Model 2010 monitor add over a 210?	Red-fail monitoring, minimum yellow checks and a fault log.
+Why must a program card never move to another cabinet?	Each card matches one intersection's phasing.
+What does a 12CSC serve, and how many does a pole need?	The signal heads on one standard. One 12CSC per pole with heads, as long as the pole needs 12 or fewer conductors.
+How do you count conductors needed in a 12CSC?	3 per vehicle phase (R, Y, G) + 2 per ped phase (Walk, Don't Walk) + 1 common.
+What does a 3CSC serve?	One push-button location.
+How many cables does a conduit run carry?	One cable for every pole beyond it, because signal cable runs unspliced from the cabinet to each pole. The run leaving the cabinet carries all of them.
+What is the NEC conduit fill limit for three or more conductors?	40% of the conduit's inside area (NEC Chapter 9, Table 1). 53% for one conductor, 31% for two.
+How many degrees of bends are allowed between pull points?	360° total (for example NEC 352.26 for PVC).
+Which conduit runs get an equipment ground or bonding conductor?	Every run, including ones that carry only DLC or SIC.
+How is the equipment grounding conductor sized?	By the breaker ahead of the circuit (NEC 250.122): for example 20 A → #12, 30–60 A → #10, 100 A → #8 copper.
+Why isn't a ground rod by itself enough to protect people?	The earth is not an effective fault path (NEC 250.4(A)(5)). The bonding conductor back to the service carries fault current so the breaker trips.
+What resistance must a single ground rod meet?	25 Ω or less, or a second electrode is added at least 6 ft away (NEC 250.53).
+What voltage-drop limits does the NEC recommend?	3% on a branch circuit and 5% total (informational note, not a requirement).
+What color must the grounded (common) conductor be?	White or gray (NEC 200.6).
+What must you do before pulling a switch pack, FTR or monitor?	Put the intersection into flash, under traffic control.
+Why can a cabinet still be live after you open the utility breaker?	A battery backup system (BBS) inverter can keep feeding it. Turn the BBS off and verify zero voltage.
+What should you do before handling wires at a knocked-down pole?	Open the signal and lighting breakers at the service and test before touching.
+Which standard covers arc-flash PPE and verifying a safe work condition?	NFPA 70E.
+Which part of the CA MUTCD covers traffic control for work in the street?	Part 6, temporary traffic control.
+What is the danger of an ungrounded pole or cabinet?	A fault can energize it without tripping a breaker, and a person touching it completes the circuit.
+Why can opening a current-carrying coil be dangerous?	Inductive kick: v = L × Δi/Δt. Interrupting 2 A in a 0.4 H coil in 1 ms makes about 800 V.

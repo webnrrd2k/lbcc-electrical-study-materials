@@ -20,11 +20,18 @@ Wiring diagrams and troubleshooting notes for the ELECT 435A motor control labs.
 
 ---
 
+## Flashcards
+
+- **[Motor Control Basics](flashcards/)** (53 cards): components, terminal numbers (A1/A2, 13-14, 95-96...), ladder logic, seal-in and interlocking, NFPA 79 wire colors, and testing and troubleshooting. Study them on the page, on the [flashcard study page](https://webnrrd2k.github.io/lbcc-electrical-study-materials/flashcards/?deck=e435a-motor-control), or download them for Anki, Quizlet or Emacs.
+
+---
+
 ## Folder layout
 
 ```
 elect_435a_motor_control_wiring+trouble/
 ├── README.md                          (this page)
+├── flashcards/                        (53 cards: README, .json, .apkg, Quizlet .txt, .org)
 └── labs/
     ├── lab_2_startstopjog/
     │   ├── README.md

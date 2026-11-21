@@ -130,6 +130,102 @@
    ]
   },
   {
+   "class": "ELECT 212",
+   "deck": "Labs 4–6: Power Systems",
+   "deck_id": "e212-power-systems",
+   "order": 30,
+   "format": "text",
+   "path": "elect_212_3rd_semester_electrical_fundamentals/labs-4-6-power-systems/flashcards/power_systems.json",
+   "cards": 43,
+   "sections": [
+    "1. Split-phase 120/240 V",
+    "2. Three-phase basics",
+    "3. Wye systems",
+    "4. Delta systems",
+    "5. Three-phase power",
+    "6. Safety"
+   ]
+  },
+  {
+   "class": "ELECT 245",
+   "deck": "Chapter 12: Panelboard Selection and Installation",
+   "deck_id": "e245-ch12",
+   "order": 12,
+   "format": "text",
+   "path": "elect_245_electrical_code_commercial/chapter_12/flashcards/chapter12.json",
+   "cards": 100,
+   "sections": [
+    "1. Big picture",
+    "2. Panelboard basics",
+    "3. Construction, phase arrangement, numbering",
+    "4. Ratings & overcurrent",
+    "5. Cabinets & wiring space",
+    "6. Directory & identification",
+    "7. Working space: conditions, dimensions",
+    "8. Egress, doors, light, dedicated space",
+    "9. Safety, exceptions, pitfalls"
+   ]
+  },
+  {
+   "class": "ELECT 245",
+   "deck": "Chapter 13: The Electric Service and Grounding",
+   "deck_id": "e245-ch13",
+   "order": 13,
+   "format": "text",
+   "path": "elect_245_electrical_code_commercial/chapter_13/flashcards/chapter13.json",
+   "cards": 100,
+   "sections": [
+    "1. Big picture",
+    "2. Service types, service point, vocabulary",
+    "3. Transformers",
+    "4. Connections",
+    "5. Utility supply & metering",
+    "6. Service-entrance equipment",
+    "7. Grounding / bonding concepts",
+    "8. Electrodes & GEC",
+    "9. Bonding jumpers & EGC sizing",
+    "10. Bonding at service & piping",
+    "11. GFPE, safety, pitfalls"
+   ]
+  },
+  {
+   "class": "ELECT 275",
+   "deck": "Conduit Bending",
+   "deck_id": "e275-bending",
+   "order": 1,
+   "format": "text",
+   "path": "elect_275_electrical_pipe_bending/flashcards/pipe_bending.json",
+   "cards": 44,
+   "sections": [
+    "1. Bender marks",
+    "2. 90° stubs, deductions and gain",
+    "3. Offsets and shrinkage",
+    "4. Saddles and box offsets",
+    "5. NEC rules"
+   ]
+  },
+  {
+   "class": "ELECT 280",
+   "deck": "Course Concepts",
+   "deck_id": "e280-concepts",
+   "order": 0,
+   "format": "text",
+   "path": "elect_280_traffic_signal_systems_1/flashcards/concepts/concepts.json",
+   "cards": 103,
+   "sections": [
+    "1. Phases and phase numbering",
+    "2. Ring diagram and timing intervals",
+    "3. Plans and Standard Plans",
+    "4. Pedestrian heads and push buttons",
+    "5. Loop detectors and detector designations",
+    "6. The 332 cabinet",
+    "7. Load switches, PDA and flash",
+    "8. The 210 monitor and diode card",
+    "9. Conduit, cable, power and grounding",
+    "10. Safety"
+   ]
+  },
+  {
    "class": "ELECT 280",
    "deck": "Caltrans Legend Symbols",
    "deck_id": "e280-legend",
@@ -189,6 +285,22 @@
    "cards": 5,
    "sections": [
     "Soffit and Wall-Mounted Luminaire"
+   ]
+  },
+  {
+   "class": "ELECT 435A",
+   "deck": "Motor Control Basics",
+   "deck_id": "e435a-motor-control",
+   "order": 1,
+   "format": "text",
+   "path": "elect_435a_motor_control_wiring+trouble/flashcards/motor_control.json",
+   "cards": 53,
+   "sections": [
+    "1. Components",
+    "2. Terminal numbers",
+    "3. Ladder diagrams and circuits",
+    "4. Wiring practice",
+    "5. Testing and troubleshooting"
    ]
   }
  ]

@@ -1,0 +1,648 @@
+{
+ "schema_version": "2.0",
+ "deck": "Motor Control Basics",
+ "deck_id": "e435a-motor-control",
+ "class": "ELECT 435A",
+ "title": "Motor control components, terminal numbers, circuits and troubleshooting",
+ "order": 1,
+ "source": "Written from the ELECT 435A lab pages and general motor control practice; NFPA 79 colors from the standard.",
+ "format": "text",
+ "cards": [
+  {
+   "id": "e435a-motor-control-001",
+   "type": "basic",
+   "section": "1. Components",
+   "difficulty": 1,
+   "front": "What is a contactor?",
+   "back": "A heavy-duty electrically operated switch. Its coil pulls in main power contacts that carry motor current.",
+   "tags": [
+    "elect-435a",
+    "components"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-002",
+   "type": "basic",
+   "section": "1. Components",
+   "difficulty": 1,
+   "front": "What is the difference between a contactor and a motor starter?",
+   "back": "A motor starter is a contactor plus an overload relay.",
+   "tags": [
+    "elect-435a",
+    "components"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-003",
+   "type": "basic",
+   "section": "1. Components",
+   "difficulty": 1,
+   "front": "What does an overload relay protect against?",
+   "back": "Motor overheating from sustained overcurrent. It opens the control circuit; it does not protect against short circuits.",
+   "tags": [
+    "elect-435a",
+    "components"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-004",
+   "type": "basic",
+   "section": "1. Components",
+   "difficulty": 2,
+   "front": "What protects the motor circuit against short circuits?",
+   "back": "The branch-circuit short-circuit and ground-fault device: fuses or a circuit breaker ahead of the starter.",
+   "tags": [
+    "elect-435a",
+    "components"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-005",
+   "type": "basic",
+   "section": "1. Components",
+   "difficulty": 1,
+   "front": "What is a control relay used for?",
+   "back": "Switching low-current control signals and adding contacts. It does not carry motor current.",
+   "tags": [
+    "elect-435a",
+    "components"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-006",
+   "type": "basic",
+   "section": "1. Components",
+   "difficulty": 1,
+   "front": "What does a control transformer do?",
+   "back": "Steps line voltage down to a safer control voltage (24 V in the lab panels) for the push buttons, coils and lights.",
+   "tags": [
+    "elect-435a",
+    "components"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-007",
+   "type": "basic",
+   "section": "1. Components",
+   "difficulty": 2,
+   "front": "What is a limit switch used for in a forward/reverse circuit?",
+   "back": "It opens when the machine reaches the end of travel and drops out that direction only.",
+   "tags": [
+    "elect-435a",
+    "components"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-008",
+   "type": "basic",
+   "section": "1. Components",
+   "difficulty": 1,
+   "front": "What is a pilot light for?",
+   "back": "Showing the operator a state, such as motor running forward.",
+   "tags": [
+    "elect-435a",
+    "components"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-009",
+   "type": "basic",
+   "section": "1. Components",
+   "difficulty": 2,
+   "front": "What does the FLA dial on an overload relay set?",
+   "back": "The trip current. Set it to the motor nameplate full-load amps.",
+   "tags": [
+    "elect-435a",
+    "components"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-010",
+   "type": "basic",
+   "section": "1. Components",
+   "difficulty": 2,
+   "front": "What is the difference between HAND and AUTO reset on an overload?",
+   "back": "HAND: someone must press reset after a trip. AUTO: it resets itself when it cools. Use HAND where an automatic restart could hurt someone.",
+   "tags": [
+    "elect-435a",
+    "components"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-011",
+   "type": "basic",
+   "section": "2. Terminal numbers",
+   "difficulty": 1,
+   "front": "What are terminals A1 and A2?",
+   "back": "The two ends of a contactor or relay coil.",
+   "tags": [
+    "elect-435a",
+    "terminal-numbers"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-012",
+   "type": "basic",
+   "section": "2. Terminal numbers",
+   "difficulty": 1,
+   "front": "What do 1L1, 3L2, 5L3 and 2T1, 4T2, 6T3 mean on a contactor?",
+   "back": "Line-side and load-side terminals of the three main power poles: 1L1 to 2T1, 3L2 to 4T2, 5L3 to 6T3.",
+   "tags": [
+    "elect-435a",
+    "terminal-numbers"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-013",
+   "type": "basic",
+   "section": "2. Terminal numbers",
+   "difficulty": 2,
+   "front": "What do the units digits 1-2 and 3-4 tell you about an auxiliary contact?",
+   "back": "1-2 is normally closed (NC); 3-4 is normally open (NO). The tens digit is the position number.",
+   "tags": [
+    "elect-435a",
+    "terminal-numbers"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-014",
+   "type": "basic",
+   "section": "2. Terminal numbers",
+   "difficulty": 2,
+   "front": "Is aux contact 23-24 NO or NC?",
+   "back": "Normally open (ends in 3-4).",
+   "tags": [
+    "elect-435a",
+    "terminal-numbers"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-015",
+   "type": "basic",
+   "section": "2. Terminal numbers",
+   "difficulty": 2,
+   "front": "Is aux contact 31-32 NO or NC?",
+   "back": "Normally closed (ends in 1-2).",
+   "tags": [
+    "elect-435a",
+    "terminal-numbers"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-016",
+   "type": "basic",
+   "section": "2. Terminal numbers",
+   "difficulty": 1,
+   "front": "What are overload terminals 95-96 and 97-98?",
+   "back": "95-96 is the normally closed trip contact wired in series with the coils. 97-98 is a normally open alarm contact.",
+   "tags": [
+    "elect-435a",
+    "terminal-numbers"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-017",
+   "type": "basic",
+   "section": "2. Terminal numbers",
+   "difficulty": 2,
+   "front": "A push button's NC contact is usually numbered...?",
+   "back": "1-2 (for example a STOP button).",
+   "tags": [
+    "elect-435a",
+    "terminal-numbers"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-018",
+   "type": "basic",
+   "section": "2. Terminal numbers",
+   "difficulty": 2,
+   "front": "A push button's NO contact is usually numbered...?",
+   "back": "3-4 (for example a START button).",
+   "tags": [
+    "elect-435a",
+    "terminal-numbers"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-019",
+   "type": "basic",
+   "section": "2. Terminal numbers",
+   "difficulty": 3,
+   "front": "On an 8-pin octal relay, which pins are usually the coil?",
+   "back": "Pins 2 and 7.",
+   "tags": [
+    "elect-435a",
+    "terminal-numbers"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-020",
+   "type": "basic",
+   "section": "2. Terminal numbers",
+   "difficulty": 2,
+   "front": "What do H1-H4 and X1-X4 mean on a control transformer?",
+   "back": "H terminals are the primary (high-voltage) side; X terminals are the secondary (low-voltage) side.",
+   "tags": [
+    "elect-435a",
+    "terminal-numbers"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-021",
+   "type": "basic",
+   "section": "3. Ladder diagrams and circuits",
+   "difficulty": 1,
+   "front": "How is a ladder diagram read?",
+   "back": "Left to right across each rung, top to bottom. Power rails on the sides; one load (coil or light) per rung, at the right end.",
+   "tags": [
+    "elect-435a",
+    "ladder-diagrams-and-circuits"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-022",
+   "type": "basic",
+   "section": "3. Ladder diagrams and circuits",
+   "difficulty": 2,
+   "front": "Where do the overload contacts go in a control rung?",
+   "back": "In series with the coil, between the coil and the common side.",
+   "tags": [
+    "elect-435a",
+    "ladder-diagrams-and-circuits"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-023",
+   "type": "basic",
+   "section": "3. Ladder diagrams and circuits",
+   "difficulty": 1,
+   "front": "What is a seal-in (holding) contact?",
+   "back": "A normally open contact of the contactor wired across the START button, so the coil stays energized after START is released.",
+   "tags": [
+    "elect-435a",
+    "ladder-diagrams-and-circuits"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-024",
+   "type": "basic",
+   "section": "3. Ladder diagrams and circuits",
+   "difficulty": 2,
+   "front": "What is 3-wire control?",
+   "back": "Momentary START/STOP buttons with a seal-in contact. It gives low-voltage protection: after a power loss the motor does not restart by itself.",
+   "tags": [
+    "elect-435a",
+    "ladder-diagrams-and-circuits"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-025",
+   "type": "basic",
+   "section": "3. Ladder diagrams and circuits",
+   "difficulty": 2,
+   "front": "What is 2-wire control?",
+   "back": "A maintained contact (switch, float, thermostat) runs the coil directly. It gives low-voltage release: the motor restarts when power returns.",
+   "tags": [
+    "elect-435a",
+    "ladder-diagrams-and-circuits"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-026",
+   "type": "basic",
+   "section": "3. Ladder diagrams and circuits",
+   "difficulty": 1,
+   "front": "How are multiple STOP buttons wired?",
+   "back": "In series (any one opens the circuit).",
+   "tags": [
+    "elect-435a",
+    "ladder-diagrams-and-circuits"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-027",
+   "type": "basic",
+   "section": "3. Ladder diagrams and circuits",
+   "difficulty": 1,
+   "front": "How are multiple START buttons wired?",
+   "back": "In parallel (any one can start).",
+   "tags": [
+    "elect-435a",
+    "ladder-diagrams-and-circuits"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-028",
+   "type": "basic",
+   "section": "3. Ladder diagrams and circuits",
+   "difficulty": 1,
+   "front": "What does jog (inch) mean?",
+   "back": "The motor runs only while the button is held; the seal-in is bypassed.",
+   "tags": [
+    "elect-435a",
+    "ladder-diagrams-and-circuits"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-029",
+   "type": "basic",
+   "section": "3. Ladder diagrams and circuits",
+   "difficulty": 3,
+   "front": "Why should a JOG circuit still be fed through STOP?",
+   "back": "So pressing STOP always stops the motor, even while someone is holding JOG.",
+   "tags": [
+    "elect-435a",
+    "ladder-diagrams-and-circuits"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-030",
+   "type": "basic",
+   "section": "3. Ladder diagrams and circuits",
+   "difficulty": 2,
+   "front": "What is electrical interlocking in a forward/reverse starter?",
+   "back": "Each contactor's NC aux contact (for example 31-32) is wired in series with the other contactor's coil, so both can't pull in at once.",
+   "tags": [
+    "elect-435a",
+    "ladder-diagrams-and-circuits"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-031",
+   "type": "basic",
+   "section": "3. Ladder diagrams and circuits",
+   "difficulty": 2,
+   "front": "What is mechanical interlocking?",
+   "back": "A mechanical bar between the two contactors that physically prevents both from closing.",
+   "tags": [
+    "elect-435a",
+    "ladder-diagrams-and-circuits"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-032",
+   "type": "basic",
+   "section": "3. Ladder diagrams and circuits",
+   "difficulty": 3,
+   "front": "What is push-button interlocking?",
+   "back": "Each direction button's NC contact is in the other direction's rung, so pressing one drops out the other.",
+   "tags": [
+    "elect-435a",
+    "ladder-diagrams-and-circuits"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-033",
+   "type": "basic",
+   "section": "3. Ladder diagrams and circuits",
+   "difficulty": 1,
+   "front": "How does a 3-phase motor reverse?",
+   "back": "Swap any two of the three line leads (the reversing contactor swaps L1 and L3).",
+   "tags": [
+    "elect-435a",
+    "ladder-diagrams-and-circuits"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-034",
+   "type": "basic",
+   "section": "3. Ladder diagrams and circuits",
+   "difficulty": 2,
+   "front": "Why must forward and reverse never pull in together?",
+   "back": "Two lines would be shorted together phase to phase.",
+   "tags": [
+    "elect-435a",
+    "ladder-diagrams-and-circuits"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-035",
+   "type": "basic",
+   "section": "3. Ladder diagrams and circuits",
+   "difficulty": 3,
+   "front": "What is a common forgotten wire on a starter?",
+   "back": "The coil return: coil A2 to the overload 95 terminal. Without it the coil has no path and nothing pulls in.",
+   "tags": [
+    "elect-435a",
+    "ladder-diagrams-and-circuits"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-036",
+   "type": "basic",
+   "section": "4. Wiring practice",
+   "difficulty": 2,
+   "front": "NFPA 79 wire color for AC control circuits?",
+   "back": "Red.",
+   "tags": [
+    "elect-435a",
+    "wiring-practice"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-037",
+   "type": "basic",
+   "section": "4. Wiring practice",
+   "difficulty": 2,
+   "front": "NFPA 79 wire color for DC control circuits?",
+   "back": "Blue.",
+   "tags": [
+    "elect-435a",
+    "wiring-practice"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-038",
+   "type": "basic",
+   "section": "4. Wiring practice",
+   "difficulty": 2,
+   "front": "NFPA 79 wire color for the grounded (common) control conductor?",
+   "back": "White (or white with a stripe for DC).",
+   "tags": [
+    "elect-435a",
+    "wiring-practice"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-039",
+   "type": "basic",
+   "section": "4. Wiring practice",
+   "difficulty": 1,
+   "front": "NFPA 79 wire color for equipment grounding?",
+   "back": "Green, or green with yellow stripe.",
+   "tags": [
+    "elect-435a",
+    "wiring-practice"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-040",
+   "type": "basic",
+   "section": "4. Wiring practice",
+   "difficulty": 3,
+   "front": "What color does NFPA 79 use for interlock circuits fed from an outside source?",
+   "back": "Orange (or yellow), because they stay live when the panel disconnect is off.",
+   "tags": [
+    "elect-435a",
+    "wiring-practice"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-041",
+   "type": "basic",
+   "section": "4. Wiring practice",
+   "difficulty": 3,
+   "front": "Why should a white wire be used only for the grounded conductor?",
+   "back": "Workers assume white is near ground potential. A white wire upstream of the overload contact can read full control voltage when the overload trips.",
+   "tags": [
+    "elect-435a",
+    "wiring-practice"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-042",
+   "type": "basic",
+   "section": "4. Wiring practice",
+   "difficulty": 2,
+   "front": "Why is one side of the control transformer secondary grounded?",
+   "back": "So a ground fault in the control circuit blows the fuse or trips the breaker instead of starting the motor by itself.",
+   "tags": [
+    "elect-435a",
+    "wiring-practice"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-043",
+   "type": "basic",
+   "section": "4. Wiring practice",
+   "difficulty": 3,
+   "front": "Which side of the control circuit goes to the push buttons and contacts?",
+   "back": "The fused, ungrounded (hot) side. The grounded side goes to the coils' A2 ends through the overload contacts.",
+   "tags": [
+    "elect-435a",
+    "wiring-practice"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-044",
+   "type": "basic",
+   "section": "4. Wiring practice",
+   "difficulty": 1,
+   "front": "Why give every wire a number at both ends?",
+   "back": "So the panel matches the ladder diagram and anyone can trace a fault.",
+   "tags": [
+    "elect-435a",
+    "wiring-practice"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-045",
+   "type": "basic",
+   "section": "5. Testing and troubleshooting",
+   "difficulty": 1,
+   "front": "What must be off before doing ohm or continuity checks on a control panel?",
+   "back": "All power: cord unplugged, motor supply unplugged, control breaker off.",
+   "tags": [
+    "elect-435a",
+    "testing-and-troubleshooting"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-046",
+   "type": "basic",
+   "section": "5. Testing and troubleshooting",
+   "difficulty": 3,
+   "front": "Why are continuity checks useless with the control transformer still connected and switched on?",
+   "back": "The transformer secondary joins the hot and common buses through a few ohms, so almost everything reads continuous.",
+   "tags": [
+    "elect-435a",
+    "testing-and-troubleshooting"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-047",
+   "type": "basic",
+   "section": "5. Testing and troubleshooting",
+   "difficulty": 2,
+   "front": "What should a contactor coil read on an ohmmeter?",
+   "back": "A definite resistance: not zero (shorted) and not open.",
+   "tags": [
+    "elect-435a",
+    "testing-and-troubleshooting"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-048",
+   "type": "basic",
+   "section": "5. Testing and troubleshooting",
+   "difficulty": 2,
+   "front": "How do you bench-test a contactor's main contacts without power?",
+   "back": "Push the armature in by hand and check each pole (1L1-2T1 and so on) goes from open to continuous.",
+   "tags": [
+    "elect-435a",
+    "testing-and-troubleshooting"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-049",
+   "type": "basic",
+   "section": "5. Testing and troubleshooting",
+   "difficulty": 2,
+   "front": "A motor starts but stops as soon as START is released. Most likely cause?",
+   "back": "The seal-in (holding) contact is missing, miswired or not closing.",
+   "tags": [
+    "elect-435a",
+    "testing-and-troubleshooting"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-050",
+   "type": "basic",
+   "section": "5. Testing and troubleshooting",
+   "difficulty": 2,
+   "front": "Pressing START does nothing at all. What do you check first?",
+   "back": "Control power, the STOP button and overload contact (both NC), and the coil return wire.",
+   "tags": [
+    "elect-435a",
+    "testing-and-troubleshooting"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-051",
+   "type": "basic",
+   "section": "5. Testing and troubleshooting",
+   "difficulty": 2,
+   "front": "An overload keeps tripping. What are common causes?",
+   "back": "FLA set too low, a mechanically overloaded or binding motor, a lost phase (single-phasing), or a bad connection heating the overload.",
+   "tags": [
+    "elect-435a",
+    "testing-and-troubleshooting"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-052",
+   "type": "basic",
+   "section": "5. Testing and troubleshooting",
+   "difficulty": 2,
+   "front": "What is single-phasing?",
+   "back": "Losing one line of a 3-phase supply. The motor draws high current on the other two lines and overheats.",
+   "tags": [
+    "elect-435a",
+    "testing-and-troubleshooting"
+   ]
+  },
+  {
+   "id": "e435a-motor-control-053",
+   "type": "basic",
+   "section": "5. Testing and troubleshooting",
+   "difficulty": 1,
+   "front": "What is the safe way to check for voltage?",
+   "back": "Test your meter on a known live source, test the circuit, then test the meter again (live-dead-live).",
+   "tags": [
+    "elect-435a",
+    "testing-and-troubleshooting"
+   ]
+  }
+ ]
+}
