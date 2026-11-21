@@ -1,6 +1,6 @@
 # ELECT 212 — Electrical Fundamentals (3rd Semester)
 
-Study guides, flashcards, and practice problems for the AC theory units of ELECT 212: trigonometry and vectors, alternating current, inductance, capacitance, and R-L, R-C and R-L-C circuits.
+Study guides, flashcards, and practice problems for the AC theory units of ELECT 212: trigonometry and vectors, alternating current, inductance, capacitance, R-L, R-C and R-L-C circuits, and single-phase transformers.
 
 [← Back to all classes](../README.md)
 
@@ -35,6 +35,7 @@ Unit numbers follow the course textbook.
 | 22 | Resistive-Capacitive (RC) Parallel Circuits | [Guide](units/unit-22-rc-parallel/study-guide.md) | [44 cards](units/unit-22-rc-parallel/flashcards/) |
 | 23 | RLC Series Circuits | [Guide](units/unit-23-rlc-series/study-guide.md) | [46 cards](units/unit-23-rlc-series/flashcards/) |
 | 24 | RLC Parallel Circuits | [Guide](units/unit-24-rlc-parallel/study-guide.md) | [49 cards](units/unit-24-rlc-parallel/flashcards/) |
+| 27 | Single-Phase Transformers | [Guide](units/unit-27-single-phase-transformers/study-guide.md) ([PDF](units/unit-27-single-phase-transformers/study-guide.pdf)) | [211 cards](units/unit-27-single-phase-transformers/flashcards/) |
 
 Each flashcard folder also holds the raw card data (`unitNN_flashcards.json`) and the diagrams, if you'd rather import the cards into a flashcard app.
 

@@ -63,88 +63,88 @@ Here t = 1 s reaction time, v = approach speed in ft/s (mph × 1.47), a = 10 ft/
 
 ## Assignments
 
-### 1 — Phases (due Sep 12)
+### 1 — Phases
 
 Mark the correct Ø on every vehicle head and ped head of an intersection, and name the symbols, such as "signal head with backplate" and "southbound ped crossing".
 
 - **Skills:** odd = left turn, even = through; Ø2/Ø6 are the main street, Ø4/Ø8 the side street; a left turn pairs with the through phase on the same approach (Ø1 with Ø6, Ø5 with Ø2, Ø3 with Ø8, Ø7 with Ø4).
 - **Common mistakes:** Labeling a head by the corner it stands on instead of the traffic it faces. A far-side head on the NE corner faces south and serves **northbound** traffic. Mixing up which left turn goes with which through.
 
-### 2 — Concurrency and Standard Plans (due Sep 26)
+### 2 — Concurrency and Standard Plans
 
 Draw the concurrency arrows on the A/B ring diagram and explain the yellow and red lines. Then find 32 plan items in the 2018 Caltrans Electrical Standard Plans.
 
 - **Skills:** One phase from each ring runs at a time. Barriers are where both rings must finish together. Find a symbol in ES-1A to ES-1C, then check it against the plan's Standard and Equipment Schedule.
 - **Common mistakes:** Calling the red line "just red". It is the **all-red clearance**, when every approach shows red. Drawing arrows across the barrier, for example Ø2 with Ø3. Forgetting the ped phases (13–16) and existing (E) versus new symbols. Standard Plans give the general case; the project plan's notes and schedules come first.
 
-### 3 — Phases with Ped Heads and Vehicle Detector Designations (due Oct 3)
+### 3 — Phases with Ped Heads and Vehicle Detector Designations
 
 Mark the phases on a test print, now with ped heads and loops added.
 
 - **Skills:** A ped head's phase matches the through phase parallel to the crosswalk. A loop's phase is the movement in the lane it sits in.
 - **Common mistakes:** Giving a ped head the phase of the street being crossed (it is the parallel street's phase). Giving left-turn pocket loops the through phase.
 
-### 4 — The 332 Controller Cabinet (due Oct 10)
+### 4 — The 332 Controller Cabinet
 
 Label the parts of the 332 cabinet and put the correct phase next to each slot symbol in the I file.
 
 - **Skills:** Know what each part does. The 2070 makes decisions. Input files carry 222 loop detectors and 242 isolators. The PDA holds the breakers, two 204 flashers and the 206L 24 VDC supply. Model 200 load switches use a triac to send 120 VAC to the heads. FTRs move the heads to the flasher. The 210 watches for conflicts.
 - **Common mistakes:** Calling the I file "loops" and the J file "detectors". Both hold detector cards: I = Ø1–Ø4, J = Ø5–Ø8. Thinking the controller powers the lamps directly. It only sends 24 VDC logic signals to the load switches.
 
-### 5 — Quiz: phases (Oct 10)
+### 5 — Quiz: phases
 
 A timed version of Assignments 1 and 3 on a new print. Read the north arrow first, then work one approach at a time.
 
-### 6 — Vehicle Detector Designations (due Oct 17)
+### 6 — Vehicle Detector Designations
 
 On an intersection print, trace each VDD to its input panel terminal block (TB) and input file pins, using the 332L cabinet manual.
 
 - **Skills:** Each detector channel has its own pair of TB positions and its own pair of file pins. Upper and lower channels of one slot use different pins. Read the input panel and input file drawings in the cabinet manual.
 - **Common mistakes:** Marking loops that are drawn but carry no designation. The instructor marks those wrong. Copy errors, such as writing J5 pins for a J6 detector. Check every line twice.
 
-### 7 — Quiz 2: Concurrency (Oct 17)
+### 7 — Quiz 2: Concurrency
 
 The ring diagram again, from memory. Know the four compatible pairs on each side of the barrier and where the ped channels go.
 
-### 8 — The PDA and Output File (due Oct 24)
+### 8 — The PDA and Output File
 
 Use the cabinet manual to find which switch packs each SCB feeds and where its output lands, then fill in what lands on each field terminal (FT) block terminal.
 
 - **Skills:** Each breaker feeds a group of three switch packs (phase, phase, ped). Each switch pack has three outputs, R/Y/G or DW/(Y)/Walk.
 - **Common mistakes:** Mixing up the output order. Ped switch pack outputs are Don't Walk, Yellow (unused), Walk. Reading the PDA from the front when the drawing shows the rear view.
 
-### 9 — Quiz 3: I and J File callout (Oct 24)
+### 9 — Quiz 3: I and J File callout
 
 Place every VDD and ped isolator from a print in the correct I or J slot, using the input file layout in the 332L manual. Mark only what is on the print.
 
-### 10 — 210 Diode Card (due Oct 31)
+### 10 — 210 Diode Card
 
 Start with all 120 diodes in place, which makes every channel conflict. Cut out the diodes for compatible pairs. Work from the ring diagram: check every vehicle, ped and overlap pair, and ask whether those movements can safely show green or walk at the same time.
 
 - **Common mistakes:** Removing a diode for a pair that conflicts. That lets two conflicting greens show and the monitor will not catch it, which is the worst error in the course. Forgetting the ped and overlap channels. Forgetting to write the intersection name on the card.
 
-### 11 — Quiz 4: Output file (Oct 31)
+### 11 — Quiz 4: Output file
 
 A timed version of Assignment 8.
 
-### 12 — Cable and Conductor Schedule (due Nov 7)
+### 12 — Cable and Conductor Schedule
 
 Fill in the 12CSC and 3CSC rows of a conduit and conductor schedule.
 
 - **Skills:** One 12CSC for every pole with heads. One 3CSC for every push-button location. Signal cable runs unspliced from the cabinet to the pole. Check the conductor count for each pole: 3 per vehicle phase + 2 per ped phase + 1 common, which must fit in 12.
 - **Common mistakes:** Counting a pole only in the last run to reach it instead of every run it passes through. Putting signal cable in SIC-only or service runs. Forgetting that a push-button-only post gets no 12CSC.
 
-### 13 — DLCs and Conduit and Conductor Schedule (due Nov 14)
+### 13 — DLCs and Conduit and Conductor Schedule
 
 Add the DLC rows. There is one DLC per detector designation, and they build up toward the cabinet.
 
 - **Common mistakes:** Treating a plan callout such as "INSTALL 4 DLC" as the total for the run. It is only what that leg adds. Missing a conduit that is not clearly labeled. Write down any assumption you make.
 
-### 14 — Quiz 5: I and J File (Nov 14)
+### 14 — Quiz 5: I and J File
 
 Define each part of a VDD and fill in a full I and J file: loops, ped push-button isolators, FS and ST, and preemption inputs.
 
-### 15 — Power, Street Lighting and Grounding (due Nov 21)
+### 15 — Power, Street Lighting and Grounding
 
 Add the signal power, lighting and ground rows to the schedule.
 

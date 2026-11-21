@@ -1,6 +1,4 @@
 #+TITLE: ELECT 435A — Lab 3 Forward/Reverse: Task List
-#+AUTHOR: Jeff
-#+DATE: <2026-11-05 Thu>
 #+STARTUP: overview
 #+TODO: TODO NEXT SUBMITTED WAITING | DONE CANCELED
 #+TAGS: milestone(m) canvas(c) report(r) video(v) photo(p) instructor(i) hardware(h)
@@ -14,52 +12,44 @@ section of that page; "wire list" means its wire list table.
 
 * Read me first
 - *Real deadline:* the box has to be wired, tested, *powered*, *filmed* and *photographed*
-  before drop-off (Fri <2026-11-20 Fri> / Sat <2026-11-21 Sat>; hard limit Tue <2026-11-24 Tue 18:00>).
-  It comes back with 4 faults installed, so the Nov 30 Canvas dates only say when to upload.
+  before you drop it off. It comes back with 4 faults installed, so the later Canvas due
+  dates for the videos and photos only say when to upload them.
 - Major milestones are top-level headings tagged =:milestone:=.
   Minor milestones are second-level headings tagged =:milestone:=.
-- Emacs: =C-c a= agenda view picks up the SCHEDULED/DEADLINE dates. =C-c C-c= on a
+- Emacs: add SCHEDULED/DEADLINE dates from your own Canvas, and =C-c a= agenda view will show them. =C-c C-c= on a
   checkbox toggles it. =[/]= cookies show progress.
 - Not using Emacs? This is plain text. Open lab3-tasks.txt (same content) in any
   editor or print it, and mark each =[ ]= as =[X]= when done. TODO/DONE in front of
-  a heading is its status; =<2026-11-20 Fri>= is a date.
+  a heading is its status.
 
 * Milestone map
-| #  | Milestone                                 | Target          | Hard limit           |
-|----+-------------------------------------------+-----------------+----------------------|
-| M0 | Oriented: videos watched, plan made       | Sun Nov 08      |                      |
-| M1 | Diagrams done (Constructor + hand-drawn)  | Tue Nov 10      | (report, Dec 12)     |
-| M2 | Parts bench-checked + mounted             | Tue Nov 10      |                      |
-| M3 | Control wiring done + Check In 1          | Sun Nov 15      | Check In 1 Nov 16    |
-| M4 | Power wiring done + self-inspection       | Tue Nov 17      |                      |
-| M5 | Pre-power test quiz 100%                  | Wed Nov 18      | before power-on      |
-| M6 | Powered, filmed, photographed             | Thu Nov 19      | before drop-off      |
-| M7 | Box dropped off                           | Fri Nov 20      | Tue Nov 24 6 pm      |
-| M8 | Box picked up                             | Thu/Fri Nov 26-27? | confirm (Thanksgiving) |
-| M9 | Timed troubleshooting done                | Fri Dec 04      | Mon Dec 07           |
-| M10| Report submitted                          | Thu Dec 10      | Sat Dec 12           |
+| #  | Milestone                                 | Must be done             |
+|----+-------------------------------------------+--------------------------|
+| M0 | Oriented: videos watched, plan made       | first                    |
+| M1 | Diagrams done (Constructor + hand-drawn)  | before wiring (report)   |
+| M2 | Parts bench-checked + mounted             | before wiring            |
+| M3 | Control wiring done + Check In 1          | by Check In 1            |
+| M4 | Power wiring done + self-inspection       | before the quiz          |
+| M5 | Pre-power test quiz 100%                  | before power-on          |
+| M6 | Powered, filmed, photographed             | before drop-off          |
+| M7 | Box dropped off                           | by the drop-off deadline |
+| M8 | Box picked up                             | confirm day with the lab |
+| M9 | Timed troubleshooting done                | by its Canvas due date   |
+| M10| Report submitted                          | by its Canvas due date   |
 
 * Admin — do this week [0/3]                                     :instructor:
-** TODO Email Tedde Titus (ttitus@lbcc.edu): set drop-off AND pick-up appointment
-   SCHEDULED: <2026-11-06 Fri>
-   - Ask: is pick-up Thu/Fri Nov 26-27 (Thanksgiving)? Alternate days?
-   - Ask: is Tue Nov 24 a drop-off option, or only Fri Nov 20 / Sat Nov 21?
+** TODO Email the lab staff: set drop-off AND pick-up appointments
+   - Ask which days and times drop-off and pick-up are open, especially around holidays.
 ** TODO Ask the instructor about the Canvas gaps (one email)
-   SCHEDULED: <2026-11-06 Fri>
    - [ ] Testing/Operation/Procedure: confirm they're done before drop-off
    - [ ] No "Check In 3" in the module. Intentional?
    - [ ] Where is the "Timed Troubleshooting Video Upload" assignment?
    - [ ] Operation video: 9 scenes (page) vs 8 tests (sheet) vs 10 (rubric)?
    - [ ] Testing worksheet: is a self-made paper sheet OK?
    - [ ] Wire color for 7 and 12 (coil A2 to OL 95): red or white?
-** TODO Put the other class deadlines in the agenda
-   - Test #2 Start/Stop/Jog + Ch 8 HW: <2026-11-16 Mon>
-   - Ch 7 HW: <2026-11-23 Mon>
-   - Ch 12 HW: <2026-12-06 Sun>
-   - Final Exam: <2026-12-14 Mon>
+** TODO Put the other class deadlines (tests, homework, final) from Canvas in your agenda
 
 * M0 Orientation [0/4]                                              :milestone:
-  SCHEDULED: <2026-11-05 Thu> DEADLINE: <2026-11-08 Sun>
 ** TODO Watch Circuit Operation video (20:42), notes on the ladder           :video:
    :PROPERTIES:
    :Effort:   1:00
@@ -90,9 +80,7 @@ section of that page; "wire list" means its wire list table.
    - [ ] Print and cut the wire labels (wire-labels.html / wire-labels.csv)
 
 * M1 Report setup + diagrams [0/4]                          :milestone:report:
-  DEADLINE: <2026-11-10 Tue>
 ** TODO Create report doc: cover sheet + all section headers
-   SCHEDULED: <2026-11-06 Fri>
    Headers in order: WIRING SECTION / Testing Worksheets / TESTING SECTION /
    TROUBLESHOOTING SECTION / SELL-OFF SECTION. Label every sub-item.
 ** TODO Constructor ladder diagram (20 pts)
@@ -113,7 +101,6 @@ section of that page; "wire list" means its wire list table.
    Keep the original. Retyped worksheets get no credit.
 
 * M2 Components bench-checked and installed [0/5]          :milestone:hardware:
-  SCHEDULED: <2026-11-07 Sat> DEADLINE: <2026-11-10 Tue>
   Every ohm/continuity check: cord unplugged, 3PHIN feed unplugged, *CB2 OFF*.
   "Open" = meter reads OL.
 ** TODO Build step 1: bench-check the door devices (before wiring them)
@@ -160,7 +147,6 @@ section of that page; "wire list" means its wire list table.
    - [ ] Contactor A1 to overload 96: coil resistance (proves coil, A2 pin, wire 7/12, OL contact)
 
 * M3 Control wiring complete + Check In 1 [0/5]           :milestone:hardware:
-  DEADLINE: <2026-11-15 Sun>
   Rules: in the top, out the bottom · no copper showing · max 2 wires/terminal ·
   *1 wire per CB terminal* · hot+neutral run together · nothing on unused terminals ·
   16 AWG stranded only · no wire nuts. Check each step before moving on.
@@ -213,13 +199,11 @@ section of that page; "wire list" means its wire list table.
    - [ ] Check: FWDON X2 and REVON X2 to TB4 continuous
    - [ ] Count door-channel wires: exactly *9* (1, 3, 4, 5, 9, 10, 14, 15, 17)
 ** TODO Check In 1 (10 pts)                                     :canvas:photo:
-   DEADLINE: <2026-11-16 Mon 23:59>
    - [ ] Photos: front of controls / rear of control panel / top-down wiring area
    - [ ] Crop close to the box
    - [ ] Word doc: title page (name, class, lab #) + 3 photos → PDF → upload
 
 * M4 Power wiring + self-inspection [0/2]                 :milestone:hardware:
-  DEADLINE: <2026-11-17 Tue>
 ** TODO Build step 9: 3-phase (simulated) power circuit, all black
    3PHIN feed unplugged. Watch for a phase swap.
    - [ ] 3PHIN 24 (L1) → FW 1L1; FW 1L1 → RV 5L3
@@ -246,7 +230,6 @@ section of that page; "wire list" means its wire list table.
    - [ ] Max 2 wires/terminal, 1 per CB terminal, nothing on unused terminals
 
 * M5 Testing Prior to Power ON — 100% (100 pts) [0/4]            :milestone:canvas:
-  SCHEDULED: <2026-11-18 Wed> DEADLINE: <2026-11-30 Mon 23:59>
   *Power OFF the whole time.* >1 MΩ = OL. <1000 Ω = "less than 1000". Unlimited attempts.
 ** TODO Take quiz, recording each reading on the *paper* worksheet
 ** TODO Fix anything wrong and log it ("Items you fixed" is a report item)
@@ -254,7 +237,6 @@ section of that page; "wire list" means its wire list table.
 ** TODO Screenshot / print the quiz for the report
 
 * M6 Powered, filmed, photographed [0/5]                 :milestone:video:photo:
-  SCHEDULED: <2026-11-19 Thu> DEADLINE: <2026-11-20 Fri>
 ** TODO Build step 10: first power-up, control circuit only (only after M5 is at 100%)
    Cord in, 3PHIN still unplugged, CB2 on.
    - [ ] FWD: FW pulls in, stays in after release, FWDON lights
@@ -269,7 +251,6 @@ section of that page; "wire list" means its wire list table.
    - [ ] Print [[file:LAB 3 OPERATIONAL DEMONSTRATION.pdf][the demo sheet]]
    - [ ] Watch [[file:ELECT 435A LAB3 OPERATION DEMO [AAsnMvPTKYE].mkv][instructor's demo video]] (2:42)
 ** TODO Film Operation video (100 pts)                              :canvas:video:
-   DEADLINE: <2026-11-30 Mon 23:59>
    Horizontal, close, buttons + lights + contactors visible. Have a helper.
    - [ ] 5 s of phone showing date & time
    - [ ] 1 FWD & STOP1
@@ -284,7 +265,6 @@ section of that page; "wire list" means its wire list table.
    - [ ] 10 REV & STOP1 (rubric item, not on printed sheet)
    - [ ] Watch it back: is every item clearly visible? Upload.
 ** TODO Procedure Component Install & Wiring photos (55 pts)        :canvas:photo:
-   DEADLINE: <2026-11-30 Mon 23:59>
    - [ ] 1 Front panel: all buttons + lights in one shot
    - [ ] 2 Rear of front panel, trays *open*
    - [ ] 3 Starter area: right of CB2, between horizontal trays, covers *off*
@@ -292,18 +272,14 @@ section of that page; "wire list" means its wire list table.
    - [ ] 5 Top-down overview, trays *installed*
    - [ ] Upload in that order
 ** TODO Check In 2 (10 pts): same 3 views as Check In 1          :canvas:photo:
-   DEADLINE: <2026-11-23 Mon 23:59>
    Take the photos now, while the box is still here. Covers back on afterward.
 
 * M7 Drop-off [0/3]                                        :milestone:instructor:
-  SCHEDULED: <2026-11-20 Fri> DEADLINE: <2026-11-24 Tue 18:00>
 ** TODO Covers on, final look against selloff list. *Don't disassemble anything.*
-** TODO Drop off in RR101 (Fri Nov 20 1-9 pm or Sat Nov 21 8 am-2 pm)
+** TODO Drop off at the lab at your scheduled time
 ** TODO Controller Drop-off assignment (10 pts): enter pick-up appointment    :canvas:
-   DEADLINE: <2026-11-24 Tue 23:59>
 
 * Report drafting, part 1 (while it's fresh) [0/2]                    :report:
-  SCHEDULED: <2026-11-21 Sat> DEADLINE: <2026-11-25 Wed>
 ** TODO WIRING SECTION: Summary (≥2 ¶, 10) + Conclusion (≥2 ¶, 20)
    Summary = what you did. Conclusion = what you learned, with specifics
    (e.g., why the door jumpers give 9 wires, why X4 is grounded at the transformer).
@@ -314,11 +290,9 @@ section of that page; "wire list" means its wire list table.
    - [ ] Summary ≥2 ¶ (10) + Conclusion ≥2 ¶ (20)
 
 * M8 Pick-up                                              :milestone:instructor:
-** WAITING Pick up box (Thu/Fri; confirm date, likely Thanksgiving week)
-   SCHEDULED: <2026-11-26 Thu>
+** WAITING Pick up box (confirm the day with the lab)
 
 * M9 Timed Troubleshooting (2 pts + report 80 pts) [0/5]           :milestone:
-  DEADLINE: <2026-12-07 Mon 23:59>
 ** TODO Prep (before opening the quiz)
    - [ ] Re-study the ladder until you can predict any meter reading
    - [ ] Clean ladder copy, wire list + "Things to check" from the wiring diagrams page,
@@ -338,15 +312,13 @@ section of that page; "wire list" means its wire list table.
 ** TODO Film troubleshooting operation video (same tests) and upload  :canvas:video:
    Upload to "Lab 3 - Timed Troubleshooting Video Upload" (look under Assignments, not Modules)
 ** TODO Check In 4 (10 pts): same 3 views                         :canvas:photo:
-   DEADLINE: <2026-12-06 Sun 23:59>
 ** TODO Draft TROUBLESHOOTING SECTION while it's fresh                     :report:
    - [ ] Errors Found Table, *table* format, very detailed (10 + 20)
    - [ ] How did you find the transformer problem? (meter procedure; if found by accident, the procedure you *should* have used) (20)
    - [ ] Summary ≥2 ¶ (10) + Conclusion ≥2 ¶ (20; include the whole lab, not just this section)
 
 * M10 Forward/Reverse Lab Report (275 pts) [0/4]           :milestone:report:canvas:
-  SCHEDULED: <2026-12-08 Tue> DEADLINE: <2026-12-12 Sat 23:59>
-** WAITING Get selloff results from the instructor (ask by ~Dec 8 if not posted)
+** WAITING Get selloff results from the instructor (ask if they aren't posted a few days before the report is due)
 ** TODO SELL-OFF SECTION
    - [ ] Points lost and why, with your final score (say so if none were lost) (20)
    - [ ] *Project Conclusion* (50): substantial, well beyond 2 ¶. Concrete things learned,
@@ -355,5 +327,4 @@ section of that page; "wire list" means its wire list table.
    - [ ] Cover sheet (5)
    - [ ] Sections in required order, headers exactly as specified, every item labeled
    - [ ] Every summary/conclusion ≥2 ¶ and clearly labeled as summary vs. conclusion
-** TODO Export PDF and upload (target Thu Dec 10)
-   DEADLINE: <2026-12-12 Sat 23:59>
+** TODO Export PDF and upload (aim for a couple of days before it's due)

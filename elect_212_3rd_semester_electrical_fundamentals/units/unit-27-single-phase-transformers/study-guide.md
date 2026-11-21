@@ -1,6 +1,4 @@
-# Basic Transformers Study Guide
-
-Nov 9, 2026 · @Jeff
+# Unit 27 — Single-Phase Transformers: Study Guide
 
 ## 1. Why transformers matter
 
@@ -12,9 +10,9 @@ This guide follows the instructor's "Basic Transformers" slide deck (472 slides)
 
 **The one rule that solves most problems:**
 
-```latex
+$$
 P_{in} \approx P_{out} \quad\Rightarrow\quad E_P \times I_P = E_S \times I_S
-```
+$$
 
 - E = voltage, I = current, P = primary (the side the power comes in on), S = secondary (the side feeding the load).
 - The high-voltage side always carries the low current, and the low-voltage side always carries the high current.
@@ -47,9 +45,9 @@ AC in the primary makes a changing magnetic flux in the iron core. That same flu
 
 The textbook-level equation behind it (for sine waves):
 
-```latex
+$$
 E_{rms} = 4.44 \times f \times N \times \Phi_{max}
-```
+$$
 
 - f = frequency (Hz), N = number of turns, Φmax = peak core flux (webers).
 - For a given winding on a given supply, the flux is fixed by the applied voltage and frequency. Load current does not change it much.
@@ -81,9 +79,9 @@ Three-phase units use a three-leg (or five-leg) core, one leg per phase.
 
 ### 2.5 Efficiency
 
-```latex
+$$
 \%\,Eff = \frac{P_{out}}{P_{in}} \times 100
-```
+$$
 
 - Modern transformers run about 96–99% efficient. Big units are at the top of that range. They are among the most efficient machines made.
 - Efficiency is highest when copper loss equals core loss. That usually happens somewhere around half to three-quarters load.
@@ -101,9 +99,9 @@ Voltage goes with turns, and current goes against turns. More turns means more v
 
 ### 3.1 The ratio equations
 
-```latex
+$$
 \frac{N_P}{N_S} = \frac{E_P}{E_S} = \frac{I_S}{I_P}
-```
+$$
 
 - N = turns, E = voltage, I = current, P = primary, S = secondary.
 - **TTR (transformer turns ratio)** = NP : NS, usually written high side to low side (for example 10:1).
@@ -125,9 +123,9 @@ Voltage goes with turns, and current goes against turns. More turns means more v
 
 The primary "sees" the load impedance multiplied by the turns ratio squared:
 
-```latex
+$$
 Z_P = \left(\frac{N_P}{N_S}\right)^2 \times Z_S
-```
+$$
 
 Example: a 2 Ω load on a 10:1 step-down looks like 200 Ω from the primary. This is why a small load current on the high side can represent a big load on the low side.
 
@@ -166,9 +164,9 @@ A transformer's real limit is heat, and heat comes from current. So transformers
 
 FLC and FLA mean the same thing: the current the transformer can carry continuously at rated conditions.
 
-```latex
+$$
 I_{FL} = \frac{VA}{E} = \frac{kVA \times 1{,}000}{E} \qquad (1\varnothing)
-```
+$$
 
 (For three-phase, divide by E × 1.732 instead.)
 
@@ -191,9 +189,9 @@ I_{FL} = \frac{VA}{E} = \frac{kVA \times 1{,}000}{E} \qquad (1\varnothing)
 
 ### 4.4 Sizing a transformer
 
-```latex
+$$
 VA = \frac{W}{PF}
-```
+$$
 
 Slide 90: 50 kW at PF 0.85 → 58.8 kVA. No standard size is exactly 58.8, so go to the next standard size up: **75 kVA**. Never round down.
 
@@ -246,9 +244,9 @@ Every loading rule comes back to one thing: the insulation's temperature. Heat a
 
 ### 5.2 Temperature rise
 
-```latex
+$$
 T_{max} = T_{ambient} + T_{rise}
-```
+$$
 
 - Ratings assume 40 °C maximum ambient (30 °C average over 24 hours).
 - Slide example: 65 °C rise + 40 °C ambient = 105 °C. That's the *average* winding temperature. The hottest spot inside runs higher (about 15–30 °C more, depending on the type), and the insulation class is chosen to cover the hot spot.
@@ -430,9 +428,9 @@ In real life, an open service neutral shows up as lights that go bright on one s
 
 ### 8.2 Short-circuit current formula
 
-```latex
+$$
 I_{SC} = \frac{I_{FL} \times 100}{\%Z}
-```
+$$
 
 This assumes the utility source can supply unlimited current (an "infinite bus"). Real fault current is a bit lower, but this worst case is what you use to check equipment ratings.
 
@@ -563,9 +561,9 @@ A three-phase bank is three single-phase windings connected in wye or delta. The
 | Wye (star) | E\_line = E\_phase × 1.732 | I\_line = I\_phase | Yes, the common point |
 | Delta | E\_line = E\_phase | I\_line = I\_phase × 1.732 | No (except a center-tapped high-leg delta) |
 
-```latex
+$$
 kVA_{3\varnothing} = \frac{E_L \times I_L \times 1.732}{1{,}000}
-```
+$$
 
 - "Phase" means the winding. "Line" means the conductor between the bank and the load. (The slides call line current "line-to-line current." Line current is the current in one line conductor.)
 - 1 ÷ 1.732 = 0.577, so phase voltage in a wye is 57.7% of line voltage (the slides round to 58%). Example: 208 V line → 120 V phase.
@@ -617,9 +615,9 @@ Instrument transformers shrink high voltages and currents to safe, standard valu
 
 **Ratio math**
 
-```latex
+$$
 I_S = I_P \times \frac{5}{\text{primary rating}} \qquad\text{and}\qquad \frac{I_S}{I_P} = \frac{N_P}{N_S}
-```
+$$
 
 - 600:5 = 120:1. 300 A through it gives 300 ÷ 120 = 2.5 A.
 - **Shortcut** for X:5 ratios: double the primary number and drop the last zero. 600:5 → 120:1. 2000:5 → 400:1. (It works because dividing by 5 is the same as ×2 ÷ 10.)
@@ -632,9 +630,9 @@ I_S = I_P \times \frac{5}{\text{primary rating}} \qquad\text{and}\qquad \frac{I_
 
 **Wrapping the primary through a window CT.** Each extra pass through the window acts like more primary current, so the effective ratio divides by the number of passes.
 
-```latex
+$$
 \text{New ratio} = \frac{\text{nameplate ratio}}{\text{number of passes}}
-```
+$$
 
 - 200:5 with 2 passes → 100:5. 3 passes → 66.7:5. 4 passes → 50:5.
 - Count passes **through the window**, not loops around the outside. One loop around the housing = 2 passes.
@@ -848,9 +846,9 @@ The same figure labels the grounding parts of a separately derived system, all i
 
 **Open-delta capacity:** two units deliver 86.6% of their combined rating, or 57.7% of what three would give in full delta. Both ways land on the same number:
 
-```latex
+$$
 (100 + 100)\ kVA \times 0.866 = 173\ kVA \qquad 300\ kVA \times 0.577 = 173\ kVA
-```
+$$
 
 For open delta feeding 3Ø loads only, the center tap isn't connected.
 
@@ -890,9 +888,9 @@ The book adds two refinements to the section 8 formula:
 1. **±10% impedance tolerance.** Listed transformers of 25 kVA and up can have actual %Z up to 10% below the nameplate value. For the worst case, the book multiplies the marked %Z by 0.9.
 2. **Voltage swings.** A 10% higher system voltage means 10% more fault current.
 
-```latex
+$$
 I_{SC} = I_{FL} \times \frac{100}{\%Z \times 0.9}
-```
+$$
 
 **Book example (Problem 1):** 225 kVA, 208Y/120 V, 2 %Z, infinite primary.
 
