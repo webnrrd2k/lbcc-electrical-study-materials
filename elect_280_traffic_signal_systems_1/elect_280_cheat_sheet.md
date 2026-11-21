@@ -23,6 +23,10 @@ The course has three learning outcomes. You should be able to read an intersecti
 
 ## Key numbers, terms and formulas
 
+![NEMA 8-phase dual-ring diagram: Ring 1 runs phases 1, 2, 3, 4 and Ring 2 runs 5, 6, 7, 8, with a barrier between the main-street and side-street groups](images/ring-diagram.png)
+
+![Model 332L cabinet cage from top to bottom: 2070 controller, drawer shelf, Input File I, Input File J, PDA #2L, Output File #1L](images/332-cabinet.png)
+
 | Item | What to remember |
 | --- | --- |
 | Ring diagram | Ring 1: Ø1 Ø2 ‖ Ø3 Ø4. Ring 2: Ø5 Ø6 ‖ Ø7 Ø8. Compatible pairs on the left side of the barrier: 1+5, 1+6, 2+5, 2+6. On the right side: 3+7, 3+8, 4+7, 4+8. |
@@ -59,7 +63,7 @@ $$
 Y = t + \frac{v}{2a + 2gG}
 $$
 
-Here t = 1 s reaction time, v = approach speed in ft/s (mph × 1.47), a = 10 ft/s², g = 32.2 ft/s² and G = grade as a decimal. Example: 35 mph = 51.5 ft/s on a flat road gives Y = 1 + 51.5/20 ≈ 3.6 s, which matches the CA MUTCD minimum for 35 mph.
+Here t = 1 s reaction time, v = approach speed in ft/s (mph × 1.47), a = 10 ft/s², g = 32.2 ft/s² and G = grade as a decimal. Example: 35 mph = 51.5 ft/s on a flat road gives Y = 1 + 51.5/20 ≈ 3.6 s, which matches CA MUTCD Table 4D-101(CA) for an 85th-percentile speed of 35 mph. If you only know the posted speed, the CA MUTCD has you add 7 mph first (10 mph at 25 mph or less), so a 35 mph posted street gets 4.1 s.
 
 ## Assignments
 
